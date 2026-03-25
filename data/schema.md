@@ -16,7 +16,9 @@
 | `id` | string | `uid-NNN` 唯一标识 |
 | `name` | string | 英文全名 |
 | `type` | string | `"faculty"` / `"industry"` |
-| `institution` | string | institutions.json 中的 key |
+| `institution` | string | institutions.json 中的 key；自动发现时也可能是生成的 `QS_*` key |
+| `institution_display_name` | string | 自动发现时用于展示的学校名；当学校还不在 institutions.json 时会出现 |
+| `institution_qs_rank` | number | 自动发现时记录的 QS 排名 |
 | `department` | string | 院系简称 |
 | `country` | string | 国家 |
 | `region` | string | `"Asia"` / `"Europe"` / `"North America"` / `"Oceania"` |
@@ -36,6 +38,8 @@
 | `notes` | string | 备注 |
 | `added_date` | string | `YYYY-MM-DD` |
 | `last_updated` | string | `YYYY-MM-DD` |
+
+自动发现的学校如果还没有正式收录到 `data/institutions.json`，会优先写入 `institution_display_name` 和 `institution_qs_rank`，这样 dashboard 仍然可以正常显示学校名和 QS 标记。
 
 ## Controlled vocabulary for tags
 

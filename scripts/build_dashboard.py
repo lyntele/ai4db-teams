@@ -16,7 +16,14 @@ HTML_PATH = os.path.join(OUT_DIR, 'dashboard.html')
 CSV_PATH  = os.path.join(OUT_DIR, 'data', 'researchers.csv')
 
 # ── Palette ───────────────────────────────────────────────────
-REGION_COLORS  = {'Asia':'#6366f1','Europe':'#0ea5e9','North America':'#10b981','Oceania':'#f59e0b'}
+REGION_COLORS  = {
+    'Asia': '#6366f1',
+    'Europe': '#0ea5e9',
+    'North America': '#10b981',
+    'Oceania': '#f59e0b',
+    'South America': '#ef4444',
+    'Africa': '#14b8a6',
+}
 TYPE_COLORS    = {'faculty':'#818cf8','industry':'#fb923c'}
 CHANCE_COLORS  = {'high':'#10b981','medium':'#f59e0b','low':'#ef4444','internship-only':'#a855f7'}
 PRIORITY_COLORS= {'high':'#ef4444','medium':'#f59e0b','low':'#94a3b8'}
@@ -40,16 +47,19 @@ def build_df(data, institutions):
     for r in data['researchers']:
         inst_key = r.get('institution', '')
         inst = institutions.get(inst_key, {})
-        rows.append({
-            **r,
-            'inst_display': inst.get('display_name', inst_key),
-            'lat':  inst.get('lat', 0),
-            'lon':  inst.get('lon', 0),
-            'qs_rank': inst.get('qs_rank'),
-            'inst_type': inst.get('type', ''),
-            'tags_str':  ', '.join(r.get('tags', [])),
-            'focus_str': ', '.join(r.get('research_focus', [])),
-        })
+        row = dict(r)
+        row['inst_display'] = inst.get('display_name') or r.get('institution_display_name') or inst_key
+        row['lat'] = inst.get('lat') if inst else r.get('institution_lat')
+        row['lon'] = inst.get('lon') if inst else r.get('institution_lon')
+        row['qs_rank'] = inst.get('qs_rank') if inst else r.get('institution_qs_rank')
+        row['inst_type'] = inst.get('type', '')
+        row['tags_str'] = ', '.join(r.get('tags', []))
+        row['focus_str'] = ', '.join(r.get('research_focus', []))
+        row.pop('institution_display_name', None)
+        row.pop('institution_qs_rank', None)
+        row.pop('institution_lat', None)
+        row.pop('institution_lon', None)
+        rows.append(row)
     return pd.DataFrame(rows)
 
 
@@ -244,7 +254,7 @@ def chart_kanban(df):
 
 
 def chart_region_donut(df):
-    ORDER = ['Asia', 'North America', 'Europe', 'Oceania']
+    ORDER = ['Asia', 'North America', 'Europe', 'Oceania', 'South America', 'Africa']
     agg = df.groupby('region').size().reset_index(name='count')
     agg['region'] = pd.Categorical(agg['region'], categories=ORDER, ordered=True)
     agg = agg.sort_values('region').dropna(subset=['region'])
@@ -309,9 +319,13 @@ def chart_type_donut(df):
 
 # ── HTML helpers ──────────────────────────────────────────────
 
-def to_div(fig):
-    return fig.to_html(full_html=False, include_plotlyjs=False,
-                       config={'responsive': True, 'displayModeBar': False})
+def to_div(fig, div_id):
+    return fig.to_html(
+        full_html=False,
+        include_plotlyjs=False,
+        config={'responsive': True, 'displayModeBar': False},
+        div_id=div_id,
+    )
 
 
 def stats_cards(df):
@@ -397,7 +411,17 @@ def assemble(df, figs, table_html, filters_html, offline=False):
         import plotly
         plotly_js = f'<script>{plotly.offline.get_plotlyjs()}</script>'
 
-    map_div, inst_div, tags_div, kanban_div, region_div, type_div = [to_div(f) for f in figs]
+    div_ids = [
+        'chart-map',
+        'chart-inst',
+        'chart-tags',
+        'chart-kanban',
+        'chart-region',
+        'chart-type',
+    ]
+    map_div, inst_div, tags_div, kanban_div, region_div, type_div = [
+        to_div(fig, div_id) for fig, div_id in zip(figs, div_ids)
+    ]
     sc = stats_cards(df)
     researcher_map_json = _json.dumps(build_researcher_map_data(df), ensure_ascii=False)
 
