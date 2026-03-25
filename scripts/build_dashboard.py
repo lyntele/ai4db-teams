@@ -13,6 +13,7 @@ from utils import load_researchers, load_institutions
 
 OUT_DIR   = os.path.join(os.path.dirname(__file__), '..')
 HTML_PATH = os.path.join(OUT_DIR, 'dashboard.html')
+INDEX_PATH = os.path.join(OUT_DIR, 'index.html')
 CSV_PATH  = os.path.join(OUT_DIR, 'data', 'researchers.csv')
 
 # ── Palette ───────────────────────────────────────────────────
@@ -890,6 +891,10 @@ def main():
     with open(HTML_PATH, 'w', encoding='utf-8') as f:
         f.write(html)
     print(f"  Dashboard: {HTML_PATH}")
+
+    with open(INDEX_PATH, 'w', encoding='utf-8') as f:
+        f.write(html)
+    print(f"  Index: {INDEX_PATH}")
 
 
 if __name__ == '__main__':

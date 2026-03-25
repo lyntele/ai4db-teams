@@ -61,13 +61,21 @@ python build_dashboard.py
 cd scripts && python build_dashboard.py --offline
 ```
 
-生成的 `dashboard.html` 为自包含单文件，可直接分享。
+生成的 `dashboard.html` 和 `index.html` 都是自包含单文件，可直接分享。
 
 ## 线上部署
 
-仓库已经补了 GitHub Pages 的部署 workflow。只要把 GitHub Pages 的 Source 设成 `GitHub Actions`，后续每次 `main` 分支有更新时，都会自动重建并发布网站。
+现在更适合用 GitHub Pages 的 branch source：
 
-线上页面会用 `dashboard.html` 生成对应的 `index.html`，因此可以直接作为静态站点访问。
+- 在仓库 `Settings -> Pages` 里把 Source 设成 `Deploy from a branch`
+- 分支选 `main`
+- 目录选 `/ (root)`
+
+`scripts/build_dashboard.py` 会同时生成 `dashboard.html` 和 `index.html`，所以仓库每次 push 到 `main` 后，Pages 都会自动刷新首页。
+
+线上访问地址：
+
+- [https://lyntele.github.io/ai4db-teams/](https://lyntele.github.io/ai4db-teams/)
 
 ## 数据结构
 

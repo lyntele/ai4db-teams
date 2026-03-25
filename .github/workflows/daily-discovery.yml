@@ -49,6 +49,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/researchers.json data/researchers.csv dashboard.html
+          git add data/researchers.json data/researchers.csv dashboard.html index.html
           git commit -m "chore: daily AI4DB discovery"
           git push
