@@ -9,6 +9,12 @@
 }
 ```
 
+`data/manual_overrides.json` 是额外的人工覆盖层，按 `id` 覆盖单个条目的字段。适合处理这几类自动化难以稳定判断的问题：
+
+- 已退休或主页明确声明不再接收新学生 / 博后
+- 主页或团队链接失效
+- 已人工核实的招生状态、优先级、备注修正
+
 ## Entry fields
 
 | Field | Type | Enum / Notes |
@@ -43,6 +49,8 @@
 自动发现的学校如果还没有正式收录到 `data/institutions.json`，会优先写入 `institution_display_name` 和 `institution_qs_rank`，这样 dashboard 仍然可以正常显示学校名和 QS 标记。
 
 工业界团队如果没有稳定可用的团队主页，可以把 `homepage` / `research_group_url` 留空，同时在 `members` 里按论文作者回填成员；dashboard 会以可展开方式展示，若能找到个人主页就会直接链接。
+
+`manual_overrides.json` 中的字段会在读取 `researchers.json` 后按 `id` 直接覆盖，所以可以安全地用它修正 `currently_taking_students`、`application_status`、`priority`、`notes` 等字段。
 
 ## Controlled vocabulary for tags
 

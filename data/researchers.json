@@ -1140,14 +1140,14 @@
       "google_scholar": "",
       "notable_papers": [],
       "research_group_url": "",
-      "currently_taking_students": true,
-      "admission_chance": "medium",
-      "application_status": "considering",
-      "priority": "medium",
+      "currently_taking_students": false,
+      "admission_chance": "low",
+      "application_status": "not-applicable",
+      "priority": "low",
       "contact_history": [],
-      "notes": "MPI 知识图谱方向泰斗，YAGO 知识库创建者。",
+      "notes": "MPI 知识图谱方向泰斗，YAGO 知识库创建者。2026-03-26 核对个人主页后确认其已正式退休，且明确说明不再接收新的学生或博后。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-26"
     },
     {
       "id": "uid-035",

@@ -7,6 +7,7 @@ from datetime import date
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 RESEARCHERS_PATH = os.path.join(DATA_DIR, 'researchers.json')
 INSTITUTIONS_PATH = os.path.join(DATA_DIR, 'institutions.json')
+MANUAL_OVERRIDES_PATH = os.path.join(DATA_DIR, 'manual_overrides.json')
 
 VALID_TYPES = {'faculty', 'industry'}
 VALID_CHANCES = {'high', 'medium', 'low', 'internship-only'}
@@ -24,7 +25,19 @@ CONTROLLED_TAGS = {
 
 def load_researchers():
     with open(RESEARCHERS_PATH, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        data = json.load(f)
+
+    overrides = load_manual_overrides()
+    if not overrides:
+        return data
+
+    researchers = data.get('researchers', [])
+    for entry in researchers:
+        override = overrides.get(entry.get('id'))
+        if not isinstance(override, dict):
+            continue
+        entry.update(override)
+    return data
 
 
 def save_researchers(data):
@@ -36,6 +49,14 @@ def save_researchers(data):
 def load_institutions():
     with open(INSTITUTIONS_PATH, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+
+def load_manual_overrides():
+    if not os.path.exists(MANUAL_OVERRIDES_PATH):
+        return {}
+    with open(MANUAL_OVERRIDES_PATH, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data if isinstance(data, dict) else {}
 
 
 def next_id(researchers):

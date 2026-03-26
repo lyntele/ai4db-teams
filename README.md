@@ -22,6 +22,7 @@ open dashboard.html
 - **CLI 工具**：交互式添加/更新学者条目
 - **自动化发现**：可按天扫描 OpenAlex 中的 arXiv / 顶会论文，自动把 QS100 学校里的新团队或新论文补回仓库，不再局限于 `data/institutions.json` 里已经存在的学校
 - **工业界团队展开**：工业界条目会优先从近期相关论文作者里回填成员，团队主页失效时可以直接看成员个人主页
+- **人工覆盖**：`data/manual_overrides.json` 可为已退休、明确不再招生、主页失效等特殊情况提供人工结论，并覆盖自动发现结果
 
 ## 管理学者数据
 
@@ -57,6 +58,8 @@ python build_dashboard.py
 
 如果某个学校不在 QS<100 的范围内，脚本会跳过，不会自动入库。
 
+如果某位老师或团队已经确认不再招生，但自动流程还没识别出来，直接把结论写进 `data/manual_overrides.json` 即可。这个覆盖层会在 build 和 discovery 时一并生效，避免后续被自动结果改回去。
+
 ## 离线使用
 
 ```bash
@@ -84,5 +87,6 @@ cd scripts && python build_dashboard.py --offline
 - `data/researchers.json` — 学者数据（核心）
 - `data/institutions.json` — 机构信息（QS排名、经纬度）
 - `data/qs_rankings.json` — QS 2026 排名缓存，自动发现时用它判断是否满足 `QS <= 100`
+- `data/manual_overrides.json` — 人工覆盖层；用于已退休、不再招生、主页坏链等人工核实结果
 - `data/schema.md` — 字段说明
 - `data/researchers.csv` — 自动导出的 CSV（每次 build 时生成）
