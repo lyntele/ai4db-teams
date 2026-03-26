@@ -45,6 +45,7 @@ MAX_PAGES_PER_QUERY = 3
 DEFAULT_MEMBER_LOOKBACK_DAYS = 180
 QS_RANKINGS_PATH = ROOT_DIR / "data" / "qs_rankings.json"
 TEAM_NAME_HINTS = ("team", "group", "lab")
+MIN_INSTITUTION_MATCH_SCORE = 16
 
 # High-signal terms for AI4DB / database + LLM discovery.
 SEARCH_TERMS = [
@@ -255,6 +256,11 @@ SPECIAL_ALIASES = {
         "Google Research",
         "Google",
     ],
+    "GoogleCloud": [
+        "Google Cloud",
+        "Google Cloud, Sunnyvale",
+        "Google Cloud Sunnyvale",
+    ],
     "AliDAMO": [
         "Alibaba DAMO Academy",
         "DAMO Academy",
@@ -310,6 +316,10 @@ SPECIAL_ALIASES = {
     "IBM": [
         "IBM Research",
         "IBM",
+    ],
+    "Oracle": [
+        "Oracle Corporation",
+        "Oracle",
     ],
     "Snowflake": [
         "Snowflake Research",
@@ -528,7 +538,8 @@ def match_qs_institution(candidate_text: str, qs_rankings: List[Dict[str, Any]])
         score = score_qs_institution_candidate(candidate_text, entry["display_name"])
         if best is None or score > best[1]:
             best = (entry, score)
-    if best and best[1] >= 6:
+    # Weak fuzzy matches create bad imports like York -> NYU or UCSB -> Berkeley.
+    if best and best[1] >= MIN_INSTITUTION_MATCH_SCORE:
         return best
     return None
 
@@ -589,7 +600,7 @@ def match_institution(candidate_text: str, known_institutions: Dict[str, Dict[st
         score = score_institution_candidate(candidate_text, key, meta)
         if best is None or score > best[2]:
             best = (key, meta, score)
-    if best and best[2] >= 6:
+    if best and best[2] >= MIN_INSTITUTION_MATCH_SCORE:
         return best
     return None
 

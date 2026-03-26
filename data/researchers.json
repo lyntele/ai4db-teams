@@ -1820,13 +1820,14 @@
       "name": "Amazon Text-to-SQL Team",
       "type": "industry",
       "institution": "AmazonSci",
-      "department": "Alexa AI",
+      "department": "AWS",
       "country": "USA",
       "region": "North America",
       "position": "Research Team",
       "research_focus": [
-        "Alexa data query",
-        "NL2SQL"
+        "enterprise data query",
+        "NL2SQL",
+        "error detection and correction"
       ],
       "tags": [
         "NL2SQL",
@@ -1836,16 +1837,47 @@
       "homepage": "https://www.amazon.science/",
       "email": "",
       "google_scholar": "",
-      "notable_papers": [],
+      "notable_papers": [
+        {
+          "title": "AgentSM: Semantic Memory for Agentic Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2601.15709"
+        },
+        {
+          "title": "SQLENS: An End-to-End Framework for Error Detection and Correction in Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2506.04494"
+        }
+      ],
       "research_group_url": "https://www.amazon.science/",
+      "members": [
+        {
+          "name": "Yue Gong",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "SQLENS 作者，Amazon Web Services 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Aodong Li",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "AgentSM 作者，Amazon Web Services 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Balakrishnan Narayanaswamy",
+          "position": "Research Scientist",
+          "homepage": "",
+          "notes": "AgentSM / SQLENS 作者，Amazon Web Services 归属通过论文首页署名核实。"
+        }
+      ],
       "currently_taking_students": false,
       "admission_chance": "internship-only",
       "application_status": "not-applicable",
       "priority": "medium",
       "contact_history": [],
-      "notes": "Amazon Science NL2SQL 团队。",
+      "notes": "Amazon Web Services / Amazon Science 的 Text-to-SQL 团队，成员按 AgentSM 与 SQLENS 论文补齐。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-26"
     },
     {
       "id": "uid-055",
@@ -1930,8 +1962,27 @@
       "homepage": "https://www.snowflake.com/en/research/",
       "email": "",
       "google_scholar": "",
-      "notable_papers": [],
+      "notable_papers": [
+        {
+          "title": "AgentSM: Semantic Memory for Agentic Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2601.15709"
+        },
+        {
+          "title": "SQLENS: An End-to-End Framework for Error Detection and Correction in Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2506.04494"
+        }
+      ],
       "research_group_url": "https://www.snowflake.com/en/research/",
+      "members": [
+        {
+          "name": "Xiao Qin",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "AgentSM / SQLENS 作者，Snowflake 归属通过论文首页邮箱 xiao.qin@snowflake.com 核实。"
+        }
+      ],
       "currently_taking_students": false,
       "admission_chance": "internship-only",
       "application_status": "not-applicable",
@@ -1939,7 +1990,7 @@
       "contact_history": [],
       "notes": "Snowflake 数据仓库+LLM Cortex AI 方向。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-26"
     },
     {
       "id": "uid-058",
@@ -1996,7 +2047,18 @@
       "homepage": "https://www.microsoft.com/en-us/research/",
       "email": "",
       "google_scholar": "",
-      "notable_papers": [],
+      "notable_papers": [
+        {
+          "title": "Sphinteract: Resolving Ambiguities in NL2SQL Through User Interaction",
+          "venue": "PVLDB 2025",
+          "url": "https://www.vldb.org/pvldb/vol18/p1145-zhao.pdf"
+        },
+        {
+          "title": "MAGIC: Generating Self-Correction Guideline for In-Context Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2406.12692"
+        }
+      ],
       "research_group_url": "https://www.microsoft.com/en-us/research/",
       "currently_taking_students": false,
       "admission_chance": "internship-only",
@@ -2018,8 +2080,179 @@
           "position": "Researcher",
           "homepage": "",
           "notes": "来自仓库已有个人条目：MSRA NL2SQL 方向，schema linking 相关工作。"
+        },
+        {
+          "name": "Shaleen Deep",
+          "position": "Research Scientist",
+          "homepage": "https://pages.cs.wisc.edu/~shaleen/",
+          "notes": "Sphinteract 作者，Microsoft 归属通过论文首页邮箱 shaleen.deep@microsoft.com 核实。"
+        },
+        {
+          "name": "Fotis Psallidas",
+          "position": "Researcher",
+          "homepage": "https://www.cs.columbia.edu/~fotis/",
+          "notes": "Sphinteract 作者，Microsoft 归属通过论文首页邮箱 fotis.psallidas@microsoft.com 核实。"
+        },
+        {
+          "name": "Avrilia Floratou",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "Sphinteract 作者，Microsoft 归属通过论文首页邮箱 avrilia.floratou@microsoft.com 核实。"
+        },
+        {
+          "name": "Christian Poelitz",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "MAGIC 作者，Microsoft Research Cambridge 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Xinye Tang",
+          "position": "Researcher",
+          "homepage": "https://xinyeah.github.io/about/",
+          "notes": "MAGIC 作者，Microsoft Redmond 归属通过论文首页署名核实。"
         }
       ]
+    },
+    {
+      "id": "uid-826",
+      "name": "Google Cloud Text-to-SQL Team",
+      "type": "industry",
+      "institution": "GoogleCloud",
+      "department": "Data Analytics / AI",
+      "country": "USA",
+      "region": "North America",
+      "position": "Research Team",
+      "research_focus": [
+        "NL2SQL",
+        "text-to-SQL",
+        "data agents"
+      ],
+      "tags": [
+        "NL2SQL",
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "homepage": "https://cloud.google.com/",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2410.01943"
+        }
+      ],
+      "research_group_url": "https://cloud.google.com/",
+      "members": [
+        {
+          "name": "Fatma Özcan",
+          "position": "Research Scientist",
+          "homepage": "https://research.google/people/fatma-ozcan/",
+          "notes": "来自仓库已有个人条目：CHASE-SQL 作者。"
+        },
+        {
+          "name": "Mohammadreza Pourreza",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "CHASE-SQL 作者，Google Cloud Sunnyvale 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Hailong Li",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "CHASE-SQL 作者，Google Cloud Sunnyvale 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Ruoxi Sun",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "CHASE-SQL 作者，Google Cloud Sunnyvale 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Yeounoh Chung",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "CHASE-SQL 作者，Google Cloud Sunnyvale 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Gaurav Tarlok Kakkar",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "CHASE-SQL 作者，Google Cloud Sunnyvale 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Yu Gan",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "CHASE-SQL 作者，Google Cloud Sunnyvale 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Sercan Ö. Arık",
+          "position": "Research Scientist",
+          "homepage": "",
+          "notes": "CHASE-SQL 作者，Google Cloud Sunnyvale 归属通过论文首页署名核实。"
+        }
+      ],
+      "currently_taking_students": false,
+      "admission_chance": "internship-only",
+      "application_status": "not-applicable",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Google Cloud 的 Text-to-SQL 团队，成员按 CHASE-SQL 论文首页补齐。",
+      "added_date": "2026-03-26",
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "uid-827",
+      "name": "Oracle Text-to-SQL Team",
+      "type": "industry",
+      "institution": "Oracle",
+      "department": "AI / Database",
+      "country": "USA",
+      "region": "North America",
+      "position": "Research Team",
+      "research_focus": [
+        "NL2SQL",
+        "text-to-SQL",
+        "enterprise data systems"
+      ],
+      "tags": [
+        "NL2SQL",
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "homepage": "https://www.oracle.com/artificial-intelligence/",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "AgentSM: Semantic Memory for Agentic Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2601.15709"
+        },
+        {
+          "title": "SQLENS: An End-to-End Framework for Error Detection and Correction in Text-to-SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2506.04494"
+        }
+      ],
+      "research_group_url": "https://www.oracle.com/artificial-intelligence/",
+      "members": [
+        {
+          "name": "Chuan Lei",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "AgentSM / SQLENS 作者，Oracle Corporation 归属通过论文首页邮箱 chuan.lei@oracle.com 核实。"
+        }
+      ],
+      "currently_taking_students": false,
+      "admission_chance": "internship-only",
+      "application_status": "not-applicable",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Oracle 的 Text-to-SQL 团队，成员按 AgentSM 与 SQLENS 论文首页补齐。",
+      "added_date": "2026-03-26",
+      "last_updated": "2026-03-26"
     },
     {
       "id": "uid-060",
@@ -29812,6 +30045,174 @@
       "priority": "medium",
       "contact_history": [],
       "notes": "Auto-discovered from QS #6 school Renmin University of China via arXiv (Cornell University) paper \"Can ChatGPT Generate Realistic Synthetic System Requirement Specifications? Results of a Case Study\". Please verify homepage and student availability manually.",
+      "added_date": "2026-03-26",
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "uid-821",
+      "name": "Yuyu Luo",
+      "type": "faculty",
+      "institution": "QS_HongKongUniversityScienceTechnologyGuangzhou",
+      "institution_display_name": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "institution_qs_rank": 44,
+      "institution_lat": 23.051,
+      "institution_lon": 113.808,
+      "department": "Data Science and Analytics Thrust",
+      "country": "China",
+      "region": "Asia",
+      "position": "Assistant Professor",
+      "research_focus": [
+        "NL2SQL",
+        "text-to-SQL",
+        "data management"
+      ],
+      "tags": [
+        "NL2SQL",
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "homepage": "https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/LUO-Yuyu/yuyuluo",
+      "email": "yuyuluo@hkust-gz.edu.cn",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "A Plug-and-Play Natural Language Rewriter for Natural Language to SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2412.17068"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "high",
+      "contact_history": [],
+      "notes": "REWRITER 通讯作者。机构通过论文首页署名与 @hkust-gz.edu.cn 邮箱域名核实；主页来自 HKUST(GZ) 官方 faculty profile。",
+      "added_date": "2026-03-26",
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "uid-823",
+      "name": "Nick Koudas",
+      "type": "faculty",
+      "institution": "QS_UniversityToronto",
+      "institution_display_name": "University of Toronto",
+      "institution_qs_rank": 29,
+      "institution_lat": 43.6629,
+      "institution_lon": -79.3957,
+      "department": "Computer Science",
+      "country": "Canada",
+      "region": "North America",
+      "position": "Professor",
+      "research_focus": [
+        "NL2SQL",
+        "reliable text-to-SQL",
+        "data management"
+      ],
+      "tags": [
+        "NL2SQL",
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "homepage": "https://www.cs.toronto.edu/~koudas/",
+      "email": "koudas@cs.toronto.edu",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Reliable Text-to-SQL with Adaptive Abstention",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2501.10858"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "low",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Reliable Text-to-SQL with Adaptive Abstention 作者。机构与邮箱通过论文首页和多伦多大学主页核实。",
+      "added_date": "2026-03-26",
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "uid-824",
+      "name": "Sainyam Galhotra",
+      "type": "faculty",
+      "institution": "Cornell",
+      "department": "Cornell Tech",
+      "country": "USA",
+      "region": "North America",
+      "position": "Assistant Professor",
+      "research_focus": [
+        "NL2SQL",
+        "interactive data systems",
+        "AI for data management"
+      ],
+      "tags": [
+        "NL2SQL",
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "homepage": "https://sainyamgalhotra.com/",
+      "email": "sg@cs.cornell.edu",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "VeriMinder: Mitigating Analytical Vulnerabilities in NL2SQL",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2507.17896"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "VeriMinder 作者。Cornell 归属与邮箱通过论文首页核实，主页使用个人站。",
+      "added_date": "2026-03-26",
+      "last_updated": "2026-03-26"
+    },
+    {
+      "id": "uid-825",
+      "name": "Xiao Huang",
+      "type": "faculty",
+      "institution": "QS_HongKongPolytechnicUniversity",
+      "institution_display_name": "The Hong Kong Polytechnic University",
+      "institution_qs_rank": 54,
+      "institution_lat": 22.3042,
+      "institution_lon": 114.179,
+      "department": "Department of Computing",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "position": "Assistant Professor",
+      "research_focus": [
+        "NL2SQL",
+        "text-to-SQL",
+        "LLM for data systems"
+      ],
+      "tags": [
+        "NL2SQL",
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "homepage": "https://web.comp.polyu.edu.hk/xiaohuang/index.html",
+      "email": "xiao.huang@polyu.edu.hk",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Structure-Guided Large Language Models for Text-to-SQL Generation",
+          "venue": "ICML 2025",
+          "url": "https://arxiv.org/abs/2402.13284"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": true,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "high",
+      "contact_history": [],
+      "notes": "SGU-SQL 作者。论文首页给出 PolyU 归属，个人主页明确写有 PhD recruiting。",
       "added_date": "2026-03-26",
       "last_updated": "2026-03-26"
     }
