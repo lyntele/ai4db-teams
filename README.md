@@ -70,13 +70,14 @@ cd scripts && python build_dashboard.py --offline
 
 ## 线上部署
 
-现在更适合用 GitHub Pages 的 branch source：
+当前仓库同时支持两种 GitHub Pages 方式：
 
-- 在仓库 `Settings -> Pages` 里把 Source 设成 `Deploy from a branch`
-- 分支选 `main`
-- 目录选 `/ (root)`
+- 推荐：`Settings -> Pages -> Source` 设成 `GitHub Actions`
+- 兼容：`Deploy from a branch`，分支选 `main`，目录选 `/ (root)`
 
-`scripts/build_dashboard.py` 会同时生成 `dashboard.html` 和 `index.html`，所以仓库每次 push 到 `main` 后，Pages 都会自动刷新首页。
+如果你现在看到线上不刷新，通常是因为 Pages 仍然配置成了 `GitHub Actions`，但仓库里缺少部署 workflow；当前已经补上 `.github/workflows/deploy-pages.yml`。
+
+`scripts/build_dashboard.py` 会同时生成 `dashboard.html` 和 `index.html`。现在无论是 push 到 `main` 还是手动触发 workflow，Pages 都会重新发布首页。
 
 线上访问地址：
 
