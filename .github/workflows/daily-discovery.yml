@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENALEX_MAILTO: github-actions[bot]@users.noreply.github.com
+      DISCOVERY_WATCHLIST: db_llm
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,7 +36,14 @@ jobs:
 
       - name: Discover new teams and papers
         run: |
-          python scripts/discover_research_teams.py --apply --lookback-days 21
+          python scripts/discover_research_teams.py \
+            --apply \
+            --watchlist "${DISCOVERY_WATCHLIST}" \
+            --lookback-days 7 \
+            --member-lookback-days 180 \
+            --report-dir data/literature_reports \
+            --archive-report \
+            --skip-empty-report
 
       - name: Rebuild dashboard
         run: |
@@ -52,5 +60,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/researchers.json data/researchers.csv dashboard.html index.html
-          git commit -m "chore: daily AI4DB discovery"
+          if [ -d data/literature_reports ]; then
+            git add data/literature_reports
+          fi
+          git commit -m "chore: daily DB+LLM discovery"
           git push

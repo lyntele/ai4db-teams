@@ -10,6 +10,8 @@ cache, and then:
 2. updates existing researchers by adding missing notable papers.
 3. refreshes industrial team entries by folding in authors from related
    papers and reusing existing personal homepages when available.
+4. optionally writes a watchlist report so the daily workflow leaves behind a
+   human-readable DB+LLM literature digest in the repository.
 
 It is intentionally conservative: papers need both a topical signal and a QS
 match, and auto-discovered schools get explicit display metadata so the
@@ -44,8 +46,11 @@ DEFAULT_PAGE_SIZE = 200
 MAX_PAGES_PER_QUERY = 3
 DEFAULT_MEMBER_LOOKBACK_DAYS = 180
 QS_RANKINGS_PATH = ROOT_DIR / "data" / "qs_rankings.json"
+WATCHLISTS_PATH = ROOT_DIR / "data" / "literature_watchlists.json"
 TEAM_NAME_HINTS = ("team", "group", "lab")
 MIN_INSTITUTION_MATCH_SCORE = 16
+DEFAULT_REPORT_LIMIT = 20
+DEFAULT_WATCHLIST_ID = "db_llm"
 
 # High-signal terms for AI4DB / database + LLM discovery.
 SEARCH_TERMS = [
@@ -75,6 +80,51 @@ VENUE_MARKERS = [
     "cidr",
     "arxiv",
 ]
+
+DEFAULT_WATCHLISTS = {
+    "default_watchlist": DEFAULT_WATCHLIST_ID,
+    "watchlists": [
+        {
+            "id": DEFAULT_WATCHLIST_ID,
+            "name": "DB + LLM",
+            "description": "Track papers at the intersection of databases and LLMs, especially NL2SQL, data agents, and SQL reasoning.",
+            "search_terms": [
+                "text-to-sql",
+                "nl2sql",
+                "natural language to sql",
+                "sql generation language model",
+                "llm sql",
+                "sql agent",
+                "database llm",
+                "llm database",
+                "database agent",
+                "data agent sql",
+                "schema linking sql",
+                "rag sql",
+            ],
+            "allowed_tags": [
+                "text-to-SQL",
+                "NL2SQL",
+                "schema-linking",
+                "table-QA",
+                "data-agents",
+                "RAG",
+                "LLM-DB",
+                "query-optimization",
+                "data-integration",
+            ],
+            "focus_patterns": [
+                r"\\btext[- ]?to[- ]?sql\\b",
+                r"\\bnl2sql\\b",
+                r"\\bnatural language (interface|query|question|rewriter|translation).{0,40}\\bsql\\b",
+                r"\\b(llm|large language model|language model|gpt|agentic|data agent|rag)\\b.{0,60}\\b(sql|database|query|schema|table)\\b",
+                r"\\b(sql|database|query|schema|table)\\b.{0,60}\\b(llm|large language model|language model|gpt|agentic|data agent|rag)\\b",
+            ],
+            "venue_markers": VENUE_MARKERS,
+            "min_score": 2,
+        }
+    ],
+}
 
 # Keyword -> controlled tag mapping.
 KEYWORD_PATTERNS = [
@@ -506,6 +556,77 @@ def load_qs_rankings() -> List[Dict[str, Any]]:
     return rankings
 
 
+def normalize_string_list(items: Iterable[str]) -> List[str]:
+    return dedupe_preserve(item for item in items if item)
+
+
+def default_watchlists_payload() -> Dict[str, Any]:
+    return json.loads(json.dumps(DEFAULT_WATCHLISTS))
+
+
+def load_watchlists() -> Dict[str, Any]:
+    payload: Dict[str, Any]
+    if WATCHLISTS_PATH.exists():
+        with open(WATCHLISTS_PATH, "r", encoding="utf-8") as handle:
+            payload = json.load(handle)
+    else:
+        payload = default_watchlists_payload()
+
+    raw_watchlists = payload.get("watchlists") or []
+    watchlists: Dict[str, Dict[str, Any]] = {}
+
+    for raw in raw_watchlists:
+        watchlist_id = (raw.get("id") or raw.get("name") or "").strip()
+        if not watchlist_id:
+            continue
+        watchlists[watchlist_id] = {
+            "id": watchlist_id,
+            "name": (raw.get("name") or watchlist_id).strip(),
+            "description": (raw.get("description") or "").strip(),
+            "search_terms": normalize_string_list(raw.get("search_terms") or SEARCH_TERMS),
+            "allowed_tags": normalize_string_list(raw.get("allowed_tags") or []),
+            "focus_patterns": normalize_string_list(raw.get("focus_patterns") or []),
+            "venue_markers": [marker.lower() for marker in normalize_string_list(raw.get("venue_markers") or VENUE_MARKERS)],
+            "min_score": int(raw.get("min_score") or 2),
+        }
+
+    if not watchlists:
+        fallback = default_watchlists_payload()
+        return {
+            "default_watchlist": fallback["default_watchlist"],
+            "watchlists": {
+                item["id"]: {
+                    "id": item["id"],
+                    "name": item["name"],
+                    "description": item.get("description", ""),
+                    "search_terms": normalize_string_list(item.get("search_terms") or SEARCH_TERMS),
+                    "allowed_tags": normalize_string_list(item.get("allowed_tags") or []),
+                    "focus_patterns": normalize_string_list(item.get("focus_patterns") or []),
+                    "venue_markers": [marker.lower() for marker in normalize_string_list(item.get("venue_markers") or VENUE_MARKERS)],
+                    "min_score": int(item.get("min_score") or 2),
+                }
+                for item in fallback["watchlists"]
+            },
+        }
+
+    default_watchlist = (payload.get("default_watchlist") or "").strip()
+    if default_watchlist not in watchlists:
+        default_watchlist = next(iter(watchlists))
+
+    return {
+        "default_watchlist": default_watchlist,
+        "watchlists": watchlists,
+    }
+
+
+def resolve_watchlist(watchlists_payload: Dict[str, Any], requested_id: str) -> Dict[str, Any]:
+    watchlists = watchlists_payload.get("watchlists") or {}
+    if requested_id in watchlists:
+        return watchlists[requested_id]
+    available = ", ".join(sorted(watchlists))
+    raise KeyError(f"Unknown watchlist '{requested_id}'. Available watchlists: {available}")
+
+
 def score_qs_institution_candidate(candidate_text: str, display_name: str) -> int:
     cand = signature(candidate_text)
     scores = []
@@ -615,14 +736,7 @@ def work_tags(text: str) -> List[str]:
 
 
 def work_score(work: Dict[str, Any]) -> Tuple[int, List[str], str]:
-    text = " ".join(
-        part
-        for part in [
-            work.get("display_name") or "",
-            reconstruct_abstract(work),
-        ]
-        if part
-    )
+    text = work_text(work)
     tags = work_tags(text)
     venue = venue_label(work).lower()
     score = len(tags)
@@ -631,6 +745,210 @@ def work_score(work: Dict[str, Any]) -> Tuple[int, List[str], str]:
     if "arxiv" in venue:
         score += 1
     return score, tags, venue_label(work)
+
+
+def work_text(work: Dict[str, Any]) -> str:
+    return " ".join(
+        part
+        for part in [
+            work.get("display_name") or "",
+            reconstruct_abstract(work),
+        ]
+        if part
+    )
+
+
+def work_matches_watchlist(work: Dict[str, Any], watchlist: Dict[str, Any]) -> Tuple[bool, Dict[str, Any]]:
+    score, tags, venue = work_score(work)
+    venue_lower = venue.lower()
+    min_score = int(watchlist.get("min_score") or 2)
+    if score < min_score:
+        return False, {"reason": "score", "score": score, "tags": tags, "venue": venue}
+
+    venue_markers = watchlist.get("venue_markers") or [marker.lower() for marker in VENUE_MARKERS]
+    if not any(marker in venue_lower for marker in venue_markers) and "arxiv" not in venue_lower:
+        return False, {"reason": "venue", "score": score, "tags": tags, "venue": venue}
+
+    text = work_text(work)
+    allowed_tags = set(watchlist.get("allowed_tags") or [])
+    focus_patterns = watchlist.get("focus_patterns") or []
+    focus_match = bool(allowed_tags & set(tags))
+    if not focus_match and focus_patterns:
+        focus_match = any(re.search(pattern, text, flags=re.IGNORECASE) for pattern in focus_patterns)
+    if not focus_match:
+        return False, {"reason": "focus", "score": score, "tags": tags, "venue": venue}
+
+    return True, {"reason": "", "score": score, "tags": tags, "venue": venue}
+
+
+def filter_works_for_watchlist(
+    works: List[Dict[str, Any]],
+    watchlist: Dict[str, Any],
+) -> Tuple[List[Dict[str, Any]], Dict[str, int]]:
+    filtered: List[Dict[str, Any]] = []
+    stats = {
+        "fetched_works": len(works),
+        "matched_watchlist_works": 0,
+        "skipped_due_to_score": 0,
+        "skipped_due_to_venue": 0,
+        "skipped_due_to_focus": 0,
+    }
+    for work in works:
+        matches, meta = work_matches_watchlist(work, watchlist)
+        if matches:
+            filtered.append(work)
+            stats["matched_watchlist_works"] += 1
+            continue
+        reason = meta["reason"]
+        if reason == "score":
+            stats["skipped_due_to_score"] += 1
+        elif reason == "venue":
+            stats["skipped_due_to_venue"] += 1
+        elif reason == "focus":
+            stats["skipped_due_to_focus"] += 1
+    return filtered, stats
+
+
+def publication_date_label(work: Dict[str, Any]) -> str:
+    return (work.get("publication_date") or work.get("from_publication_date") or "").strip()
+
+
+def authorship_affiliation_label(authorship: Dict[str, Any]) -> str:
+    institutions = authorship.get("institutions") or []
+    labels = dedupe_preserve(inst.get("display_name") or "" for inst in institutions)
+    if labels:
+        return ", ".join(labels[:2])
+    raw = dedupe_preserve(authorship.get("raw_affiliation_strings") or [])
+    if raw:
+        return raw[0]
+    return ""
+
+
+def report_author_labels(work: Dict[str, Any]) -> List[str]:
+    labels: List[str] = []
+    for authorship in work.get("authorships") or []:
+        author = authorship.get("author") or {}
+        name = (author.get("display_name") or "").strip()
+        if not name:
+            continue
+        affiliation = authorship_affiliation_label(authorship)
+        if affiliation:
+            labels.append(f"{name} ({affiliation})")
+        else:
+            labels.append(name)
+    return labels
+
+
+def build_report_markdown(
+    *,
+    watchlist: Dict[str, Any],
+    raw_stats: Dict[str, int],
+    filtered_works: List[Dict[str, Any]],
+    report: Dict[str, Any],
+    start_date: str,
+    end_date: str,
+    report_limit: int,
+) -> str:
+    lines = [
+        f"# {watchlist['name']} Daily Literature Watch",
+        "",
+        f"- Run date: {end_date}",
+        f"- Scan window: {start_date} to {end_date}",
+        f"- Watchlist id: `{watchlist['id']}`",
+    ]
+    if watchlist.get("description"):
+        lines.append(f"- Scope: {watchlist['description']}")
+    lines.append("")
+    lines.append("## Summary")
+    lines.append("")
+    lines.append(f"- OpenAlex works fetched: {raw_stats['fetched_works']}")
+    lines.append(f"- Works matching this watchlist: {raw_stats['matched_watchlist_works']}")
+    lines.append(f"- New researchers added to site: {len(report['added'])}")
+    lines.append(f"- Existing researchers updated: {report['updated_existing']}")
+    lines.append(f"- Industrial team members added: {report['team_member_additions']}")
+    lines.append(f"- Industrial team members updated: {report['team_member_updates']}")
+    lines.append(f"- Papers that mapped to site entries: {report['matched_papers']}")
+    lines.append(f"- Skipped by relevance score: {raw_stats['skipped_due_to_score']}")
+    lines.append(f"- Skipped by venue: {raw_stats['skipped_due_to_venue']}")
+    lines.append(f"- Skipped by DB+LLM focus filter: {raw_stats['skipped_due_to_focus']}")
+    lines.append(f"- Skipped by institution matching: {report['skipped_due_to_match']}")
+
+    if report["added"]:
+        lines.extend(["", "## Newly Added Researchers", ""])
+        for entry in report["added"]:
+            inst_label = entry.get("institution_display_name") or entry.get("institution") or ""
+            lines.append(f"- {entry['name']} ({inst_label})")
+
+    if filtered_works:
+        lines.extend(["", "## Matched Papers", ""])
+        sorted_works = sorted(
+            filtered_works,
+            key=lambda work: (
+                publication_date_label(work),
+                (work.get("display_name") or "").casefold(),
+            ),
+            reverse=True,
+        )
+        for idx, work in enumerate(sorted_works[:report_limit], start=1):
+            score, tags, venue = work_score(work)
+            lines.append(f"### {idx}. {work.get('display_name') or 'Untitled work'}")
+            lines.append(f"- Publication date: {publication_date_label(work) or 'unknown'}")
+            lines.append(f"- Venue: {venue or 'OpenAlex'}")
+            lines.append(f"- Tags: {', '.join(tags) if tags else 'none'}")
+            lines.append(f"- Relevance score: {score}")
+            lines.append(f"- URL: {work_url(work) or 'n/a'}")
+            authors = report_author_labels(work)
+            if authors:
+                lines.append(f"- Authors: {'; '.join(authors[:12])}")
+            lines.append("")
+        remaining = len(filtered_works) - min(len(filtered_works), report_limit)
+        if remaining > 0:
+            lines.append(f"_Omitted {remaining} additional matched papers from the markdown report to keep it readable._")
+    else:
+        lines.extend(["", "## Matched Papers", "", "_No DB+LLM papers matched this run._"])
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def write_watchlist_report(
+    *,
+    output_dir: Path,
+    watchlist: Dict[str, Any],
+    raw_stats: Dict[str, int],
+    filtered_works: List[Dict[str, Any]],
+    report: Dict[str, Any],
+    start_date: str,
+    end_date: str,
+    report_limit: int,
+    archive: bool,
+    skip_empty: bool,
+) -> List[Path]:
+    if skip_empty and not filtered_works and not report["added"] and not report["paper_updates"]:
+        return []
+
+    base_dir = output_dir / watchlist["id"]
+    base_dir.mkdir(parents=True, exist_ok=True)
+    content = build_report_markdown(
+        watchlist=watchlist,
+        raw_stats=raw_stats,
+        filtered_works=filtered_works,
+        report=report,
+        start_date=start_date,
+        end_date=end_date,
+        report_limit=report_limit,
+    )
+
+    written: List[Path] = []
+    latest_path = base_dir / "latest.md"
+    latest_path.write_text(content, encoding="utf-8")
+    written.append(latest_path)
+
+    if archive:
+        archive_path = base_dir / f"{end_date}.md"
+        archive_path.write_text(content, encoding="utf-8")
+        written.append(archive_path)
+
+    return written
 
 
 def paper_signature(title: str, venue: str) -> str:
@@ -1147,9 +1465,14 @@ def fetch_openalex_works(
             break
 
 
-def collect_works(session: requests.Session, start_date: str, end_date: str) -> List[Dict[str, Any]]:
+def collect_works(
+    session: requests.Session,
+    start_date: str,
+    end_date: str,
+    search_terms: List[str],
+) -> List[Dict[str, Any]]:
     seen: Dict[str, Dict[str, Any]] = {}
-    for query in SEARCH_TERMS:
+    for query in search_terms:
         try:
             for work in fetch_openalex_works(session, query=query, start_date=start_date, end_date=end_date):
                 work_id = work.get("id") or work.get("openalex_id") or work.get("display_name")
@@ -1325,7 +1648,9 @@ def discover(
 
 def summarize(report: Dict[str, Any]) -> str:
     lines = [
-        f"Scanned works: {report['total_works']}",
+        f"Watchlist: {report['watchlist_name']} ({report['watchlist_id']})",
+        f"OpenAlex works fetched: {report['total_works']}",
+        f"Works matching watchlist: {report['matched_watchlist_works']}",
         f"New researchers added: {len(report['added'])}",
         f"Existing researchers updated: {report['updated_existing']}",
         f"Paper records appended: {report['paper_updates']}",
@@ -1335,6 +1660,7 @@ def summarize(report: Dict[str, Any]) -> str:
         f"Matched papers: {report['matched_papers']}",
         f"Skipped by relevance score: {report['skipped_due_to_score']}",
         f"Skipped by venue: {report['skipped_due_to_venue']}",
+        f"Skipped by focus filter: {report['skipped_due_to_focus']}",
         f"Skipped by institution matching: {report['skipped_due_to_match']}",
     ]
     if report["added"]:
@@ -1342,6 +1668,10 @@ def summarize(report: Dict[str, Any]) -> str:
         for entry in report["added"]:
             inst_label = entry.get("institution_display_name") or entry["institution"]
             lines.append(f"  - {entry['name']} ({inst_label})")
+    if report.get("report_paths"):
+        lines.append("Reports written:")
+        for path in report["report_paths"]:
+            lines.append(f"  - {path}")
     return "\n".join(lines)
 
 
@@ -1352,6 +1682,16 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=DEFAULT_LOOKBACK_DAYS,
         help="How many days back to scan (default: 21)",
+    )
+    parser.add_argument(
+        "--watchlist",
+        default="",
+        help="Which literature watchlist to use from data/literature_watchlists.json",
+    )
+    parser.add_argument(
+        "--list-watchlists",
+        action="store_true",
+        help="Print available watchlists and exit",
     )
     parser.add_argument(
         "--apply",
@@ -1369,11 +1709,42 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_MEMBER_LOOKBACK_DAYS,
         help="How many days back to scan for industrial team members (default: 180)",
     )
+    parser.add_argument(
+        "--report-dir",
+        default="",
+        help="Directory for markdown literature reports, relative to repo root unless absolute",
+    )
+    parser.add_argument(
+        "--archive-report",
+        action="store_true",
+        help="Also write a dated markdown report alongside latest.md",
+    )
+    parser.add_argument(
+        "--skip-empty-report",
+        action="store_true",
+        help="Do not write a markdown report when the run produced no matched papers or site updates",
+    )
+    parser.add_argument(
+        "--report-limit",
+        type=int,
+        default=DEFAULT_REPORT_LIMIT,
+        help="Maximum number of matched papers to include in the markdown report",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
+    watchlists_payload = load_watchlists()
+    if args.list_watchlists:
+        default_watchlist = watchlists_payload["default_watchlist"]
+        for watchlist_id, meta in sorted(watchlists_payload["watchlists"].items()):
+            default_marker = " (default)" if watchlist_id == default_watchlist else ""
+            print(f"{watchlist_id}{default_marker}: {meta['name']}")
+        return 0
+
+    requested_watchlist = args.watchlist.strip() or watchlists_payload["default_watchlist"]
+    watchlist = resolve_watchlist(watchlists_payload, requested_watchlist)
     data = load_researchers()
     institutions = load_institutions()
     qs_rankings = load_qs_rankings()
@@ -1388,15 +1759,47 @@ def main() -> int:
             "User-Agent": "ai4db-teams-discovery/1.0 (+https://github.com/lyntele/ai4db-teams)",
         }
     )
-    works = collect_works(session, start_date=start_date, end_date=today)
-    report = discover(data, institutions, qs_rankings, works, today)
+    search_terms = watchlist.get("search_terms") or SEARCH_TERMS
+    works = collect_works(session, start_date=start_date, end_date=today, search_terms=search_terms)
+    filtered_works, filter_report = filter_works_for_watchlist(works, watchlist)
+    report = discover(data, institutions, qs_rankings, filtered_works, today)
     if member_lookback_days == args.lookback_days:
-        member_works = works
+        member_works = filtered_works
     else:
         member_start_date = (date.fromisoformat(today) - timedelta(days=member_lookback_days)).isoformat()
-        member_works = collect_works(session, start_date=member_start_date, end_date=today)
+        raw_member_works = collect_works(
+            session,
+            start_date=member_start_date,
+            end_date=today,
+            search_terms=search_terms,
+        )
+        member_works, _member_filter_report = filter_works_for_watchlist(raw_member_works, watchlist)
     member_report = refresh_industry_team_members(data, institutions, member_works, today)
     report.update(member_report)
+    report.update(filter_report)
+    report["total_works"] = filter_report["fetched_works"]
+    report["watchlist_id"] = watchlist["id"]
+    report["watchlist_name"] = watchlist["name"]
+
+    report_paths: List[str] = []
+    if args.report_dir.strip():
+        report_dir = Path(args.report_dir)
+        if not report_dir.is_absolute():
+            report_dir = ROOT_DIR / report_dir
+        written_reports = write_watchlist_report(
+            output_dir=report_dir,
+            watchlist=watchlist,
+            raw_stats=filter_report,
+            filtered_works=filtered_works,
+            report=report,
+            start_date=start_date,
+            end_date=today,
+            report_limit=max(args.report_limit, 1),
+            archive=args.archive_report,
+            skip_empty=args.skip_empty_report,
+        )
+        report_paths = [str(path) for path in written_reports]
+    report["report_paths"] = report_paths
 
     print(summarize(report))
 
@@ -1408,7 +1811,7 @@ def main() -> int:
         save_researchers(data)
         print(f"Saved updates to {ROOT_DIR / 'data' / 'researchers.json'}")
     else:
-        print("Dry run only. No files were written.")
+        print("Dry run only. data/researchers.json was not written.")
 
     return 0
 
