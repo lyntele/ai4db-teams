@@ -40,8 +40,31 @@ BASE_LAYOUT = dict(
     margin=dict(l=16, r=16, t=40, b=16),
 )
 
+JUNIOR_ROLE_HINTS = (
+    'student', 'phd', 'ph.d', 'doctoral', 'master', 'msc',
+    'undergrad', 'undergraduate', 'research assistant', 'intern',
+)
+
 
 # ── Data helpers ──────────────────────────────────────────────
+
+def has_text(value):
+    return bool(str(value or '').strip())
+
+
+def classify_profile_segment(entry):
+    if entry.get('type') == 'industry':
+        return 'main'
+
+    position = str(entry.get('position') or '').strip().lower()
+    if any(hint in position for hint in JUNIOR_ROLE_HINTS):
+        return 'student'
+    if position:
+        return 'main'
+    if has_text(entry.get('homepage')):
+        return 'student'
+    return 'paper-author'
+
 
 def build_df(data, institutions):
     rows = []
@@ -50,18 +73,30 @@ def build_df(data, institutions):
         inst = institutions.get(inst_key, {})
         row = dict(r)
         row['inst_display'] = inst.get('display_name') or r.get('institution_display_name') or inst_key
+        row['country'] = inst.get('country') or r.get('country') or ''
+        row['region'] = inst.get('region') or r.get('region') or ''
         row['lat'] = inst.get('lat') if inst else r.get('institution_lat')
         row['lon'] = inst.get('lon') if inst else r.get('institution_lon')
         row['qs_rank'] = inst.get('qs_rank') if inst else r.get('institution_qs_rank')
         row['inst_type'] = inst.get('type', '')
         row['tags_str'] = ', '.join(r.get('tags', []))
         row['focus_str'] = ', '.join(r.get('research_focus', []))
+        row['profile_segment'] = classify_profile_segment(r)
+        row['has_homepage'] = has_text(r.get('homepage') or r.get('research_group_url'))
         row.pop('institution_display_name', None)
         row.pop('institution_qs_rank', None)
         row.pop('institution_lat', None)
         row.pop('institution_lon', None)
         rows.append(row)
     return pd.DataFrame(rows)
+
+
+def curated_df(df):
+    return df[df['profile_segment'] == 'main'].copy()
+
+
+def student_df(df):
+    return df[(df['profile_segment'] == 'student') & (df['has_homepage'])].copy()
 
 
 def build_researcher_map_data(df):
@@ -427,9 +462,35 @@ def build_filters(df):
     </div>'''
 
 
+def build_student_cards(df):
+    if df.empty:
+        return '<div class="empty-state" data-i18n="student-empty"></div>'
+
+    cards = []
+    ordered = df.sort_values(['inst_display', 'name'], ascending=[True, True])
+    for _, r in ordered.iterrows():
+        homepage = r.get('homepage') or r.get('research_group_url') or ''
+        notes = r.get('notes') or ''
+        cards.append(f'''
+      <div class="student-card">
+        <div class="student-card-top">
+          <div>
+            <div class="student-name">{r.get('name') or ''}</div>
+            <div class="student-meta">{r.get('inst_display') or ''}</div>
+          </div>
+          <span class="badge badge-type-{r.get('type') or 'faculty'}">{r.get('type') or ''}</span>
+        </div>
+        <div class="student-submeta">{r.get('position') or ''}</div>
+        {f'<a href="{homepage}" target="_blank" rel="noopener" class="table-link">↗ <span data-i18n="link-text">Link</span></a>' if homepage else ''}
+        {f'<div class="student-note">{notes}</div>' if notes else ''}
+      </div>''')
+
+    return f'<div class="student-grid">{"".join(cards)}</div>'
+
+
 # ── Full HTML ─────────────────────────────────────────────────
 
-def assemble(df, figs, table_html, filters_html, offline=False):
+def assemble(df, figs, table_html, filters_html, student_html, offline=False):
     plotly_js = '<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>'
     if offline:
         import plotly
@@ -537,6 +598,8 @@ a,button,select,input{font-family:inherit}
 .filter-bar select:focus,.filter-input:focus{border-color:rgba(15,118,110,.45);box-shadow:0 0 0 4px rgba(15,118,110,.08)}
 .filter-input{width:220px}
 
+.section-note{margin:0 0 14px;padding:14px 16px;border-radius:18px;background:rgba(15,118,110,.07);
+  border:1px solid rgba(15,118,110,.14);color:var(--text2);font-size:13px;line-height:1.55}
 .table-wrap{overflow-x:auto;border-radius:28px;border:1px solid rgba(20,33,50,.08);box-shadow:var(--shadow);background:var(--card)}
 #researcherTable{width:100%;border-collapse:collapse;font-size:13px}
 #researcherTable th{background:rgba(251,248,241,.9);padding:14px 16px;text-align:left;cursor:pointer;
@@ -548,6 +611,14 @@ a,button,select,input{font-family:inherit}
 #researcherTable tr:hover td{background:rgba(15,118,110,.03)}
 .table-link{color:var(--accent);text-decoration:none;font-weight:700}
 .table-link:hover{text-decoration:underline}
+.student-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.student-card{padding:18px;border-radius:24px;background:var(--card);border:1px solid rgba(20,33,50,.08);box-shadow:var(--shadow-soft)}
+.student-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.student-name{font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;color:var(--text)}
+.student-meta{font-size:12px;color:var(--text3);margin-top:4px}
+.student-submeta{font-size:13px;color:var(--text2);margin-bottom:12px}
+.student-note{margin-top:12px;font-size:13px;line-height:1.6;color:var(--text2)}
+.empty-state{padding:24px;border-radius:24px;background:var(--card);border:1px dashed rgba(20,33,50,.16);color:var(--text2);text-align:center}
 
 .badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.02em}
 .badge-high{background:#dcfce7;color:#166534}
@@ -626,13 +697,13 @@ a,button,select,input{font-family:inherit}
 @media (max-width: 1180px){
   .header{grid-template-columns:1fr}
   .header-left h1{max-width:none}
-  .hero-grid,.stats-row,.chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-grid,.stats-row,.chart-grid,.student-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width: 760px){
   .page-shell{width:min(100vw - 20px, 100%);margin:10px auto 28px}
   .header{padding:24px;border-radius:26px}
   .header-left h1{font-size:34px}
-  .hero-grid,.stats-row,.chart-grid,.drawer-stats{grid-template-columns:1fr}
+  .hero-grid,.stats-row,.chart-grid,.drawer-stats,.student-grid{grid-template-columns:1fr}
   .tabs{padding:8px}
   .tab-btn{padding:10px 14px}
   .card{padding:18px;border-radius:22px}
@@ -653,12 +724,12 @@ const LANG = {
     'institution-label':'Institutions',
     'region-label':    'Regions',
     'tag-count-label': 'Active Tags',
-    'total-label':      'Total Researchers',
-    'faculty-label':    'Faculty',
+    'total-label':      'Visible Profiles',
+    'faculty-label':    'Faculty / PIs',
     'industry-label':   'Industry Teams',
     'priority-label':   'High Priority',
-    'total-note':       'Tracked profiles',
-    'faculty-note':     'Academic leads',
+    'total-note':       'Shown on the main dashboard',
+    'faculty-note':     'Curated academic leads',
     'industry-note':    'Industry nodes',
     'priority-note':    'Priority stack',
     'tab-overview':     'Overview',
@@ -667,6 +738,7 @@ const LANG = {
     'tab-tags':         'Research Tags',
     'tab-kanban':       'Application Status',
     'tab-directory':    'Directory',
+    'tab-students':     'Student Profiles',
     'chart-region':     'By Region',
     'chart-type':       'Faculty vs Industry',
     'chart-map':        'Geographic Distribution',
@@ -674,6 +746,10 @@ const LANG = {
     'chart-tags':       'Research Tags',
     'chart-kanban':     'Application Pipeline',
     'map-hint':         'Click an institution bubble to inspect profiles and team members.',
+    'directory-note':   'Main directory shows curated faculty and industry teams only. Unverified paper authors are hidden from the counts and filters.',
+    'student-title':    'Student / Junior Profiles',
+    'student-note':     'Only junior profiles with a personal homepage are listed here.',
+    'student-empty':    'No student or junior profiles with a homepage have been curated yet.',
     'filter-region-all':   'All Regions',
     'filter-type-all':     'All Types',
     'filter-priority-all': 'All Priorities',
@@ -706,12 +782,12 @@ const LANG = {
     'institution-label':'覆盖机构',
     'region-label':    '覆盖地区',
     'tag-count-label': '研究标签',
-    'total-label':      '学者总数',
-    'faculty-label':    '学术界',
+    'total-label':      '主名单条目',
+    'faculty-label':    '教师 / PI',
     'industry-label':   '工业界',
     'priority-label':   '高优先级',
-    'total-note':       '已跟踪档案',
-    'faculty-note':     '学术导师与PI',
+    'total-note':       '当前主页面展示的条目',
+    'faculty-note':     '已核实的学术导师与PI',
     'industry-note':    '工业研究节点',
     'priority-note':    '重点关注名单',
     'tab-overview':     '概览',
@@ -720,6 +796,7 @@ const LANG = {
     'tab-tags':         '研究方向',
     'tab-kanban':       '申请状态',
     'tab-directory':    '完整名录',
+    'tab-students':     '学生主页',
     'chart-region':     '地区分布',
     'chart-type':       '学术 vs 工业',
     'chart-map':        '地理分布',
@@ -727,6 +804,10 @@ const LANG = {
     'chart-tags':       '研究方向分布',
     'chart-kanban':     '申请漏斗',
     'map-hint':         '点击任一机构气泡，可查看该机构下的个人与团队成员。',
+    'directory-note':   '主目录只展示已核实的教师与工业界团队；自动抓到但未核实的论文作者不会进入计数和筛选。',
+    'student-title':    '学生 / 初级研究者主页',
+    'student-note':     '这里只展示带个人主页的学生或初级研究者条目。',
+    'student-empty':    '目前还没有带个人主页的学生或初级研究者条目。',
     'filter-region-all':   '全部地区',
     'filter-type-all':     '全部类型',
     'filter-priority-all': '全部优先级',
@@ -1002,6 +1083,7 @@ setTimeout(attachMapClick, 600);
   <button class="tab-btn"        onclick="showTab(3)" data-i18n="tab-tags">Research Tags</button>
   <button class="tab-btn"        onclick="showTab(4)" data-i18n="tab-kanban">Application Status</button>
   <button class="tab-btn"        onclick="showTab(5)" data-i18n="tab-directory">Directory</button>
+  <button class="tab-btn"        onclick="showTab(6)" data-i18n="tab-students">Student Profiles</button>
 </div>
 
 <div class="tab-content active" id="tab-0">
@@ -1047,8 +1129,17 @@ setTimeout(attachMapClick, 600);
 </div>
 
 <div class="tab-content" id="tab-5">
+  <div class="section-note" data-i18n="directory-note"></div>
   {filters_html}
   <div class="table-wrap">{table_html}</div>
+</div>
+
+<div class="tab-content" id="tab-6">
+  <div class="card">
+    <div class="card-title" data-i18n="student-title">Student / Junior Profiles</div>
+    <p class="card-hint" data-i18n="student-note"></p>
+    {student_html}
+  </div>
 </div>
 
 <!-- Drawer -->
@@ -1079,7 +1170,9 @@ def main():
 
     data = load_researchers()
     institutions = load_institutions()
-    df = build_df(data, institutions)
+    full_df = build_df(data, institutions)
+    df = curated_df(full_df)
+    students = student_df(full_df)
 
     df[['id','name','type','inst_display','country','region','position',
         'focus_str','tags_str','admission_chance','application_status',
@@ -1096,7 +1189,8 @@ def main():
     ]
     table_html   = build_table(df)
     filters_html = build_filters(df)
-    html = assemble(df, figs, table_html, filters_html, offline=args.offline)
+    student_html = build_student_cards(students)
+    html = assemble(df, figs, table_html, filters_html, student_html, offline=args.offline)
 
     with open(HTML_PATH, 'w', encoding='utf-8') as f:
         f.write(html)
