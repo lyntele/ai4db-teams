@@ -27,6 +27,7 @@ import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
+from urllib.parse import urlparse
 
 import requests
 
@@ -376,6 +377,21 @@ def work_url(work: Dict[str, Any]) -> str:
     return work.get("id") or ""
 
 
+def root_domain(url: str) -> str:
+    if not url:
+        return ""
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    host = (parsed.netloc or parsed.path).lower().strip()
+    if host.startswith("www."):
+        host = host[4:]
+    parts = [part for part in host.split(".") if part]
+    if len(parts) >= 3 and len(parts[-1]) == 2 and parts[-2] in {"ac", "co", "com", "edu", "gov", "net", "org"}:
+        return ".".join(parts[-3:])
+    if len(parts) >= 2:
+        return ".".join(parts[-2:])
+    return host
+
+
 def dedupe_preserve(items: Iterable[str]) -> List[str]:
     seen: set[str] = set()
     result: List[str] = []
@@ -700,6 +716,72 @@ def build_member_profile_index(researchers: List[Dict[str, Any]]) -> Dict[str, D
     return index
 
 
+def industry_member_seed_keys(
+    entry: Dict[str, Any],
+    institutions: Dict[str, Dict[str, Any]],
+) -> List[str]:
+    keys: List[str] = []
+    inst_key = entry.get("institution", "") or ""
+    if inst_key:
+        keys.append(f"inst:{inst_key}")
+
+    inst_meta = institutions.get(inst_key, {})
+    for url in (
+        entry.get("homepage", "") or "",
+        entry.get("research_group_url", "") or "",
+        inst_meta.get("homepage", "") or "",
+        inst_meta.get("url", "") or "",
+    ):
+        domain = root_domain(url)
+        if domain:
+            keys.append(f"domain:{domain}")
+
+    return dedupe_preserve(keys)
+
+
+def existing_member_note(entry: Dict[str, Any]) -> str:
+    note = " ".join((entry.get("notes", "") or "").split()).strip()
+    if note:
+        return f"来自仓库已有个人条目：{note}"
+    return "来自仓库已有工业界个人条目。"
+
+
+def build_existing_industry_member_seeds(
+    researchers: List[Dict[str, Any]],
+    institutions: Dict[str, Dict[str, Any]],
+) -> Dict[str, Dict[str, Dict[str, str]]]:
+    seed_index: Dict[str, Dict[str, Dict[str, str]]] = {}
+
+    for entry in researchers:
+        if entry.get("type") != "industry" or is_industry_team_entry(entry):
+            continue
+
+        member_key = normalize_name(entry.get("name", ""))
+        if not member_key:
+            continue
+
+        profile = {
+            "name": entry.get("name", "") or "",
+            "position": entry.get("position", "") or "",
+            "homepage": entry.get("homepage", "") or "",
+            "notes": existing_member_note(entry),
+        }
+        for seed_key in industry_member_seed_keys(entry, institutions):
+            bucket = seed_index.setdefault(seed_key, {})
+            current = bucket.get(member_key)
+            if current is None:
+                bucket[member_key] = profile.copy()
+                continue
+            if not current.get("homepage") and profile.get("homepage"):
+                current["homepage"] = profile["homepage"]
+            if not current.get("position") and profile.get("position"):
+                current["position"] = profile["position"]
+            if not current.get("notes") and profile.get("notes"):
+                current["notes"] = profile["notes"]
+
+    return seed_index
+
+
 def member_evidence_note(team_name: str, candidate: Dict[str, Any]) -> str:
     papers = candidate.get("papers") or []
     samples: List[str] = []
@@ -733,9 +815,13 @@ def refresh_industry_team_members(
             "team_member_additions": 0,
             "team_member_updates": 0,
             "team_entries_touched": 0,
-        }
+    }
 
     profile_index = build_member_profile_index(data.get("researchers", []))
+    existing_member_seeds = build_existing_industry_member_seeds(
+        data.get("researchers", []),
+        institutions,
+    )
     team_by_inst = {
         entry.get("institution"): entry
         for entry in team_entries
@@ -840,6 +926,7 @@ def refresh_industry_team_members(
         members = entry.get("members") if isinstance(entry.get("members"), list) else []
         merged_members: Dict[str, Dict[str, Any]] = {}
         order: List[str] = []
+        changed = False
 
         for member in members:
             member_key = normalize_name(member.get("name", ""))
@@ -853,6 +940,55 @@ def refresh_industry_team_members(
             }
             order.append(member_key)
 
+        seeded_members: Dict[str, Dict[str, str]] = {}
+        for seed_key in industry_member_seed_keys(entry, institutions):
+            for member_key, profile in existing_member_seeds.get(seed_key, {}).items():
+                if member_key not in seeded_members:
+                    seeded_members[member_key] = profile.copy()
+                    continue
+                current = seeded_members[member_key]
+                if not current.get("homepage") and profile.get("homepage"):
+                    current["homepage"] = profile["homepage"]
+                if not current.get("position") and profile.get("position"):
+                    current["position"] = profile["position"]
+                if not current.get("notes") and profile.get("notes"):
+                    current["notes"] = profile["notes"]
+
+        for member_key, candidate in sorted(
+            seeded_members.items(),
+            key=lambda item: item[1].get("name", "").casefold(),
+        ):
+            if not member_key:
+                continue
+
+            if member_key in merged_members:
+                member = merged_members[member_key]
+                member_changed = False
+                if not member.get("homepage") and candidate.get("homepage"):
+                    member["homepage"] = candidate["homepage"]
+                    member_changed = True
+                if not member.get("position") and candidate.get("position"):
+                    member["position"] = candidate["position"]
+                    member_changed = True
+                if not member.get("notes") and candidate.get("notes"):
+                    member["notes"] = candidate["notes"]
+                    member_changed = True
+                if member_changed:
+                    merged_members[member_key] = member
+                    team_member_updates += 1
+                    changed = True
+                continue
+
+            merged_members[member_key] = {
+                "name": candidate.get("name", "") or "",
+                "position": candidate.get("position", "") or "Researcher",
+                "homepage": candidate.get("homepage", "") or "",
+                "notes": candidate.get("notes", "") or "",
+            }
+            order.append(member_key)
+            team_member_additions += 1
+            changed = True
+
         candidates = list(evidence_by_team.get(entry["id"], {}).values())
         candidates.sort(
             key=lambda item: (
@@ -862,8 +998,6 @@ def refresh_industry_team_members(
                 item.get("name", "").casefold(),
             )
         )
-
-        changed = False
         for candidate in candidates:
             member_key = normalize_name(candidate.get("name", ""))
             if not member_key:

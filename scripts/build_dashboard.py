@@ -18,23 +18,23 @@ CSV_PATH  = os.path.join(OUT_DIR, 'data', 'researchers.csv')
 
 # ── Palette ───────────────────────────────────────────────────
 REGION_COLORS  = {
-    'Asia': '#6366f1',
-    'Europe': '#0ea5e9',
-    'North America': '#10b981',
-    'Oceania': '#f59e0b',
-    'South America': '#ef4444',
-    'Africa': '#14b8a6',
+    'Asia': '#0f766e',
+    'Europe': '#2563eb',
+    'North America': '#c2410c',
+    'Oceania': '#7c3aed',
+    'South America': '#dc2626',
+    'Africa': '#0891b2',
 }
-TYPE_COLORS    = {'faculty':'#818cf8','industry':'#fb923c'}
-CHANCE_COLORS  = {'high':'#10b981','medium':'#f59e0b','low':'#ef4444','internship-only':'#a855f7'}
-PRIORITY_COLORS= {'high':'#ef4444','medium':'#f59e0b','low':'#94a3b8'}
+TYPE_COLORS    = {'faculty':'#0f766e','industry':'#c2410c'}
+CHANCE_COLORS  = {'high':'#15803d','medium':'#b45309','low':'#b91c1c','internship-only':'#6d28d9'}
+PRIORITY_COLORS= {'high':'#dc2626','medium':'#d97706','low':'#64748b'}
 
 HOVER_LABEL = dict(
     bgcolor='#0f172a', bordercolor='#334155',
-    font=dict(family='Inter, sans-serif', size=12, color='#f1f5f9'),
+    font=dict(family='Plus Jakarta Sans, sans-serif', size=12, color='#f1f5f9'),
 )
 BASE_LAYOUT = dict(
-    font=dict(family='Inter, -apple-system, sans-serif', size=13, color='#334155'),
+    font=dict(family='Plus Jakarta Sans, sans-serif', size=13, color='#334155'),
     paper_bgcolor='white', plot_bgcolor='white',
     hoverlabel=HOVER_LABEL,
     margin=dict(l=16, r=16, t=40, b=16),
@@ -74,17 +74,27 @@ def build_researcher_map_data(df):
         research_focus = r.get('research_focus') if isinstance(r.get('research_focus'), list) else []
         tags = r.get('tags') if isinstance(r.get('tags'), list) else []
         members = r.get('members') if isinstance(r.get('members'), list) else []
-        result.setdefault(key, {'display_name': r.get('inst_display', key), 'researchers': []})
+        result.setdefault(
+            key,
+            {
+                'display_name': r.get('inst_display', key),
+                'country': r.get('country', '') or '',
+                'region': r.get('region', '') or '',
+                'qs_rank': r.get('qs_rank'),
+                'researchers': [],
+            },
+        )
         result[key]['researchers'].append({
             'name':     r.get('name', ''),
             'position': r.get('position', ''),
             'type':     r.get('type', ''),
-            'homepage': r.get('homepage', '') or '',
+            'homepage': r.get('homepage', '') or r.get('research_group_url', '') or '',
             'research_focus': research_focus,
             'tags':           tags,
             'admission_chance': r.get('admission_chance', '') or '',
             'priority':       r.get('priority', '') or '',
             'taking_students': bool(r.get('currently_taking_students', False)),
+            'notes': r.get('notes', '') or '',
             'members': [
                 {
                     'name': m.get('name', ''),
@@ -135,7 +145,7 @@ def chart_map(df):
     fig.update_layout(
         height=560,
         paper_bgcolor='#0f172a', plot_bgcolor='#0f172a',
-        font=dict(family='Inter, sans-serif', size=13, color='#94a3b8'),
+        font=dict(family='Plus Jakarta Sans, sans-serif', size=13, color='#94a3b8'),
         margin=dict(l=0, r=0, t=8, b=0),
         hoverlabel=HOVER_LABEL,
         legend=dict(bgcolor='rgba(15,23,42,0.85)', bordercolor='#334155',
@@ -209,7 +219,7 @@ def chart_tags(df):
         marker=dict(
             size=18,
             color=tag_totals['total'],
-            colorscale=[[0, '#a5b4fc'], [0.5, '#6366f1'], [1, '#3730a3']],
+            colorscale=[[0, '#99f6e4'], [0.5, '#0f766e'], [1, '#134e4a']],
             showscale=False,
             line=dict(width=2, color='white'),
         ),
@@ -236,10 +246,10 @@ def chart_kanban(df):
         'rejected': 'Rejected', 'not-applicable': 'N/A',
     }
     COLORS = {
-        'considering': '#6366f1', 'shortlisted': '#8b5cf6',
-        'contacted': '#0ea5e9', 'awaiting-reply': '#f59e0b',
-        'applied': '#3b82f6', 'accepted': '#10b981',
-        'rejected': '#ef4444', 'not-applicable': '#94a3b8',
+        'considering': '#0f766e', 'shortlisted': '#0f766e',
+        'contacted': '#2563eb', 'awaiting-reply': '#d97706',
+        'applied': '#1d4ed8', 'accepted': '#15803d',
+        'rejected': '#dc2626', 'not-applicable': '#64748b',
     }
     counts = df.groupby('application_status').size().reindex(ORDER, fill_value=0)
     fig = go.Figure(go.Funnel(
@@ -252,10 +262,10 @@ def chart_kanban(df):
         ),
         connector=dict(
             line=dict(color='rgba(255,255,255,0.08)', width=1),
-            fillcolor='rgba(99,102,241,0.04)',
+            fillcolor='rgba(15,118,110,0.05)',
         ),
         hovertemplate='<b>%{y}</b><br>Count: %{x}<br>%{percentInitial} of pipeline<extra></extra>',
-        textfont=dict(family='Inter, sans-serif', size=12, color='white'),
+        textfont=dict(family='Plus Jakarta Sans, sans-serif', size=12, color='white'),
         opacity=0.93,
     ))
     fig.update_layout(
@@ -279,16 +289,16 @@ def chart_region_donut(df):
             colors=[REGION_COLORS.get(r, '#94a3b8') for r in agg['region']],
             line=dict(color='white', width=3),
         ),
-        textinfo='percent', textfont=dict(size=12, family='Inter'),
+        textinfo='percent', textfont=dict(size=12, family='Plus Jakarta Sans'),
         hovertemplate='<b>%{label}</b><br>%{value} researchers (%{percent})<extra></extra>',
         direction='clockwise', sort=False,
         pull=[0.05] + [0] * (len(agg) - 1),
     ))
     fig.add_annotation(text=f'<b>{total}</b>', x=0.5, y=0.57, showarrow=False,
-                       font=dict(size=30, color='#0f172a', family='Inter'),
+                       font=dict(size=30, color='#0f172a', family='Outfit'),
                        xref='paper', yref='paper')
     fig.add_annotation(text='researchers', x=0.5, y=0.43, showarrow=False,
-                       font=dict(size=11, color='#64748b', family='Inter'),
+                       font=dict(size=11, color='#64748b', family='Plus Jakarta Sans'),
                        xref='paper', yref='paper')
     fig.update_layout(
         height=340, showlegend=True,
@@ -310,15 +320,15 @@ def chart_type_donut(df):
             colors=[TYPE_COLORS.get(t, '#94a3b8') for t in agg['type']],
             line=dict(color='white', width=3),
         ),
-        textinfo='percent', textfont=dict(size=12, family='Inter'),
+        textinfo='percent', textfont=dict(size=12, family='Plus Jakarta Sans'),
         hovertemplate='<b>%{label}</b><br>%{value} (%{percent})<extra></extra>',
         pull=[0.05, 0],
     ))
     fig.add_annotation(text=f'<b>{total}</b>', x=0.5, y=0.57, showarrow=False,
-                       font=dict(size=30, color='#0f172a', family='Inter'),
+                       font=dict(size=30, color='#0f172a', family='Outfit'),
                        xref='paper', yref='paper')
     fig.add_annotation(text='total', x=0.5, y=0.43, showarrow=False,
-                       font=dict(size=11, color='#64748b', family='Inter'),
+                       font=dict(size=11, color='#64748b', family='Plus Jakarta Sans'),
                        xref='paper', yref='paper')
     fig.update_layout(
         height=340, showlegend=True,
@@ -343,20 +353,21 @@ def to_div(fig, div_id):
 
 def stats_cards(df):
     cards = [
-        (len(df),                        'total-label',    '🎓', '#6366f1'),
-        ((df['type']=='faculty').sum(),  'faculty-label',  '🏫', '#0ea5e9'),
-        ((df['type']=='industry').sum(), 'industry-label', '🏢', '#10b981'),
-        ((df['priority']=='high').sum(), 'priority-label', '⭐', '#f59e0b'),
+        (len(df),                        'total-label',    'total-note',    '#0f766e'),
+        ((df['type']=='faculty').sum(),  'faculty-label',  'faculty-note',  '#2563eb'),
+        ((df['type']=='industry').sum(), 'industry-label', 'industry-note', '#c2410c'),
+        ((df['priority']=='high').sum(), 'priority-label', 'priority-note', '#dc2626'),
     ]
     html = '<div class="stats-row">'
-    for val, i18n, icon, color in cards:
+    for val, i18n, note_key, color in cards:
         html += f'''
-      <div class="stat-card" style="border-left:3px solid {color}">
-        <div class="stat-icon">{icon}</div>
-        <div class="stat-body">
-          <div class="stat-value" style="color:{color}">{val}</div>
+      <div class="stat-card">
+        <div class="stat-card-top">
           <div class="stat-label" data-i18n="{i18n}"></div>
+          <span class="stat-accent" style="background:{color}"></span>
         </div>
+        <div class="stat-value" style="color:{color}">{val}</div>
+        <div class="stat-microcopy" data-i18n="{note_key}"></div>
       </div>'''
     return html + '</div>'
 
@@ -437,165 +448,219 @@ def assemble(df, figs, table_html, filters_html, offline=False):
     ]
     sc = stats_cards(df)
     researcher_map_json = _json.dumps(build_researcher_map_data(df), ensure_ascii=False)
+    latest_update = str(df['last_updated'].dropna().max()) if 'last_updated' in df and not df['last_updated'].dropna().empty else 'N/A'
+    institution_count = int(df['inst_display'].nunique())
+    region_count = int(df['region'].dropna().nunique())
+    tag_count = len({tag for tags in df['tags'] if isinstance(tags, list) for tag in tags})
 
     # ---------- CSS ----------
     CSS = """
 :root{
-  --bg:#f8fafc;--card:#fff;--border:#e2e8f0;--text:#0f172a;
-  --text2:#64748b;--accent:#6366f1;
-  --shadow:0 1px 3px rgba(0,0,0,.06),0 4px 16px rgba(0,0,0,.05);
-  --radius:12px;
+  --bg:#f5f1e8;--bg-soft:#fbf8f1;--card:rgba(255,255,255,.84);--card-strong:#fff;
+  --border:rgba(15,23,42,.1);--text:#142132;--text2:#5e6c7c;--text3:#7b8794;
+  --accent:#0f766e;--accent-2:#c2410c;--accent-soft:rgba(15,118,110,.12);
+  --shadow:0 18px 40px rgba(20,33,50,.08);--shadow-soft:0 10px 24px rgba(20,33,50,.06);
+  --radius:22px;--radius-sm:14px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:
+  radial-gradient(circle at top left, rgba(15,118,110,.12), transparent 32%),
+  radial-gradient(circle at top right, rgba(194,65,12,.12), transparent 24%),
+  linear-gradient(180deg, #fbf8f1 0%, #f3ede1 100%);
+  color:var(--text);min-height:100vh}
+a,button,select,input{font-family:inherit}
+.page-shell{width:min(1480px,calc(100vw - 40px));margin:24px auto 40px}
+.header{position:relative;overflow:hidden;background:
+  linear-gradient(135deg, #17324a 0%, #123d4f 42%, #6b2a12 100%);
+  color:#f8fafc;padding:36px;border-radius:32px;display:grid;
+  grid-template-columns:minmax(0,1.6fr) minmax(320px,1fr);gap:24px;
+  box-shadow:0 30px 80px rgba(20,33,50,.18);border:1px solid rgba(255,255,255,.08)}
+.header::before{content:'';position:absolute;inset:auto -8% -28% auto;width:320px;height:320px;
+  background:radial-gradient(circle, rgba(255,255,255,.16) 0%, rgba(255,255,255,0) 68%);
+  pointer-events:none}
+.header-left{position:relative;z-index:1;display:flex;flex-direction:column;gap:14px}
+.hero-kicker{display:inline-flex;align-items:center;width:max-content;padding:8px 14px;border-radius:999px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);
+  color:#d9ece8;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.header-left h1{font-family:'Outfit',sans-serif;font-size:46px;line-height:1.02;font-weight:700;letter-spacing:-.04em;max-width:10ch}
+.header-left p{max-width:62ch;font-size:15px;line-height:1.7;color:rgba(248,250,252,.8)}
+.header-right{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.header-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.lang-toggle,.meta-tag{border-radius:999px;padding:9px 16px;font-size:12px;font-weight:600}
+.lang-toggle{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#f8fafc;cursor:pointer;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.lang-toggle:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.4);transform:translateY(-1px)}
+.meta-tag{background:rgba(15,118,110,.26);border:1px solid rgba(167,243,208,.24);color:#d8f7ea}
+.hero-panel{align-self:stretch;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  border-radius:24px;padding:20px;backdrop-filter:blur(14px)}
+.hero-panel-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:rgba(226,232,240,.76);font-weight:600}
+.hero-panel-date{margin-top:10px;font-family:'Outfit',sans-serif;font-size:28px;font-weight:700;letter-spacing:-.03em}
+.hero-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+.hero-metric{padding:14px;border-radius:18px;background:rgba(8,15,26,.16);border:1px solid rgba(255,255,255,.08)}
+.hero-metric span{display:block;font-family:'Outfit',sans-serif;font-size:26px;font-weight:700;line-height:1}
+.hero-metric small{display:block;margin-top:8px;color:rgba(226,232,240,.74);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
 
-/* Header */
-.header{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#312e81 100%);
-  color:#fff;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.header-left h1{font-size:22px;font-weight:700;letter-spacing:-.3px}
-.header-left p{font-size:13px;opacity:.7;margin-top:3px}
-.header-right{display:flex;align-items:center;gap:12px}
-.lang-toggle{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
-  color:#fff;padding:6px 16px;border-radius:20px;cursor:pointer;font-size:13px;font-weight:500;
-  transition:background .2s;font-family:'Inter',sans-serif}
-.lang-toggle:hover{background:rgba(255,255,255,.22)}
-.meta-tag{background:rgba(99,102,241,.35);border:1px solid rgba(99,102,241,.5);
-  color:#c7d2fe;padding:4px 12px;border-radius:20px;font-size:12px}
+.stats-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:18px}
+.stat-card{padding:18px 20px;background:var(--card);border:1px solid rgba(20,33,50,.08);
+  border-radius:24px;box-shadow:var(--shadow-soft);backdrop-filter:blur(10px)}
+.stat-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.stat-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text3)}
+.stat-accent{width:34px;height:6px;border-radius:999px;display:inline-block}
+.stat-value{margin-top:18px;font-family:'Outfit',sans-serif;font-size:38px;font-weight:700;line-height:1}
+.stat-microcopy{margin-top:10px;font-size:13px;color:var(--text2)}
 
-/* Stats */
-.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:20px 28px 0}
-.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  padding:16px 20px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow)}
-.stat-icon{font-size:26px}
-.stat-value{font-size:28px;font-weight:700;line-height:1}
-.stat-label{font-size:12px;color:var(--text2);margin-top:3px;font-weight:500}
+.tabs{display:flex;gap:8px;padding:10px;background:rgba(255,255,255,.52);border:1px solid rgba(20,33,50,.08);
+  border-radius:999px;box-shadow:var(--shadow-soft);margin:18px 0 0;overflow-x:auto}
+.tab-btn{padding:11px 18px;border:none;background:none;cursor:pointer;font-size:13px;font-weight:700;
+  color:var(--text2);border-radius:999px;transition:all .18s ease;white-space:nowrap}
+.tab-btn:hover{color:var(--text);background:rgba(15,118,110,.08)}
+.tab-btn.active{color:#f8fafc;background:linear-gradient(135deg,#0f766e 0%, #115e59 100%);
+  box-shadow:0 12px 24px rgba(15,118,110,.24)}
 
-/* Tabs */
-.tabs{display:flex;padding:20px 28px 0;overflow-x:auto;gap:0}
-.tab-btn{padding:10px 20px;border:none;background:none;cursor:pointer;font-size:13px;font-weight:500;
-  color:var(--text2);border-bottom:2px solid transparent;transition:all .18s;white-space:nowrap;
-  font-family:'Inter',sans-serif}
-.tab-btn:hover{color:var(--accent)}
-.tab-btn.active{color:var(--accent);border-bottom-color:var(--accent)}
-
-/* Content */
-.tab-content{display:none;padding:16px 28px 28px;animation:fadeIn .2s ease}
+.tab-content{display:none;padding:18px 0 0;animation:fadeIn .22s ease}
 .tab-content.active{display:block}
-@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  padding:20px;box-shadow:var(--shadow);margin-bottom:16px}
-.card-title{font-size:12px;font-weight:600;color:var(--text2);margin-bottom:12px;
-  text-transform:uppercase;letter-spacing:.6px}
-.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.card-hint{font-size:12px;color:#475569;margin:-8px 0 12px}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--card);border:1px solid rgba(20,33,50,.08);border-radius:28px;padding:24px;
+  box-shadow:var(--shadow);backdrop-filter:blur(12px);margin-bottom:18px}
+.card.card-map{background:linear-gradient(180deg,#0f172a 0%, #14213d 100%);border-color:rgba(148,163,184,.18)}
+.card-title{font-size:12px;font-weight:700;color:var(--text3);margin-bottom:12px;text-transform:uppercase;letter-spacing:.1em}
+.card.card-map .card-title{color:#94a3b8}
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card-hint{font-size:13px;color:var(--text2);margin:-4px 0 14px}
+.card.card-map .card-hint{color:#94a3b8}
 
-/* Filters */
-.filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;
-  padding:14px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  box-shadow:var(--shadow)}
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;padding:16px 18px;background:var(--card);
+  border:1px solid rgba(20,33,50,.08);border-radius:24px;box-shadow:var(--shadow-soft)}
 .filter-bar select,.filter-input{
-  padding:7px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;
-  font-family:'Inter',sans-serif;background:white;color:var(--text);outline:none;transition:border .15s}
-.filter-bar select:focus,.filter-input:focus{border-color:var(--accent)}
-.filter-input{width:190px}
+  padding:10px 14px;border:1px solid rgba(20,33,50,.12);border-radius:14px;font-size:13px;
+  background:rgba(255,255,255,.88);color:var(--text);outline:none;transition:border-color .15s ease,box-shadow .15s ease}
+.filter-bar select:focus,.filter-input:focus{border-color:rgba(15,118,110,.45);box-shadow:0 0 0 4px rgba(15,118,110,.08)}
+.filter-input{width:220px}
 
-/* Table */
-.table-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border);
-  box-shadow:var(--shadow)}
+.table-wrap{overflow-x:auto;border-radius:28px;border:1px solid rgba(20,33,50,.08);box-shadow:var(--shadow);background:var(--card)}
 #researcherTable{width:100%;border-collapse:collapse;font-size:13px}
-#researcherTable th{background:#f8fafc;padding:10px 12px;text-align:left;cursor:pointer;
-  user-select:none;white-space:nowrap;border-bottom:2px solid var(--border);
-  font-weight:600;font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:.5px}
-#researcherTable th:hover{background:#f1f5f9;color:var(--accent)}
+#researcherTable th{background:rgba(251,248,241,.9);padding:14px 16px;text-align:left;cursor:pointer;
+  user-select:none;white-space:nowrap;border-bottom:1px solid rgba(20,33,50,.08);
+  font-weight:700;font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+#researcherTable th:hover{color:var(--accent)}
 #researcherTable th::after{content:' ↕';opacity:.3;font-size:10px}
-#researcherTable td{padding:10px 12px;border-bottom:1px solid #f1f5f9;vertical-align:top}
-#researcherTable tr:hover td{background:#fafbff}
-.table-link{color:var(--accent);text-decoration:none;font-weight:500}
+#researcherTable td{padding:14px 16px;border-bottom:1px solid rgba(20,33,50,.06);vertical-align:top}
+#researcherTable tr:hover td{background:rgba(15,118,110,.03)}
+.table-link{color:var(--accent);text-decoration:none;font-weight:700}
 .table-link:hover{text-decoration:underline}
 
-/* Badges */
-.badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.2px}
-.badge-high{background:#dcfce7;color:#15803d}
-.badge-medium{background:#fef9c3;color:#a16207}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.02em}
+.badge-high{background:#dcfce7;color:#166534}
+.badge-medium{background:#fef3c7;color:#92400e}
 .badge-low{background:#fee2e2;color:#b91c1c}
-.badge-internship-only{background:#f3e8ff;color:#7c3aed}
-.badge-type-faculty{background:#eef2ff;color:#4338ca}
-.badge-type-industry{background:#fffbeb;color:#b45309}
-.priority-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle}
-.priority-high{background:#ef4444}
-.priority-medium{background:#f59e0b}
-.priority-low{background:#94a3b8}
+.badge-internship-only{background:#ede9fe;color:#6d28d9}
+.badge-type-faculty{background:#d9f0ed;color:#0f766e}
+.badge-type-industry{background:#ffedd5;color:#c2410c}
+.priority-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.priority-high{background:#dc2626}
+.priority-medium{background:#d97706}
+.priority-low{background:#64748b}
 
-/* ── Map drawer ── */
-#drawerOverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9998;
-  backdrop-filter:blur(2px)}
+#drawerOverlay{display:none;position:fixed;inset:0;background:rgba(20,33,50,.46);z-index:9998;backdrop-filter:blur(4px)}
 #drawerOverlay.open{display:block}
-#instDrawer{position:fixed;top:0;right:-440px;width:420px;height:100vh;
-  background:#0f172a;border-left:1px solid #1e293b;
-  box-shadow:-12px 0 40px rgba(0,0,0,.6);z-index:9999;
-  transition:right .32s cubic-bezier(.4,0,.2,1);
-  display:flex;flex-direction:column;font-family:'Inter',sans-serif;overflow:hidden}
+#instDrawer{position:fixed;top:0;right:-520px;width:500px;height:100vh;
+  background:linear-gradient(180deg,#142132 0%, #0e1927 100%);border-left:1px solid rgba(148,163,184,.18);
+  box-shadow:-20px 0 60px rgba(15,23,42,.42);z-index:9999;transition:right .32s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;overflow:hidden}
 #instDrawer.open{right:0}
-#drawerHeader{padding:20px 20px 16px;border-bottom:1px solid #1e293b;
-  display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-#drawerTitle{font-size:15px;font-weight:600;color:#f1f5f9;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#drawerClose{background:none;border:none;color:#64748b;cursor:pointer;
-  font-size:22px;line-height:1;padding:2px 8px;border-radius:6px;transition:background .15s,color .15s}
-#drawerClose:hover{background:#1e293b;color:#f1f5f9}
-#drawerBody{flex:1;overflow-y:auto;padding:16px;
-  scrollbar-width:thin;scrollbar-color:#334155 #0f172a}
-#drawerBody::-webkit-scrollbar{width:4px}
-#drawerBody::-webkit-scrollbar-track{background:#0f172a}
-#drawerBody::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
+#drawerHeader{padding:22px 22px 18px;border-bottom:1px solid rgba(148,163,184,.14);display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-shrink:0}
+#drawerHeaderText{display:flex;flex-direction:column;gap:8px;min-width:0}
+#drawerTitle{font-family:'Outfit',sans-serif;font-size:22px;font-weight:700;color:#f8fafc;line-height:1.05}
+#drawerSubtitle{font-size:12px;color:#8ba0b6;text-transform:uppercase;letter-spacing:.08em}
+#drawerClose{background:none;border:none;color:#8ba0b6;cursor:pointer;font-size:28px;line-height:1;padding:0 2px;border-radius:8px;transition:color .15s ease,transform .15s ease}
+#drawerClose:hover{color:#f8fafc;transform:translateY(-1px)}
+#drawerBody{flex:1;overflow-y:auto;padding:18px;scrollbar-width:thin;scrollbar-color:#334155 transparent}
+#drawerBody::-webkit-scrollbar{width:6px}
+#drawerBody::-webkit-scrollbar-thumb{background:#334155;border-radius:999px}
 
-/* Researcher mini-cards */
-.r-card{background:#1e293b;border:1px solid #334155;border-radius:10px;
-  padding:14px 16px;margin-bottom:12px;transition:border-color .15s,transform .15s}
-.r-card:hover{border-color:#6366f1;transform:translateX(-2px)}
-.r-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px}
-.r-name{font-size:14px;font-weight:600;color:#f1f5f9;line-height:1.3}
-.r-pos{font-size:12px;color:#94a3b8;margin-top:2px}
-.r-open{display:inline-block;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:600;
-  background:#052e16;color:#4ade80;border:1px solid #166534;flex-shrink:0;margin-left:8px}
-.r-chance{display:inline-block;padding:2px 9px;border-radius:10px;font-size:11px;font-weight:600;margin-bottom:10px}
-.r-chance-high{background:#052e16;color:#4ade80;border:1px solid #166534}
-.r-chance-medium{background:#451a03;color:#fb923c;border:1px solid #92400e}
-.r-chance-low{background:#3f1d1d;color:#f87171;border:1px solid #7f1d1d}
-.r-chance-internship-only{background:#2e1065;color:#c084fc;border:1px solid #6b21a8}
-.r-tags{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 10px}
-.r-tag{padding:2px 8px;border-radius:12px;font-size:11px;font-weight:500;
-  background:#312e81;color:#c7d2fe;border:1px solid #3730a3}
-.r-link{display:inline-flex;align-items:center;gap:6px;color:#818cf8;
-  font-size:12px;font-weight:500;text-decoration:none;
-  padding:6px 14px;border:1px solid #3730a3;border-radius:8px;
-  background:rgba(99,102,241,.08);transition:background .15s,border-color .15s}
-.r-link:hover{background:rgba(99,102,241,.2);border-color:#6366f1;color:#a5b4fc}
-.r-no-link{font-size:12px;color:#475569}
-.team-members{margin-top:12px;padding-top:12px;border-top:1px solid #334155}
-.team-members summary{cursor:pointer;list-style:none;font-size:12px;font-weight:600;color:#cbd5e1}
+.drawer-intro{padding:18px;border-radius:22px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);margin-bottom:14px}
+.drawer-meta{display:flex;flex-wrap:wrap;gap:8px}
+.drawer-meta-pill{padding:6px 10px;border-radius:999px;background:rgba(15,118,110,.18);border:1px solid rgba(94,234,212,.14);font-size:11px;font-weight:700;color:#d8f7ea}
+.drawer-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.drawer-stat{padding:12px;border-radius:18px;background:rgba(8,15,26,.28);border:1px solid rgba(255,255,255,.06)}
+.drawer-stat span{display:block;font-family:'Outfit',sans-serif;font-size:24px;font-weight:700;color:#f8fafc}
+.drawer-stat small{display:block;margin-top:6px;font-size:11px;color:#8ba0b6;text-transform:uppercase;letter-spacing:.08em}
+.drawer-stack{display:grid;gap:12px}
+
+.r-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:18px;transition:border-color .16s ease,transform .16s ease}
+.r-card:hover{border-color:rgba(94,234,212,.22);transform:translateY(-1px)}
+.r-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.r-meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 10px}
+.r-type{display:inline-flex;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.08);font-size:11px;font-weight:700;color:#d6e2ef;text-transform:uppercase;letter-spacing:.08em}
+.r-open{display:inline-flex;padding:4px 10px;border-radius:999px;background:rgba(22,163,74,.16);border:1px solid rgba(74,222,128,.18);font-size:11px;font-weight:700;color:#bbf7d0}
+.r-name{font-size:17px;font-weight:700;color:#f8fafc;line-height:1.2}
+.r-pos{font-size:13px;color:#94a3b8;margin-top:4px}
+.r-chance{display:inline-flex;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;margin-top:2px}
+.r-chance-high{background:#052e16;color:#86efac;border:1px solid #166534}
+.r-chance-medium{background:#431407;color:#fdba74;border:1px solid #9a3412}
+.r-chance-low{background:#450a0a;color:#fca5a5;border:1px solid #991b1b}
+.r-chance-internship-only{background:#2e1065;color:#d8b4fe;border:1px solid #6d28d9}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.focus-chip,.tag-chip{display:inline-flex;padding:6px 10px;border-radius:999px;font-size:11px;font-weight:700}
+.focus-chip{background:rgba(15,118,110,.14);color:#d1faf5;border:1px solid rgba(94,234,212,.12)}
+.tag-chip{background:rgba(255,255,255,.08);color:#d6e2ef;border:1px solid rgba(255,255,255,.08)}
+.r-notes{margin-top:14px;font-size:12px;line-height:1.65;color:#bfd0df}
+.r-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.r-link{display:inline-flex;align-items:center;gap:6px;color:#d8f7ea;font-size:12px;font-weight:700;text-decoration:none;
+  padding:8px 13px;border:1px solid rgba(94,234,212,.16);border-radius:14px;background:rgba(15,118,110,.14);
+  transition:background .15s ease,border-color .15s ease,transform .15s ease}
+.r-link:hover{background:rgba(15,118,110,.22);border-color:rgba(94,234,212,.28);transform:translateY(-1px)}
+.r-no-link{font-size:12px;color:#71859a}
+.team-members{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08)}
+.team-members summary{cursor:pointer;list-style:none;font-size:12px;font-weight:700;color:#d6e2ef;text-transform:uppercase;letter-spacing:.08em}
 .team-members summary::-webkit-details-marker{display:none}
-.member-list{display:grid;gap:8px;margin-top:10px}
-.member-card{background:#0f172a;border:1px solid #334155;border-radius:9px;padding:10px 12px}
-.member-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px}
-.member-name{font-size:13px;font-weight:600;color:#f8fafc;line-height:1.25}
-.member-pos{font-size:11px;color:#94a3b8;margin-top:2px}
-.member-note{font-size:11px;color:#64748b;margin-top:6px;line-height:1.4}
-.member-link{margin-top:8px}
-.member-no-link{font-size:11px;color:#64748b}
+.member-list{display:grid;gap:10px;margin-top:12px}
+.member-card{background:rgba(8,15,26,.36);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:14px}
+.member-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.member-name{font-size:14px;font-weight:700;color:#f8fafc;line-height:1.25}
+.member-pos{font-size:12px;color:#8ba0b6;margin-top:4px}
+.member-note{font-size:12px;color:#bfd0df;margin-top:10px;line-height:1.6}
+.member-link{margin-top:10px}
+.member-no-link{font-size:12px;color:#71859a}
+
+@media (max-width: 1180px){
+  .header{grid-template-columns:1fr}
+  .header-left h1{max-width:none}
+  .hero-grid,.stats-row,.chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width: 760px){
+  .page-shell{width:min(100vw - 20px, 100%);margin:10px auto 28px}
+  .header{padding:24px;border-radius:26px}
+  .header-left h1{font-size:34px}
+  .hero-grid,.stats-row,.chart-grid,.drawer-stats{grid-template-columns:1fr}
+  .tabs{padding:8px}
+  .tab-btn{padding:10px 14px}
+  .card{padding:18px;border-radius:22px}
+  .filter-input{width:100%}
+  #instDrawer{width:min(100vw, 100%);right:-100vw}
+}
 """
 
     # ---------- i18n ----------
     LANG_JS = r"""
 const LANG = {
   en: {
+    'hero-kicker':      'Targeted Directory',
     'title':            'AI4DB Research Teams Tracker',
     'subtitle':         'LLM + Database · NL2SQL · Data Agents — PhD / Internship Target List',
     'meta-tag':         'PhD / Internship',
+    'hero-updated-label':'Dataset Refreshed',
+    'institution-label':'Institutions',
+    'region-label':    'Regions',
+    'tag-count-label': 'Active Tags',
     'total-label':      'Total Researchers',
     'faculty-label':    'Faculty',
     'industry-label':   'Industry Teams',
     'priority-label':   'High Priority',
+    'total-note':       'Tracked profiles',
+    'faculty-note':     'Academic leads',
+    'industry-note':    'Industry nodes',
+    'priority-note':    'Priority stack',
     'tab-overview':     'Overview',
     'tab-map':          'World Map',
     'tab-institutions': 'Institutions',
@@ -608,12 +673,23 @@ const LANG = {
     'chart-inst':       'Researchers per Institution',
     'chart-tags':       'Research Tags',
     'chart-kanban':     'Application Pipeline',
+    'map-hint':         'Click an institution bubble to inspect profiles and team members.',
     'filter-region-all':   'All Regions',
     'filter-type-all':     'All Types',
     'filter-priority-all': 'All Priorities',
     'filter-tag-all':      'All Tags',
     'filter-search':       'Search name…',
     'link-text':    'Link',
+    'drawer-homepage':'Homepage',
+    'drawer-no-homepage':'No homepage listed',
+    'drawer-open':'Potentially Open',
+    'drawer-members':'Members',
+    'drawer-profiles':'Profiles',
+    'drawer-teams':'Teams',
+    'drawer-member-count':'Members',
+    'drawer-type-faculty':'Faculty',
+    'drawer-type-industry':'Industry',
+    'drawer-subtitle':'Institution Snapshot',
     'name-col':     'Name',       'type-col':    'Type',
     'inst-col':     'Institution','country-col': 'Country',
     'region-col':   'Region',     'pos-col':     'Position',
@@ -622,13 +698,22 @@ const LANG = {
     'pri-col':      'Priority',   'link-col':    'Homepage',
   },
   zh: {
+    'hero-kicker':      '重点跟踪目录',
     'title':            'AI4DB 研究团队追踪',
     'subtitle':         'LLM + 数据库 · NL2SQL · 数据智能体 — 博士申请 / 实习目标列表',
     'meta-tag':         '博士 / 实习',
+    'hero-updated-label':'数据更新到',
+    'institution-label':'覆盖机构',
+    'region-label':    '覆盖地区',
+    'tag-count-label': '研究标签',
     'total-label':      '学者总数',
     'faculty-label':    '学术界',
     'industry-label':   '工业界',
     'priority-label':   '高优先级',
+    'total-note':       '已跟踪档案',
+    'faculty-note':     '学术导师与PI',
+    'industry-note':    '工业研究节点',
+    'priority-note':    '重点关注名单',
     'tab-overview':     '概览',
     'tab-map':          '世界地图',
     'tab-institutions': '机构分布',
@@ -641,12 +726,23 @@ const LANG = {
     'chart-inst':       '各机构学者数',
     'chart-tags':       '研究方向分布',
     'chart-kanban':     '申请漏斗',
+    'map-hint':         '点击任一机构气泡，可查看该机构下的个人与团队成员。',
     'filter-region-all':   '全部地区',
     'filter-type-all':     '全部类型',
     'filter-priority-all': '全部优先级',
     'filter-tag-all':      '全部标签',
     'filter-search':       '搜索姓名…',
     'link-text':    '主页',
+    'drawer-homepage':'主页',
+    'drawer-no-homepage':'暂无主页',
+    'drawer-open':'可能招收',
+    'drawer-members':'团队成员',
+    'drawer-profiles':'个人条目',
+    'drawer-teams':'团队条目',
+    'drawer-member-count':'成员数',
+    'drawer-type-faculty':'学术界',
+    'drawer-type-industry':'工业界',
+    'drawer-subtitle':'机构概览',
     'name-col':     '姓名',       'type-col':    '类型',
     'inst-col':     '机构',       'country-col': '国家',
     'region-col':   '地区',       'pos-col':     '职位',
@@ -664,6 +760,12 @@ const LANG = {
         "const RESEARCHER_MAP = " + researcher_map_json + ";\n"
         + r"""
 let currentLang = 'en';
+let currentDrawerKey = null;
+
+function langText(key, fallback) {
+  return LANG[currentLang]?.[key] || fallback || key;
+}
+
 function applyLang(lang) {
   const t = LANG[lang];
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -681,6 +783,7 @@ function applyLang(lang) {
   document.querySelector('.lang-toggle').textContent = lang==='en' ? '中文' : 'EN';
   document.documentElement.setAttribute('data-lang', lang);
   currentLang = lang;
+  if (currentDrawerKey) openDrawer(currentDrawerKey);
 }
 function toggleLang() { applyLang(currentLang==='en' ? 'zh' : 'en'); }
 
@@ -726,20 +829,20 @@ function sortTable(th) {
     .forEach(r=>tbody.appendChild(r));
 }
 
-function renderHomepageButton(url) {
-  if (!url) return '<span class="r-no-link">No homepage listed</span>';
-  return `<a href="${url}" target="_blank" rel="noopener" class="r-link member-link">
+function renderHomepageButton(url, extraClass='') {
+  if (!url) return `<span class="r-no-link ${extraClass}">${langText('drawer-no-homepage', 'No homepage listed')}</span>`;
+  return `<a href="${url}" target="_blank" rel="noopener" class="r-link ${extraClass}">
            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
              <polyline points="15 3 21 3 21 9"/>
              <line x1="10" y1="14" x2="21" y2="3"/>
            </svg>
-           Homepage
+           ${langText('drawer-homepage', 'Homepage')}
          </a>`;
 }
 
 function renderMemberCard(member) {
-  const homepage = renderHomepageButton(member.homepage || '');
+  const homepage = renderHomepageButton(member.homepage || '', 'member-link');
   return `
     <div class="member-card">
       <div class="member-card-top">
@@ -753,44 +856,75 @@ function renderMemberCard(member) {
     </div>`;
 }
 
-/* ── Drawer ── */
-function openDrawer(instKey) {
-  const data = RESEARCHER_MAP[instKey];
-  if (!data) return;
-  document.getElementById('drawerTitle').textContent = data.display_name;
-  const body = document.getElementById('drawerBody');
-  body.innerHTML = '';
-  data.researchers.forEach(r => {
-    const chClass = 'r-chance-' + (r.admission_chance||'medium').replace(/\s/g,'-');
-    const tagsHtml = (r.tags||[]).map(t=>`<span class="r-tag">${t}</span>`).join('');
-    const openBadge = r.taking_students ? '<span class="r-open">Open</span>' : '';
-    const linkBtn = renderHomepageButton(r.homepage || '');
-    const members = Array.isArray(r.members) ? r.members : [];
-    const membersHtml = members.length ? `
+function renderResearchCard(r) {
+  const chClass = 'r-chance-' + (r.admission_chance||'medium').replace(/\s/g,'-');
+  const tagsHtml = (r.tags||[]).map(t=>`<span class="tag-chip">${t}</span>`).join('');
+  const focusHtml = (r.research_focus||[]).slice(0, 4).map(t=>`<span class="focus-chip">${t}</span>`).join('');
+  const openBadge = r.taking_students ? `<span class="r-open">${langText('drawer-open', 'Potentially Open')}</span>` : '';
+  const linkBtn = renderHomepageButton(r.homepage || '');
+  const members = Array.isArray(r.members) ? r.members : [];
+  const membersHtml = members.length ? `
       <details class="team-members">
-        <summary>Members (${members.length})</summary>
+        <summary>${langText('drawer-members', 'Members')} (${members.length})</summary>
         <div class="member-list">
           ${members.map(renderMemberCard).join('')}
         </div>
       </details>` : '';
-    body.innerHTML += `
+  const typeLabel = langText(`drawer-type-${r.type}`, r.type || '');
+  return `
       <div class="r-card">
         <div class="r-card-top">
-          <div><div class="r-name">${r.name}</div><div class="r-pos">${r.position||''}</div></div>
+          <div>
+            <div class="r-name">${r.name}</div>
+            <div class="r-pos">${r.position||''}</div>
+          </div>
+          <span class="r-chance ${chClass}">${r.admission_chance||''}</span>
+        </div>
+        <div class="r-meta">
+          <span class="r-type">${typeLabel}</span>
           ${openBadge}
         </div>
-        <span class="r-chance ${chClass}">${r.admission_chance||''}</span>
-        <div class="r-tags">${tagsHtml}</div>
-        ${linkBtn}
+        ${focusHtml ? `<div class="chip-row">${focusHtml}</div>` : ''}
+        ${tagsHtml ? `<div class="chip-row">${tagsHtml}</div>` : ''}
+        ${r.notes ? `<div class="r-notes">${r.notes}</div>` : ''}
+        <div class="r-links">${linkBtn}</div>
         ${membersHtml}
       </div>`;
-  });
+}
+
+/* ── Drawer ── */
+function openDrawer(instKey) {
+  const data = RESEARCHER_MAP[instKey];
+  if (!data) return;
+  currentDrawerKey = instKey;
+  document.getElementById('drawerTitle').textContent = data.display_name;
+  document.getElementById('drawerSubtitle').textContent = langText('drawer-subtitle', 'Institution Snapshot');
+  const body = document.getElementById('drawerBody');
+  const totalProfiles = data.researchers.length;
+  const totalTeams = data.researchers.filter(r => r.type === 'industry' && ((r.position||'').toLowerCase().includes('team') || (Array.isArray(r.members) && r.members.length))).length;
+  const totalMembers = data.researchers.reduce((sum, r) => sum + ((Array.isArray(r.members) ? r.members.length : 0)), 0);
+  const metaParts = [data.region, data.country, data.qs_rank ? `QS #${data.qs_rank}` : ''].filter(Boolean);
+  body.innerHTML = `
+    <div class="drawer-intro">
+      <div class="drawer-meta">
+        ${metaParts.map(item => `<span class="drawer-meta-pill">${item}</span>`).join('')}
+      </div>
+      <div class="drawer-stats">
+        <div class="drawer-stat"><span>${totalProfiles}</span><small>${langText('drawer-profiles', 'Profiles')}</small></div>
+        <div class="drawer-stat"><span>${totalTeams}</span><small>${langText('drawer-teams', 'Teams')}</small></div>
+        <div class="drawer-stat"><span>${totalMembers}</span><small>${langText('drawer-member-count', 'Members')}</small></div>
+      </div>
+    </div>
+    <div class="drawer-stack">
+      ${data.researchers.map(renderResearchCard).join('')}
+    </div>`;
   document.getElementById('instDrawer').classList.add('open');
   document.getElementById('drawerOverlay').classList.add('open');
 }
 function closeDrawer() {
   document.getElementById('instDrawer').classList.remove('open');
   document.getElementById('drawerOverlay').classList.remove('open');
+  currentDrawerKey = null;
 }
 document.addEventListener('keydown', e => { if (e.key==='Escape') closeDrawer(); });
 
@@ -820,20 +954,42 @@ setTimeout(attachMapClick, 600);
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI4DB Research Teams Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 {plotly_js}
 <style>{CSS}</style>
 </head>
 <body>
-
+<div class="page-shell">
 <div class="header">
   <div class="header-left">
+    <span class="hero-kicker" data-i18n="hero-kicker">Targeted Directory</span>
     <h1 data-i18n="title">AI4DB Research Teams Tracker</h1>
     <p data-i18n="subtitle">LLM + Database · NL2SQL · Data Agents</p>
   </div>
   <div class="header-right">
-    <span class="meta-tag" data-i18n="meta-tag">PhD / Internship</span>
-    <button class="lang-toggle" onclick="toggleLang()">中文</button>
+    <div class="header-actions">
+      <span class="meta-tag" data-i18n="meta-tag">PhD / Internship</span>
+      <button class="lang-toggle" onclick="toggleLang()">中文</button>
+    </div>
+    <div class="hero-panel">
+      <div class="hero-panel-label" data-i18n="hero-updated-label">Dataset Refreshed</div>
+      <div class="hero-panel-date">{latest_update}</div>
+      <div class="hero-grid">
+        <div class="hero-metric">
+          <span>{institution_count}</span>
+          <small data-i18n="institution-label">Institutions</small>
+        </div>
+        <div class="hero-metric">
+          <span>{region_count}</span>
+          <small data-i18n="region-label">Regions</small>
+        </div>
+        <div class="hero-metric">
+          <span>{tag_count}</span>
+          <small data-i18n="tag-count-label">Active Tags</small>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -862,9 +1018,9 @@ setTimeout(attachMapClick, 600);
 </div>
 
 <div class="tab-content" id="tab-1">
-  <div class="card" style="background:#0f172a;border-color:#1e293b;padding:16px 16px 0">
-    <div class="card-title" data-i18n="chart-map" style="color:#94a3b8">Geographic Distribution</div>
-    <p class="card-hint" style="color:#475569">● Click any bubble to open researcher profiles</p>
+  <div class="card card-map">
+    <div class="card-title" data-i18n="chart-map">Geographic Distribution</div>
+    <p class="card-hint" data-i18n="map-hint">Click an institution bubble to inspect profiles and team members.</p>
     {map_div}
   </div>
 </div>
@@ -899,13 +1055,17 @@ setTimeout(attachMapClick, 600);
 <div id="drawerOverlay" onclick="closeDrawer()"></div>
 <div id="instDrawer">
   <div id="drawerHeader">
-    <div id="drawerTitle"></div>
+    <div id="drawerHeaderText">
+      <div id="drawerSubtitle"></div>
+      <div id="drawerTitle"></div>
+    </div>
     <button id="drawerClose" onclick="closeDrawer()">×</button>
   </div>
   <div id="drawerBody"></div>
 </div>
 
 <script>{JS}</script>
+</div>
 </body>
 </html>"""
 

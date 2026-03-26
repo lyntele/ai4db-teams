@@ -2005,7 +2005,21 @@
       "contact_history": [],
       "notes": "Microsoft Research Redmond NL2SQL 方向。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-26",
+      "members": [
+        {
+          "name": "Qian Liu",
+          "position": "Senior Researcher",
+          "homepage": "https://www.microsoft.com/en-us/research/people/qianl/",
+          "notes": "来自仓库已有个人条目：MSRA NLC 组，NL2SQL 方向核心研究员。"
+        },
+        {
+          "name": "Yan Gao",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "来自仓库已有个人条目：MSRA NL2SQL 方向，schema linking 相关工作。"
+        }
+      ]
     },
     {
       "id": "uid-060",
