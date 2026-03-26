@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """Discover new AI4DB researchers from recent OpenAlex works.
 
-The script scans recent works for AI4DB-related signals, matches affiliations
-against a QS-top-100 cache, and then:
+The script scans recent works for AI4DB-related signals, keeps only database
+top-conference / arXiv papers, matches affiliations against a QS-top-100
+cache, and then:
 
 1. appends new researchers when the institution matches a QS<100 university,
    even if that school is not already present in ``data/institutions.json``;
 2. updates existing researchers by adding missing notable papers.
+3. refreshes industrial team entries by folding in authors from related
+   papers and reusing existing personal homepages when available.
 
 It is intentionally conservative: papers need both a topical signal and a QS
 match, and auto-discovered schools get explicit display metadata so the
@@ -38,7 +41,9 @@ OPENALEX_WORKS_API = "https://api.openalex.org/works"
 DEFAULT_LOOKBACK_DAYS = 21
 DEFAULT_PAGE_SIZE = 200
 MAX_PAGES_PER_QUERY = 3
+DEFAULT_MEMBER_LOOKBACK_DAYS = 180
 QS_RANKINGS_PATH = ROOT_DIR / "data" / "qs_rankings.json"
+TEAM_NAME_HINTS = ("team", "group", "lab")
 
 # High-signal terms for AI4DB / database + LLM discovery.
 SEARCH_TERMS = [
@@ -234,6 +239,80 @@ SPECIAL_ALIASES = {
         "University of New South Wales",
         "UNSW Sydney",
         "UNSW",
+    ],
+    "MSRA": [
+        "Microsoft Research Asia",
+        "MSRA",
+        "Microsoft Research Asia Lab",
+    ],
+    "MSR": [
+        "Microsoft Research",
+        "MSR",
+        "Microsoft Research Redmond",
+    ],
+    "GoogleR": [
+        "Google Research",
+        "Google",
+    ],
+    "AliDAMO": [
+        "Alibaba DAMO Academy",
+        "DAMO Academy",
+        "Alibaba",
+    ],
+    "Salesforce": [
+        "Salesforce Research",
+        "Salesforce",
+    ],
+    "MetaAI": [
+        "Meta AI Research",
+        "Meta AI",
+        "FAIR",
+        "Meta",
+    ],
+    "HuaweiNoah": [
+        "Huawei Noah's Ark Lab",
+        "Huawei Noah",
+        "Noah's Ark Lab",
+        "Huawei",
+    ],
+    "ByteDance": [
+        "ByteDance AI Lab",
+        "ByteDance Seed",
+        "ByteDance",
+    ],
+    "BaiduR": [
+        "Baidu Research",
+        "Baidu",
+    ],
+    "TencentAI": [
+        "Tencent AI Lab",
+        "Tencent",
+        "Tencent (China)",
+    ],
+    "AntGroup": [
+        "Ant Group",
+        "Ant Group Technology",
+        "Ant",
+    ],
+    "4Paradigm": [
+        "4Paradigm",
+        "Fourth Paradigm",
+    ],
+    "AmazonSci": [
+        "Amazon Science",
+        "Amazon",
+    ],
+    "Databricks": [
+        "Databricks Research",
+        "Databricks",
+    ],
+    "IBM": [
+        "IBM Research",
+        "IBM",
+    ],
+    "Snowflake": [
+        "Snowflake Research",
+        "Snowflake",
     ],
 }
 
@@ -573,6 +652,268 @@ def choose_author(
     return candidates[0]
 
 
+def is_industry_team_entry(entry: Dict[str, Any]) -> bool:
+    if entry.get("type") != "industry":
+        return False
+    name = (entry.get("name") or "").lower()
+    position = (entry.get("position") or "").lower()
+    return bool(entry.get("members")) or any(hint in name for hint in TEAM_NAME_HINTS) or any(
+        hint in position for hint in TEAM_NAME_HINTS
+    )
+
+
+def build_member_profile_index(researchers: List[Dict[str, Any]]) -> Dict[str, Dict[str, str]]:
+    index: Dict[str, Dict[str, str]] = {}
+
+    def maybe_set(name: str, profile: Dict[str, str]) -> None:
+        name_key = normalize_name(name)
+        if not name_key:
+            return
+        current = index.get(name_key)
+        if current is None:
+            index[name_key] = profile
+            return
+        if not current.get("homepage") and profile.get("homepage"):
+            index[name_key] = profile
+            return
+        if not current.get("position") and profile.get("position"):
+            index[name_key] = profile
+
+    for entry in researchers:
+        maybe_set(
+            entry.get("name", ""),
+            {
+                "homepage": entry.get("homepage", "") or "",
+                "position": entry.get("position", "") or "",
+            },
+        )
+        members = entry.get("members") if isinstance(entry.get("members"), list) else []
+        for member in members:
+            maybe_set(
+                member.get("name", ""),
+                {
+                    "homepage": member.get("homepage", "") or "",
+                    "position": member.get("position", "") or "",
+                },
+            )
+
+    return index
+
+
+def member_evidence_note(team_name: str, candidate: Dict[str, Any]) -> str:
+    papers = candidate.get("papers") or []
+    samples: List[str] = []
+    seen: set[str] = set()
+    for paper in papers:
+        sig = paper_signature(paper.get("title", ""), paper.get("venue", ""))
+        if sig in seen:
+            continue
+        seen.add(sig)
+        samples.append(f'"{paper.get("title", "")}" ({paper.get("venue", "")})')
+        if len(samples) >= 2:
+            break
+
+    if samples:
+        return f"由 {candidate.get('match_count', 0)} 篇相关论文作者回填，示例论文：{'；'.join(samples)}。"
+    return f"由相关论文作者回填，来源于 {team_name} 的近期论文。"
+
+
+def refresh_industry_team_members(
+    data: Dict[str, Any],
+    institutions: Dict[str, Dict[str, Any]],
+    works: List[Dict[str, Any]],
+    today: str,
+) -> Dict[str, Any]:
+    industry_institutions = {
+        key: meta for key, meta in institutions.items() if meta.get("type") == "industry"
+    }
+    team_entries = [entry for entry in data.get("researchers", []) if is_industry_team_entry(entry)]
+    if not team_entries:
+        return {
+            "team_member_additions": 0,
+            "team_member_updates": 0,
+            "team_entries_touched": 0,
+        }
+
+    profile_index = build_member_profile_index(data.get("researchers", []))
+    team_by_inst = {
+        entry.get("institution"): entry
+        for entry in team_entries
+        if entry.get("institution")
+    }
+    team_tags = {
+        entry["id"]: set(entry.get("tags", [])) if isinstance(entry.get("tags"), list) else set()
+        for entry in team_entries
+    }
+    evidence_by_team: Dict[str, Dict[str, Dict[str, Any]]] = {entry["id"]: {} for entry in team_entries}
+    seen_pairs: set[Tuple[str, str, str]] = set()
+
+    for work in works:
+        score, tags, venue = work_score(work)
+        if score < 2:
+            continue
+        venue_lower = venue.lower()
+        if not any(marker in venue_lower for marker in VENUE_MARKERS) and "arxiv" not in venue_lower:
+            continue
+        tag_set = set(tags)
+        if not tag_set:
+            continue
+
+        paper = {
+            "title": work.get("display_name") or "",
+            "venue": venue or "OpenAlex",
+            "url": work_url(work),
+        }
+        paper_sig = paper_signature(paper["title"], paper["venue"])
+
+        authorships = work.get("authorships") or []
+        if not authorships:
+            continue
+
+        for authorship in authorships:
+            author = authorship.get("author") or {}
+            author_name = author.get("display_name") or ""
+            if not author_name:
+                continue
+            author_norm = normalize_name(author_name)
+            if not author_norm:
+                continue
+
+            author_position = (authorship.get("author_position") or "").lower()
+            is_corresponding = bool(authorship.get("is_corresponding"))
+            author_institutions = list(authorship.get("institutions") or [])
+            if not author_institutions:
+                author_institutions = [{}]
+
+            candidate_texts: List[Tuple[str, Dict[str, Any]]] = []
+            for inst in authorship.get("institutions") or []:
+                display = inst.get("display_name") or ""
+                if display:
+                    candidate_texts.append((display, inst))
+            for raw in authorship.get("raw_affiliation_strings") or []:
+                if raw:
+                    candidate_texts.append((raw, author_institutions[0]))
+
+            matched_team_ids: set[str] = set()
+            for candidate_text, _inst_obj in candidate_texts:
+                match = match_institution(candidate_text, industry_institutions)
+                if not match:
+                    continue
+                team_key, _team_meta, _score = match
+                team_entry = team_by_inst.get(team_key)
+                if not team_entry:
+                    continue
+                team_tag_set = team_tags.get(team_entry["id"], set())
+                if team_tag_set and not (team_tag_set & tag_set):
+                    continue
+                matched_team_ids.add(team_entry["id"])
+
+            if not matched_team_ids:
+                continue
+
+            for team_id in matched_team_ids:
+                pair_key = (team_id, author_norm, paper_sig)
+                if pair_key in seen_pairs:
+                    continue
+                seen_pairs.add(pair_key)
+
+                bucket = evidence_by_team[team_id].setdefault(
+                    author_norm,
+                    {
+                        "name": author_name,
+                        "match_count": 0,
+                        "first_author_count": 0,
+                        "is_corresponding_count": 0,
+                        "papers": [],
+                    },
+                )
+                bucket["match_count"] += 1
+                bucket["first_author_count"] += int(author_position == "first")
+                bucket["is_corresponding_count"] += int(is_corresponding)
+                bucket["papers"].append(paper)
+
+    team_member_additions = 0
+    team_member_updates = 0
+    team_entries_touched = 0
+
+    for entry in team_entries:
+        members = entry.get("members") if isinstance(entry.get("members"), list) else []
+        merged_members: Dict[str, Dict[str, Any]] = {}
+        order: List[str] = []
+
+        for member in members:
+            member_key = normalize_name(member.get("name", ""))
+            if not member_key or member_key in merged_members:
+                continue
+            merged_members[member_key] = {
+                "name": member.get("name", "") or "",
+                "position": member.get("position", "") or "",
+                "homepage": member.get("homepage", "") or "",
+                "notes": member.get("notes", "") or "",
+            }
+            order.append(member_key)
+
+        candidates = list(evidence_by_team.get(entry["id"], {}).values())
+        candidates.sort(
+            key=lambda item: (
+                -int(item.get("match_count", 0)),
+                -int(item.get("is_corresponding_count", 0)),
+                -int(item.get("first_author_count", 0)),
+                item.get("name", "").casefold(),
+            )
+        )
+
+        changed = False
+        for candidate in candidates:
+            member_key = normalize_name(candidate.get("name", ""))
+            if not member_key:
+                continue
+
+            profile = profile_index.get(member_key, {})
+            homepage = profile.get("homepage", "") or ""
+            position = profile.get("position", "") or ""
+            if not position:
+                position = "Researcher"
+
+            if member_key in merged_members:
+                member = merged_members[member_key]
+                member_changed = False
+                if not member.get("homepage") and homepage:
+                    member["homepage"] = homepage
+                    member_changed = True
+                if not member.get("position") and position:
+                    member["position"] = position
+                    member_changed = True
+                if not member.get("notes"):
+                    member["notes"] = member_evidence_note(entry["name"], candidate)
+                    member_changed = True
+                if member_changed:
+                    merged_members[member_key] = member
+                    team_member_updates += 1
+                    changed = True
+            else:
+                merged_members[member_key] = {
+                    "name": candidate.get("name", "") or "",
+                    "position": position,
+                    "homepage": homepage,
+                    "notes": member_evidence_note(entry["name"], candidate),
+                }
+                order.append(member_key)
+                team_member_additions += 1
+                changed = True
+
+        if changed:
+            entry["members"] = [merged_members[key] for key in order if key in merged_members]
+            entry["last_updated"] = today
+            team_entries_touched += 1
+
+    return {
+        "team_member_additions": team_member_additions,
+        "team_member_updates": team_member_updates,
+        "team_entries_touched": team_entries_touched,
+    }
+
+
 def append_notable_paper(entry: Dict[str, Any], paper: Dict[str, str], today: str) -> bool:
     notable = entry.setdefault("notable_papers", [])
     signature_key = paper_signature(paper["title"], paper["venue"])
@@ -692,6 +1033,7 @@ def discover(
     additions: List[Dict[str, Any]] = []
     updated_existing = 0
     skipped_due_to_score = 0
+    skipped_due_to_venue = 0
     skipped_due_to_match = 0
     paper_updates = 0
     matched_papers = 0
@@ -701,6 +1043,10 @@ def discover(
         score, tags, venue = work_score(work)
         if score < 2:
             skipped_due_to_score += 1
+            continue
+        venue_lower = venue.lower()
+        if not any(marker in venue_lower for marker in VENUE_MARKERS) and "arxiv" not in venue_lower:
+            skipped_due_to_venue += 1
             continue
 
         authorships = work.get("authorships") or []
@@ -828,6 +1174,7 @@ def discover(
         "paper_updates": paper_updates,
         "matched_papers": matched_papers,
         "total_works": len(works),
+        "skipped_due_to_venue": skipped_due_to_venue,
     }
 
 
@@ -837,8 +1184,12 @@ def summarize(report: Dict[str, Any]) -> str:
         f"New researchers added: {len(report['added'])}",
         f"Existing researchers updated: {report['updated_existing']}",
         f"Paper records appended: {report['paper_updates']}",
+        f"Industrial members added: {report['team_member_additions']}",
+        f"Industrial member records updated: {report['team_member_updates']}",
+        f"Industrial teams touched: {report['team_entries_touched']}",
         f"Matched papers: {report['matched_papers']}",
         f"Skipped by relevance score: {report['skipped_due_to_score']}",
+        f"Skipped by venue: {report['skipped_due_to_venue']}",
         f"Skipped by institution matching: {report['skipped_due_to_match']}",
     ]
     if report["added"]:
@@ -867,6 +1218,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Force read-only mode even if --apply is present",
     )
+    parser.add_argument(
+        "--member-lookback-days",
+        type=int,
+        default=DEFAULT_MEMBER_LOOKBACK_DAYS,
+        help="How many days back to scan for industrial team members (default: 180)",
+    )
     return parser.parse_args()
 
 
@@ -878,6 +1235,7 @@ def main() -> int:
 
     today = date.today().isoformat()
     start_date = (date.fromisoformat(today) - timedelta(days=args.lookback_days)).isoformat()
+    member_lookback_days = max(args.lookback_days, args.member_lookback_days)
 
     session = requests.Session()
     session.headers.update(
@@ -887,10 +1245,21 @@ def main() -> int:
     )
     works = collect_works(session, start_date=start_date, end_date=today)
     report = discover(data, institutions, qs_rankings, works, today)
+    if member_lookback_days == args.lookback_days:
+        member_works = works
+    else:
+        member_start_date = (date.fromisoformat(today) - timedelta(days=member_lookback_days)).isoformat()
+        member_works = collect_works(session, start_date=member_start_date, end_date=today)
+    member_report = refresh_industry_team_members(data, institutions, member_works, today)
+    report.update(member_report)
 
     print(summarize(report))
 
-    if args.apply and not args.dry_run and report["paper_updates"] > 0:
+    if args.apply and not args.dry_run and (
+        report["paper_updates"] > 0
+        or report["team_member_additions"] > 0
+        or report["team_member_updates"] > 0
+    ):
         save_researchers(data)
         print(f"Saved updates to {ROOT_DIR / 'data' / 'researchers.json'}")
     else:

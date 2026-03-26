@@ -71,17 +71,29 @@ def build_researcher_map_data(df):
         key = r.get('institution', '')
         if not key:
             continue
+        research_focus = r.get('research_focus') if isinstance(r.get('research_focus'), list) else []
+        tags = r.get('tags') if isinstance(r.get('tags'), list) else []
+        members = r.get('members') if isinstance(r.get('members'), list) else []
         result.setdefault(key, {'display_name': r.get('inst_display', key), 'researchers': []})
         result[key]['researchers'].append({
             'name':     r.get('name', ''),
             'position': r.get('position', ''),
             'type':     r.get('type', ''),
             'homepage': r.get('homepage', '') or '',
-            'research_focus': list(r.get('research_focus') or []),
-            'tags':           list(r.get('tags') or []),
+            'research_focus': research_focus,
+            'tags':           tags,
             'admission_chance': r.get('admission_chance', '') or '',
             'priority':       r.get('priority', '') or '',
             'taking_students': bool(r.get('currently_taking_students', False)),
+            'members': [
+                {
+                    'name': m.get('name', ''),
+                    'position': m.get('position', ''),
+                    'homepage': m.get('homepage', '') or '',
+                    'notes': m.get('notes', '') or '',
+                }
+                for m in members
+            ],
         })
     return result
 
@@ -560,6 +572,17 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
   background:rgba(99,102,241,.08);transition:background .15s,border-color .15s}
 .r-link:hover{background:rgba(99,102,241,.2);border-color:#6366f1;color:#a5b4fc}
 .r-no-link{font-size:12px;color:#475569}
+.team-members{margin-top:12px;padding-top:12px;border-top:1px solid #334155}
+.team-members summary{cursor:pointer;list-style:none;font-size:12px;font-weight:600;color:#cbd5e1}
+.team-members summary::-webkit-details-marker{display:none}
+.member-list{display:grid;gap:8px;margin-top:10px}
+.member-card{background:#0f172a;border:1px solid #334155;border-radius:9px;padding:10px 12px}
+.member-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px}
+.member-name{font-size:13px;font-weight:600;color:#f8fafc;line-height:1.25}
+.member-pos{font-size:11px;color:#94a3b8;margin-top:2px}
+.member-note{font-size:11px;color:#64748b;margin-top:6px;line-height:1.4}
+.member-link{margin-top:8px}
+.member-no-link{font-size:11px;color:#64748b}
 """
 
     # ---------- i18n ----------
@@ -703,6 +726,33 @@ function sortTable(th) {
     .forEach(r=>tbody.appendChild(r));
 }
 
+function renderHomepageButton(url) {
+  if (!url) return '<span class="r-no-link">No homepage listed</span>';
+  return `<a href="${url}" target="_blank" rel="noopener" class="r-link member-link">
+           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+             <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+             <polyline points="15 3 21 3 21 9"/>
+             <line x1="10" y1="14" x2="21" y2="3"/>
+           </svg>
+           Homepage
+         </a>`;
+}
+
+function renderMemberCard(member) {
+  const homepage = renderHomepageButton(member.homepage || '');
+  return `
+    <div class="member-card">
+      <div class="member-card-top">
+        <div>
+          <div class="member-name">${member.name || ''}</div>
+          <div class="member-pos">${member.position || ''}</div>
+        </div>
+      </div>
+      ${homepage}
+      ${member.notes ? `<div class="member-note">${member.notes}</div>` : ''}
+    </div>`;
+}
+
 /* ── Drawer ── */
 function openDrawer(instKey) {
   const data = RESEARCHER_MAP[instKey];
@@ -714,16 +764,15 @@ function openDrawer(instKey) {
     const chClass = 'r-chance-' + (r.admission_chance||'medium').replace(/\s/g,'-');
     const tagsHtml = (r.tags||[]).map(t=>`<span class="r-tag">${t}</span>`).join('');
     const openBadge = r.taking_students ? '<span class="r-open">Open</span>' : '';
-    const linkBtn = r.homepage
-      ? `<a href="${r.homepage}" target="_blank" rel="noopener" class="r-link">
-           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-             <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-             <polyline points="15 3 21 3 21 9"/>
-             <line x1="10" y1="14" x2="21" y2="3"/>
-           </svg>
-           Homepage
-         </a>`
-      : '<span class="r-no-link">No homepage listed</span>';
+    const linkBtn = renderHomepageButton(r.homepage || '');
+    const members = Array.isArray(r.members) ? r.members : [];
+    const membersHtml = members.length ? `
+      <details class="team-members">
+        <summary>Members (${members.length})</summary>
+        <div class="member-list">
+          ${members.map(renderMemberCard).join('')}
+        </div>
+      </details>` : '';
     body.innerHTML += `
       <div class="r-card">
         <div class="r-card-top">
@@ -733,6 +782,7 @@ function openDrawer(instKey) {
         <span class="r-chance ${chClass}">${r.admission_chance||''}</span>
         <div class="r-tags">${tagsHtml}</div>
         ${linkBtn}
+        ${membersHtml}
       </div>`;
   });
   document.getElementById('instDrawer').classList.add('open');

@@ -30,6 +30,7 @@
 | `google_scholar` | string | Scholar URL（可留空） |
 | `notable_papers` | array[{title, venue, url}] | 代表作 |
 | `research_group_url` | string | 课题组主页 |
+| `members` | array[{name, position, homepage, notes}] | 工业界团队的公开成员列表；通常由近期相关论文作者回填，并优先复用已有个人主页 |
 | `currently_taking_students` | bool | 是否招生 |
 | `admission_chance` | string | `"high"` / `"medium"` / `"low"` / `"internship-only"` |
 | `application_status` | string | `considering` / `shortlisted` / `contacted` / `awaiting-reply` / `applied` / `rejected` / `accepted` / `not-applicable` |
@@ -40,6 +41,8 @@
 | `last_updated` | string | `YYYY-MM-DD` |
 
 自动发现的学校如果还没有正式收录到 `data/institutions.json`，会优先写入 `institution_display_name` 和 `institution_qs_rank`，这样 dashboard 仍然可以正常显示学校名和 QS 标记。
+
+工业界团队如果没有稳定可用的团队主页，可以把 `homepage` / `research_group_url` 留空，同时在 `members` 里按论文作者回填成员；dashboard 会以可展开方式展示，若能找到个人主页就会直接链接。
 
 ## Controlled vocabulary for tags
 

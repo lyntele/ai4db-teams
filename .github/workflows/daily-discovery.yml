@@ -15,6 +15,8 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
+    env:
+      OPENALEX_MAILTO: github-actions[bot]@users.noreply.github.com
     steps:
       - name: Checkout
         uses: actions/checkout@v4

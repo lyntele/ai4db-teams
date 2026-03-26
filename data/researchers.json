@@ -1529,17 +1529,37 @@
         "LLM-DB",
         "data-agents"
       ],
-      "homepage": "https://ailab.bytedance.com/",
+      "homepage": "",
       "email": "",
       "google_scholar": "",
       "notable_papers": [],
-      "research_group_url": "https://ailab.bytedance.com/",
+      "research_group_url": "",
+      "members": [
+        {
+          "name": "Xinghua Qu",
+          "position": "Principal Research Scientist",
+          "homepage": "https://xinghua-qu.github.io/",
+          "notes": "ByteDance Seed，multimodal LLMs。"
+        },
+        {
+          "name": "Chao Peng",
+          "position": "Principal Research Scientist",
+          "homepage": "https://chao-peng.github.io/",
+          "notes": "ByteDance Software Engineering Lab，AI agents for software engineering。"
+        },
+        {
+          "name": "Mingxuan Wang",
+          "position": "Research Manager",
+          "homepage": "https://mingxuan.github.io/",
+          "notes": "ByteDance AI Lab，NLP and machine translation。"
+        }
+      ],
       "currently_taking_students": false,
       "admission_chance": "internship-only",
       "application_status": "considering",
       "priority": "high",
       "contact_history": [],
-      "notes": "字节跳动 AI Lab LLM+DB 团队。",
+      "notes": "字节跳动公开团队主页已失效，成员优先按近年相关论文的 ByteDance 作者回填。",
       "added_date": "2026-03-24",
       "last_updated": "2026-03-24"
     },
@@ -1594,19 +1614,39 @@
         "LLM-DB",
         "knowledge-graph"
       ],
-      "homepage": "https://ai.tencent.com/ailab/",
+      "homepage": "",
       "email": "",
       "google_scholar": "",
       "notable_papers": [],
-      "research_group_url": "https://ai.tencent.com/ailab/",
+      "research_group_url": "",
+      "members": [
+        {
+          "name": "Sangwoo Cho",
+          "position": "Senior Research Scientist",
+          "homepage": "https://sangwoo3.github.io/",
+          "notes": "Tencent AI Lab，summarization and long document understanding。"
+        },
+        {
+          "name": "Tianqing Fang",
+          "position": "Researcher",
+          "homepage": "https://tqfang.github.io/",
+          "notes": "Tencent AI Lab，agent foundation models。"
+        },
+        {
+          "name": "Zhirui Zhang",
+          "position": "Senior Researcher",
+          "homepage": "https://zrustc.github.io/",
+          "notes": "Tencent AI Lab，NLP and machine translation。"
+        }
+      ],
       "currently_taking_students": false,
       "admission_chance": "internship-only",
       "application_status": "considering",
       "priority": "medium",
       "contact_history": [],
-      "notes": "腾讯 AI Lab NLP 团队。",
+      "notes": "腾讯 AI Lab 旧 NLP 入口已失效，成员优先按近年相关论文的 Tencent AI Lab 作者回填。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-03-26"
     },
     {
       "id": "uid-049",

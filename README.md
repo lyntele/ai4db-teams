@@ -21,6 +21,7 @@ open dashboard.html
 - **结构化数据**：`data/researchers.json` 存储所有学者信息，支持筛选、排序、导出
 - **CLI 工具**：交互式添加/更新学者条目
 - **自动化发现**：可按天扫描 OpenAlex 中的 arXiv / 顶会论文，自动把 QS100 学校里的新团队或新论文补回仓库，不再局限于 `data/institutions.json` 里已经存在的学校
+- **工业界团队展开**：工业界条目会优先从近期相关论文作者里回填成员，团队主页失效时可以直接看成员个人主页
 
 ## 管理学者数据
 
@@ -39,9 +40,10 @@ cd scripts && python build_dashboard.py
 
 仓库已经可以接一个 GitHub Actions 定时流程：
 
-- 每天扫描近几天的 OpenAlex 论文结果，重点看 AI4DB 相关关键词
+- 每天扫描近几天的 OpenAlex 论文结果，重点看 AI4DB 相关关键词，并只保留数据库顶会或 arXiv
 - 只自动加入 QS 排名 `<= 100` 的大学；如果学校还没出现在 `data/institutions.json`，脚本会保留一个可读的 `institution_display_name`，并用生成的 key 写进 `data/researchers.json`
 - 对已存在的研究者，只补充缺失的 `notable_papers`
+- 工业界团队成员会从相关论文作者中自动聚合，已有个人主页会优先复用
 - 生成新的 `data/researchers.json`、`data/researchers.csv` 和 `dashboard.html` 后自动 push
 
 本地试跑：
