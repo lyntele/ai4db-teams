@@ -15,6 +15,7 @@ OUT_DIR   = os.path.join(os.path.dirname(__file__), '..')
 HTML_PATH = os.path.join(OUT_DIR, 'dashboard.html')
 INDEX_PATH = os.path.join(OUT_DIR, 'index.html')
 CSV_PATH  = os.path.join(OUT_DIR, 'data', 'researchers.csv')
+LITERATURE_REPORT_PATH = os.path.join(OUT_DIR, 'data', 'literature_reports', 'db_llm', 'latest.json')
 
 # ── Palette ───────────────────────────────────────────────────
 REGION_COLORS  = {
@@ -89,6 +90,13 @@ def build_df(data, institutions):
         row.pop('institution_lon', None)
         rows.append(row)
     return pd.DataFrame(rows)
+
+
+def load_literature_report():
+    if not os.path.exists(LITERATURE_REPORT_PATH):
+        return {}
+    with open(LITERATURE_REPORT_PATH, 'r', encoding='utf-8') as handle:
+        return _json.load(handle)
 
 
 def curated_df(df):
@@ -488,9 +496,94 @@ def build_student_cards(df):
     return f'<div class="student-grid">{"".join(cards)}</div>'
 
 
+def build_literature_cards(report):
+    summary = report.get('summary') or {}
+    papers = report.get('papers') or []
+    new_researchers = report.get('new_researchers') or []
+    run_date = report.get('run_date') or ''
+
+    summary_cards = [
+        ('literature-fetched', summary.get('openalex_works_fetched', 0)),
+        ('literature-matched', summary.get('watchlist_matches', 0)),
+        ('literature-added', summary.get('new_researchers_added', 0)),
+        ('literature-updated', summary.get('existing_researchers_updated', 0)),
+    ]
+    summary_html = ''.join(
+        f'''
+      <div class="literature-stat">
+        <span>{value}</span>
+        <small data-i18n="{label_key}"></small>
+      </div>'''
+        for label_key, value in summary_cards
+    )
+
+    if not report:
+        return '''
+      <div class="empty-state" data-i18n="literature-empty"></div>
+      <div class="literature-summary-grid"></div>'''
+
+    cards = []
+    for paper in papers[:18]:
+        tags = paper.get('tags') or []
+        authors = paper.get('authors') or []
+        author_preview = authors[:8]
+        author_chunks = []
+        for author in author_preview:
+            label = author.get('name') or ''
+            affiliation = author.get('affiliation') or ''
+            if affiliation:
+                label = f'{label} ({affiliation})'
+            author_chunks.append(label)
+        author_text = '; '.join(author_chunks)
+        remaining = max(len(authors) - len(author_preview), 0)
+        tags_html = ''
+        if tags:
+            tags_html = '<div class="chip-row">' + ''.join(
+                f'<span class="tag-chip">{tag}</span>' for tag in tags
+            ) + '</div>'
+        authors_html = f'<div class="literature-authors">{author_text}</div>' if author_text else ''
+        more_html = f'<div class="literature-more">+{remaining} <span data-i18n="literature-more-authors"></span></div>' if remaining else ''
+        link_html = f'<a href="{paper.get("url")}" target="_blank" rel="noopener" class="r-link">Paper</a>' if paper.get('url') else ''
+        cards.append(f'''
+      <article class="literature-card">
+        <div class="literature-card-top">
+          <div>
+            <div class="literature-title">{paper.get('title') or ''}</div>
+            <div class="literature-meta">{paper.get('publication_date') or ''} · {paper.get('venue') or ''}</div>
+          </div>
+          <span class="badge badge-type-faculty">score {paper.get('relevance_score') or 0}</span>
+        </div>
+        {tags_html}
+        {authors_html}
+        {more_html}
+        <div class="r-links">
+          {link_html}
+        </div>
+      </article>''')
+
+    new_researchers_html = ''
+    if new_researchers:
+        items = ''.join(
+            f'<li>{item.get("name") or ""} ({item.get("institution") or ""})</li>'
+            for item in new_researchers[:10]
+        )
+        new_researchers_html = f'''
+      <div class="literature-added-block">
+        <div class="card-title" data-i18n="literature-added-title"></div>
+        <ul class="literature-added-list">{items}</ul>
+      </div>'''
+
+    cards_html = ''.join(cards) if cards else '<div class="empty-state" data-i18n="literature-no-match"></div>'
+    return f'''
+      <div class="literature-summary-grid">{summary_html}</div>
+      <div class="section-note"><span data-i18n="literature-run-date"></span>: {run_date or "N/A"}</div>
+      {new_researchers_html}
+      <div class="literature-grid">{cards_html}</div>'''
+
+
 # ── Full HTML ─────────────────────────────────────────────────
 
-def assemble(df, figs, table_html, filters_html, student_html, offline=False):
+def assemble(df, figs, table_html, filters_html, student_html, literature_html, offline=False):
     plotly_js = '<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>'
     if offline:
         import plotly
@@ -619,6 +712,19 @@ a,button,select,input{font-family:inherit}
 .student-submeta{font-size:13px;color:var(--text2);margin-bottom:12px}
 .student-note{margin-top:12px;font-size:13px;line-height:1.6;color:var(--text2)}
 .empty-state{padding:24px;border-radius:24px;background:var(--card);border:1px dashed rgba(20,33,50,.16);color:var(--text2);text-align:center}
+.literature-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:16px}
+.literature-stat{padding:18px;border-radius:22px;background:var(--card);border:1px solid rgba(20,33,50,.08);box-shadow:var(--shadow-soft)}
+.literature-stat span{display:block;font-family:'Outfit',sans-serif;font-size:34px;font-weight:700;line-height:1;color:var(--accent)}
+.literature-stat small{display:block;margin-top:10px;font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+.literature-added-block{margin:0 0 16px;padding:18px;border-radius:22px;background:var(--card);border:1px solid rgba(20,33,50,.08);box-shadow:var(--shadow-soft)}
+.literature-added-list{margin:10px 0 0 18px;color:var(--text2);display:grid;gap:8px}
+.literature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.literature-card{padding:18px;border-radius:24px;background:var(--card);border:1px solid rgba(20,33,50,.08);box-shadow:var(--shadow-soft)}
+.literature-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.literature-title{font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;line-height:1.25;color:var(--text)}
+.literature-meta{margin-top:6px;font-size:12px;color:var(--text3)}
+.literature-authors{margin-top:14px;font-size:13px;line-height:1.7;color:var(--text2)}
+.literature-more{margin-top:10px;font-size:12px;color:var(--text3)}
 
 .badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.02em}
 .badge-high{background:#dcfce7;color:#166534}
@@ -697,13 +803,13 @@ a,button,select,input{font-family:inherit}
 @media (max-width: 1180px){
   .header{grid-template-columns:1fr}
   .header-left h1{max-width:none}
-  .hero-grid,.stats-row,.chart-grid,.student-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-grid,.stats-row,.chart-grid,.student-grid,.literature-summary-grid,.literature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width: 760px){
   .page-shell{width:min(100vw - 20px, 100%);margin:10px auto 28px}
   .header{padding:24px;border-radius:26px}
   .header-left h1{font-size:34px}
-  .hero-grid,.stats-row,.chart-grid,.drawer-stats,.student-grid{grid-template-columns:1fr}
+  .hero-grid,.stats-row,.chart-grid,.drawer-stats,.student-grid,.literature-summary-grid,.literature-grid{grid-template-columns:1fr}
   .tabs{padding:8px}
   .tab-btn{padding:10px 14px}
   .card{padding:18px;border-radius:22px}
@@ -733,6 +839,7 @@ const LANG = {
     'industry-note':    'Industry nodes',
     'priority-note':    'Priority stack',
     'tab-overview':     'Overview',
+    'tab-literature':   'Literature Watch',
     'tab-map':          'World Map',
     'tab-institutions': 'Institutions',
     'tab-tags':         'Research Tags',
@@ -750,6 +857,15 @@ const LANG = {
     'student-title':    'Student / Junior Profiles',
     'student-note':     'Only junior profiles with a personal homepage are listed here.',
     'student-empty':    'No student or junior profiles with a homepage have been curated yet.',
+    'literature-fetched':'OpenAlex Fetched',
+    'literature-matched':'Watchlist Matches',
+    'literature-added':'New Profiles',
+    'literature-updated':'Updated Profiles',
+    'literature-added-title':'Added This Run',
+    'literature-empty':'No literature report has been generated yet.',
+    'literature-no-match':'No DB+LLM papers matched the latest run.',
+    'literature-run-date':'Latest literature run',
+    'literature-more-authors':'more authors',
     'filter-region-all':   'All Regions',
     'filter-type-all':     'All Types',
     'filter-priority-all': 'All Priorities',
@@ -791,6 +907,7 @@ const LANG = {
     'industry-note':    '工业研究节点',
     'priority-note':    '重点关注名单',
     'tab-overview':     '概览',
+    'tab-literature':   '最新文献',
     'tab-map':          '世界地图',
     'tab-institutions': '机构分布',
     'tab-tags':         '研究方向',
@@ -808,6 +925,15 @@ const LANG = {
     'student-title':    '学生 / 初级研究者主页',
     'student-note':     '这里只展示带个人主页的学生或初级研究者条目。',
     'student-empty':    '目前还没有带个人主页的学生或初级研究者条目。',
+    'literature-fetched':'抓取文献',
+    'literature-matched':'命中文献',
+    'literature-added':'新增条目',
+    'literature-updated':'更新条目',
+    'literature-added-title':'本轮新增',
+    'literature-empty':'还没有生成过文献日报。',
+    'literature-no-match':'最近一次运行没有命中 DB+LLM 文献。',
+    'literature-run-date':'最近一次文献扫描',
+    'literature-more-authors':'位作者',
     'filter-region-all':   '全部地区',
     'filter-type-all':     '全部类型',
     'filter-priority-all': '全部优先级',
@@ -872,8 +998,8 @@ function toggleLang() { applyLang(currentLang==='en' ? 'zh' : 'en'); }
 function showTab(idx) {
   document.querySelectorAll('.tab-content').forEach((el,i) => el.classList.toggle('active', i===idx));
   document.querySelectorAll('.tab-btn').forEach((el,i) => el.classList.toggle('active', i===idx));
-  if (idx < 5) window.dispatchEvent(new Event('resize'));
-  if (idx === 1) setTimeout(attachMapClick, 200);
+  if (idx < 6) window.dispatchEvent(new Event('resize'));
+  if (idx === 2) setTimeout(attachMapClick, 200);
 }
 
 /* Table filter */
@@ -1010,7 +1136,7 @@ function closeDrawer() {
 document.addEventListener('keydown', e => { if (e.key==='Escape') closeDrawer(); });
 
 function attachMapClick() {
-  const mapDiv = document.querySelector('#tab-1 .js-plotly-plot');
+  const mapDiv = document.querySelector('#tab-2 .js-plotly-plot');
   if (!mapDiv || mapDiv._bound) return;
   mapDiv._bound = true;
   mapDiv.on('plotly_click', function(evt) {
@@ -1078,12 +1204,13 @@ setTimeout(attachMapClick, 600);
 
 <div class="tabs">
   <button class="tab-btn active" onclick="showTab(0)" data-i18n="tab-overview">Overview</button>
-  <button class="tab-btn"        onclick="showTab(1)" data-i18n="tab-map">World Map</button>
-  <button class="tab-btn"        onclick="showTab(2)" data-i18n="tab-institutions">Institutions</button>
-  <button class="tab-btn"        onclick="showTab(3)" data-i18n="tab-tags">Research Tags</button>
-  <button class="tab-btn"        onclick="showTab(4)" data-i18n="tab-kanban">Application Status</button>
-  <button class="tab-btn"        onclick="showTab(5)" data-i18n="tab-directory">Directory</button>
-  <button class="tab-btn"        onclick="showTab(6)" data-i18n="tab-students">Student Profiles</button>
+  <button class="tab-btn"        onclick="showTab(1)" data-i18n="tab-literature">Literature Watch</button>
+  <button class="tab-btn"        onclick="showTab(2)" data-i18n="tab-map">World Map</button>
+  <button class="tab-btn"        onclick="showTab(3)" data-i18n="tab-institutions">Institutions</button>
+  <button class="tab-btn"        onclick="showTab(4)" data-i18n="tab-tags">Research Tags</button>
+  <button class="tab-btn"        onclick="showTab(5)" data-i18n="tab-kanban">Application Status</button>
+  <button class="tab-btn"        onclick="showTab(6)" data-i18n="tab-directory">Directory</button>
+  <button class="tab-btn"        onclick="showTab(7)" data-i18n="tab-students">Student Profiles</button>
 </div>
 
 <div class="tab-content active" id="tab-0">
@@ -1100,6 +1227,13 @@ setTimeout(attachMapClick, 600);
 </div>
 
 <div class="tab-content" id="tab-1">
+  <div class="card">
+    <div class="card-title" data-i18n="tab-literature">Literature Watch</div>
+    {literature_html}
+  </div>
+</div>
+
+<div class="tab-content" id="tab-2">
   <div class="card card-map">
     <div class="card-title" data-i18n="chart-map">Geographic Distribution</div>
     <p class="card-hint" data-i18n="map-hint">Click an institution bubble to inspect profiles and team members.</p>
@@ -1107,34 +1241,34 @@ setTimeout(attachMapClick, 600);
   </div>
 </div>
 
-<div class="tab-content" id="tab-2">
+<div class="tab-content" id="tab-3">
   <div class="card">
     <div class="card-title" data-i18n="chart-inst">Researchers per Institution</div>
     {inst_div}
   </div>
 </div>
 
-<div class="tab-content" id="tab-3">
+<div class="tab-content" id="tab-4">
   <div class="card">
     <div class="card-title" data-i18n="chart-tags">Research Tags</div>
     {tags_div}
   </div>
 </div>
 
-<div class="tab-content" id="tab-4">
+<div class="tab-content" id="tab-5">
   <div class="card">
     <div class="card-title" data-i18n="chart-kanban">Application Pipeline</div>
     {kanban_div}
   </div>
 </div>
 
-<div class="tab-content" id="tab-5">
+<div class="tab-content" id="tab-6">
   <div class="section-note" data-i18n="directory-note"></div>
   {filters_html}
   <div class="table-wrap">{table_html}</div>
 </div>
 
-<div class="tab-content" id="tab-6">
+<div class="tab-content" id="tab-7">
   <div class="card">
     <div class="card-title" data-i18n="student-title">Student / Junior Profiles</div>
     <p class="card-hint" data-i18n="student-note"></p>
@@ -1170,6 +1304,7 @@ def main():
 
     data = load_researchers()
     institutions = load_institutions()
+    literature_report = load_literature_report()
     full_df = build_df(data, institutions)
     df = curated_df(full_df)
     students = student_df(full_df)
@@ -1190,7 +1325,8 @@ def main():
     table_html   = build_table(df)
     filters_html = build_filters(df)
     student_html = build_student_cards(students)
-    html = assemble(df, figs, table_html, filters_html, student_html, offline=args.offline)
+    literature_html = build_literature_cards(literature_report)
+    html = assemble(df, figs, table_html, filters_html, student_html, literature_html, offline=args.offline)
 
     with open(HTML_PATH, 'w', encoding='utf-8') as f:
         f.write(html)

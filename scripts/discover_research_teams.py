@@ -839,6 +839,84 @@ def report_author_labels(work: Dict[str, Any]) -> List[str]:
     return labels
 
 
+def report_author_records(work: Dict[str, Any]) -> List[Dict[str, str]]:
+    records: List[Dict[str, str]] = []
+    for authorship in work.get("authorships") or []:
+        author = authorship.get("author") or {}
+        name = (author.get("display_name") or "").strip()
+        if not name:
+            continue
+        records.append(
+            {
+                "name": name,
+                "affiliation": authorship_affiliation_label(authorship),
+                "is_corresponding": bool(authorship.get("is_corresponding")),
+            }
+        )
+    return records
+
+
+def build_report_payload(
+    *,
+    watchlist: Dict[str, Any],
+    raw_stats: Dict[str, int],
+    filtered_works: List[Dict[str, Any]],
+    report: Dict[str, Any],
+    start_date: str,
+    end_date: str,
+) -> Dict[str, Any]:
+    sorted_works = sorted(
+        filtered_works,
+        key=lambda work: (
+            publication_date_label(work),
+            (work.get("display_name") or "").casefold(),
+        ),
+        reverse=True,
+    )
+    return {
+        "watchlist_id": watchlist["id"],
+        "watchlist_name": watchlist["name"],
+        "description": watchlist.get("description", ""),
+        "search_terms": watchlist.get("search_terms", []),
+        "run_date": end_date,
+        "scan_window": {"start_date": start_date, "end_date": end_date},
+        "summary": {
+            "openalex_works_fetched": raw_stats["fetched_works"],
+            "watchlist_matches": raw_stats["matched_watchlist_works"],
+            "new_researchers_added": len(report["added"]),
+            "existing_researchers_updated": report["updated_existing"],
+            "industrial_members_added": report["team_member_additions"],
+            "industrial_members_updated": report["team_member_updates"],
+            "papers_mapped_to_site_entries": report["matched_papers"],
+            "skipped_due_to_score": raw_stats["skipped_due_to_score"],
+            "skipped_due_to_venue": raw_stats["skipped_due_to_venue"],
+            "skipped_due_to_focus": raw_stats["skipped_due_to_focus"],
+            "skipped_due_to_institution": report["skipped_due_to_match"],
+            "skipped_due_to_role": report["skipped_due_to_role"],
+        },
+        "new_researchers": [
+            {
+                "name": entry["name"],
+                "institution": entry.get("institution_display_name") or entry.get("institution", ""),
+                "tags": entry.get("tags", []),
+            }
+            for entry in report["added"]
+        ],
+        "papers": [
+            {
+                "title": work.get("display_name") or "",
+                "publication_date": publication_date_label(work),
+                "venue": venue_label(work),
+                "tags": work_score(work)[1],
+                "relevance_score": work_score(work)[0],
+                "url": work_url(work),
+                "authors": report_author_records(work),
+            }
+            for work in sorted_works
+        ],
+    }
+
+
 def build_report_markdown(
     *,
     watchlist: Dict[str, Any],
@@ -872,6 +950,7 @@ def build_report_markdown(
     lines.append(f"- Skipped by venue: {raw_stats['skipped_due_to_venue']}")
     lines.append(f"- Skipped by DB+LLM focus filter: {raw_stats['skipped_due_to_focus']}")
     lines.append(f"- Skipped by institution matching: {report['skipped_due_to_match']}")
+    lines.append(f"- Skipped by author-role guardrail: {report['skipped_due_to_role']}")
 
     if report["added"]:
         lines.extend(["", "## Newly Added Researchers", ""])
@@ -943,10 +1022,31 @@ def write_watchlist_report(
     latest_path.write_text(content, encoding="utf-8")
     written.append(latest_path)
 
+    payload = build_report_payload(
+        watchlist=watchlist,
+        raw_stats=raw_stats,
+        filtered_works=filtered_works,
+        report=report,
+        start_date=start_date,
+        end_date=end_date,
+    )
+    latest_json_path = base_dir / "latest.json"
+    latest_json_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    written.append(latest_json_path)
+
     if archive:
         archive_path = base_dir / f"{end_date}.md"
         archive_path.write_text(content, encoding="utf-8")
         written.append(archive_path)
+        archive_json_path = base_dir / f"{end_date}.json"
+        archive_json_path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        written.append(archive_json_path)
 
     return written
 
@@ -964,12 +1064,13 @@ def build_existing_index(researchers: List[Dict[str, Any]]) -> Dict[str, Dict[st
     return index
 
 
-def choose_author(
+def matched_author_candidates(
     authorships: List[Dict[str, Any]],
     authorship_matches: List[set[str]],
     matched_key: str,
-) -> Optional[Dict[str, Any]]:
+) -> List[Dict[str, Any]]:
     candidates: List[Dict[str, Any]] = []
+    total_authors = len(authorships)
     for idx, authorship in enumerate(authorships):
         if matched_key not in authorship_matches[idx]:
             continue
@@ -978,23 +1079,36 @@ def choose_author(
         author_name = author.get("display_name") or ""
         if not author_name:
             continue
+
+        is_corresponding = bool(authorship.get("is_corresponding"))
+        is_single_author = total_authors == 1
+        is_last_author = total_authors > 1 and idx == total_authors - 1
+        author_position = (authorship.get("author_position") or "").lower()
+        has_senior_signal = is_corresponding or is_last_author or is_single_author
+
         candidates.append(
             {
                 "author_name": author_name,
                 "author_index": idx,
-                "is_corresponding": bool(authorship.get("is_corresponding")),
+                "author_position": author_position,
+                "is_corresponding": is_corresponding,
+                "is_last_author": is_last_author,
+                "is_single_author": is_single_author,
+                "has_senior_signal": has_senior_signal,
             }
         )
-    if not candidates:
-        return None
+
     candidates.sort(
         key=lambda item: (
+            1 if item["has_senior_signal"] else 0,
             1 if item["is_corresponding"] else 0,
+            1 if item["is_last_author"] else 0,
+            1 if item["is_single_author"] else 0,
             item["author_index"],
         ),
         reverse=True,
     )
-    return candidates[0]
+    return candidates
 
 
 def is_industry_team_entry(entry: Dict[str, Any]) -> bool:
@@ -1503,6 +1617,7 @@ def discover(
     skipped_due_to_score = 0
     skipped_due_to_venue = 0
     skipped_due_to_match = 0
+    skipped_due_to_role = 0
     paper_updates = 0
     matched_papers = 0
     generated_keys: set[str] = set()
@@ -1600,21 +1715,30 @@ def discover(
         # Try to update existing entries first. If a researcher is already in the
         # dataset, we only append missing papers.
         for inst_key in sorted(matched_insts):
-            chosen = choose_author(authorships, authorship_matches, inst_key)
-            if not chosen:
+            candidates = matched_author_candidates(authorships, authorship_matches, inst_key)
+            if not candidates:
                 continue
 
-            chosen_name = chosen["author_name"]
-            existing = existing_index.get(normalize_name(chosen_name))
-            if existing:
+            matched_existing = False
+            for candidate in candidates:
+                existing = existing_index.get(normalize_name(candidate["author_name"]))
+                if not existing:
+                    continue
+                matched_existing = True
                 if append_notable_paper(existing, paper, today):
                     paper_updates += 1
                     updated_existing += 1
+            if matched_existing:
+                continue
+
+            chosen = next((candidate for candidate in candidates if candidate["has_senior_signal"]), None)
+            if not chosen:
+                skipped_due_to_role += 1
                 continue
 
             inst_record = matched_insts[inst_key]
             candidate = build_new_entry(
-                researcher_name=chosen_name,
+                researcher_name=chosen["author_name"],
                 inst_key=inst_key,
                 inst_meta=inst_record["meta"],
                 inst_display_name=inst_record["display_name"],
@@ -1643,6 +1767,7 @@ def discover(
         "matched_papers": matched_papers,
         "total_works": len(works),
         "skipped_due_to_venue": skipped_due_to_venue,
+        "skipped_due_to_role": skipped_due_to_role,
     }
 
 
@@ -1662,6 +1787,7 @@ def summarize(report: Dict[str, Any]) -> str:
         f"Skipped by venue: {report['skipped_due_to_venue']}",
         f"Skipped by focus filter: {report['skipped_due_to_focus']}",
         f"Skipped by institution matching: {report['skipped_due_to_match']}",
+        f"Skipped by author-role guardrail: {report['skipped_due_to_role']}",
     ]
     if report["added"]:
         lines.append("Added researchers:")
