@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-03-26"
+    "last_updated": "2026-03-27"
   },
   "researchers": [
     {
@@ -2067,7 +2067,7 @@
       "contact_history": [],
       "notes": "Microsoft Research Redmond NL2SQL 方向。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-26",
+      "last_updated": "2026-03-27",
       "members": [
         {
           "name": "Qian Liu",
@@ -2110,6 +2110,30 @@
           "position": "Researcher",
           "homepage": "https://xinyeah.github.io/about/",
           "notes": "MAGIC 作者，Microsoft Redmond 归属通过论文首页署名核实。"
+        },
+        {
+          "name": "Xiaoying Wang",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"Evaluating the Practical Effectiveness of LLM-Driven Index Tuning with Microsoft Database Tuning Advisor\" (ArXiv.org)。"
+        },
+        {
+          "name": "Surajit Chaudhuri",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"Evaluating the Practical Effectiveness of LLM-Driven Index Tuning with Microsoft Database Tuning Advisor\" (ArXiv.org)。"
+        },
+        {
+          "name": "Vivek Narasayya",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"Evaluating the Practical Effectiveness of LLM-Driven Index Tuning with Microsoft Database Tuning Advisor\" (ArXiv.org)。"
+        },
+        {
+          "name": "Wentao Wu",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"Evaluating the Practical Effectiveness of LLM-Driven Index Tuning with Microsoft Database Tuning Advisor\" (ArXiv.org)。"
         }
       ]
     },
