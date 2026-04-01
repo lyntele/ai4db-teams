@@ -1749,7 +1749,7 @@ def discover(
             )
             candidate["id"] = next_id(data["researchers"] + additions)
             additions.append(candidate)
-            existing_index[normalize_name(chosen_name)] = candidate
+            existing_index[normalize_name(chosen["author_name"])] = candidate
             paper_updates += 1
 
     if additions:
