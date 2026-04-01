@@ -1,0 +1,509 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-04-01",
+  "scan_window": {
+    "start_date": "2026-03-25",
+    "end_date": "2026-04-01"
+  },
+  "summary": {
+    "openalex_works_fetched": 882,
+    "watchlist_matches": 11,
+    "new_researchers_added": 1,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 1,
+    "skipped_due_to_score": 770,
+    "skipped_due_to_venue": 35,
+    "skipped_due_to_focus": 66,
+    "skipped_due_to_institution": 10,
+    "skipped_due_to_role": 0
+  },
+  "new_researchers": [
+    {
+      "name": "Zhuoran Li",
+      "institution": "Shanghai Jiao Tong University",
+      "tags": [
+        "RAG"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "ZEBRA-Prop: A Zero-Shot Embedding-Based Rapid and Accessible Regression Model for Materials Properties",
+      "publication_date": "2026-03-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2603.26060",
+      "authors": [
+        {
+          "name": "Ryoma Yamamoto",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Akira Takahashi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kei Terayama",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yu Kumagai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fumiyasu Oba",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Not All Entities are Created Equal: A Dynamic Anonymization Framework for Privacy-Preserving Retrieval-Augmented Generation",
+      "publication_date": "2026-03-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2603.26074",
+      "authors": [
+        {
+          "name": "Xinyuan Zhu",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Zekun Fei",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Enye Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruiqi He",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zheli Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation",
+      "publication_date": "2026-03-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2603.26512",
+      "authors": [
+        {
+          "name": "J.J. Barkley",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Rumi Loghmani",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Amir Barati Farimani",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Supercharging Federated Intelligence Retrieval",
+      "publication_date": "2026-03-26",
+      "venue": "ArXiv.org",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "http://arxiv.org/abs/2603.25374",
+      "authors": [
+        {
+          "name": "Dimitris Stripelis",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Patrick Foley",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mohammad Naseri",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "William Lindskog-Münzing",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chong Shen Ng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Daniel J. Beutel",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nicholas D. Lane",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retrieval-Augmented Generation Systems",
+      "publication_date": "2026-03-26",
+      "venue": "ArXiv.org",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "http://arxiv.org/abs/2603.25164",
+      "authors": [
+        {
+          "name": "Haozhen Wang",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Haoyue Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jionghao Zhu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhichao Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yongxin Guo",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaoying Tang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retrieval-Augmented Generation Systems",
+      "publication_date": "2026-03-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2603.25164",
+      "authors": [
+        {
+          "name": "Haozhen Wang",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Haoyue Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jionghao Zhu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhichao Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yongxin Guo",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaoying Tang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GraphER: An Efficient Graph-Based Enrichment and Reranking Method for Retrieval-Augmented Generation",
+      "publication_date": "2026-03-26",
+      "venue": "ArXiv.org",
+      "tags": [
+        "knowledge-graph",
+        "RAG"
+      ],
+      "relevance_score": 4,
+      "url": "http://arxiv.org/abs/2603.24925",
+      "authors": [
+        {
+          "name": "Ruizhong Miao",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Yuying Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rongguang Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chenyang Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tao Sheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sujith Ravi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dan Roth",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "VILLA: Versatile Information Retrieval From Scientific Literature Using Large LAnguage Models",
+      "publication_date": "2026-03-25",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "http://arxiv.org/abs/2603.23849",
+      "authors": [
+        {
+          "name": "Blessy Antony",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Amartya Dutta",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sneha Aggarwal",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Vasu Gatne",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ozan Gökdemir",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Samantha Grimes",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Adam Lauring",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Brian R. Wasik",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anuj Karpatne",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "T. M. Murali",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SOMA: Strategic Orchestration and Memory-Augmented System for Vision-Language-Action Model Robustness via In-Context Adaptation",
+      "publication_date": "2026-03-25",
+      "venue": "ArXiv.org",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "http://arxiv.org/abs/2603.24060",
+      "authors": [
+        {
+          "name": "Zhuoran Li",
+          "affiliation": "Institute of Natural Science",
+          "is_corresponding": true
+        },
+        {
+          "name": "Zhiyang Li",
+          "affiliation": "Institute of Natural Science",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kaijun Zhou",
+          "affiliation": "Institute of Natural Science",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jinyu Gu",
+          "affiliation": "Institute of Natural Science",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Schema on the Inside: A Two-Phase Fine-Tuning Method for High-Efficiency Text-to-SQL at Scale",
+      "publication_date": "2026-03-25",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2603.24023",
+      "authors": [
+        {
+          "name": "Chinmay Soni",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Shivam Chourasia",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gaurav Kumar",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hitesh Kapoor",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Boosting LLMs for Mutation Generation",
+      "publication_date": "2026-03-25",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "http://arxiv.org/abs/2603.24560",
+      "authors": [
+        {
+          "name": "Bo Wang",
+          "affiliation": "",
+          "is_corresponding": true
+        },
+        {
+          "name": "Ming Deng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mingda Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chengran Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Youfang Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mark Harman",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mike Papadakis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jie M. Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
