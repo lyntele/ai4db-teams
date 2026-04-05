@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-04-01"
+    "last_updated": "2026-04-05"
   },
   "researchers": [
     {
@@ -30103,6 +30103,11 @@
           "title": "A Plug-and-Play Natural Language Rewriter for Natural Language to SQL",
           "venue": "arXiv",
           "url": "https://arxiv.org/abs/2412.17068"
+        },
+        {
+          "title": "DeepEye: A Steerable Self-driving Data Agent System",
+          "venue": "arXiv (Cornell University)",
+          "url": "http://arxiv.org/abs/2603.28889"
         }
       ],
       "research_group_url": "",
@@ -30113,7 +30118,7 @@
       "contact_history": [],
       "notes": "REWRITER 通讯作者。机构通过论文首页署名与 @hkust-gz.edu.cn 邮箱域名核实；主页来自 HKUST(GZ) 官方 faculty profile。",
       "added_date": "2026-03-26",
-      "last_updated": "2026-03-26"
+      "last_updated": "2026-04-05"
     },
     {
       "id": "uid-823",
