@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-04-05"
+    "last_updated": "2026-04-06"
   },
   "researchers": [
     {
@@ -30281,6 +30281,80 @@
       "notes": "Auto-discovered from QS #47 school Shanghai Jiao Tong University via ArXiv.org paper \"SOMA: Strategic Orchestration and Memory-Augmented System for Vision-Language-Action Model Robustness via In-Context Adaptation\". Please verify homepage and student availability manually.",
       "added_date": "2026-04-01",
       "last_updated": "2026-04-01"
+    },
+    {
+      "id": "uid-829",
+      "name": "Damien F. G. Minenna",
+      "type": "faculty",
+      "institution": "QS_UniversiteParisSaclay",
+      "institution_display_name": "Université Paris-Saclay",
+      "institution_qs_rank": 70,
+      "department": "",
+      "country": "France",
+      "region": "Europe",
+      "position": "",
+      "research_focus": [
+        "LLM-DB"
+      ],
+      "tags": [
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Data-Driven Optimisation of Superconducting Magnets at CEA Paris-Saclay",
+          "venue": "ArXiv.org",
+          "url": "http://arxiv.org/abs/2603.29740"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #70 school Université Paris-Saclay via ArXiv.org paper \"Data-Driven Optimisation of Superconducting Magnets at CEA Paris-Saclay\". Please verify homepage and student availability manually.",
+      "added_date": "2026-04-06",
+      "last_updated": "2026-04-06"
+    },
+    {
+      "id": "uid-830",
+      "name": "Hajar Zgour",
+      "type": "faculty",
+      "institution": "QS_UniversiteParisSaclay_27",
+      "institution_display_name": "Université Paris-Saclay",
+      "institution_qs_rank": 70,
+      "department": "",
+      "country": "France",
+      "region": "Europe",
+      "position": "",
+      "research_focus": [
+        "LLM-DB"
+      ],
+      "tags": [
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Data-Driven Optimisation of Superconducting Magnets at CEA Paris-Saclay",
+          "venue": "ArXiv.org",
+          "url": "http://arxiv.org/abs/2603.29740"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #70 school Université Paris-Saclay via ArXiv.org paper \"Data-Driven Optimisation of Superconducting Magnets at CEA Paris-Saclay\". Please verify homepage and student availability manually.",
+      "added_date": "2026-04-06",
+      "last_updated": "2026-04-06"
     }
   ]
 }
