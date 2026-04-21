@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-04-14"
+    "last_updated": "2026-04-21"
   },
   "researchers": [
     {
@@ -30125,6 +30125,11 @@
           "title": "AnnoRetrieve: Efficient Structured Retrieval for Unstructured Document Analysis",
           "venue": "ArXiv.org",
           "url": "http://arxiv.org/abs/2604.02690"
+        },
+        {
+          "title": "DPC: Training-Free Text-to-SQL Candidate Selection via Dual-Paradigm Consistency",
+          "venue": "ArXiv.org",
+          "url": "https://arxiv.org/abs/2604.15163"
         }
       ],
       "research_group_url": "",
@@ -30135,7 +30140,7 @@
       "contact_history": [],
       "notes": "REWRITER 通讯作者。机构通过论文首页署名与 @hkust-gz.edu.cn 邮箱域名核实；主页来自 HKUST(GZ) 官方 faculty profile。",
       "added_date": "2026-03-26",
-      "last_updated": "2026-04-10"
+      "last_updated": "2026-04-21"
     },
     {
       "id": "uid-823",
@@ -30520,6 +30525,84 @@
       "notes": "Auto-discovered from QS #45 school University of Michigan-Ann Arbor via arXiv (Cornell University) paper \"TSUBASA: Improving Long-Horizon Personalization via Evolving Memory and Self-Learning with Context Distillation\". Please verify homepage and student availability manually.",
       "added_date": "2026-04-14",
       "last_updated": "2026-04-14"
+    },
+    {
+      "id": "uid-835",
+      "name": "Seokwon Lee",
+      "type": "faculty",
+      "institution": "QS_YonseiUniversity",
+      "institution_display_name": "Yonsei University",
+      "institution_qs_rank": 50,
+      "department": "",
+      "country": "Republic of Korea",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "query-optimization",
+        "LLM-DB"
+      ],
+      "tags": [
+        "query-optimization",
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "RELOAD: A Robust and Efficient Learned Query Optimizer for Database Systems",
+          "venue": "ArXiv.org",
+          "url": "https://arxiv.org/abs/2604.14725"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #50 school Yonsei University via ArXiv.org paper \"RELOAD: A Robust and Efficient Learned Query Optimizer for Database Systems\". Please verify homepage and student availability manually.",
+      "added_date": "2026-04-21",
+      "last_updated": "2026-04-21"
+    },
+    {
+      "id": "uid-836",
+      "name": "Kwanghyun Park",
+      "type": "faculty",
+      "institution": "QS_YonseiUniversity_6",
+      "institution_display_name": "Yonsei University",
+      "institution_qs_rank": 50,
+      "department": "",
+      "country": "Republic of Korea",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "query-optimization",
+        "LLM-DB"
+      ],
+      "tags": [
+        "query-optimization",
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "RELOAD: A Robust and Efficient Learned Query Optimizer for Database Systems",
+          "venue": "ArXiv.org",
+          "url": "https://arxiv.org/abs/2604.14725"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #50 school Yonsei University via ArXiv.org paper \"RELOAD: A Robust and Efficient Learned Query Optimizer for Database Systems\". Please verify homepage and student availability manually.",
+      "added_date": "2026-04-21",
+      "last_updated": "2026-04-21"
     }
   ]
 }
