@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-05-02"
+    "last_updated": "2026-05-04"
   },
   "researchers": [
     {
@@ -552,6 +552,11 @@
           "title": "LASER: A Data-Centric Method for Low-Cost and Efficient SQL Rewriting based on SQL-GRPO",
           "venue": "arXiv (Cornell University)",
           "url": "http://arxiv.org/abs/2604.06804"
+        },
+        {
+          "title": "PiLLar: Matching for Pivot Table Schema via LLM-guided Monte-Carlo Tree Search",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2604.26356"
         }
       ],
       "research_group_url": "",
@@ -562,7 +567,7 @@
       "contact_history": [],
       "notes": "浙大 DB 组，时空数据与查询处理。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-04-14"
+      "last_updated": "2026-05-04"
     },
     {
       "id": "uid-017",
