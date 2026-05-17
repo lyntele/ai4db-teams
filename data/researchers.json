@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-05-16"
+    "last_updated": "2026-05-17"
   },
   "researchers": [
     {
@@ -31036,6 +31036,43 @@
       "notes": "Auto-discovered from QS #32 school University of Hong Kong via ArXiv.org paper \"PrimeKG-CL: A Continual Graph Learning Benchmark on Evolving Biomedical Knowledge Graphs\". Please verify homepage and student availability manually.",
       "added_date": "2026-05-16",
       "last_updated": "2026-05-16"
+    },
+    {
+      "id": "uid-847",
+      "name": "Julien Rossi",
+      "type": "faculty",
+      "institution": "QS_UniversityAmsterdam",
+      "institution_display_name": "The University of Amsterdam",
+      "institution_qs_rank": 53,
+      "department": "",
+      "country": "Netherlands",
+      "region": "Europe",
+      "position": "",
+      "research_focus": [
+        "RAG"
+      ],
+      "tags": [
+        "RAG"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "LegalCheck: Retrieval- and Context-Augmented Generation for Drafting Municipal Legal Advice Letters",
+          "venue": "ArXiv.org",
+          "url": "https://arxiv.org/abs/2605.12012"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #53 school The University of Amsterdam via ArXiv.org paper \"LegalCheck: Retrieval- and Context-Augmented Generation for Drafting Municipal Legal Advice Letters\". Please verify homepage and student availability manually.",
+      "added_date": "2026-05-17",
+      "last_updated": "2026-05-17"
     }
   ]
 }
