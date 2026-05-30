@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-05-28"
+    "last_updated": "2026-05-30"
   },
   "researchers": [
     {
@@ -31374,6 +31374,80 @@
       "notes": "Auto-discovered from QS #42 school The University of Queensland via arXiv (Cornell University) paper \"APT-Agent: Automated Penetration Testing using Large Language Models\". Please verify homepage and student availability manually.",
       "added_date": "2026-05-28",
       "last_updated": "2026-05-28"
+    },
+    {
+      "id": "uid-856",
+      "name": "Dan Dongseong Kim",
+      "type": "faculty",
+      "institution": "QS_UniversityQueensland_2",
+      "institution_display_name": "The University of Queensland",
+      "institution_qs_rank": 42,
+      "department": "",
+      "country": "Australia",
+      "region": "Oceania",
+      "position": "",
+      "research_focus": [
+        "LLM-DB"
+      ],
+      "tags": [
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "APT-Agent: Automated Penetration Testing using Large Language Models",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2605.24949"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #42 school The University of Queensland via arXiv (Cornell University) paper \"APT-Agent: Automated Penetration Testing using Large Language Models\". Please verify homepage and student availability manually.",
+      "added_date": "2026-05-30",
+      "last_updated": "2026-05-30"
+    },
+    {
+      "id": "uid-857",
+      "name": "Daren Wang",
+      "type": "faculty",
+      "institution": "HKU",
+      "institution_display_name": "University of Hong Kong",
+      "institution_qs_rank": 32,
+      "department": "",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "LLM-DB"
+      ],
+      "tags": [
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "PolyGnosis 2.0: Enhancing LLM Reasoning via Agentic Harness Engineering for Polymarket and OSINT Insight Extraction",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2605.25958"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #32 school University of Hong Kong via arXiv (Cornell University) paper \"PolyGnosis 2.0: Enhancing LLM Reasoning via Agentic Harness Engineering for Polymarket and OSINT Insight Extraction\". Please verify homepage and student availability manually.",
+      "added_date": "2026-05-30",
+      "last_updated": "2026-05-30"
     }
   ]
 }
