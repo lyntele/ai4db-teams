@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-06-26"
+    "last_updated": "2026-06-28"
   },
   "researchers": [
     {
@@ -279,6 +279,11 @@
           "title": "BIRD: A Big Bench for Large-Scale Database Grounded Text-to-SQL Evaluation",
           "venue": "NeurIPS 2023",
           "url": ""
+        },
+        {
+          "title": "Are We Ready For An Agent-Native Memory System?",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2606.24775"
         }
       ],
       "research_group_url": "http://dbgroup.cs.tsinghua.edu.cn",
@@ -289,7 +294,7 @@
       "contact_history": [],
       "notes": "清华 DB 组负责人，BIRD benchmark 作者，国内 NL2SQL 领域最核心学者。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-06-28"
     },
     {
       "id": "uid-009",
