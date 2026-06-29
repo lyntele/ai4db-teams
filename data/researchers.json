@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-06-28"
+    "last_updated": "2026-06-29"
   },
   "researchers": [
     {
@@ -31757,6 +31757,43 @@
       "notes": "Auto-discovered from QS #54 school The Hong Kong Polytechnic University via The VLDB Journal paper \"On Efficient Top-k Empirical Variance Computation: A Once-For-All Progressive Sampling Approach\". Please verify homepage and student availability manually.",
       "added_date": "2026-06-26",
       "last_updated": "2026-06-26"
+    },
+    {
+      "id": "uid-866",
+      "name": "Rajkumar Buyya",
+      "type": "faculty",
+      "institution": "UMelb",
+      "institution_display_name": "University of Melbourne",
+      "institution_qs_rank": 19,
+      "department": "",
+      "country": "Australia",
+      "region": "Oceania",
+      "position": "",
+      "research_focus": [
+        "RAG"
+      ],
+      "tags": [
+        "RAG"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Security and Privacy in Retrieval-Augmented Generation: Architectures, Threats, Defenses, and Future Directions for Building Trustworthy Systems",
+          "venue": "ArXiv.org",
+          "url": "https://arxiv.org/abs/2606.25533"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #19 school University of Melbourne via ArXiv.org paper \"Security and Privacy in Retrieval-Augmented Generation: Architectures, Threats, Defenses, and Future Directions for Building Trustworthy Systems\". Please verify homepage and student availability manually.",
+      "added_date": "2026-06-29",
+      "last_updated": "2026-06-29"
     }
   ]
 }
