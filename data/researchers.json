@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-07-23"
+    "last_updated": "2026-07-26"
   },
   "researchers": [
     {
@@ -32057,6 +32057,76 @@
       "notes": "Auto-discovered from QS #27 school McGill University via arXiv (Cornell University) paper \"FinSAgent: Corpus-Aligned Multi-Agent RAG Framework for Evidence-Grounded SEC Filing Question Answering\". Please verify homepage and student availability manually.",
       "added_date": "2026-07-23",
       "last_updated": "2026-07-23"
+    },
+    {
+      "id": "uid-874",
+      "name": "Flora D. Salim",
+      "type": "faculty",
+      "institution": "UNSW",
+      "institution_display_name": "UNSW Sydney",
+      "institution_qs_rank": 20,
+      "department": "",
+      "country": "Australia",
+      "region": "Oceania",
+      "position": "",
+      "research_focus": [
+        "database systems"
+      ],
+      "tags": [],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Scope3Trace: Evidence-Based Identification and Extraction of Scope 3 GHG Emissions from Sustainability Reports",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2607.17122"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #20 school UNSW Sydney via arXiv (Cornell University) paper \"Scope3Trace: Evidence-Based Identification and Extraction of Scope 3 GHG Emissions from Sustainability Reports\". Please verify homepage and student availability manually.",
+      "added_date": "2026-07-26",
+      "last_updated": "2026-07-26"
+    },
+    {
+      "id": "uid-875",
+      "name": "Alberto León-García",
+      "type": "faculty",
+      "institution": "QS_UniversityToronto_2",
+      "institution_display_name": "University of Toronto",
+      "institution_qs_rank": 29,
+      "department": "",
+      "country": "Canada",
+      "region": "North America",
+      "position": "",
+      "research_focus": [
+        "database systems"
+      ],
+      "tags": [],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "ARBITER: Guarded Agentic Control for SLO-Oriented Kubernetes Remediation",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2607.19182"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #29 school University of Toronto via arXiv (Cornell University) paper \"ARBITER: Guarded Agentic Control for SLO-Oriented Kubernetes Remediation\". Please verify homepage and student availability manually.",
+      "added_date": "2026-07-26",
+      "last_updated": "2026-07-26"
     }
   ]
 }
