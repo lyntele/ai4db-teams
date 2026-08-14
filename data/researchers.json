@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-08-12"
+    "last_updated": "2026-08-14"
   },
   "researchers": [
     {
@@ -30237,6 +30237,11 @@
           "title": "DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2608.03451"
+        },
+        {
+          "title": "MIRA: Evidence-Verified Repair Memory for Text-to-SQL Correction",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2608.06950"
         }
       ],
       "research_group_url": "",
@@ -30247,7 +30252,7 @@
       "contact_history": [],
       "notes": "REWRITER 通讯作者。机构通过论文首页署名与 @hkust-gz.edu.cn 邮箱域名核实；主页来自 HKUST(GZ) 官方 faculty profile。",
       "added_date": "2026-03-26",
-      "last_updated": "2026-08-09"
+      "last_updated": "2026-08-14"
     },
     {
       "id": "uid-823",
