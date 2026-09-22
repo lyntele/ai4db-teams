@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-09-18"
+    "last_updated": "2026-09-22"
   },
   "researchers": [
     {
@@ -578,6 +578,11 @@
           "title": "PiLLar: Matching for Pivot Table Schema via LLM-guided Monte-Carlo Tree Search",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2604.26356"
+        },
+        {
+          "title": "InceptionRAG: Stealthy Poisoning Attack Against Retrieval-Augmented Generation",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2609.16818"
         }
       ],
       "research_group_url": "",
@@ -588,7 +593,7 @@
       "contact_history": [],
       "notes": "浙大 DB 组，时空数据与查询处理。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-05-04"
+      "last_updated": "2026-09-22"
     },
     {
       "id": "uid-017",
