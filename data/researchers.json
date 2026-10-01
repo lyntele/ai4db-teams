@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-09-23"
+    "last_updated": "2026-10-01"
   },
   "researchers": [
     {
@@ -2163,7 +2163,7 @@
       "contact_history": [],
       "notes": "Microsoft Research Redmond NL2SQL 方向。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-09-23",
+      "last_updated": "2026-10-01",
       "members": [
         {
           "name": "Qian Liu",
@@ -2236,6 +2236,12 @@
           "position": "Researcher",
           "homepage": "",
           "notes": "由 1 篇相关论文作者回填，示例论文：\"Evaluating the Practical Effectiveness of LLM-Driven Index Tuning on Microsoft SQL Server\" (Proceedings of the VLDB Endowment)。"
+        },
+        {
+          "name": "Yeye He",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence\" (arXiv (Cornell University))。"
         }
       ]
     },
