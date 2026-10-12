@@ -1,28 +1,24 @@
 # DB + LLM Daily Literature Watch
 
-- Run date: 2026-10-11
-- Scan window: 2026-10-04 to 2026-10-11
+- Run date: 2026-10-12
+- Scan window: 2026-10-05 to 2026-10-12
 - Watchlist id: `db_llm`
 - Scope: Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.
 
 ## Summary
 
-- OpenAlex works fetched: 1134
-- Works matching this watchlist: 17
-- New researchers added to site: 1
+- OpenAlex works fetched: 1142
+- Works matching this watchlist: 14
+- New researchers added to site: 0
 - Existing researchers updated: 0
 - Industrial team members added: 0
 - Industrial team members updated: 0
-- Papers that mapped to site entries: 1
-- Skipped by relevance score: 1066
-- Skipped by venue: 22
-- Skipped by DB+LLM focus filter: 29
-- Skipped by institution matching: 16
+- Papers that mapped to site entries: 0
+- Skipped by relevance score: 1065
+- Skipped by venue: 18
+- Skipped by DB+LLM focus filter: 45
+- Skipped by institution matching: 14
 - Skipped by author-role guardrail: 0
-
-## Newly Added Researchers
-
-- Tianlin Li (Nanyang Technological University, Singapore (NTU Singapore))
 
 ## Matched Papers
 
@@ -31,7 +27,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL
 - Relevance score: 3
-- URL: https://doi.org/10.48550/arxiv.2610.11464
+- URL: https://arxiv.org/abs/2610.11464
 - Authors: Xing Zhang; Guanghui Wang; Yanwei Cui; Ziyuan Li; Wei Qiu; Bing Zhu; Peiyang He
 
 ### 2. When Interfaces Speak: Data-Aware Generative UI Harness for Active Interaction
@@ -39,7 +35,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: LLM-DB
 - Relevance score: 3
-- URL: https://doi.org/10.48550/arxiv.2610.11123
+- URL: https://arxiv.org/abs/2610.11123
 - Authors: Xiaolong Li; Xiaohan Xu; Jinyang Li; Xinnuo Xu; Ge Qu; Nan Huo; Jack Williams; Reynold Cheng
 
 ### 3. HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments
@@ -47,7 +43,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL
 - Relevance score: 3
-- URL: https://doi.org/10.48550/arxiv.2610.12274
+- URL: https://arxiv.org/abs/2610.12274
 - Authors: Haolin Yang; Jipeng Zhang; Jian Xie; Shuaishuai Gong; Sirui Han; Yike Guo
 
 ### 4. A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization
@@ -55,7 +51,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: LLM-DB
 - Relevance score: 3
-- URL: https://doi.org/10.48550/arxiv.2610.12183
+- URL: https://arxiv.org/abs/2610.12183
 - Authors: Ming Chen; Rong-Xi Tan; Ke Xue; Yujie Zhou; Taiye Lu; Zhi-Xuan Gao; Peng Xie; Zijun Shen; Chen Lu; Haopu Shang; Chao Qian
 
 ### 5. The Case for Synthesized Data Compression
@@ -71,7 +67,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: RAG, LLM-DB
 - Relevance score: 4
-- URL: https://doi.org/10.48550/arxiv.2610.10858
+- URL: https://arxiv.org/abs/2610.10858
 - Authors: Awani Khodkumbhe; Yunfei Feng; Raj Rangarajan; K. Wang; Kamal Sahota
 
 ### 7. No Trace, No Claim: Two Contracts for Database Agents
@@ -95,7 +91,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL
 - Relevance score: 3
-- URL: https://doi.org/10.48550/arxiv.2610.10740
+- URL: https://arxiv.org/abs/2610.10740
 - Authors: Nafiseh Ghoroghchian; Luis Scoccola; Tina Sedaghat; Omid Vaheb; Hannah Chen; Dino D'Agostino; Keyvan Golestan
 
 ### 10. ARCS: Towards Precise Text-to-SQL via Structured Disambiguation
@@ -130,34 +126,10 @@
 - URL: https://arxiv.org/abs/2610.05826
 - Authors: 许楚宏 (Sony Corporation (United States)); Yi Daniel Lu (Google (United States)); Gangzhen Qian (Google (United States)); Kainan Zhou (Google (United States)); Zhaoyi Li (Mountain View Clinical Research); Hang Xiao (Fortinet (United States))
 
-### 14. Why, Where, How: Taxonomy-guided Error Grounding for Code Repair in NL2SQL
-- Publication date: 2026-10-04
-- Venue: arXiv (Cornell University)
-- Tags: NL2SQL
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.05060
-- Authors: Suchan Lee (KAIST 1 {leesc0324 ,); Woomin Song (KAIST 1 {leesc0324 ,); Hwanjo Yu (KAIST 1 {leesc0324 ,); Sangwoo Mo (KAIST 1 {leesc0324 ,)
-
-### 15. SALUS: Automated Auditing of NL-to-SQL Benchmarks through Weak Supervision of Multi-Agent Output
-- Publication date: 2026-10-04
+### 14. Agentic schema-guided extraction of materials process knowledge from scientific literature
+- Publication date: 2026-10-05
 - Venue: arXiv (Cornell University)
 - Tags: none
 - Relevance score: 2
-- URL: https://arxiv.org/abs/2610.05540
-- Authors: Shiyuan Zhou; Ashwin Gerard Colaco; Sainyam Galhotra; Sharad Mehrotra
-
-### 16. IREA: Intermediate Representation-based Embedding Alignment for Normative RAG
-- Publication date: 2026-10-04
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.04974
-- Authors: Mirae Han (Konkuk University); Sihyeong Yeom (NAVER Cloud (South Korea)); Harksoo Kim (Konkuk University)
-
-### 17. CARET: Training-Free Test-Time Scaling for Repository-Level Code Completion
-- Publication date: 2026-10-04
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.04837
-- Authors: Jiajie Wang (University of Arizona); Yutong Zhao (California State University, Long Beach); Kebin Peng (East Carolina University); Sen He (University of Arizona); Qing Guo (Nankai University); Tianlin Li (Nanyang Technological University)
+- URL: https://arxiv.org/abs/2610.06322
+- Authors: Sameer Sadruddin (Technische Informationsbibliothek (TIB)); Jennifer D’Souza (Technische Informationsbibliothek (TIB))

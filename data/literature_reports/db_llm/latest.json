@@ -16,34 +16,26 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-11",
+  "run_date": "2026-10-12",
   "scan_window": {
-    "start_date": "2026-10-04",
-    "end_date": "2026-10-11"
+    "start_date": "2026-10-05",
+    "end_date": "2026-10-12"
   },
   "summary": {
-    "openalex_works_fetched": 1134,
-    "watchlist_matches": 17,
-    "new_researchers_added": 1,
+    "openalex_works_fetched": 1142,
+    "watchlist_matches": 14,
+    "new_researchers_added": 0,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 1,
-    "skipped_due_to_score": 1066,
-    "skipped_due_to_venue": 22,
-    "skipped_due_to_focus": 29,
-    "skipped_due_to_institution": 16,
+    "papers_mapped_to_site_entries": 0,
+    "skipped_due_to_score": 1065,
+    "skipped_due_to_venue": 18,
+    "skipped_due_to_focus": 45,
+    "skipped_due_to_institution": 14,
     "skipped_due_to_role": 0
   },
-  "new_researchers": [
-    {
-      "name": "Tianlin Li",
-      "institution": "Nanyang Technological University, Singapore (NTU Singapore)",
-      "tags": [
-        "RAG"
-      ]
-    }
-  ],
+  "new_researchers": [],
   "papers": [
     {
       "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
@@ -53,7 +45,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.11464",
+      "url": "https://arxiv.org/abs/2610.11464",
       "authors": [
         {
           "name": "Xing Zhang",
@@ -100,7 +92,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.11123",
+      "url": "https://arxiv.org/abs/2610.11123",
       "authors": [
         {
           "name": "Xiaolong Li",
@@ -152,7 +144,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.12274",
+      "url": "https://arxiv.org/abs/2610.12274",
       "authors": [
         {
           "name": "Haolin Yang",
@@ -194,7 +186,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.12183",
+      "url": "https://arxiv.org/abs/2610.12183",
       "authors": [
         {
           "name": "Ming Chen",
@@ -299,7 +291,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2610.10858",
+      "url": "https://arxiv.org/abs/2610.10858",
       "authors": [
         {
           "name": "Awani Khodkumbhe",
@@ -405,7 +397,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.10740",
+      "url": "https://arxiv.org/abs/2610.10740",
       "authors": [
         {
           "name": "Nafiseh Ghoroghchian",
@@ -589,132 +581,21 @@
       ]
     },
     {
-      "title": "Why, Where, How: Taxonomy-guided Error Grounding for Code Repair in NL2SQL",
-      "publication_date": "2026-10-04",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "NL2SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.05060",
-      "authors": [
-        {
-          "name": "Suchan Lee",
-          "affiliation": "KAIST 1 {leesc0324 ,",
-          "is_corresponding": false
-        },
-        {
-          "name": "Woomin Song",
-          "affiliation": "KAIST 1 {leesc0324 ,",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hwanjo Yu",
-          "affiliation": "KAIST 1 {leesc0324 ,",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sangwoo Mo",
-          "affiliation": "KAIST 1 {leesc0324 ,",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "SALUS: Automated Auditing of NL-to-SQL Benchmarks through Weak Supervision of Multi-Agent Output",
-      "publication_date": "2026-10-04",
+      "title": "Agentic schema-guided extraction of materials process knowledge from scientific literature",
+      "publication_date": "2026-10-05",
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.05540",
+      "url": "https://arxiv.org/abs/2610.06322",
       "authors": [
         {
-          "name": "Shiyuan Zhou",
-          "affiliation": "",
+          "name": "Sameer Sadruddin",
+          "affiliation": "Technische Informationsbibliothek (TIB)",
           "is_corresponding": false
         },
         {
-          "name": "Ashwin Gerard Colaco",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sainyam Galhotra",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sharad Mehrotra",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "IREA: Intermediate Representation-based Embedding Alignment for Normative RAG",
-      "publication_date": "2026-10-04",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.04974",
-      "authors": [
-        {
-          "name": "Mirae Han",
-          "affiliation": "Konkuk University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sihyeong Yeom",
-          "affiliation": "NAVER Cloud (South Korea)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Harksoo Kim",
-          "affiliation": "Konkuk University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "CARET: Training-Free Test-Time Scaling for Repository-Level Code Completion",
-      "publication_date": "2026-10-04",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.04837",
-      "authors": [
-        {
-          "name": "Jiajie Wang",
-          "affiliation": "University of Arizona",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yutong Zhao",
-          "affiliation": "California State University, Long Beach",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kebin Peng",
-          "affiliation": "East Carolina University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sen He",
-          "affiliation": "University of Arizona",
-          "is_corresponding": false
-        },
-        {
-          "name": "Qing Guo",
-          "affiliation": "Nankai University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tianlin Li",
-          "affiliation": "Nanyang Technological University",
+          "name": "Jennifer D’Souza",
+          "affiliation": "Technische Informationsbibliothek (TIB)",
           "is_corresponding": false
         }
       ]
