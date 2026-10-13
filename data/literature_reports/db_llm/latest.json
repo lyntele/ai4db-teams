@@ -16,26 +16,40 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-13",
   "scan_window": {
-    "start_date": "2026-10-05",
-    "end_date": "2026-10-12"
+    "start_date": "2026-10-06",
+    "end_date": "2026-10-13"
   },
   "summary": {
-    "openalex_works_fetched": 1142,
+    "openalex_works_fetched": 1134,
     "watchlist_matches": 14,
-    "new_researchers_added": 0,
+    "new_researchers_added": 2,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 0,
-    "skipped_due_to_score": 1065,
+    "papers_mapped_to_site_entries": 2,
+    "skipped_due_to_score": 1053,
     "skipped_due_to_venue": 18,
-    "skipped_due_to_focus": 45,
-    "skipped_due_to_institution": 14,
-    "skipped_due_to_role": 0
+    "skipped_due_to_focus": 49,
+    "skipped_due_to_institution": 12,
+    "skipped_due_to_role": 7
   },
-  "new_researchers": [],
+  "new_researchers": [
+    {
+      "name": "Djellel Eddine Difallah",
+      "institution": "New York University (NYU)",
+      "tags": [
+        "table-QA",
+        "LLM-DB"
+      ]
+    },
+    {
+      "name": "Shazia Wasim Sadiq",
+      "institution": "The University of Queensland",
+      "tags": []
+    }
+  ],
   "papers": [
     {
       "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
@@ -469,6 +483,36 @@
       ]
     },
     {
+      "title": "Structured but Silent: Probing Capability Requirements in LLM Hidden States",
+      "publication_date": "2026-10-06",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2610.08018",
+      "authors": [
+        {
+          "name": "Kyojun Choo",
+          "affiliation": "Soongsil University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Minsoo Song",
+          "affiliation": "Soongsil University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yunju Kang",
+          "affiliation": "Soongsil University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chanjun Park",
+          "affiliation": "Soongsil University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "DBRAG: Multi-Table Retrieval-Augmented Generation for Complex Database Queries",
       "publication_date": "2026-10-06",
       "venue": "arXiv (Cornell University)",
@@ -486,12 +530,52 @@
         },
         {
           "name": "Ryoji Kubo",
-          "affiliation": "",
+          "affiliation": "New York University Abu Dhabi",
           "is_corresponding": false
         },
         {
           "name": "Djellel Eddine Difallah",
-          "affiliation": "",
+          "affiliation": "New York University Abu Dhabi",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Cost-Effective Numerical QA over Semi-Structured Table: Structuring, Resolution, Planning",
+      "publication_date": "2026-10-06",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2610.07749",
+      "authors": [
+        {
+          "name": "Feng Luo",
+          "affiliation": "The University of Queensland, RMIT University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hui Luo",
+          "affiliation": "University of Wollongong",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhifeng Bao",
+          "affiliation": "The University of Queensland",
+          "is_corresponding": false
+        },
+        {
+          "name": "J. Shane Culpepper",
+          "affiliation": "The University of Queensland",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaoli Wang",
+          "affiliation": "Xiamen University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shazia Wasim Sadiq",
+          "affiliation": "The University of Queensland",
           "is_corresponding": false
         }
       ]
@@ -522,7 +606,7 @@
           "is_corresponding": false
         },
         {
-          "name": "Yoed Kenett",
+          "name": "Yoed Nissan Kenett",
           "affiliation": "",
           "is_corresponding": false
         },
@@ -532,70 +616,8 @@
           "is_corresponding": false
         },
         {
-          "name": "Thomas Hills",
+          "name": "Thomas T. Hills",
           "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Bounded Provisional Visibility: Controlling Poisoning Exposure in Continuously Ingested RAG Vector Stores",
-      "publication_date": "2026-10-05",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.05826",
-      "authors": [
-        {
-          "name": "许楚宏",
-          "affiliation": "Sony Corporation (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yi Daniel Lu",
-          "affiliation": "Google (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Gangzhen Qian",
-          "affiliation": "Google (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kainan Zhou",
-          "affiliation": "Google (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhaoyi Li",
-          "affiliation": "Mountain View Clinical Research",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hang Xiao",
-          "affiliation": "Fortinet (United States)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Agentic schema-guided extraction of materials process knowledge from scientific literature",
-      "publication_date": "2026-10-05",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.06322",
-      "authors": [
-        {
-          "name": "Sameer Sadruddin",
-          "affiliation": "Technische Informationsbibliothek (TIB)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jennifer D’Souza",
-          "affiliation": "Technische Informationsbibliothek (TIB)",
           "is_corresponding": false
         }
       ]

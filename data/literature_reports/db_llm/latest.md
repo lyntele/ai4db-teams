@@ -1,24 +1,29 @@
 # DB + LLM Daily Literature Watch
 
-- Run date: 2026-10-12
-- Scan window: 2026-10-05 to 2026-10-12
+- Run date: 2026-10-13
+- Scan window: 2026-10-06 to 2026-10-13
 - Watchlist id: `db_llm`
 - Scope: Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.
 
 ## Summary
 
-- OpenAlex works fetched: 1142
+- OpenAlex works fetched: 1134
 - Works matching this watchlist: 14
-- New researchers added to site: 0
+- New researchers added to site: 2
 - Existing researchers updated: 0
 - Industrial team members added: 0
 - Industrial team members updated: 0
-- Papers that mapped to site entries: 0
-- Skipped by relevance score: 1065
+- Papers that mapped to site entries: 2
+- Skipped by relevance score: 1053
 - Skipped by venue: 18
-- Skipped by DB+LLM focus filter: 45
-- Skipped by institution matching: 14
-- Skipped by author-role guardrail: 0
+- Skipped by DB+LLM focus filter: 49
+- Skipped by institution matching: 12
+- Skipped by author-role guardrail: 7
+
+## Newly Added Researchers
+
+- Djellel Eddine Difallah (New York University (NYU))
+- Shazia Wasim Sadiq (The University of Queensland)
 
 ## Matched Papers
 
@@ -102,34 +107,34 @@
 - URL: https://arxiv.org/abs/2610.09396
 - Authors: Yihao Hu; Yanlin Feng; Naoki Otani; Nikita Bhutani
 
-### 11. DBRAG: Multi-Table Retrieval-Augmented Generation for Complex Database Queries
+### 11. Structured but Silent: Probing Capability Requirements in LLM Hidden States
+- Publication date: 2026-10-06
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://arxiv.org/abs/2610.08018
+- Authors: Kyojun Choo (Soongsil University); Minsoo Song (Soongsil University); Yunju Kang (Soongsil University); Chanjun Park (Soongsil University)
+
+### 12. DBRAG: Multi-Table Retrieval-Augmented Generation for Complex Database Queries
 - Publication date: 2026-10-06
 - Venue: arXiv (Cornell University)
 - Tags: table-QA, LLM-DB
 - Relevance score: 4
 - URL: https://arxiv.org/abs/2610.07622
-- Authors: Prince Larbi Ampofo; Ryoji Kubo; Djellel Eddine Difallah
+- Authors: Prince Larbi Ampofo; Ryoji Kubo (New York University Abu Dhabi); Djellel Eddine Difallah (New York University Abu Dhabi)
 
-### 12. CARTE: An LLM-based automated tool for semantic clustering and switching identification in associative verbal fluency
+### 13. Cost-Effective Numerical QA over Semi-Structured Table: Structuring, Resolution, Planning
+- Publication date: 2026-10-06
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://arxiv.org/abs/2610.07749
+- Authors: Feng Luo (The University of Queensland, RMIT University); Hui Luo (University of Wollongong); Zhifeng Bao (The University of Queensland); J. Shane Culpepper (The University of Queensland); Xiaoli Wang (Xiamen University); Shazia Wasim Sadiq (The University of Queensland)
+
+### 14. CARTE: An LLM-based automated tool for semantic clustering and switching identification in associative verbal fluency
 - Publication date: 2026-10-06
 - Venue: PsyArXiv (OSF Preprints)
 - Tags: LLM-DB
 - Relevance score: 3
 - URL: https://osf.io/96j2b
-- Authors: Victor Altmayer; Mathias Benedek; Emmanuelle Volle; Yoed Kenett; Lucie Vigreux; Thomas Hills
-
-### 13. Bounded Provisional Visibility: Controlling Poisoning Exposure in Continuously Ingested RAG Vector Stores
-- Publication date: 2026-10-05
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.05826
-- Authors: 许楚宏 (Sony Corporation (United States)); Yi Daniel Lu (Google (United States)); Gangzhen Qian (Google (United States)); Kainan Zhou (Google (United States)); Zhaoyi Li (Mountain View Clinical Research); Hang Xiao (Fortinet (United States))
-
-### 14. Agentic schema-guided extraction of materials process knowledge from scientific literature
-- Publication date: 2026-10-05
-- Venue: arXiv (Cornell University)
-- Tags: none
-- Relevance score: 2
-- URL: https://arxiv.org/abs/2610.06322
-- Authors: Sameer Sadruddin (Technische Informationsbibliothek (TIB)); Jennifer D’Souza (Technische Informationsbibliothek (TIB))
+- Authors: Victor Altmayer; Mathias Benedek; Emmanuelle Volle; Yoed Nissan Kenett; Lucie Vigreux; Thomas T. Hills
