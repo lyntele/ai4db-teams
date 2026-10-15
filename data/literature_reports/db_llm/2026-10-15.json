@@ -1,0 +1,619 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-10-15",
+  "scan_window": {
+    "start_date": "2026-10-08",
+    "end_date": "2026-10-15"
+  },
+  "summary": {
+    "openalex_works_fetched": 1049,
+    "watchlist_matches": 15,
+    "new_researchers_added": 2,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 1,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 2,
+    "skipped_due_to_score": 950,
+    "skipped_due_to_venue": 19,
+    "skipped_due_to_focus": 65,
+    "skipped_due_to_institution": 13,
+    "skipped_due_to_role": 1
+  },
+  "new_researchers": [
+    {
+      "name": "Yike Guo",
+      "institution": "HKUST",
+      "tags": [
+        "text-to-SQL"
+      ]
+    },
+    {
+      "name": "Pramod Bhatotia",
+      "institution": "TU Munich",
+      "tags": [
+        "LLM-DB"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching",
+      "publication_date": "2026-10-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.12971",
+      "authors": [
+        {
+          "name": "Jun Lu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yancan Mao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhenya Ma",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sheng Yue",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yongjian Fu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ju Ren",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases",
+      "publication_date": "2026-10-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2610.13573",
+      "authors": [
+        {
+          "name": "Chen Jason Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qi Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Humanize Olympiad Agents: A Multi-Session Workflow for Olympiad Problem Solving with Solve, Review, Wiki, Verify",
+      "publication_date": "2026-10-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.13632",
+      "authors": [
+        {
+          "name": "Zhengyang Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jing Xiong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongzhou Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Juihui Chung",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zijian Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Song Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sihao Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ligeng Zhu",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Hindsight Structured Advice Distillation: Steering Executor Agents with Advisors Trained on Their Failures and Task Characteristics",
+      "publication_date": "2026-10-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.13000",
+      "authors": [
+        {
+          "name": "O. Ozan Koyluoglu",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.11464",
+      "authors": [
+        {
+          "name": "Xing Zhang",
+          "affiliation": "AWS Forward Deployed Engineering",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guanghui Wang",
+          "affiliation": "AWS Forward Deployed Engineering",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yanwei Cui",
+          "affiliation": "AWS Forward Deployed Engineering",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ziyuan Li",
+          "affiliation": "HSBC Holdings",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wei Qiu",
+          "affiliation": "HSBC Holdings",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bing Zhu",
+          "affiliation": "HSBC Holdings",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peiyang He",
+          "affiliation": "AWS Forward Deployed Engineering",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "When Interfaces Speak: Data-Aware Generative UI Harness for Active Interaction",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.11123",
+      "authors": [
+        {
+          "name": "Xiaolong Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaohan Xu",
+          "affiliation": "Microsoft (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jinyang Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinnuo Xu",
+          "affiliation": "Microsoft (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ge Qu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nan Huo",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jack Williams",
+          "affiliation": "Microsoft (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Reynold Cheng",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "The Geometry of Hierarchical Navigation: Accuracy and Query Cost for Point Process Input",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.12312",
+      "authors": [
+        {
+          "name": "Shankar Bhamidi",
+          "affiliation": "University of North Carolina at Chapel Hill",
+          "is_corresponding": false
+        },
+        {
+          "name": "Souvik Dhara",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lars Schroeder",
+          "affiliation": "University of Twente",
+          "is_corresponding": false
+        },
+        {
+          "name": "Clara Stegehuis",
+          "affiliation": "University of Twente",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Should Your Database Systems Use Hardware-Assisted Memory Safety Extensions in Production?",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.11525",
+      "authors": [
+        {
+          "name": "Ilya Meignan--Masson",
+          "affiliation": "Technical University of Munich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Martin Fink",
+          "affiliation": "Technical University of Munich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Masanori Misono",
+          "affiliation": "Technical University of Munich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dimitrios Stavrakakis",
+          "affiliation": "Technical University of Munich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pramod Bhatotia",
+          "affiliation": "Technical University of Munich",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "ORCAGen: Orchestrating Context-Aware Malware Deception with RAG-Guided Generative AI",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.12415",
+      "authors": [
+        {
+          "name": "Shamima Ahmed",
+          "affiliation": "Towson University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Md Sajidul Islam Sajid",
+          "affiliation": "Towson University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Teryl Taylor",
+          "affiliation": "IBM (United States), Alliance for Safe Kids",
+          "is_corresponding": false
+        },
+        {
+          "name": "Frederico Araujo",
+          "affiliation": "IBM (United States), Alliance for Safe Kids",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tariqul Islam",
+          "affiliation": "University of Maryland, Baltimore County",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MAP4CS: A Multi-dimensional Data Pruning Framework for Efficient Code Retriever Fine-tuning",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.11727",
+      "authors": [
+        {
+          "name": "Yuxuan Chen",
+          "affiliation": "GUANGSHENG OU ,",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mingwei Liu",
+          "affiliation": "Sun Yat-sen University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guangsheng Ou",
+          "affiliation": "Sun Yat-sen University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zekai Zhang",
+          "affiliation": "ZIKE LI ,",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zike Li",
+          "affiliation": "Sun Yat-sen University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yanlin Wang",
+          "affiliation": "Sun Yat-sen University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pelin Zheng",
+          "affiliation": "ZIKE LI ,",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Leakage-Resistant Evaluation of AI-Generated Database Specifications in Specification-Driven Migration",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.12778",
+      "authors": [
+        {
+          "name": "Oleg Grynets",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ivan V. Fedorchuk",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Vasyl Lyashkevych",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.12274",
+      "authors": [
+        {
+          "name": "Haolin Yang",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jipeng Zhang",
+          "affiliation": "Microsoft (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jian Xie",
+          "affiliation": "Tsinghua University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuaishuai Gong",
+          "affiliation": "University of Macau",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sirui Han",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yike Guo",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent System",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.11899",
+      "authors": [
+        {
+          "name": "Irene Weber",
+          "affiliation": "Kempten University of Applied Sciences",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "A Security Meta-Model for Retrieval-Augmented Generation Systems",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.11893",
+      "authors": [
+        {
+          "name": "Steve Nouyep",
+          "affiliation": "Centre National de la Recherche Scientifique, University of Clermont Auvergne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sébastien Salva",
+          "affiliation": "Centre National de la Recherche Scientifique, University of Clermont Auvergne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Maxime Puys",
+          "affiliation": "Centre National de la Recherche Scientifique, University of Clermont Auvergne",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
+      "publication_date": "2026-10-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.12183",
+      "authors": [
+        {
+          "name": "Ming Chen",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rong-Xi Tan",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ke Xue",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yujie Zhou",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Taiye Lu",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhi-Xuan Gao",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peng Xie",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zijun Shen",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chen Lu",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haopu Shang",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chao Qian",
+          "affiliation": "Nanjing University",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
