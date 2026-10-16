@@ -1,57 +1,162 @@
 # DB + LLM Daily Literature Watch
 
-- Run date: 2026-10-15
-- Scan window: 2026-10-08 to 2026-10-15
+- Run date: 2026-10-16
+- Scan window: 2026-10-09 to 2026-10-16
 - Watchlist id: `db_llm`
 - Scope: Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.
 
 ## Summary
 
-- OpenAlex works fetched: 1049
-- Works matching this watchlist: 15
-- New researchers added to site: 2
+- OpenAlex works fetched: 990
+- Works matching this watchlist: 19
+- New researchers added to site: 3
 - Existing researchers updated: 0
-- Industrial team members added: 1
+- Industrial team members added: 0
 - Industrial team members updated: 0
-- Papers that mapped to site entries: 2
-- Skipped by relevance score: 950
-- Skipped by venue: 19
-- Skipped by DB+LLM focus filter: 65
-- Skipped by institution matching: 13
-- Skipped by author-role guardrail: 1
+- Papers that mapped to site entries: 4
+- Skipped by relevance score: 891
+- Skipped by venue: 14
+- Skipped by DB+LLM focus filter: 66
+- Skipped by institution matching: 15
+- Skipped by author-role guardrail: 8
 
 ## Newly Added Researchers
 
-- Yike Guo (HKUST)
-- Pramod Bhatotia (TU Munich)
+- Qi Chen (The Hong Kong Polytechnic University)
+- Ju Ren (Tsinghua University)
+- Zhizheng Wu (University of Hong Kong)
 
 ## Matched Papers
 
-### 1. PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching
+### 1. RT-J: Large-Scale Pretraining of Relational Transformers for Context-Efficient Predictions
+- Publication date: 2026-10-13
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.17867
+- Authors: Rishabh Ranjan; Vignesh Kothapalli; Harshvardhan Agarwal; Charilaos I. Kanatsoulis; Roshan Upendra; Tom Palczewski; Carlos Guestrin; Jure Leskovec
+
+### 2. Fan Out or Relay? Ownership-Aware Routing for LLM Agents Querying Siloed Tables
+- Publication date: 2026-10-13
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://doi.org/10.48550/arxiv.2610.18157
+- Authors: Zhexi Feng
+
+### 3. Configuring RAG Systems: What Breaks, Where Originates, and How to Fix
+- Publication date: 2026-10-13
+- Venue: arXiv (Cornell University)
+- Tags: knowledge-graph, RAG, LLM-DB
+- Relevance score: 5
+- URL: https://doi.org/10.48550/arxiv.2610.18567
+- Authors: Liangyu Chen; Youpeng Ma; Yulong Ye; Zezhen Xiang; Tao Chen
+
+### 4. When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an LLM Agent Benchmark
+- Publication date: 2026-10-12
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.16067
+- Authors: Junjie Chen
+
+### 5. VeriPIE: Checkable Query Plans and Evidence-Guided Selection for Text-to-SQL
+- Publication date: 2026-10-12
+- Venue: arXiv (Cornell University)
+- Tags: text-to-SQL
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.17493
+- Authors: Piyush Jha; Cruise Song; Zhengyu Li; Yatharth Sejpal
+
+### 6. ML Engineering Agents - A Data Management Perspective
+- Publication date: 2026-10-12
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.16919
+- Authors: Arnab Phani; Elias Strauss; Tim Schuster; Sebastian Schelter
+
+### 7. Learning Perceptual Geometry of Natural Odor Mixtures from LLM-Derived Descriptors
+- Publication date: 2026-10-12
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.17164
+- Authors: Farhad Pashakhanloo; Venkatesh N. Murthy
+
+### 8. GPU Goldmines: Tunable WebGPU Kernels for Edge LLM Inference
+- Publication date: 2026-10-12
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.17321
+- Authors: Rithik Sharma; Reese Levine; Zheyuan Chen; Ananthajit Srikanth; Yanwen Xu; Tyler Sorensen
+
+### 9. Does a Governed Confidence Score Know When a Text-to-SQL Answer Is Right? An Exploratory Study on BIRD and a Pre-registered Confirmation on Spider
+- Publication date: 2026-10-12
+- Venue: arXiv (Cornell University)
+- Tags: text-to-SQL
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.17256
+- Authors: Raghu Venkat; Tricha Anjali
+
+### 10. LYNX: Analytical Program Synthesis via Grounding and Closed-Loop Refinement
+- Publication date: 2026-10-10
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://doi.org/10.48550/arxiv.2610.14777
+- Authors: Ruichen Xia; Xiao Han; Dingyu Yang; Luwei Yang; Sai Wu; Dongxiang Zhang; Binhui Yao; Gang Chen
+
+### 11. DSABench: Benchmarking Source Discovery, Coordination, and Execution for Multi-Database Agents
+- Publication date: 2026-10-10
+- Venue: arXiv (Cornell University)
+- Tags: text-to-SQL
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.14700
+- Authors: Jinlong Luo; Haoran Wu; Bo Xu
+
+### 12. Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing
+- Publication date: 2026-10-09
+- Venue: arXiv (Cornell University)
+- Tags: query-optimization
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2610.13823
+- Authors: Oktie Hassanzadeh (IBM (United States), Alliance for Safe Kids); Dharmashankar Subramanian (IBM (United States), Alliance for Safe Kids)
+
+### 13. PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching
 - Publication date: 2026-10-09
 - Venue: arXiv (Cornell University)
 - Tags: LLM-DB
 - Relevance score: 3
 - URL: https://arxiv.org/abs/2610.12971
-- Authors: Jun Lu; Yancan Mao; Zhenya Ma; Sheng Yue; Yongjian Fu; Ju Ren
+- Authors: Jun Lu (Tsinghua University); Yancan Mao (Huazhong University of Science and Technology); Zhenya Ma (Tsinghua University); Sheng Yue (Sun Yat-sen University); Yongjian Fu (Tsinghua University); Ju Ren (Tsinghua University)
 
-### 2. MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases
+### 14. MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases
 - Publication date: 2026-10-09
 - Venue: arXiv (Cornell University)
 - Tags: none
 - Relevance score: 2
 - URL: https://arxiv.org/abs/2610.13573
-- Authors: Chen Jason Zhang; Qi Chen
+- Authors: Chen Jason Zhang (Hong Kong Polytechnic University); Qi Chen (Hong Kong Polytechnic University)
 
-### 3. Humanize Olympiad Agents: A Multi-Session Workflow for Olympiad Problem Solving with Solve, Review, Wiki, Verify
+### 15. KV-Repurpose: A Testbed for Evaluating Non-Prefix KV-Cache Reuse
+- Publication date: 2026-10-09
+- Venue: arXiv (Cornell University)
+- Tags: RAG
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2610.13060
+- Authors: Taiga Ikeda (KIOXIA Corporation (Japan)); Daisuke Miyashita (KIOXIA Corporation (Japan)); Jun Deguchi (KIOXIA Corporation (Japan))
+
+### 16. Humanize Olympiad Agents: A Multi-Session Workflow for Olympiad Problem Solving with Solve, Review, Wiki, Verify
 - Publication date: 2026-10-09
 - Venue: arXiv (Cornell University)
 - Tags: LLM-DB
 - Relevance score: 3
 - URL: https://arxiv.org/abs/2610.13632
-- Authors: Zhengyang Zhang; Jing Xiong; Hongzhou Lin; Juihui Chung; Zijian Zhang; Song Han; Sihao Liu; Ligeng Zhu
+- Authors: Zhengyang Zhang (Nvidia (United Kingdom), Nvidia (United States)); Jing Xiong (University of Hong Kong); Hongzhou Lin (Amazon (United States)); Juihui Chung (Princeton University); Zijian Zhang (Nvidia (United Kingdom), Nvidia (United States)); Song Han (Nvidia (United Kingdom), Nvidia (United States)); Sihao Liu (Nvidia (United Kingdom), Nvidia (United States)); Ligeng Zhu (Nvidia (United Kingdom), Nvidia (United States))
 
-### 4. Hindsight Structured Advice Distillation: Steering Executor Agents with Advisors Trained on Their Failures and Task Characteristics
+### 17. Hindsight Structured Advice Distillation: Steering Executor Agents with Advisors Trained on Their Failures and Task Characteristics
 - Publication date: 2026-10-09
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL
@@ -59,90 +164,18 @@
 - URL: https://arxiv.org/abs/2610.13000
 - Authors: O. Ozan Koyluoglu
 
-### 5. Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents
-- Publication date: 2026-10-08
+### 18. E3-System: Expressive EmoData, Explicitly Controllable, Easy-to-Use TTS
+- Publication date: 2026-10-09
 - Venue: arXiv (Cornell University)
-- Tags: text-to-SQL
+- Tags: RAG
 - Relevance score: 3
-- URL: https://arxiv.org/abs/2610.11464
-- Authors: Xing Zhang (AWS Forward Deployed Engineering); Guanghui Wang (AWS Forward Deployed Engineering); Yanwei Cui (AWS Forward Deployed Engineering); Ziyuan Li (HSBC Holdings); Wei Qiu (HSBC Holdings); Bing Zhu (HSBC Holdings); Peiyang He (AWS Forward Deployed Engineering)
+- URL: https://arxiv.org/abs/2610.12993
+- Authors: Yiqiao Huang (Harvard University); Xiaolong Lin (Baidu (China)); Zhenpeng Zhan (Baidu (China)); Zhizheng Wu (Chinese University of Hong Kong, Shenzhen)
 
-### 6. When Interfaces Speak: Data-Aware Generative UI Harness for Active Interaction
-- Publication date: 2026-10-08
+### 19. Agentic Evolution of SQL Test Generators
+- Publication date: 2026-10-09
 - Venue: arXiv (Cornell University)
 - Tags: LLM-DB
 - Relevance score: 3
-- URL: https://arxiv.org/abs/2610.11123
-- Authors: Xiaolong Li; Xiaohan Xu (Microsoft (United States)); Jinyang Li; Xinnuo Xu (Microsoft (United States)); Ge Qu; Nan Huo; Jack Williams (Microsoft (United States)); Reynold Cheng
-
-### 7. The Geometry of Hierarchical Navigation: Accuracy and Query Cost for Point Process Input
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.12312
-- Authors: Shankar Bhamidi (University of North Carolina at Chapel Hill); Souvik Dhara (Georgia Institute of Technology); Lars Schroeder (University of Twente); Clara Stegehuis (University of Twente)
-
-### 8. Should Your Database Systems Use Hardware-Assisted Memory Safety Extensions in Production?
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: LLM-DB
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.11525
-- Authors: Ilya Meignan--Masson (Technical University of Munich); Martin Fink (Technical University of Munich); Masanori Misono (Technical University of Munich); Dimitrios Stavrakakis (Technical University of Munich); Pramod Bhatotia (Technical University of Munich)
-
-### 9. ORCAGen: Orchestrating Context-Aware Malware Deception with RAG-Guided Generative AI
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.12415
-- Authors: Shamima Ahmed (Towson University); Md Sajidul Islam Sajid (Towson University); Teryl Taylor (IBM (United States), Alliance for Safe Kids); Frederico Araujo (IBM (United States), Alliance for Safe Kids); Tariqul Islam (University of Maryland, Baltimore County)
-
-### 10. MAP4CS: A Multi-dimensional Data Pruning Framework for Efficient Code Retriever Fine-tuning
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.11727
-- Authors: Yuxuan Chen (GUANGSHENG OU ,); Mingwei Liu (Sun Yat-sen University); Guangsheng Ou (Sun Yat-sen University); Zekai Zhang (ZIKE LI ,); Zike Li (Sun Yat-sen University); Yanlin Wang (Sun Yat-sen University); Pelin Zheng (ZIKE LI ,)
-
-### 11. Leakage-Resistant Evaluation of AI-Generated Database Specifications in Specification-Driven Migration
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: LLM-DB
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.12778
-- Authors: Oleg Grynets; Ivan V. Fedorchuk; Vasyl Lyashkevych
-
-### 12. HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: text-to-SQL
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.12274
-- Authors: Haolin Yang (Hong Kong University of Science and Technology); Jipeng Zhang (Microsoft (United States)); Jian Xie (Tsinghua University); Shuaishuai Gong (University of Macau); Sirui Han (Hong Kong University of Science and Technology); Yike Guo (Hong Kong University of Science and Technology)
-
-### 13. Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent System
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.11899
-- Authors: Irene Weber (Kempten University of Applied Sciences)
-
-### 14. A Security Meta-Model for Retrieval-Augmented Generation Systems
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.11893
-- Authors: Steve Nouyep (Centre National de la Recherche Scientifique, University of Clermont Auvergne); Sébastien Salva (Centre National de la Recherche Scientifique, University of Clermont Auvergne); Maxime Puys (Centre National de la Recherche Scientifique, University of Clermont Auvergne)
-
-### 15. A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization
-- Publication date: 2026-10-08
-- Venue: arXiv (Cornell University)
-- Tags: LLM-DB
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.12183
-- Authors: Ming Chen (Nanjing University); Rong-Xi Tan (Nanjing University); Ke Xue (Nanjing University); Yujie Zhou (Nanjing University); Taiye Lu (Nanjing University); Zhi-Xuan Gao (Nanjing University); Peng Xie (Nanjing University); Zijun Shen (Nanjing University); Chen Lu (Nanjing University); Haopu Shang (Nanjing University); Chao Qian (Nanjing University)
+- URL: https://doi.org/10.48550/arxiv.2610.14161
+- Authors: Shian Zhong; Manuel Rigger

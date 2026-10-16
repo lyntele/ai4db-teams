@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-10-15"
+    "last_updated": "2026-10-16"
   },
   "researchers": [
     {
@@ -33258,6 +33258,115 @@
       "notes": "Auto-discovered from QS #22 school TU Munich via arXiv (Cornell University) paper \"Should Your Database Systems Use Hardware-Assisted Memory Safety Extensions in Production?\". Please verify homepage and student availability manually.",
       "added_date": "2026-10-15",
       "last_updated": "2026-10-15"
+    },
+    {
+      "id": "uid-904",
+      "name": "Qi Chen",
+      "type": "faculty",
+      "institution": "QS_HongKongPolytechnicUniversity_3",
+      "institution_display_name": "The Hong Kong Polytechnic University",
+      "institution_qs_rank": 54,
+      "department": "",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "database systems"
+      ],
+      "tags": [],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2610.13573"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #54 school The Hong Kong Polytechnic University via arXiv (Cornell University) paper \"MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases\". Please verify homepage and student availability manually.",
+      "added_date": "2026-10-16",
+      "last_updated": "2026-10-16"
+    },
+    {
+      "id": "uid-905",
+      "name": "Ju Ren",
+      "type": "faculty",
+      "institution": "THU",
+      "institution_display_name": "Tsinghua University",
+      "institution_qs_rank": 17,
+      "department": "",
+      "country": "China",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "LLM-DB"
+      ],
+      "tags": [
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2610.12971"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #17 school Tsinghua University via arXiv (Cornell University) paper \"PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching\". Please verify homepage and student availability manually.",
+      "added_date": "2026-10-16",
+      "last_updated": "2026-10-16"
+    },
+    {
+      "id": "uid-906",
+      "name": "Zhizheng Wu",
+      "type": "faculty",
+      "institution": "HKU",
+      "institution_display_name": "University of Hong Kong",
+      "institution_qs_rank": 32,
+      "department": "",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "RAG"
+      ],
+      "tags": [
+        "RAG"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "E3-System: Expressive EmoData, Explicitly Controllable, Easy-to-Use TTS",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2610.12993"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #32 school University of Hong Kong via arXiv (Cornell University) paper \"E3-System: Expressive EmoData, Explicitly Controllable, Easy-to-Use TTS\". Please verify homepage and student availability manually.",
+      "added_date": "2026-10-16",
+      "last_updated": "2026-10-16"
     }
   ]
 }
