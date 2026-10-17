@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-10-16"
+    "last_updated": "2026-10-17"
   },
   "researchers": [
     {
@@ -33367,6 +33367,43 @@
       "notes": "Auto-discovered from QS #32 school University of Hong Kong via arXiv (Cornell University) paper \"E3-System: Expressive EmoData, Explicitly Controllable, Easy-to-Use TTS\". Please verify homepage and student availability manually.",
       "added_date": "2026-10-16",
       "last_updated": "2026-10-16"
+    },
+    {
+      "id": "uid-907",
+      "name": "Wenjie Zhang",
+      "type": "faculty",
+      "institution": "UNSW",
+      "institution_display_name": "UNSW Sydney",
+      "institution_qs_rank": 20,
+      "department": "",
+      "country": "Australia",
+      "region": "Oceania",
+      "position": "",
+      "research_focus": [
+        "RAG"
+      ],
+      "tags": [
+        "RAG"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Managing Vector Data for Retrieval Augmented Generation@Dagstuhl Seminar Summary",
+          "venue": "ACM SIGMOD Record",
+          "url": "https://doi.org/10.1145/3858364.3858372"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #20 school UNSW Sydney via ACM SIGMOD Record paper \"Managing Vector Data for Retrieval Augmented Generation@Dagstuhl Seminar Summary\". Please verify homepage and student availability manually.",
+      "added_date": "2026-10-17",
+      "last_updated": "2026-10-17"
     }
   ]
 }

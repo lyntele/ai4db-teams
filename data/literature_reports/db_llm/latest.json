@@ -16,47 +16,203 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-16",
+  "run_date": "2026-10-17",
   "scan_window": {
-    "start_date": "2026-10-09",
-    "end_date": "2026-10-16"
+    "start_date": "2026-10-10",
+    "end_date": "2026-10-17"
   },
   "summary": {
-    "openalex_works_fetched": 990,
-    "watchlist_matches": 19,
-    "new_researchers_added": 3,
+    "openalex_works_fetched": 967,
+    "watchlist_matches": 17,
+    "new_researchers_added": 1,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 4,
-    "skipped_due_to_score": 891,
-    "skipped_due_to_venue": 14,
-    "skipped_due_to_focus": 66,
-    "skipped_due_to_institution": 15,
-    "skipped_due_to_role": 8
+    "papers_mapped_to_site_entries": 1,
+    "skipped_due_to_score": 928,
+    "skipped_due_to_venue": 15,
+    "skipped_due_to_focus": 7,
+    "skipped_due_to_institution": 16,
+    "skipped_due_to_role": 0
   },
   "new_researchers": [
     {
-      "name": "Qi Chen",
-      "institution": "The Hong Kong Polytechnic University",
-      "tags": []
-    },
-    {
-      "name": "Ju Ren",
-      "institution": "Tsinghua University",
-      "tags": [
-        "LLM-DB"
-      ]
-    },
-    {
-      "name": "Zhizheng Wu",
-      "institution": "University of Hong Kong",
+      "name": "Wenjie Zhang",
+      "institution": "UNSW Sydney",
       "tags": [
         "RAG"
       ]
     }
   ],
   "papers": [
+    {
+      "title": "SEFRQO-Plus: a self-evolving query optimizer via large language models and retrieval-augmented generation",
+      "publication_date": "2026-10-15",
+      "venue": "The VLDB Journal",
+      "tags": [
+        "query-optimization",
+        "RAG",
+        "vector-DB",
+        "LLM-DB"
+      ],
+      "relevance_score": 5,
+      "url": "https://doi.org/10.1007/s00778-026-00999-z",
+      "authors": [
+        {
+          "name": "Hanwen Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Q. Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ryan Marcus",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ibrahim Sabek",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Managing Vector Data for Retrieval Augmented Generation@Dagstuhl Seminar Summary",
+      "publication_date": "2026-10-15",
+      "venue": "ACM SIGMOD Record",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.1145/3858364.3858372",
+      "authors": [
+        {
+          "name": "Sihem Amer-Yahia",
+          "affiliation": "Centre National de la Recherche Scientifique",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arijit Khan",
+          "affiliation": "Bowling Green State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wolfgang Lehner",
+          "affiliation": "Technische Universität Dresden",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sharad Mehrotra",
+          "affiliation": "University of California, Irvine",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenjie Zhang",
+          "affiliation": "UNSW Sydney",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "What Is a Clarification? Estimating Model-Dependent Input Ambiguity",
+      "publication_date": "2026-10-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.20052",
+      "authors": [
+        {
+          "name": "Jingqin Tang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tim Tomov",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sebastian Schmidt",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dominik Fuchsgruber",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Stephan Günnemann",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "PRISMATIC : Prescription Risk Inspection System for Multi-Agent Treatment Interaction in Clinical Decision-Making",
+      "publication_date": "2026-10-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.19762",
+      "authors": [
+        {
+          "name": "Ziyang Ling",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuyu Lu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ziyi Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "JetStream: Generating Verified Query Accelerators for Existing Database Systems",
+      "publication_date": "2026-10-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.20527",
+      "authors": [
+        {
+          "name": "Akhilesh Balasingam",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Amadou Ngom",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Geoffrey X. Yu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tim Kraska",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "RT-J: Large-Scale Pretraining of Relational Transformers for Context-Efficient Predictions",
       "publication_date": "2026-10-13",
@@ -110,12 +266,49 @@
       ]
     },
     {
+      "title": "HERO: Harnessing Evidence for Test-time Refinement and Prompt Optimization in Program Generation",
+      "publication_date": "2026-10-13",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.19184",
+      "authors": [
+        {
+          "name": "Mingyu Lu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Timothy Ossowski",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tristan Naumann",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hoifung Poon",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peniel Argaw",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "Fan Out or Relay? Ownership-Aware Routing for LLM Agents Querying Siloed Tables",
       "publication_date": "2026-10-13",
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2610.18157",
+      "url": "https://arxiv.org/abs/2610.18157",
       "authors": [
         {
           "name": "Zhexi Feng",
@@ -134,7 +327,7 @@
         "LLM-DB"
       ],
       "relevance_score": 5,
-      "url": "https://doi.org/10.48550/arxiv.2610.18567",
+      "url": "https://arxiv.org/abs/2610.18567",
       "authors": [
         {
           "name": "Liangyu Chen",
@@ -171,7 +364,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.16067",
+      "url": "https://arxiv.org/abs/2610.16067",
       "authors": [
         {
           "name": "Junjie Chen",
@@ -188,7 +381,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.17493",
+      "url": "https://arxiv.org/abs/2610.17493",
       "authors": [
         {
           "name": "Piyush Jha",
@@ -220,7 +413,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.16919",
+      "url": "https://arxiv.org/abs/2610.16919",
       "authors": [
         {
           "name": "Arnab Phani",
@@ -252,7 +445,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.17164",
+      "url": "https://arxiv.org/abs/2610.17164",
       "authors": [
         {
           "name": "Farhad Pashakhanloo",
@@ -274,7 +467,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.17321",
+      "url": "https://arxiv.org/abs/2610.17321",
       "authors": [
         {
           "name": "Rithik Sharma",
@@ -316,7 +509,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.17256",
+      "url": "https://arxiv.org/abs/2610.17256",
       "authors": [
         {
           "name": "Raghu Venkat",
@@ -336,7 +529,7 @@
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2610.14777",
+      "url": "https://arxiv.org/abs/2610.14777",
       "authors": [
         {
           "name": "Ruichen Xia",
@@ -388,7 +581,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.14700",
+      "url": "https://arxiv.org/abs/2610.14700",
       "authors": [
         {
           "name": "Jinlong Luo",
@@ -402,240 +595,6 @@
         },
         {
           "name": "Bo Xu",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "query-optimization"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.13823",
-      "authors": [
-        {
-          "name": "Oktie Hassanzadeh",
-          "affiliation": "IBM (United States), Alliance for Safe Kids",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dharmashankar Subramanian",
-          "affiliation": "IBM (United States), Alliance for Safe Kids",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "PredictIO: Decoupling Workload Prediction from OS-Controlled Storage Prefetching",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.12971",
-      "authors": [
-        {
-          "name": "Jun Lu",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yancan Mao",
-          "affiliation": "Huazhong University of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhenya Ma",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sheng Yue",
-          "affiliation": "Sun Yat-sen University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yongjian Fu",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ju Ren",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.13573",
-      "authors": [
-        {
-          "name": "Chen Jason Zhang",
-          "affiliation": "Hong Kong Polytechnic University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Qi Chen",
-          "affiliation": "Hong Kong Polytechnic University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "KV-Repurpose: A Testbed for Evaluating Non-Prefix KV-Cache Reuse",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.13060",
-      "authors": [
-        {
-          "name": "Taiga Ikeda",
-          "affiliation": "KIOXIA Corporation (Japan)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Daisuke Miyashita",
-          "affiliation": "KIOXIA Corporation (Japan)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jun Deguchi",
-          "affiliation": "KIOXIA Corporation (Japan)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Humanize Olympiad Agents: A Multi-Session Workflow for Olympiad Problem Solving with Solve, Review, Wiki, Verify",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.13632",
-      "authors": [
-        {
-          "name": "Zhengyang Zhang",
-          "affiliation": "Nvidia (United Kingdom), Nvidia (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jing Xiong",
-          "affiliation": "University of Hong Kong",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hongzhou Lin",
-          "affiliation": "Amazon (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Juihui Chung",
-          "affiliation": "Princeton University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zijian Zhang",
-          "affiliation": "Nvidia (United Kingdom), Nvidia (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Song Han",
-          "affiliation": "Nvidia (United Kingdom), Nvidia (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sihao Liu",
-          "affiliation": "Nvidia (United Kingdom), Nvidia (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ligeng Zhu",
-          "affiliation": "Nvidia (United Kingdom), Nvidia (United States)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Hindsight Structured Advice Distillation: Steering Executor Agents with Advisors Trained on Their Failures and Task Characteristics",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.13000",
-      "authors": [
-        {
-          "name": "O. Ozan Koyluoglu",
-          "affiliation": "",
-          "is_corresponding": true
-        }
-      ]
-    },
-    {
-      "title": "E3-System: Expressive EmoData, Explicitly Controllable, Easy-to-Use TTS",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.12993",
-      "authors": [
-        {
-          "name": "Yiqiao Huang",
-          "affiliation": "Harvard University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaolong Lin",
-          "affiliation": "Baidu (China)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhenpeng Zhan",
-          "affiliation": "Baidu (China)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhizheng Wu",
-          "affiliation": "Chinese University of Hong Kong, Shenzhen",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Agentic Evolution of SQL Test Generators",
-      "publication_date": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.14161",
-      "authors": [
-        {
-          "name": "Shian Zhong",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Manuel Rigger",
           "affiliation": "",
           "is_corresponding": false
         }
