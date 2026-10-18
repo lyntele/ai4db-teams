@@ -16,32 +16,30 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-17",
+  "run_date": "2026-10-18",
   "scan_window": {
-    "start_date": "2026-10-10",
-    "end_date": "2026-10-17"
+    "start_date": "2026-10-11",
+    "end_date": "2026-10-18"
   },
   "summary": {
-    "openalex_works_fetched": 967,
-    "watchlist_matches": 17,
+    "openalex_works_fetched": 1112,
+    "watchlist_matches": 27,
     "new_researchers_added": 1,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 1,
-    "skipped_due_to_score": 928,
-    "skipped_due_to_venue": 15,
-    "skipped_due_to_focus": 7,
-    "skipped_due_to_institution": 16,
-    "skipped_due_to_role": 0
+    "papers_mapped_to_site_entries": 7,
+    "skipped_due_to_score": 901,
+    "skipped_due_to_venue": 19,
+    "skipped_due_to_focus": 165,
+    "skipped_due_to_institution": 20,
+    "skipped_due_to_role": 5
   },
   "new_researchers": [
     {
-      "name": "Wenjie Zhang",
-      "institution": "UNSW Sydney",
-      "tags": [
-        "RAG"
-      ]
+      "name": "Zhexi Feng",
+      "institution": "University of California, San Diego (UCSD)",
+      "tags": []
     }
   ],
   "papers": [
@@ -60,22 +58,22 @@
       "authors": [
         {
           "name": "Hanwen Liu",
-          "affiliation": "",
-          "is_corresponding": false
+          "affiliation": "University of Southern California",
+          "is_corresponding": true
         },
         {
           "name": "Q. Zhang",
-          "affiliation": "",
+          "affiliation": "University of Southern California",
           "is_corresponding": false
         },
         {
           "name": "Ryan Marcus",
-          "affiliation": "",
+          "affiliation": "University of Pennsylvania",
           "is_corresponding": false
         },
         {
           "name": "Ibrahim Sabek",
-          "affiliation": "",
+          "affiliation": "University of Southern California",
           "is_corresponding": false
         }
       ]
@@ -118,6 +116,80 @@
       ]
     },
     {
+      "title": "EliteReplay: Preserving Diverse Solutions in RL Post-Training via Quality-Diversity Search",
+      "publication_date": "2026-10-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.22290",
+      "authors": [
+        {
+          "name": "Hanane Nour Moussa",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Doeun Lee",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sachin Kumar",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
+      "publication_date": "2026-10-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.21439",
+      "authors": [
+        {
+          "name": "Skylar Zhai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haonan Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhining Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Linxin Song",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xuwei Ding",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jingcheng Liang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jian Kang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "What Is a Clarification? Estimating Model-Dependent Input Ambiguity",
       "publication_date": "2026-10-14",
       "venue": "arXiv (Cornell University)",
@@ -125,7 +197,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.20052",
+      "url": "https://arxiv.org/abs/2610.20052",
       "authors": [
         {
           "name": "Jingqin Tang",
@@ -149,6 +221,63 @@
         },
         {
           "name": "Stephan Günnemann",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Same Context, Different Agents: A Behavioral Study of Semantic Layers, Orchestration and Compaction in Data Agents",
+      "publication_date": "2026-10-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-agents"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.20959",
+      "authors": [
+        {
+          "name": "Zhivar Sourati",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Marianne Menglin Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zheng Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rongguang Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sai Ashish Somayajula",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tao Sheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kyu Jeong Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sujith Ravi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dan Roth",
           "affiliation": "",
           "is_corresponding": false
         }
@@ -189,7 +318,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.20527",
+      "url": "https://arxiv.org/abs/2610.20527",
       "authors": [
         {
           "name": "Akhilesh Balasingam",
@@ -266,6 +395,48 @@
       ]
     },
     {
+      "title": "MERIT: Multimodal Evidence Reasoning over Image Tables",
+      "publication_date": "2026-10-13",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "table-QA"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.17937",
+      "authors": [
+        {
+          "name": "Haoyang Jiang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhuotong Fan",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mingyang Yi",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ju Fan",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lanqing Hu",
+          "affiliation": "Independent Researcher",
+          "is_corresponding": false
+        },
+        {
+          "name": "昝校",
+          "affiliation": "Beike Inc",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "HERO: Harnessing Evidence for Test-time Refinement and Prompt Optimization in Program Generation",
       "publication_date": "2026-10-13",
       "venue": "arXiv (Cornell University)",
@@ -273,7 +444,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.19184",
+      "url": "https://arxiv.org/abs/2610.19184",
       "authors": [
         {
           "name": "Mingyu Lu",
@@ -312,7 +483,7 @@
       "authors": [
         {
           "name": "Zhexi Feng",
-          "affiliation": "",
+          "affiliation": "University of California San Diego",
           "is_corresponding": true
         }
       ]
@@ -357,6 +528,65 @@
       ]
     },
     {
+      "title": "Complex materials engineering via Provenance Action Graphs: potential, structure and demonstration",
+      "publication_date": "2026-10-13",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-agents"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.18314",
+      "authors": [
+        {
+          "name": "Yevgeny Rakita",
+          "affiliation": "Ben-Gurion University of the Negev",
+          "is_corresponding": false
+        },
+        {
+          "name": "Paul Todd",
+          "affiliation": "Colorado State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "James Richmond Neilson",
+          "affiliation": "Columbia University, Colorado State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Simon J. L. Billinge",
+          "affiliation": "University of California, Santa Barbara",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "ARACDE: Retrofitting Databases with ABAC using External Authorization Engines",
+      "publication_date": "2026-10-13",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.18660",
+      "authors": [
+        {
+          "name": "Karthikeya S. M. Yelisetty",
+          "affiliation": "Indian Institute of Technology Kharagpur",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shamik Sural",
+          "affiliation": "Indian Institute of Technology Kharagpur",
+          "is_corresponding": false
+        },
+        {
+          "name": "Santosh Nagarakatte",
+          "affiliation": "Rutgers, The State University of New Jersey",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an LLM Agent Benchmark",
       "publication_date": "2026-10-12",
       "venue": "arXiv (Cornell University)",
@@ -368,7 +598,7 @@
       "authors": [
         {
           "name": "Junjie Chen",
-          "affiliation": "",
+          "affiliation": "Nanjing University of Science and Technology",
           "is_corresponding": true
         }
       ]
@@ -385,22 +615,62 @@
       "authors": [
         {
           "name": "Piyush Jha",
-          "affiliation": "",
+          "affiliation": "KNOWIDEA Technology Atlanta , GA , USA",
           "is_corresponding": false
         },
         {
           "name": "Cruise Song",
-          "affiliation": "",
+          "affiliation": "Georgia Institute of Technology, Atlanta Technical College",
           "is_corresponding": false
         },
         {
           "name": "Zhengyu Li",
-          "affiliation": "",
+          "affiliation": "KNOWIDEA Technology Atlanta , GA , USA",
           "is_corresponding": false
         },
         {
           "name": "Yatharth Sejpal",
+          "affiliation": "Georgia Institute of Technology, Atlanta Technical College",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "TILE: Bridging LLMs and Table Foundation Models for Tabular Learning with Strings",
+      "publication_date": "2026-10-12",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2610.17065",
+      "authors": [
+        {
+          "name": "Aimee Coelho",
+          "affiliation": "Centre Inria de Saclay",
+          "is_corresponding": false
+        },
+        {
+          "name": "David Holzmüller",
+          "affiliation": "Centre Inria de Saclay",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gioia Blayer",
+          "affiliation": "Centre Inria de Saclay",
+          "is_corresponding": false
+        },
+        {
+          "name": "Myung Jun Kim",
+          "affiliation": "Systems, Applications & Products in Data Processing (Germany)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Marine Le Morvan",
           "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gael P. Varoquaux",
+          "affiliation": "Centre Inria de Saclay",
           "is_corresponding": false
         }
       ]
@@ -417,22 +687,22 @@
       "authors": [
         {
           "name": "Arnab Phani",
-          "affiliation": "",
+          "affiliation": "Berliner Institut für Sozialforschung",
           "is_corresponding": false
         },
         {
           "name": "Elias Strauss",
-          "affiliation": "",
+          "affiliation": "Berliner Institut für Sozialforschung",
           "is_corresponding": false
         },
         {
           "name": "Tim Schuster",
-          "affiliation": "",
+          "affiliation": "Berliner Institut für Sozialforschung",
           "is_corresponding": false
         },
         {
           "name": "Sebastian Schelter",
-          "affiliation": "",
+          "affiliation": "Berliner Institut für Sozialforschung",
           "is_corresponding": false
         }
       ]
@@ -449,12 +719,54 @@
       "authors": [
         {
           "name": "Farhad Pashakhanloo",
-          "affiliation": "",
+          "affiliation": "Harvard University",
           "is_corresponding": false
         },
         {
           "name": "Venkatesh N. Murthy",
           "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Improving the Evaluation of Biomedical Question Answering with Few Human Preference Signals",
+      "publication_date": "2026-10-12",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.16008",
+      "authors": [
+        {
+          "name": "Shakila Mahjabin Tonni",
+          "affiliation": "Suncorp Bank , Australia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiang Dai",
+          "affiliation": "Commonwealth Scientific and Industrial Research Organisation",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sarvnaz Karimi",
+          "affiliation": "Monash University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaomei Li",
+          "affiliation": "Reserve Bank of Australia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Samuel C. Andrew",
+          "affiliation": "Commonwealth Scientific and Industrial Research Organisation",
+          "is_corresponding": false
+        },
+        {
+          "name": "Stephen Wan",
+          "affiliation": "Commonwealth Scientific and Industrial Research Organisation",
           "is_corresponding": false
         }
       ]
@@ -471,12 +783,12 @@
       "authors": [
         {
           "name": "Rithik Sharma",
-          "affiliation": "",
+          "affiliation": "University of California, Santa Cruz",
           "is_corresponding": false
         },
         {
           "name": "Reese Levine",
-          "affiliation": "",
+          "affiliation": "University of California, Santa Cruz",
           "is_corresponding": false
         },
         {
@@ -486,17 +798,17 @@
         },
         {
           "name": "Ananthajit Srikanth",
-          "affiliation": "",
+          "affiliation": "École Polytechnique Fédérale de Lausanne",
           "is_corresponding": false
         },
         {
           "name": "Yanwen Xu",
-          "affiliation": "",
+          "affiliation": "University of California, Santa Cruz",
           "is_corresponding": false
         },
         {
           "name": "Tyler Sorensen",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States), Microsoft Research (India)",
           "is_corresponding": false
         }
       ]
@@ -513,89 +825,200 @@
       "authors": [
         {
           "name": "Raghu Venkat",
-          "affiliation": "",
+          "affiliation": "Numberz.ai Inc. , Alpharetta , Georgia , USA",
           "is_corresponding": false
         },
         {
           "name": "Tricha Anjali",
-          "affiliation": "",
+          "affiliation": "Numberz.ai Inc. , Alpharetta , Georgia , USA",
           "is_corresponding": false
         }
       ]
     },
     {
-      "title": "LYNX: Analytical Program Synthesis via Grounding and Closed-Loop Refinement",
-      "publication_date": "2026-10-10",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.14777",
-      "authors": [
-        {
-          "name": "Ruichen Xia",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiao Han",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dingyu Yang",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Luwei Yang",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sai Wu",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dongxiang Zhang",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Binhui Yao",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Gang Chen",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "DSABench: Benchmarking Source Discovery, Coordination, and Execution for Multi-Database Agents",
-      "publication_date": "2026-10-10",
+      "title": "DeepGroundRepair: From API-Grounded Generation to Shape-Aware Repair for Deep Learning Programs",
+      "publication_date": "2026-10-12",
       "venue": "arXiv (Cornell University)",
       "tags": [
-        "text-to-SQL"
+        "RAG"
       ],
       "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.14700",
+      "url": "https://arxiv.org/abs/2610.16897",
       "authors": [
         {
-          "name": "Jinlong Luo",
+          "name": "Xiangyue Ma",
+          "affiliation": "Beihang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhen Wang",
+          "affiliation": "XUHUI LU , Beihang University , China XIAOTING DU ,",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xuhui Lu",
           "affiliation": "",
           "is_corresponding": false
         },
         {
-          "name": "Haoran Wu",
+          "name": "Xiaoting Du",
+          "affiliation": "Beijing University of Technology, Beihang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chenglong Li",
           "affiliation": "",
           "is_corresponding": false
         },
         {
-          "name": "Bo Xu",
+          "name": "Jun Li",
+          "affiliation": "Beihang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haotian Li",
+          "affiliation": "Beijing University of Posts and Telecommunications",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zheng Zheng",
           "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "ARMED: Adaptive Retrieval-Augmented Medication Recommendation",
+      "publication_date": "2026-10-12",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.16440",
+      "authors": [
+        {
+          "name": "Kyungkeon Chung",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Se Un Park",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hyejin Lee",
+          "affiliation": "UX Factory, Inc. Seongnam-si , South Korea",
+          "is_corresponding": false
+        },
+        {
+          "name": "Junyoung Park",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "OntoAR-HAR: Ontology-Guided Agentic RAG with Personalized Memory for Human Activity Recognition",
+      "publication_date": "2026-10-11",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.15292",
+      "authors": [
+        {
+          "name": "Xiangqing Lu",
+          "affiliation": "University of South China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tao Zhu",
+          "affiliation": "University of South China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Liang Yu",
+          "affiliation": "University of South China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuangjian Li",
+          "affiliation": "Dalian University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lulu Ban",
+          "affiliation": "Dalian University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Furong Duan",
+          "affiliation": "Dalian University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mingxing Nie",
+          "affiliation": "University of South China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Liming Chen",
+          "affiliation": "Dalian University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yaping Wan",
+          "affiliation": "Dalian University of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Fast and Accurate: Improving Personalized LLM Performance by Semantic Concentration Inspired Workload Split between RAG and Fine-Tuning",
+      "publication_date": "2026-10-11",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.15921",
+      "authors": [
+        {
+          "name": "Xingke Yang",
+          "affiliation": "University of Houston",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sicong Li",
+          "affiliation": "University of Houston",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lingfeng Yao",
+          "affiliation": "University of Houston",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rui Chen",
+          "affiliation": "Independent Researcher , USA",
+          "is_corresponding": false
+        },
+        {
+          "name": "Changqing Luo",
+          "affiliation": "University of Houston",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xin Fu",
+          "affiliation": "University of Houston",
+          "is_corresponding": false
+        },
+        {
+          "name": "Miao Pan",
+          "affiliation": "University of Houston",
           "is_corresponding": false
         }
       ]
