@@ -16,32 +16,26 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-18",
+  "run_date": "2026-10-19",
   "scan_window": {
-    "start_date": "2026-10-11",
-    "end_date": "2026-10-18"
+    "start_date": "2026-10-12",
+    "end_date": "2026-10-19"
   },
   "summary": {
-    "openalex_works_fetched": 1112,
+    "openalex_works_fetched": 1110,
     "watchlist_matches": 27,
-    "new_researchers_added": 1,
-    "existing_researchers_updated": 0,
-    "industrial_members_added": 0,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 1,
+    "industrial_members_added": 4,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 7,
-    "skipped_due_to_score": 901,
+    "papers_mapped_to_site_entries": 11,
+    "skipped_due_to_score": 848,
     "skipped_due_to_venue": 19,
-    "skipped_due_to_focus": 165,
-    "skipped_due_to_institution": 20,
-    "skipped_due_to_role": 5
+    "skipped_due_to_focus": 216,
+    "skipped_due_to_institution": 16,
+    "skipped_due_to_role": 9
   },
-  "new_researchers": [
-    {
-      "name": "Zhexi Feng",
-      "institution": "University of California, San Diego (UCSD)",
-      "tags": []
-    }
-  ],
+  "new_researchers": [],
   "papers": [
     {
       "title": "SEFRQO-Plus: a self-evolving query optimizer via large language models and retrieval-augmented generation",
@@ -74,6 +68,49 @@
         {
           "name": "Ibrahim Sabek",
           "affiliation": "University of Southern California",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "PremiseSQL: Evaluating Premise Critique and Abstention in Text-to-SQL Systems",
+      "publication_date": "2026-10-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "NL2SQL"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.22158",
+      "authors": [
+        {
+          "name": "Shuo Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jinzhe Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chenlu Guo",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yanhan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuan Wu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yi Chang",
+          "affiliation": "",
           "is_corresponding": false
         }
       ]
@@ -123,7 +160,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.22290",
+      "url": "https://arxiv.org/abs/2610.22290",
       "authors": [
         {
           "name": "Hanane Nour Moussa",
@@ -150,7 +187,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.21439",
+      "url": "https://arxiv.org/abs/2610.21439",
       "authors": [
         {
           "name": "Skylar Zhai",
@@ -201,27 +238,27 @@
       "authors": [
         {
           "name": "Jingqin Tang",
-          "affiliation": "",
+          "affiliation": "Technical University of Munich",
           "is_corresponding": false
         },
         {
           "name": "Tim Tomov",
-          "affiliation": "",
+          "affiliation": "Munich Center for Machine Learning",
           "is_corresponding": false
         },
         {
           "name": "Sebastian Schmidt",
-          "affiliation": "",
+          "affiliation": "Technical University of Munich",
           "is_corresponding": false
         },
         {
           "name": "Dominik Fuchsgruber",
-          "affiliation": "",
+          "affiliation": "Munich Center for Machine Learning",
           "is_corresponding": false
         },
         {
           "name": "Stephan Günnemann",
-          "affiliation": "",
+          "affiliation": "Munich Center for Machine Learning",
           "is_corresponding": false
         }
       ]
@@ -234,7 +271,7 @@
         "data-agents"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.20959",
+      "url": "https://arxiv.org/abs/2610.20959",
       "authors": [
         {
           "name": "Zhivar Sourati",
@@ -295,17 +332,17 @@
       "authors": [
         {
           "name": "Ziyang Ling",
-          "affiliation": "",
+          "affiliation": "University of Science and Technology of China",
           "is_corresponding": false
         },
         {
           "name": "Shuyu Lu",
-          "affiliation": "",
+          "affiliation": "The University of Texas Health Science Center at Houston",
           "is_corresponding": false
         },
         {
           "name": "Ziyi Chen",
-          "affiliation": "",
+          "affiliation": "University of Science and Technology of China",
           "is_corresponding": false
         }
       ]
@@ -322,21 +359,63 @@
       "authors": [
         {
           "name": "Akhilesh Balasingam",
-          "affiliation": "",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
           "is_corresponding": false
         },
         {
           "name": "Amadou Ngom",
-          "affiliation": "",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
           "is_corresponding": false
         },
         {
           "name": "Geoffrey X. Yu",
-          "affiliation": "",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
           "is_corresponding": false
         },
         {
           "name": "Tim Kraska",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "DarKnight: Retrieval-Guided Agentic Framework for Breaking Dark Web CAPTCHA Gates",
+      "publication_date": "2026-10-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.19830",
+      "authors": [
+        {
+          "name": "Binghui Wu",
+          "affiliation": "National University of Singapore",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yeo Zi Yi",
+          "affiliation": "National University of Singapore",
+          "is_corresponding": false
+        },
+        {
+          "name": "Darren Tan",
+          "affiliation": "National University of Singapore",
+          "is_corresponding": false
+        },
+        {
+          "name": "Manit Baser",
+          "affiliation": "National University of Singapore",
+          "is_corresponding": false
+        },
+        {
+          "name": "Levente Csikor",
+          "affiliation": "STAR Institute of Advanced Intelligence and Compute Singapore",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dinil Mon Divakaran",
           "affiliation": "",
           "is_corresponding": false
         }
@@ -350,7 +429,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.17867",
+      "url": "https://arxiv.org/abs/2610.17867",
       "authors": [
         {
           "name": "Rishabh Ranjan",
@@ -448,27 +527,27 @@
       "authors": [
         {
           "name": "Mingyu Lu",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States), University of Washington",
           "is_corresponding": false
         },
         {
           "name": "Timothy Ossowski",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States)",
           "is_corresponding": false
         },
         {
           "name": "Tristan Naumann",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States)",
           "is_corresponding": false
         },
         {
           "name": "Hoifung Poon",
-          "affiliation": "",
+          "affiliation": "Recursion (United States)",
           "is_corresponding": false
         },
         {
           "name": "Peniel Argaw",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States)",
           "is_corresponding": false
         }
       ]
@@ -915,110 +994,6 @@
         {
           "name": "Junyoung Park",
           "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "OntoAR-HAR: Ontology-Guided Agentic RAG with Personalized Memory for Human Activity Recognition",
-      "publication_date": "2026-10-11",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.15292",
-      "authors": [
-        {
-          "name": "Xiangqing Lu",
-          "affiliation": "University of South China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tao Zhu",
-          "affiliation": "University of South China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Liang Yu",
-          "affiliation": "University of South China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuangjian Li",
-          "affiliation": "Dalian University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lulu Ban",
-          "affiliation": "Dalian University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Furong Duan",
-          "affiliation": "Dalian University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mingxing Nie",
-          "affiliation": "University of South China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Liming Chen",
-          "affiliation": "Dalian University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yaping Wan",
-          "affiliation": "Dalian University of Technology",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Fast and Accurate: Improving Personalized LLM Performance by Semantic Concentration Inspired Workload Split between RAG and Fine-Tuning",
-      "publication_date": "2026-10-11",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.15921",
-      "authors": [
-        {
-          "name": "Xingke Yang",
-          "affiliation": "University of Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sicong Li",
-          "affiliation": "University of Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lingfeng Yao",
-          "affiliation": "University of Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Rui Chen",
-          "affiliation": "Independent Researcher , USA",
-          "is_corresponding": false
-        },
-        {
-          "name": "Changqing Luo",
-          "affiliation": "University of Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xin Fu",
-          "affiliation": "University of Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Miao Pan",
-          "affiliation": "University of Houston",
           "is_corresponding": false
         }
       ]
