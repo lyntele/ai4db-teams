@@ -16,49 +16,107 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-20",
+  "run_date": "2026-10-21",
   "scan_window": {
-    "start_date": "2026-10-13",
-    "end_date": "2026-10-20"
+    "start_date": "2026-10-14",
+    "end_date": "2026-10-21"
   },
   "summary": {
-    "openalex_works_fetched": 1083,
-    "watchlist_matches": 22,
-    "new_researchers_added": 3,
+    "openalex_works_fetched": 1068,
+    "watchlist_matches": 19,
+    "new_researchers_added": 0,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 12,
-    "skipped_due_to_score": 818,
-    "skipped_due_to_venue": 13,
-    "skipped_due_to_focus": 230,
-    "skipped_due_to_institution": 10,
-    "skipped_due_to_role": 9
+    "papers_mapped_to_site_entries": 8,
+    "skipped_due_to_score": 883,
+    "skipped_due_to_venue": 14,
+    "skipped_due_to_focus": 152,
+    "skipped_due_to_institution": 11,
+    "skipped_due_to_role": 6
   },
-  "new_researchers": [
+  "new_researchers": [],
+  "papers": [
     {
-      "name": "Jian Kang",
-      "institution": "UIUC",
+      "title": "NL2SQL with Iterative Self-Refinement",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
       "tags": [
-        "text-to-SQL"
+        "text-to-SQL",
+        "NL2SQL"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2610.22968",
+      "authors": [
+        {
+          "name": "Anjali Vemula",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Akshat Dasula",
+          "affiliation": "",
+          "is_corresponding": false
+        }
       ]
     },
     {
-      "name": "Dan Roth",
-      "institution": "University of Pennsylvania",
-      "tags": [
-        "data-agents"
-      ]
-    },
-    {
-      "name": "Jure Leskovec",
-      "institution": "Stanford University",
+      "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
       "tags": [
         "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.23845",
+      "authors": [
+        {
+          "name": "Shicheng Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Krista Opsahl-Ong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Andrew Drozdov",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Julian Killingback",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arnav Singhvi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ronak Pradeep",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Michael Bendersky",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "James Charles Dickerson",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Monica S. Lam",
+          "affiliation": "",
+          "is_corresponding": false
+        }
       ]
-    }
-  ],
-  "papers": [
+    },
     {
       "title": "SEFRQO-Plus: a self-evolving query optimizer via large language models and retrieval-augmented generation",
       "publication_date": "2026-10-15",
@@ -91,6 +149,24 @@
           "name": "Ibrahim Sabek",
           "affiliation": "University of Southern California",
           "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV",
+      "publication_date": "2026-10-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2610.22588",
+      "authors": [
+        {
+          "name": "Yuchao Wu",
+          "affiliation": "",
+          "is_corresponding": true
         }
       ]
     },
@@ -241,6 +317,28 @@
         {
           "name": "Sachin Kumar",
           "affiliation": "The Ohio State University {moussa.45 , lee. 11501 ,",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Efficient Dialect-Agnostic SQL Equivalence Refutation",
+      "publication_date": "2026-10-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.22442",
+      "authors": [
+        {
+          "name": "Junwen An",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Manuel Rigger",
+          "affiliation": "",
           "is_corresponding": false
         }
       ]
@@ -679,250 +777,6 @@
         {
           "name": "Farig Sadeque",
           "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "RT-J: Large-Scale Pretraining of Relational Transformers for Context-Efficient Predictions",
-      "publication_date": "2026-10-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.17867",
-      "authors": [
-        {
-          "name": "Rishabh Ranjan",
-          "affiliation": "Stanford University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Vignesh Kothapalli",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Harshvardhan Agarwal",
-          "affiliation": "Stanford University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Charilaos I. Kanatsoulis",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Roshan Upendra",
-          "affiliation": "Stanford University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tom Palczewski",
-          "affiliation": "Stanford University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Carlos Guestrin",
-          "affiliation": "Stanford University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jure Leskovec",
-          "affiliation": "Stanford University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "MERIT: Multimodal Evidence Reasoning over Image Tables",
-      "publication_date": "2026-10-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "table-QA"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.17937",
-      "authors": [
-        {
-          "name": "Haoyang Jiang",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhuotong Fan",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mingyang Yi",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ju Fan",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lanqing Hu",
-          "affiliation": "Independent Researcher",
-          "is_corresponding": false
-        },
-        {
-          "name": "昝校",
-          "affiliation": "Beike Inc",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "HERO: Harnessing Evidence for Test-time Refinement and Prompt Optimization in Program Generation",
-      "publication_date": "2026-10-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.19184",
-      "authors": [
-        {
-          "name": "Mingyu Lu",
-          "affiliation": "Microsoft (United States), University of Washington",
-          "is_corresponding": false
-        },
-        {
-          "name": "Timothy Ossowski",
-          "affiliation": "Microsoft (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tristan Naumann",
-          "affiliation": "Microsoft (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hoifung Poon",
-          "affiliation": "Recursion (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Peniel Argaw",
-          "affiliation": "Microsoft (United States)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Fan Out or Relay? Ownership-Aware Routing for LLM Agents Querying Siloed Tables",
-      "publication_date": "2026-10-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.18157",
-      "authors": [
-        {
-          "name": "Zhexi Feng",
-          "affiliation": "University of California San Diego",
-          "is_corresponding": true
-        }
-      ]
-    },
-    {
-      "title": "Configuring RAG Systems: What Breaks, Where Originates, and How to Fix",
-      "publication_date": "2026-10-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "knowledge-graph",
-        "RAG",
-        "LLM-DB"
-      ],
-      "relevance_score": 5,
-      "url": "https://arxiv.org/abs/2610.18567",
-      "authors": [
-        {
-          "name": "Liangyu Chen",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Youpeng Ma",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yulong Ye",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zezhen Xiang",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tao Chen",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Complex materials engineering via Provenance Action Graphs: potential, structure and demonstration",
-      "publication_date": "2026-10-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "data-agents"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.18314",
-      "authors": [
-        {
-          "name": "Yevgeny Rakita",
-          "affiliation": "Ben-Gurion University of the Negev",
-          "is_corresponding": false
-        },
-        {
-          "name": "Paul Todd",
-          "affiliation": "Colorado State University",
-          "is_corresponding": false
-        },
-        {
-          "name": "James Richmond Neilson",
-          "affiliation": "Columbia University, Colorado State University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Simon J. L. Billinge",
-          "affiliation": "University of California, Santa Barbara",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "ARACDE: Retrofitting Databases with ABAC using External Authorization Engines",
-      "publication_date": "2026-10-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.18660",
-      "authors": [
-        {
-          "name": "Karthikeya S. M. Yelisetty",
-          "affiliation": "Indian Institute of Technology Kharagpur",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shamik Sural",
-          "affiliation": "Indian Institute of Technology Kharagpur",
-          "is_corresponding": false
-        },
-        {
-          "name": "Santosh Nagarakatte",
-          "affiliation": "Rutgers, The State University of New Jersey",
           "is_corresponding": false
         }
       ]
