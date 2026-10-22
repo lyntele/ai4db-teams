@@ -16,27 +16,236 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-21",
+  "run_date": "2026-10-22",
   "scan_window": {
-    "start_date": "2026-10-14",
-    "end_date": "2026-10-21"
+    "start_date": "2026-10-15",
+    "end_date": "2026-10-22"
   },
   "summary": {
-    "openalex_works_fetched": 1068,
+    "openalex_works_fetched": 983,
     "watchlist_matches": 19,
     "new_researchers_added": 0,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 8,
-    "skipped_due_to_score": 883,
-    "skipped_due_to_venue": 14,
-    "skipped_due_to_focus": 152,
-    "skipped_due_to_institution": 11,
-    "skipped_due_to_role": 6
+    "papers_mapped_to_site_entries": 4,
+    "skipped_due_to_score": 882,
+    "skipped_due_to_venue": 12,
+    "skipped_due_to_focus": 70,
+    "skipped_due_to_institution": 15,
+    "skipped_due_to_role": 4
   },
   "new_researchers": [],
   "papers": [
+    {
+      "title": "From Outcomes to Components: A Counterfactual Evaluation Framework for LLM-Proposed Repairs",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.26650",
+      "authors": [
+        {
+          "name": "Hengyu Ye",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Songhua Hu",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow?",
+      "publication_date": "2026-10-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.25078",
+      "authors": [
+        {
+          "name": "Jiaqi Su",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guibin Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jie-Jing Shao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cong Pang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tiankuo Yao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ivor Wai-Hung Tsang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haiyan Yin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuicheng Yan",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Benchmark for Structured Retrieval-Augmented Generation in Perovskite Photovoltaics",
+      "publication_date": "2026-10-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2610.25575",
+      "authors": [
+        {
+          "name": "Qiwei Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chi Zhou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gaoxiang Yuan",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "HybridResearcher: Bridging the Structured-Unstructured Boundary for Deep Research Agents",
+      "publication_date": "2026-10-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2610.24899",
+      "authors": [
+        {
+          "name": "Soyoung Yoon",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peiran Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Han Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruofan Wu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaodong Yu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Feng Yan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mohit Bansal",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Debiao Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Seung-Won Hwang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuxiong He",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhewei Yao",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Probing Ambiguity: Adversarial Intent Resolution for Robust Text-to-SQL",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.24248",
+      "authors": [
+        {
+          "name": "Youbing Yin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xujun Peng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Muhammad Shahin Uddin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Erin Babinsky",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Daben Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anoop Kumar",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "NL2SQL with Iterative Self-Refinement",
       "publication_date": "2026-10-16",
@@ -46,7 +255,7 @@
         "NL2SQL"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2610.22968",
+      "url": "https://arxiv.org/abs/2610.22968",
       "authors": [
         {
           "name": "Anjali Vemula",
@@ -61,6 +270,29 @@
       ]
     },
     {
+      "title": "Designing for Imperfect Prompts: A Simulation-Based Evaluation of an LLM-Based Enterprise Data Assistant Using Knowledge Graphs",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.23304",
+      "authors": [
+        {
+          "name": "Niklas Wagner",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alexander Maedche",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
       "publication_date": "2026-10-16",
       "venue": "arXiv (Cornell University)",
@@ -68,7 +300,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.23845",
+      "url": "https://arxiv.org/abs/2610.23845",
       "authors": [
         {
           "name": "Shicheng Liu",
@@ -161,7 +393,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2610.22588",
+      "url": "https://arxiv.org/abs/2610.22588",
       "authors": [
         {
           "name": "Yuchao Wu",
@@ -329,7 +561,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.22442",
+      "url": "https://arxiv.org/abs/2610.22442",
       "authors": [
         {
           "name": "Junwen An",
@@ -525,258 +757,6 @@
         {
           "name": "Yue Yu",
           "affiliation": "Peng Cheng Laboratory",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "What Is a Clarification? Estimating Model-Dependent Input Ambiguity",
-      "publication_date": "2026-10-14",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.20052",
-      "authors": [
-        {
-          "name": "Jingqin Tang",
-          "affiliation": "Technical University of Munich",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tim Tomov",
-          "affiliation": "Munich Center for Machine Learning",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sebastian Schmidt",
-          "affiliation": "Technical University of Munich",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dominik Fuchsgruber",
-          "affiliation": "Munich Center for Machine Learning",
-          "is_corresponding": false
-        },
-        {
-          "name": "Stephan Günnemann",
-          "affiliation": "Munich Center for Machine Learning",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Same Context, Different Agents: A Behavioral Study of Semantic Layers, Orchestration and Compaction in Data Agents",
-      "publication_date": "2026-10-14",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "data-agents"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.20959",
-      "authors": [
-        {
-          "name": "Zhivar Sourati",
-          "affiliation": "University of Southern California",
-          "is_corresponding": false
-        },
-        {
-          "name": "Marianne Menglin Liu",
-          "affiliation": "Oracle AI",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zheng Wang",
-          "affiliation": "Oracle AI",
-          "is_corresponding": false
-        },
-        {
-          "name": "Rongguang Wang",
-          "affiliation": "Oracle AI",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sai Ashish Somayajula",
-          "affiliation": "Oracle AI",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tao Sheng",
-          "affiliation": "Oracle AI",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kyu Jeong Han",
-          "affiliation": "Oracle AI",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sujith Ravi",
-          "affiliation": "Oracle AI",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dan Roth",
-          "affiliation": "University of Pennsylvania",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "PRISMATIC : Prescription Risk Inspection System for Multi-Agent Treatment Interaction in Clinical Decision-Making",
-      "publication_date": "2026-10-14",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.19762",
-      "authors": [
-        {
-          "name": "Ziyang Ling",
-          "affiliation": "University of Science and Technology of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuyu Lu",
-          "affiliation": "The University of Texas Health Science Center at Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ziyi Chen",
-          "affiliation": "University of Science and Technology of China",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "JetStream: Generating Verified Query Accelerators for Existing Database Systems",
-      "publication_date": "2026-10-14",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.20527",
-      "authors": [
-        {
-          "name": "Akhilesh Balasingam",
-          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Amadou Ngom",
-          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Geoffrey X. Yu",
-          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tim Kraska",
-          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "DarKnight: Retrieval-Guided Agentic Framework for Breaking Dark Web CAPTCHA Gates",
-      "publication_date": "2026-10-14",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.19830",
-      "authors": [
-        {
-          "name": "Binghui Wu",
-          "affiliation": "National University of Singapore",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yeo Zi Yi",
-          "affiliation": "National University of Singapore",
-          "is_corresponding": false
-        },
-        {
-          "name": "Darren Tan",
-          "affiliation": "National University of Singapore",
-          "is_corresponding": false
-        },
-        {
-          "name": "Manit Baser",
-          "affiliation": "National University of Singapore",
-          "is_corresponding": false
-        },
-        {
-          "name": "Levente Csikor",
-          "affiliation": "STAR Institute of Advanced Intelligence and Compute Singapore",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dinil Mon Divakaran",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Analyzing performance of Retrieval Augmented Generation models for Question Answering Tasks",
-      "publication_date": "2026-10-14",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.20419",
-      "authors": [
-        {
-          "name": "Fazle Mohammad Tasfiq",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sabab Attin",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sheikh Md. Tahmid Hossain Faiyaz",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Raiat Reza",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tanzim Ahmmed",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nafis Chowdhury",
-          "affiliation": "BRAC University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Anika Ahmed",
-          "affiliation": "BRAC University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Moinul Haque",
-          "affiliation": "BRAC University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Farig Sadeque",
-          "affiliation": "",
           "is_corresponding": false
         }
       ]
