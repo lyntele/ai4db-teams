@@ -1,0 +1,481 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-10-23",
+  "scan_window": {
+    "start_date": "2026-10-16",
+    "end_date": "2026-10-23"
+  },
+  "summary": {
+    "openalex_works_fetched": 955,
+    "watchlist_matches": 12,
+    "new_researchers_added": 1,
+    "existing_researchers_updated": 1,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 2,
+    "skipped_due_to_score": 880,
+    "skipped_due_to_venue": 12,
+    "skipped_due_to_focus": 51,
+    "skipped_due_to_institution": 10,
+    "skipped_due_to_role": 2
+  },
+  "new_researchers": [
+    {
+      "name": "Alexander Maedche",
+      "institution": "Karlsruhe Institute of Technology (KIT)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Tracing Recurrent and Emergent Hallucination Patterns in Decomposed Text-to-SQL Generation",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.27720",
+      "authors": [
+        {
+          "name": "Hayden Moore",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abhinav Verma",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anshuman Dutt",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.28611",
+      "authors": [
+        {
+          "name": "Jitendra Solanki",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anand Todkar",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ziran Min",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.27230",
+      "authors": [
+        {
+          "name": "Tao Jiang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Benjamin Navet",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yousouf Taghzouti",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fabien L. Gandon",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Louis-Félix Nothias",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Élise Dumont",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "From Outcomes to Components: A Counterfactual Evaluation Framework for LLM-Proposed Repairs",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.26650",
+      "authors": [
+        {
+          "name": "Hengyu Ye",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Songhua Hu",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow?",
+      "publication_date": "2026-10-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.25078",
+      "authors": [
+        {
+          "name": "Jiaqi Su",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guibin Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jie-Jing Shao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cong Pang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tiankuo Yao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ivor Wai-Hung Tsang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haiyan Yin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuicheng Yan",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Benchmark for Structured Retrieval-Augmented Generation in Perovskite Photovoltaics",
+      "publication_date": "2026-10-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2610.25575",
+      "authors": [
+        {
+          "name": "Qiwei Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chi Zhou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gaoxiang Yuan",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "HybridResearcher: Bridging the Structured-Unstructured Boundary for Deep Research Agents",
+      "publication_date": "2026-10-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.24899",
+      "authors": [
+        {
+          "name": "Soyoung Yoon",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peiran Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Han Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruofan Wu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaodong Yu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Feng Yan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mohit Bansal",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Debiao Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Seung-Won Hwang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuxiong He",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhewei Yao",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Probing Ambiguity: Adversarial Intent Resolution for Robust Text-to-SQL",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.24248",
+      "authors": [
+        {
+          "name": "Youbing Yin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xujun Peng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Muhammad Shahin Uddin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Erin Babinsky",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Daben Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anoop Kumar",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "NL2SQL with Iterative Self-Refinement",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "NL2SQL"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.22968",
+      "authors": [
+        {
+          "name": "Anjali Vemula",
+          "affiliation": "University of Minnesota, Twin Cities Orthopedics",
+          "is_corresponding": false
+        },
+        {
+          "name": "Akshat Dasula",
+          "affiliation": "University of Minnesota, Twin Cities Orthopedics",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Designing for Imperfect Prompts: A Simulation-Based Evaluation of an LLM-Based Enterprise Data Assistant Using Knowledge Graphs",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.23304",
+      "authors": [
+        {
+          "name": "Niklas Wagner",
+          "affiliation": "Karlsruhe Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alexander Maedche",
+          "affiliation": "Karlsruhe Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Characterising and Analysing Retrieval-Augmented Generation Techniques",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.23226",
+      "authors": [
+        {
+          "name": "Igbekele Emmanuel O.",
+          "affiliation": "Landmark University, University of Pretoria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Olawande J. Daramola",
+          "affiliation": "University of Pretoria",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "publication_date": "2026-10-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.23845",
+      "authors": [
+        {
+          "name": "Shicheng Liu",
+          "affiliation": "Stanford University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Krista Opsahl-Ong",
+          "affiliation": "Databricks AI Research",
+          "is_corresponding": false
+        },
+        {
+          "name": "Andrew Drozdov",
+          "affiliation": "Databricks AI Research",
+          "is_corresponding": false
+        },
+        {
+          "name": "Julian Killingback",
+          "affiliation": "University of Massachusetts Amherst",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arnav Singhvi",
+          "affiliation": "Databricks AI Research",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ronak Pradeep",
+          "affiliation": "Databricks AI Research",
+          "is_corresponding": false
+        },
+        {
+          "name": "Michael Bendersky",
+          "affiliation": "Databricks AI Research",
+          "is_corresponding": false
+        },
+        {
+          "name": "James Charles Dickerson",
+          "affiliation": "Stanford University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Monica S. Lam",
+          "affiliation": "Stanford University",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
