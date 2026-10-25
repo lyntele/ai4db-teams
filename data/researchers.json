@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-10-24"
+    "last_updated": "2026-10-25"
   },
   "researchers": [
     {
@@ -33844,6 +33844,43 @@
       "notes": "Auto-discovered from QS #47 school Shanghai Jiao Tong University via arXiv (Cornell University) paper \"Consistency Is the Attack Surface: Detecting Coordinated Retrieval Poisoning with Embedding Geometry\". Please verify homepage and student availability manually.",
       "added_date": "2026-10-24",
       "last_updated": "2026-10-24"
+    },
+    {
+      "id": "uid-919",
+      "name": "Bruno Ribeiro",
+      "type": "faculty",
+      "institution": "QS_PurdueUniversity_3",
+      "institution_display_name": "Purdue University",
+      "institution_qs_rank": 88,
+      "department": "",
+      "country": "United States",
+      "region": "North America",
+      "position": "",
+      "research_focus": [
+        "RAG"
+      ],
+      "tags": [
+        "RAG"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "DeclineCraft: A RAG Abstention Benchmark for Jointly Measuring Combined Retrieval and Parametric Knowledge",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2610.28340"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #88 school Purdue University via arXiv (Cornell University) paper \"DeclineCraft: A RAG Abstention Benchmark for Jointly Measuring Combined Retrieval and Parametric Knowledge\". Please verify homepage and student availability manually.",
+      "added_date": "2026-10-25",
+      "last_updated": "2026-10-25"
     }
   ]
 }

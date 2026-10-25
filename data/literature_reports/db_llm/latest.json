@@ -16,68 +16,111 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-24",
+  "run_date": "2026-10-25",
   "scan_window": {
-    "start_date": "2026-10-17",
-    "end_date": "2026-10-24"
+    "start_date": "2026-10-18",
+    "end_date": "2026-10-25"
   },
   "summary": {
-    "openalex_works_fetched": 1057,
+    "openalex_works_fetched": 1088,
     "watchlist_matches": 22,
-    "new_researchers_added": 6,
+    "new_researchers_added": 1,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 10,
-    "skipped_due_to_score": 818,
-    "skipped_due_to_venue": 11,
-    "skipped_due_to_focus": 206,
-    "skipped_due_to_institution": 12,
-    "skipped_due_to_role": 36
+    "papers_mapped_to_site_entries": 8,
+    "skipped_due_to_score": 858,
+    "skipped_due_to_venue": 15,
+    "skipped_due_to_focus": 193,
+    "skipped_due_to_institution": 14,
+    "skipped_due_to_role": 26
   },
   "new_researchers": [
     {
-      "name": "Gaoxiang Yuan",
-      "institution": "New York University (NYU)",
-      "tags": []
-    },
-    {
-      "name": "Songhua Hu",
-      "institution": "University of Hong Kong",
-      "tags": [
-        "LLM-DB"
-      ]
-    },
-    {
-      "name": "Guido Zuccon",
-      "institution": "The University of Queensland",
-      "tags": [
-        "RAG"
-      ]
-    },
-    {
-      "name": "Zhiyao Xie",
-      "institution": "HKUST",
-      "tags": [
-        "RAG"
-      ]
-    },
-    {
-      "name": "Chris Callison-Burch",
-      "institution": "University of Pennsylvania",
-      "tags": [
-        "RAG"
-      ]
-    },
-    {
-      "name": "Jianfeng Xu*",
-      "institution": "Shanghai Jiao Tong University",
+      "name": "Bruno Ribeiro",
+      "institution": "Purdue University",
       "tags": [
         "RAG"
       ]
     }
   ],
   "papers": [
+    {
+      "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.30611",
+      "authors": [
+        {
+          "name": "Amirhossein Aghaei",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Liangyan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiyi Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shaohua Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yan Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 5,
+      "url": "https://doi.org/10.48550/arxiv.2610.30710",
+      "authors": [
+        {
+          "name": "Guangcan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuyuan Zheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiayao Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shigeto Seno",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Makoto Onizuka",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "Building SQL Equivalence Proofs from Query Rewrite Rules",
       "publication_date": "2026-10-21",
@@ -87,7 +130,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2610.30100",
+      "url": "https://arxiv.org/abs/2610.30100",
       "authors": [
         {
           "name": "Chunyu Chen",
@@ -175,6 +218,55 @@
         {
           "name": "Ziran Min",
           "affiliation": "Siemens (United States)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Local Inference of LLMs on Long Contexts: A Data Systems Perspective",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.28223",
+      "authors": [
+        {
+          "name": "Mattias Dürrmeier",
+          "affiliation": "University of Fribourg",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alberto Lerner",
+          "affiliation": "Computing Flows GmbH Fribourg , Switzerland",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "DeclineCraft: A RAG Abstention Benchmark for Jointly Measuring Combined Retrieval and Parametric Knowledge",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.28340",
+      "authors": [
+        {
+          "name": "Atharva Thakur",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abulhair Saparov",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bruno Ribeiro",
+          "affiliation": "Purdue University West Lafayette",
           "is_corresponding": false
         }
       ]
@@ -694,160 +786,6 @@
         {
           "name": "Muhammed Abdur Rahmaan Kamaldeen",
           "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "HybridResearcher: Bridging the Structured-Unstructured Boundary for Deep Research Agents",
-      "publication_date": "2026-10-17",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL",
-        "LLM-DB"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2610.24899",
-      "authors": [
-        {
-          "name": "Soyoung Yoon",
-          "affiliation": "Seoul National University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Peiran Xu",
-          "affiliation": "University of California, Los Angeles",
-          "is_corresponding": false
-        },
-        {
-          "name": "Han Wang",
-          "affiliation": "University of North Carolina at Chapel Hill",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ruofan Wu",
-          "affiliation": "University of Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaodong Yu",
-          "affiliation": "Snowflake Inc. (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Feng Yan",
-          "affiliation": "University of Houston",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mohit Bansal",
-          "affiliation": "University of North Carolina at Chapel Hill",
-          "is_corresponding": false
-        },
-        {
-          "name": "Debiao Li",
-          "affiliation": "University of California, Los Angeles",
-          "is_corresponding": false
-        },
-        {
-          "name": "Seung-Won Hwang",
-          "affiliation": "Seoul National University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yuxiong He",
-          "affiliation": "Snowflake Inc. (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhewei Yao",
-          "affiliation": "Snowflake Inc. (United States)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Do Conversational Agents Need Explicit Memory? A Controlled Comparison with Raw-History Retrieval",
-      "publication_date": "2026-10-17",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.24671",
-      "authors": [
-        {
-          "name": "Yongjie Zhou",
-          "affiliation": "The University of Queensland",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuai Wang",
-          "affiliation": "The University of Queensland",
-          "is_corresponding": false
-        },
-        {
-          "name": "Bevan Koopman",
-          "affiliation": "Commonwealth Scientific and Industrial Research Organisation, The University of Queensland",
-          "is_corresponding": false
-        },
-        {
-          "name": "Guido Zuccon",
-          "affiliation": "Google (United States), The University of Queensland",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Consistency Is the Attack Surface: Detecting Coordinated Retrieval Poisoning with Embedding Geometry",
-      "publication_date": "2026-10-17",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.24834",
-      "authors": [
-        {
-          "name": "Zeyan Li",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Qirong Guo",
-          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jianfeng Xu*",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "A Cross-Domain Evaluation of Prompting Techniques for Large Language Models",
-      "publication_date": "2026-10-17",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.24913",
-      "authors": [
-        {
-          "name": "Kevin Krazius",
-          "affiliation": "IU International University of Applied Sciences",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tim Schlippe",
-          "affiliation": "IU International University of Applied Sciences",
-          "is_corresponding": false
-        },
-        {
-          "name": "Paul Libbrecht",
-          "affiliation": "IU International University of Applied Sciences",
           "is_corresponding": false
         }
       ]
