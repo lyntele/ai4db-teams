@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-10-25"
+    "last_updated": "2026-10-26"
   },
   "researchers": [
     {
@@ -20805,6 +20805,11 @@
           "title": "LHGstore: An In-Memory Learned Graph Storage for Fast Updates and Analytics",
           "venue": "ArXiv.org",
           "url": "http://arxiv.org/abs/2603.11596"
+        },
+        {
+          "title": "C$^2$U in RAG: Compositional Concept Unlearning in Retrieval-Augmented Generation",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2610.29223"
         }
       ],
       "research_group_url": "",
@@ -20815,7 +20820,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #85 school Tokyo Institute of Technology via ArXiv.org paper \"LHGstore: An In-Memory Learned Graph Storage for Fast Updates and Analytics\". Please verify homepage and student availability manually.",
       "added_date": "2026-03-26",
-      "last_updated": "2026-03-26"
+      "last_updated": "2026-10-26"
     },
     {
       "id": "uid-565",

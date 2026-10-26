@@ -1,0 +1,615 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-10-26",
+  "scan_window": {
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-26"
+  },
+  "summary": {
+    "openalex_works_fetched": 1115,
+    "watchlist_matches": 19,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 1,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 5,
+    "skipped_due_to_score": 867,
+    "skipped_due_to_venue": 14,
+    "skipped_due_to_focus": 215,
+    "skipped_due_to_institution": 14,
+    "skipped_due_to_role": 15
+  },
+  "new_researchers": [],
+  "papers": [
+    {
+      "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.30611",
+      "authors": [
+        {
+          "name": "Amirhossein Aghaei",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Liangyan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiyi Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shaohua Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yan Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 5,
+      "url": "https://arxiv.org/abs/2610.30710",
+      "authors": [
+        {
+          "name": "Guangcan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuyuan Zheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiayao Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shigeto Seno",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Makoto Onizuka",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Retrieval Augmented Generation Compositionality",
+      "publication_date": "2026-10-21",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.29722",
+      "authors": [
+        {
+          "name": "Ido Levy",
+          "affiliation": "Weizmann Institute of Science",
+          "is_corresponding": false
+        },
+        {
+          "name": "Segev Shlomov",
+          "affiliation": "Weizmann Institute of Science",
+          "is_corresponding": false
+        },
+        {
+          "name": "Leshem Choshen",
+          "affiliation": "Weizmann Institute of Science",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "LTEM: LLM-Friendly Table-Enhanced Markdown for Table Understanding and Generation",
+      "publication_date": "2026-10-21",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2610.29188",
+      "authors": [
+        {
+          "name": "Eunbin Kim",
+          "affiliation": "Chungnam National University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hyeonseok Kang",
+          "affiliation": "Chungnam National University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sangkeun Jung",
+          "affiliation": "Chungnam National University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "DynaCI: Generating GitHub Actions Workflows via Dynamic Analysis",
+      "publication_date": "2026-10-21",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.29890",
+      "authors": [
+        {
+          "name": "Javid Ditty",
+          "affiliation": "University of Michigan–Dearborn",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rahul Chavan",
+          "affiliation": "University of Michigan–Dearborn",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nimmi Rashinika Weeraddana",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Foyzul Hassan",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Charts as Epistemic Actions for Experience-Driven Agentic Data Analysis",
+      "publication_date": "2026-10-21",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-agents"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.30072",
+      "authors": [
+        {
+          "name": "Xinzhe Wang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xudong Weng",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zang Li",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shaolei Zhang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "C$^2$U in RAG: Compositional Concept Unlearning in Retrieval-Augmented Generation",
+      "publication_date": "2026-10-21",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.29223",
+      "authors": [
+        {
+          "name": "Yiyang Duan",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fan Wu",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tiantong Wu",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Che Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhiren Gong",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wei Guo",
+          "affiliation": "Beihang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yang Cao",
+          "affiliation": "Tokyo Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wei Yang Bryan Lim",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Building SQL Equivalence Proofs from Query Rewrite Rules",
+      "publication_date": "2026-10-21",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.30100",
+      "authors": [
+        {
+          "name": "Chunyu Chen",
+          "affiliation": "Simon Fraser University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinyi Huang",
+          "affiliation": "Simon Fraser University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhengjie Miao",
+          "affiliation": "Simon Fraser University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Tracing Recurrent and Emergent Hallucination Patterns in Decomposed Text-to-SQL Generation",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.27720",
+      "authors": [
+        {
+          "name": "Hayden Moore",
+          "affiliation": "Pennsylvania State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abhinav Verma",
+          "affiliation": "Pennsylvania State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anshuman Dutt",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Temporal Evidence-Parameter Co-Alignment for LLM Reasoning over Temporal Knowledge Graphs",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.28176",
+      "authors": [
+        {
+          "name": "Jiapu Wang",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.28611",
+      "authors": [
+        {
+          "name": "Jitendra Solanki",
+          "affiliation": "Siemens (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anand Todkar",
+          "affiliation": "Siemens (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ziran Min",
+          "affiliation": "Siemens (United States)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Local Inference of LLMs on Long Contexts: A Data Systems Perspective",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.28223",
+      "authors": [
+        {
+          "name": "Mattias Dürrmeier",
+          "affiliation": "University of Fribourg",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alberto Lerner",
+          "affiliation": "Computing Flows GmbH Fribourg , Switzerland",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "DeclineCraft: A RAG Abstention Benchmark for Jointly Measuring Combined Retrieval and Parametric Knowledge",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.28340",
+      "authors": [
+        {
+          "name": "Atharva Thakur",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abulhair Saparov",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bruno Ribeiro",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG",
+      "publication_date": "2026-10-20",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.28364",
+      "authors": [
+        {
+          "name": "Abhishek Rai",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "TimelineAgent: An LLM-based Framework for Query-Centric Event Timeline Extraction Across Multiple Documents",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2610.25733",
+      "authors": [
+        {
+          "name": "Qingkai Min",
+          "affiliation": "Westlake University, Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yunxin Bao",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yifeng Lu",
+          "affiliation": "Westlake University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhenyu Feng",
+          "affiliation": "Saarland University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yulong Chen",
+          "affiliation": "University of Aberdeen, University of Cambridge",
+          "is_corresponding": false
+        },
+        {
+          "name": "Andreas Vlachos",
+          "affiliation": "University of Cambridge",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yue Zhang",
+          "affiliation": "Westlake University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MultiCard: Multiple Attribute Cardinality Estimation via Deep Learning",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "query-optimization"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.27019",
+      "authors": [
+        {
+          "name": "Mobina Koochaknia",
+          "affiliation": "Sharif University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Maryam Ramezani",
+          "affiliation": "Sharif University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mohammad Hasan Shafaat",
+          "affiliation": "Sharif University of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.27230",
+      "authors": [
+        {
+          "name": "Tao Jiang",
+          "affiliation": "Centre National de la Recherche Scientifique, Institut de Chimie de Nice",
+          "is_corresponding": false
+        },
+        {
+          "name": "Benjamin Navet",
+          "affiliation": "Centre National de la Recherche Scientifique, Institut national de recherche en sciences et technologies du numérique",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yousouf Taghzouti",
+          "affiliation": "Centre National de la Recherche Scientifique, Institut national de recherche en sciences et technologies du numérique",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fabien L. Gandon",
+          "affiliation": "Centre National de la Recherche Scientifique, Institut national de recherche en sciences et technologies du numérique",
+          "is_corresponding": false
+        },
+        {
+          "name": "Louis-Félix Nothias",
+          "affiliation": "Centre National de la Recherche Scientifique, Institut de Chimie de Nice",
+          "is_corresponding": false
+        },
+        {
+          "name": "Élise Dumont",
+          "affiliation": "Centre National de la Recherche Scientifique, Institut de Chimie de Nice",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "From Outcomes to Components: A Counterfactual Evaluation Framework for LLM-Proposed Repairs",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.26650",
+      "authors": [
+        {
+          "name": "Hengyu Ye",
+          "affiliation": "ShanghaiTech University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Songhua Hu",
+          "affiliation": "City University of Hong Kong",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "EpiLens: Lightweight RAG for Epidemiological Knowledge Acquisition",
+      "publication_date": "2026-10-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.26730",
+      "authors": [
+        {
+          "name": "Vincenzo Perri",
+          "affiliation": "Institute for Scientific Interchange",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ciro Cattuto",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Daniela Paolotti",
+          "affiliation": "Institute for Scientific Interchange",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
