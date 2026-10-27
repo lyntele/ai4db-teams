@@ -16,27 +16,86 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-26",
+  "run_date": "2026-10-27",
   "scan_window": {
-    "start_date": "2026-10-19",
-    "end_date": "2026-10-26"
+    "start_date": "2026-10-20",
+    "end_date": "2026-10-27"
   },
   "summary": {
-    "openalex_works_fetched": 1115,
-    "watchlist_matches": 19,
-    "new_researchers_added": 0,
-    "existing_researchers_updated": 1,
+    "openalex_works_fetched": 1103,
+    "watchlist_matches": 16,
+    "new_researchers_added": 2,
+    "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
     "papers_mapped_to_site_entries": 5,
-    "skipped_due_to_score": 867,
-    "skipped_due_to_venue": 14,
-    "skipped_due_to_focus": 215,
-    "skipped_due_to_institution": 14,
-    "skipped_due_to_role": 15
+    "skipped_due_to_score": 877,
+    "skipped_due_to_venue": 13,
+    "skipped_due_to_focus": 197,
+    "skipped_due_to_institution": 11,
+    "skipped_due_to_role": 13
   },
-  "new_researchers": [],
+  "new_researchers": [
+    {
+      "name": "Makoto Onizuka",
+      "institution": "The University of Osaka",
+      "tags": [
+        "knowledge-graph",
+        "RAG",
+        "LLM-DB"
+      ]
+    },
+    {
+      "name": "Wei Ye",
+      "institution": "Peking University",
+      "tags": [
+        "RAG"
+      ]
+    }
+  ],
   "papers": [
+    {
+      "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.30755",
+      "authors": [
+        {
+          "name": "Zhengye Bao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shengtao Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haokai Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiqi Lou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Muning Wen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Minnan Luo",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
       "publication_date": "2026-10-22",
@@ -49,27 +108,27 @@
       "authors": [
         {
           "name": "Amirhossein Aghaei",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies (Canada)",
           "is_corresponding": false
         },
         {
           "name": "Liangyan Li",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies (Canada)",
           "is_corresponding": false
         },
         {
           "name": "Shiyi Yang",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies (Canada)",
           "is_corresponding": false
         },
         {
           "name": "Shaohua Wang",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies (China)",
           "is_corresponding": false
         },
         {
           "name": "Yan Wang",
-          "affiliation": "",
+          "affiliation": "Central University of Finance and Economics",
           "is_corresponding": false
         }
       ]
@@ -88,27 +147,27 @@
       "authors": [
         {
           "name": "Guangcan Li",
-          "affiliation": "",
+          "affiliation": "The University of Osaka",
           "is_corresponding": false
         },
         {
           "name": "Shuyuan Zheng",
-          "affiliation": "",
+          "affiliation": "The University of Osaka",
           "is_corresponding": false
         },
         {
           "name": "Jiayao Liu",
-          "affiliation": "",
+          "affiliation": "First Hospital of China Medical University",
           "is_corresponding": false
         },
         {
           "name": "Shigeto Seno",
-          "affiliation": "",
+          "affiliation": "The University of Osaka",
           "is_corresponding": false
         },
         {
           "name": "Makoto Onizuka",
-          "affiliation": "",
+          "affiliation": "The University of Osaka",
           "is_corresponding": false
         }
       ]
@@ -136,6 +195,48 @@
         {
           "name": "Leshem Choshen",
           "affiliation": "Weizmann Institute of Science",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Protection Is Not One Event: A Survey of RAG Protection Research by Measured Endpoint",
+      "publication_date": "2026-10-21",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.30193",
+      "authors": [
+        {
+          "name": "Peiyang Liu",
+          "affiliation": "Peking University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xi Wang",
+          "affiliation": "Peking University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Di Liang",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Youru Li",
+          "affiliation": "Beijing University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhi Cai",
+          "affiliation": "Beijing University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wei Ye",
+          "affiliation": "Peking University",
           "is_corresponding": false
         }
       ]
@@ -271,7 +372,7 @@
         },
         {
           "name": "Yang Cao",
-          "affiliation": "Tokyo Institute of Technology",
+          "affiliation": "Tokyo Institute of Technology, Institute of Science Tokyo",
           "is_corresponding": false
         },
         {
@@ -445,169 +546,6 @@
           "name": "Abhishek Rai",
           "affiliation": "",
           "is_corresponding": true
-        }
-      ]
-    },
-    {
-      "title": "TimelineAgent: An LLM-based Framework for Query-Centric Event Timeline Extraction Across Multiple Documents",
-      "publication_date": "2026-10-19",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.25733",
-      "authors": [
-        {
-          "name": "Qingkai Min",
-          "affiliation": "Westlake University, Zhejiang University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yunxin Bao",
-          "affiliation": "Zhejiang University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yifeng Lu",
-          "affiliation": "Westlake University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhenyu Feng",
-          "affiliation": "Saarland University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yulong Chen",
-          "affiliation": "University of Aberdeen, University of Cambridge",
-          "is_corresponding": false
-        },
-        {
-          "name": "Andreas Vlachos",
-          "affiliation": "University of Cambridge",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yue Zhang",
-          "affiliation": "Westlake University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "MultiCard: Multiple Attribute Cardinality Estimation via Deep Learning",
-      "publication_date": "2026-10-19",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "query-optimization"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.27019",
-      "authors": [
-        {
-          "name": "Mobina Koochaknia",
-          "affiliation": "Sharif University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Maryam Ramezani",
-          "affiliation": "Sharif University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mohammad Hasan Shafaat",
-          "affiliation": "Sharif University of Technology",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Magnolia: A Persistent-Memory Agent Framework for Computational Chemistry",
-      "publication_date": "2026-10-19",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.27230",
-      "authors": [
-        {
-          "name": "Tao Jiang",
-          "affiliation": "Centre National de la Recherche Scientifique, Institut de Chimie de Nice",
-          "is_corresponding": false
-        },
-        {
-          "name": "Benjamin Navet",
-          "affiliation": "Centre National de la Recherche Scientifique, Institut national de recherche en sciences et technologies du numérique",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yousouf Taghzouti",
-          "affiliation": "Centre National de la Recherche Scientifique, Institut national de recherche en sciences et technologies du numérique",
-          "is_corresponding": false
-        },
-        {
-          "name": "Fabien L. Gandon",
-          "affiliation": "Centre National de la Recherche Scientifique, Institut national de recherche en sciences et technologies du numérique",
-          "is_corresponding": false
-        },
-        {
-          "name": "Louis-Félix Nothias",
-          "affiliation": "Centre National de la Recherche Scientifique, Institut de Chimie de Nice",
-          "is_corresponding": false
-        },
-        {
-          "name": "Élise Dumont",
-          "affiliation": "Centre National de la Recherche Scientifique, Institut de Chimie de Nice",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "From Outcomes to Components: A Counterfactual Evaluation Framework for LLM-Proposed Repairs",
-      "publication_date": "2026-10-19",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.26650",
-      "authors": [
-        {
-          "name": "Hengyu Ye",
-          "affiliation": "ShanghaiTech University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Songhua Hu",
-          "affiliation": "City University of Hong Kong",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "EpiLens: Lightweight RAG for Epidemiological Knowledge Acquisition",
-      "publication_date": "2026-10-19",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.26730",
-      "authors": [
-        {
-          "name": "Vincenzo Perri",
-          "affiliation": "Institute for Scientific Interchange",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ciro Cattuto",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Daniela Paolotti",
-          "affiliation": "Institute for Scientific Interchange",
-          "is_corresponding": false
         }
       ]
     }
