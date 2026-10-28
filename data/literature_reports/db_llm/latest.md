@@ -1,29 +1,24 @@
 # DB + LLM Daily Literature Watch
 
-- Run date: 2026-10-27
-- Scan window: 2026-10-20 to 2026-10-27
+- Run date: 2026-10-28
+- Scan window: 2026-10-21 to 2026-10-28
 - Watchlist id: `db_llm`
 - Scope: Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.
 
 ## Summary
 
-- OpenAlex works fetched: 1103
-- Works matching this watchlist: 16
-- New researchers added to site: 2
+- OpenAlex works fetched: 1047
+- Works matching this watchlist: 10
+- New researchers added to site: 0
 - Existing researchers updated: 0
 - Industrial team members added: 0
 - Industrial team members updated: 0
-- Papers that mapped to site entries: 5
-- Skipped by relevance score: 877
-- Skipped by venue: 13
-- Skipped by DB+LLM focus filter: 197
-- Skipped by institution matching: 11
-- Skipped by author-role guardrail: 13
-
-## Newly Added Researchers
-
-- Makoto Onizuka (The University of Osaka)
-- Wei Ye (Peking University)
+- Papers that mapped to site entries: 3
+- Skipped by relevance score: 900
+- Skipped by venue: 14
+- Skipped by DB+LLM focus filter: 123
+- Skipped by institution matching: 7
+- Skipped by author-role guardrail: 7
 
 ## Matched Papers
 
@@ -106,51 +101,3 @@
 - Relevance score: 4
 - URL: https://arxiv.org/abs/2610.30100
 - Authors: Chunyu Chen (Simon Fraser University); Xinyi Huang (Simon Fraser University); Zhengjie Miao (Simon Fraser University)
-
-### 11. Tracing Recurrent and Emergent Hallucination Patterns in Decomposed Text-to-SQL Generation
-- Publication date: 2026-10-20
-- Venue: arXiv (Cornell University)
-- Tags: text-to-SQL
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.27720
-- Authors: Hayden Moore (Pennsylvania State University); Abhinav Verma (Pennsylvania State University); Anshuman Dutt
-
-### 12. Temporal Evidence-Parameter Co-Alignment for LLM Reasoning over Temporal Knowledge Graphs
-- Publication date: 2026-10-20
-- Venue: arXiv (Cornell University)
-- Tags: knowledge-graph, RAG
-- Relevance score: 4
-- URL: https://arxiv.org/abs/2610.28176
-- Authors: Jiapu Wang
-
-### 13. Semantic Observability for Autonomous Systems Diagnostics
-- Publication date: 2026-10-20
-- Venue: arXiv (Cornell University)
-- Tags: knowledge-graph, LLM-DB
-- Relevance score: 4
-- URL: https://arxiv.org/abs/2610.28611
-- Authors: Jitendra Solanki (Siemens (United States)); Anand Todkar (Siemens (United States)); Ziran Min (Siemens (United States))
-
-### 14. Local Inference of LLMs on Long Contexts: A Data Systems Perspective
-- Publication date: 2026-10-20
-- Venue: arXiv (Cornell University)
-- Tags: LLM-DB
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.28223
-- Authors: Mattias Dürrmeier (University of Fribourg); Alberto Lerner (Computing Flows GmbH Fribourg , Switzerland)
-
-### 15. DeclineCraft: A RAG Abstention Benchmark for Jointly Measuring Combined Retrieval and Parametric Knowledge
-- Publication date: 2026-10-20
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.28340
-- Authors: Atharva Thakur (Purdue University West Lafayette); Abulhair Saparov (Purdue University West Lafayette); Bruno Ribeiro (Purdue University West Lafayette)
-
-### 16. Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG
-- Publication date: 2026-10-20
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.28364
-- Authors: Abhishek Rai
