@@ -1,0 +1,501 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-10-29",
+  "scan_window": {
+    "start_date": "2026-10-22",
+    "end_date": "2026-10-29"
+  },
+  "summary": {
+    "openalex_works_fetched": 1061,
+    "watchlist_matches": 15,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 1,
+    "skipped_due_to_score": 928,
+    "skipped_due_to_venue": 19,
+    "skipped_due_to_focus": 99,
+    "skipped_due_to_institution": 14,
+    "skipped_due_to_role": 3
+  },
+  "new_researchers": [],
+  "papers": [
+    {
+      "title": "Semantic Atoms for Scalable Text Analysis in Data Analytics in the Era of LLM-Based Agents",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2610.34860",
+      "authors": [
+        {
+          "name": "Jinxiang Xie",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zihao Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rui Ding",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bartuer Zhou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shi Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dongmei Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Learning to Remember: Advances in Memory Mechanisms for Large Language Models",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.35089",
+      "authors": [
+        {
+          "name": "Chenye Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongche Yu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mengyue Wu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dell Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jixiang Luo",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "From Questions to Queries to Insights: A Schema-Grounded Agentic Workflow for Natural-Language Crash Data Analysis",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2610.35054",
+      "authors": [
+        {
+          "name": "Jingwen Zhu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Keshu Wu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Steven T. Parker",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bin Ran",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "David A. Noyce",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2610.35767",
+      "authors": [
+        {
+          "name": "Tingzhu Bi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xun Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jinglin Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ping Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Meng Ma",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Before Blaming the LLM, Diagnose the Workflow: A Role-Level Difficulty Profile for Translating Natural Language into Ontology-Grounded Statements",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "NL2SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.35267",
+      "authors": [
+        {
+          "name": "Liang Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Benoît Daireaux",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sergey Alyaev",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "From Autonomous Knowledge Generation to Generalizable Property Prediction: A Precision-First Pipeline for Electro-Optic Materials Discovery",
+      "publication_date": "2026-10-25",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.34628",
+      "authors": [
+        {
+          "name": "Dibakar Datta",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Secure and Functional Code Generation with Self-Evaluation",
+      "publication_date": "2026-10-24",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.33450",
+      "authors": [
+        {
+          "name": "Md Afif Al Mamun",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gias Uddin",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Schema-Free Text-to-SQL: Learning Enterprise Database Structure from Query Logs",
+      "publication_date": "2026-10-24",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "knowledge-graph"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2610.33946",
+      "authors": [
+        {
+          "name": "Ömer Faruk Akgül",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nikhil Kapahi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Prajit Reddy Muppidi",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Bridging Search Intent and Tabular Data in Dataset Search",
+      "publication_date": "2026-10-24",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2610.33936",
+      "authors": [
+        {
+          "name": "Wenjing Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Madelon Hulsebos",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Who Verifies the Tools? How Warped Formatters Mislead Agents and Their Verifiers",
+      "publication_date": "2026-10-23",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.32110",
+      "authors": [
+        {
+          "name": "William Jeffries",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Scaling Graph Query Processing: Focused Exploration on Partitions Using Load Balancing",
+      "publication_date": "2026-10-23",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "query-optimization"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.32015",
+      "authors": [
+        {
+          "name": "Harshit Modi",
+          "affiliation": "The University of Texas at Arlington",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abhishek Santra",
+          "affiliation": "The University of Texas at Arlington",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sharma Chakravarthy",
+          "affiliation": "The University of Texas at Arlington",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "OCTOPUS: Towards A Tag Model for Cross-Query Reuse in Semantic Query Processing",
+      "publication_date": "2026-10-23",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "query-optimization"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.32586",
+      "authors": [
+        {
+          "name": "Guangxue Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nada Lahjouji",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yiming Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ashwin Colaco",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sharad Mehrotra",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.30755",
+      "authors": [
+        {
+          "name": "Zhengye Bao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shengtao Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haokai Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiqi Lou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Muning Wen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Minnan Luo",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.30611",
+      "authors": [
+        {
+          "name": "Amirhossein Aghaei",
+          "affiliation": "Huawei Technologies (Canada)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Liangyan Li",
+          "affiliation": "Huawei Technologies (Canada)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiyi Yang",
+          "affiliation": "Huawei Technologies (Canada)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shaohua Wang",
+          "affiliation": "Huawei Technologies (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yan Wang",
+          "affiliation": "Central University of Finance and Economics",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
+      "publication_date": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 5,
+      "url": "https://arxiv.org/abs/2610.30710",
+      "authors": [
+        {
+          "name": "Guangcan Li",
+          "affiliation": "The University of Osaka",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuyuan Zheng",
+          "affiliation": "The University of Osaka",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiayao Liu",
+          "affiliation": "First Hospital of China Medical University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shigeto Seno",
+          "affiliation": "The University of Osaka",
+          "is_corresponding": false
+        },
+        {
+          "name": "Makoto Onizuka",
+          "affiliation": "The University of Osaka",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}

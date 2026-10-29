@@ -1,28 +1,124 @@
 # DB + LLM Daily Literature Watch
 
-- Run date: 2026-10-28
-- Scan window: 2026-10-21 to 2026-10-28
+- Run date: 2026-10-29
+- Scan window: 2026-10-22 to 2026-10-29
 - Watchlist id: `db_llm`
 - Scope: Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.
 
 ## Summary
 
-- OpenAlex works fetched: 1047
-- Works matching this watchlist: 10
+- OpenAlex works fetched: 1061
+- Works matching this watchlist: 15
 - New researchers added to site: 0
 - Existing researchers updated: 0
 - Industrial team members added: 0
 - Industrial team members updated: 0
-- Papers that mapped to site entries: 3
-- Skipped by relevance score: 900
-- Skipped by venue: 14
-- Skipped by DB+LLM focus filter: 123
-- Skipped by institution matching: 7
-- Skipped by author-role guardrail: 7
+- Papers that mapped to site entries: 1
+- Skipped by relevance score: 928
+- Skipped by venue: 19
+- Skipped by DB+LLM focus filter: 99
+- Skipped by institution matching: 14
+- Skipped by author-role guardrail: 3
 
 ## Matched Papers
 
-### 1. Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought
+### 1. Semantic Atoms for Scalable Text Analysis in Data Analytics in the Era of LLM-Based Agents
+- Publication date: 2026-10-26
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://doi.org/10.48550/arxiv.2610.34860
+- Authors: Jinxiang Xie; Zihao Li; Rui Ding; Bartuer Zhou; Shi Han; Dongmei Zhang
+
+### 2. Learning to Remember: Advances in Memory Mechanisms for Large Language Models
+- Publication date: 2026-10-26
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.35089
+- Authors: Chenye Han; Hongche Yu; Mengyue Wu; Dell Zhang; Jixiang Luo
+
+### 3. From Questions to Queries to Insights: A Schema-Grounded Agentic Workflow for Natural-Language Crash Data Analysis
+- Publication date: 2026-10-26
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://doi.org/10.48550/arxiv.2610.35054
+- Authors: Jingwen Zhu; Keshu Wu; Steven T. Parker; Bin Ran; David A. Noyce
+
+### 4. Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents
+- Publication date: 2026-10-26
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://doi.org/10.48550/arxiv.2610.35767
+- Authors: Tingzhu Bi; Xun Zhang; Jinglin Li; Ping Wang; Meng Ma
+
+### 5. Before Blaming the LLM, Diagnose the Workflow: A Role-Level Difficulty Profile for Translating Natural Language into Ontology-Grounded Statements
+- Publication date: 2026-10-26
+- Venue: arXiv (Cornell University)
+- Tags: NL2SQL
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.35267
+- Authors: Liang Zhang; Benoît Daireaux; Sergey Alyaev
+
+### 6. From Autonomous Knowledge Generation to Generalizable Property Prediction: A Precision-First Pipeline for Electro-Optic Materials Discovery
+- Publication date: 2026-10-25
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.34628
+- Authors: Dibakar Datta
+
+### 7. Secure and Functional Code Generation with Self-Evaluation
+- Publication date: 2026-10-24
+- Venue: arXiv (Cornell University)
+- Tags: RAG
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2610.33450
+- Authors: Md Afif Al Mamun; Gias Uddin
+
+### 8. Schema-Free Text-to-SQL: Learning Enterprise Database Structure from Query Logs
+- Publication date: 2026-10-24
+- Venue: arXiv (Cornell University)
+- Tags: text-to-SQL, knowledge-graph
+- Relevance score: 4
+- URL: https://doi.org/10.48550/arxiv.2610.33946
+- Authors: Ömer Faruk Akgül; Nikhil Kapahi; Prajit Reddy Muppidi
+
+### 9. Bridging Search Intent and Tabular Data in Dataset Search
+- Publication date: 2026-10-24
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://doi.org/10.48550/arxiv.2610.33936
+- Authors: Wenjing Lin; Madelon Hulsebos
+
+### 10. Who Verifies the Tools? How Warped Formatters Mislead Agents and Their Verifiers
+- Publication date: 2026-10-23
+- Venue: arXiv (Cornell University)
+- Tags: RAG
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2610.32110
+- Authors: William Jeffries
+
+### 11. Scaling Graph Query Processing: Focused Exploration on Partitions Using Load Balancing
+- Publication date: 2026-10-23
+- Venue: arXiv (Cornell University)
+- Tags: query-optimization
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2610.32015
+- Authors: Harshit Modi (The University of Texas at Arlington); Abhishek Santra (The University of Texas at Arlington); Sharma Chakravarthy (The University of Texas at Arlington)
+
+### 12. OCTOPUS: Towards A Tag Model for Cross-Query Reuse in Semantic Query Processing
+- Publication date: 2026-10-23
+- Venue: arXiv (Cornell University)
+- Tags: query-optimization
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2610.32586
+- Authors: Guangxue Zhang; Nada Lahjouji; Yiming Lin; Ashwin Colaco; Sharad Mehrotra
+
+### 13. Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought
 - Publication date: 2026-10-22
 - Venue: arXiv (Cornell University)
 - Tags: RAG
@@ -30,7 +126,7 @@
 - URL: https://arxiv.org/abs/2610.30755
 - Authors: Zhengye Bao; Shengtao Zhang; Haokai Zhang; Shiqi Lou; Muning Wen; Minnan Luo
 
-### 2. Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference
+### 14. Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference
 - Publication date: 2026-10-22
 - Venue: arXiv (Cornell University)
 - Tags: RAG
@@ -38,66 +134,10 @@
 - URL: https://arxiv.org/abs/2610.30611
 - Authors: Amirhossein Aghaei (Huawei Technologies (Canada)); Liangyan Li (Huawei Technologies (Canada)); Shiyi Yang (Huawei Technologies (Canada)); Shaohua Wang (Huawei Technologies (China)); Yan Wang (Central University of Finance and Economics)
 
-### 3. Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation
+### 15. Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation
 - Publication date: 2026-10-22
 - Venue: arXiv (Cornell University)
 - Tags: knowledge-graph, RAG, LLM-DB
 - Relevance score: 5
 - URL: https://arxiv.org/abs/2610.30710
 - Authors: Guangcan Li (The University of Osaka); Shuyuan Zheng (The University of Osaka); Jiayao Liu (First Hospital of China Medical University); Shigeto Seno (The University of Osaka); Makoto Onizuka (The University of Osaka)
-
-### 4. Retrieval Augmented Generation Compositionality
-- Publication date: 2026-10-21
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.29722
-- Authors: Ido Levy (Weizmann Institute of Science); Segev Shlomov (Weizmann Institute of Science); Leshem Choshen (Weizmann Institute of Science)
-
-### 5. Protection Is Not One Event: A Survey of RAG Protection Research by Measured Endpoint
-- Publication date: 2026-10-21
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.30193
-- Authors: Peiyang Liu (Peking University); Xi Wang (Peking University); Di Liang (Tencent (China)); Youru Li (Beijing University of Technology); Zhi Cai (Beijing University of Technology); Wei Ye (Peking University)
-
-### 6. LTEM: LLM-Friendly Table-Enhanced Markdown for Table Understanding and Generation
-- Publication date: 2026-10-21
-- Venue: arXiv (Cornell University)
-- Tags: none
-- Relevance score: 2
-- URL: https://arxiv.org/abs/2610.29188
-- Authors: Eunbin Kim (Chungnam National University); Hyeonseok Kang (Chungnam National University); Sangkeun Jung (Chungnam National University)
-
-### 7. DynaCI: Generating GitHub Actions Workflows via Dynamic Analysis
-- Publication date: 2026-10-21
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.29890
-- Authors: Javid Ditty (University of Michigan–Dearborn); Rahul Chavan (University of Michigan–Dearborn); Nimmi Rashinika Weeraddana; Foyzul Hassan
-
-### 8. Charts as Epistemic Actions for Experience-Driven Agentic Data Analysis
-- Publication date: 2026-10-21
-- Venue: arXiv (Cornell University)
-- Tags: data-agents
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.30072
-- Authors: Xinzhe Wang (Renmin University of China); Xudong Weng (Renmin University of China); Zang Li (Renmin University of China); Shaolei Zhang (Renmin University of China)
-
-### 9. C$^2$U in RAG: Compositional Concept Unlearning in Retrieval-Augmented Generation
-- Publication date: 2026-10-21
-- Venue: arXiv (Cornell University)
-- Tags: RAG
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2610.29223
-- Authors: Yiyang Duan (Nanyang Technological University); Fan Wu (Nanyang Technological University); Tiantong Wu (Nanyang Technological University); Che Wang; Zhiren Gong (Nanyang Technological University); Wei Guo (Beihang University); Yang Cao (Tokyo Institute of Technology, Institute of Science Tokyo); Wei Yang Bryan Lim
-
-### 10. Building SQL Equivalence Proofs from Query Rewrite Rules
-- Publication date: 2026-10-21
-- Venue: arXiv (Cornell University)
-- Tags: text-to-SQL, LLM-DB
-- Relevance score: 4
-- URL: https://arxiv.org/abs/2610.30100
-- Authors: Chunyu Chen (Simon Fraser University); Xinyi Huang (Simon Fraser University); Zhengjie Miao (Simon Fraser University)
