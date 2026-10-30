@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-10-30"
   },
   "researchers": [
     {
@@ -2169,7 +2169,7 @@
       "contact_history": [],
       "notes": "Microsoft Research Redmond NL2SQL 方向。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-10-19",
+      "last_updated": "2026-10-30",
       "members": [
         {
           "name": "Qian Liu",
@@ -2278,6 +2278,90 @@
           "position": "Researcher",
           "homepage": "",
           "notes": "由 1 篇相关论文作者回填，示例论文：\"HERO: Harnessing Evidence for Test-time Refinement and Prompt Optimization in Program Generation\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Qianchu Liu",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Cliff Wong",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Guanghui Qin",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Hoifung Poon",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Jason Entenmann",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Jeya Maria Jose Valanarasu",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Maximilian Rokuss",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Mu Wei",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Naoto Usuyama",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Qin Liu",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Sheng Zhang",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Wen-wai Yim",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Yashna Hasija",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
+        },
+        {
+          "name": "Zilin Jing",
+          "position": "Researcher",
+          "homepage": "",
+          "notes": "由 1 篇相关论文作者回填，示例论文：\"HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents\" (arXiv (Cornell University))。"
         }
       ]
     },

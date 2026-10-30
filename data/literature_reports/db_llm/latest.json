@@ -16,34 +16,158 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-29",
+  "run_date": "2026-10-30",
   "scan_window": {
-    "start_date": "2026-10-22",
-    "end_date": "2026-10-29"
+    "start_date": "2026-10-23",
+    "end_date": "2026-10-30"
   },
   "summary": {
-    "openalex_works_fetched": 1061,
+    "openalex_works_fetched": 1038,
     "watchlist_matches": 15,
     "new_researchers_added": 0,
     "existing_researchers_updated": 0,
-    "industrial_members_added": 0,
+    "industrial_members_added": 14,
     "industrial_members_updated": 0,
     "papers_mapped_to_site_entries": 1,
-    "skipped_due_to_score": 928,
-    "skipped_due_to_venue": 19,
-    "skipped_due_to_focus": 99,
+    "skipped_due_to_score": 944,
+    "skipped_due_to_venue": 24,
+    "skipped_due_to_focus": 55,
     "skipped_due_to_institution": 14,
-    "skipped_due_to_role": 3
+    "skipped_due_to_role": 1
   },
   "new_researchers": [],
   "papers": [
+    {
+      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.37648",
+      "authors": [
+        {
+          "name": "Andrew Szot",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Samira Abnar",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Omar Attia",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abbas Kazerouni",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Michael Kirchhof",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cheng-Yu Hsieh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Raviteja Vemulapalli",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alexander Toshev",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2610.37459",
+      "authors": [
+        {
+          "name": "Hannes Ill",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rafi Al Attrach",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rajna Fani",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ahram Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ryohei Yamamoto",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Marlene Louisa Moerig",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dukyong Yoon",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Leo Anthony Celi",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "When the Application Layer Is Disposable: Putting Integrity Constraints Back in the Database",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.36418",
+      "authors": [
+        {
+          "name": "Hasara Kalumin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Amol Deshpande",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "Semantic Atoms for Scalable Text Analysis in Data Analytics in the Era of LLM-Based Agents",
       "publication_date": "2026-10-26",
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2610.34860",
+      "url": "https://arxiv.org/abs/2610.34860",
       "authors": [
         {
           "name": "Jinxiang Xie",
@@ -85,7 +209,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.35089",
+      "url": "https://arxiv.org/abs/2610.35089",
       "authors": [
         {
           "name": "Chenye Han",
@@ -120,7 +244,7 @@
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2610.35054",
+      "url": "https://arxiv.org/abs/2610.35054",
       "authors": [
         {
           "name": "Jingwen Zhu",
@@ -155,7 +279,7 @@
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2610.35767",
+      "url": "https://arxiv.org/abs/2610.35767",
       "authors": [
         {
           "name": "Tingzhu Bi",
@@ -192,7 +316,7 @@
         "NL2SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.35267",
+      "url": "https://arxiv.org/abs/2610.35267",
       "authors": [
         {
           "name": "Liang Zhang",
@@ -219,7 +343,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.34628",
+      "url": "https://arxiv.org/abs/2610.34628",
       "authors": [
         {
           "name": "Dibakar Datta",
@@ -236,7 +360,7 @@
         "RAG"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.33450",
+      "url": "https://arxiv.org/abs/2610.33450",
       "authors": [
         {
           "name": "Md Afif Al Mamun",
@@ -259,7 +383,7 @@
         "knowledge-graph"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2610.33946",
+      "url": "https://arxiv.org/abs/2610.33946",
       "authors": [
         {
           "name": "Ömer Faruk Akgül",
@@ -284,7 +408,7 @@
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2610.33936",
+      "url": "https://arxiv.org/abs/2610.33936",
       "authors": [
         {
           "name": "Wenjing Lin",
@@ -354,145 +478,27 @@
       "authors": [
         {
           "name": "Guangxue Zhang",
-          "affiliation": "",
+          "affiliation": "University of California, Irvine",
           "is_corresponding": false
         },
         {
           "name": "Nada Lahjouji",
-          "affiliation": "",
+          "affiliation": "Blizzard Inc Irvine , USA",
           "is_corresponding": false
         },
         {
           "name": "Yiming Lin",
-          "affiliation": "",
+          "affiliation": "University of California, Berkeley",
           "is_corresponding": false
         },
         {
           "name": "Ashwin Colaco",
-          "affiliation": "",
+          "affiliation": "University of California, Irvine",
           "is_corresponding": false
         },
         {
           "name": "Sharad Mehrotra",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought",
-      "publication_date": "2026-10-22",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.30755",
-      "authors": [
-        {
-          "name": "Zhengye Bao",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shengtao Zhang",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Haokai Zhang",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shiqi Lou",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Muning Wen",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Minnan Luo",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Better Reasoning, Not Just Bigger Models: A Structure-Grounded Framework for Efficient and Reliable Inference",
-      "publication_date": "2026-10-22",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.30611",
-      "authors": [
-        {
-          "name": "Amirhossein Aghaei",
-          "affiliation": "Huawei Technologies (Canada)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Liangyan Li",
-          "affiliation": "Huawei Technologies (Canada)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shiyi Yang",
-          "affiliation": "Huawei Technologies (Canada)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shaohua Wang",
-          "affiliation": "Huawei Technologies (China)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yan Wang",
-          "affiliation": "Central University of Finance and Economics",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Automated Enrichment Analysis with GraphRAG: Efficient Multi-Database ORA Extraction and Biological Interpretation",
-      "publication_date": "2026-10-22",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "knowledge-graph",
-        "RAG",
-        "LLM-DB"
-      ],
-      "relevance_score": 5,
-      "url": "https://arxiv.org/abs/2610.30710",
-      "authors": [
-        {
-          "name": "Guangcan Li",
-          "affiliation": "The University of Osaka",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuyuan Zheng",
-          "affiliation": "The University of Osaka",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiayao Liu",
-          "affiliation": "First Hospital of China Medical University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shigeto Seno",
-          "affiliation": "The University of Osaka",
-          "is_corresponding": false
-        },
-        {
-          "name": "Makoto Onizuka",
-          "affiliation": "The University of Osaka",
+          "affiliation": "University of California, Irvine",
           "is_corresponding": false
         }
       ]
