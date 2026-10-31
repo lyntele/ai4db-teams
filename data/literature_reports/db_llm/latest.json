@@ -16,26 +16,48 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-30",
+  "run_date": "2026-10-31",
   "scan_window": {
-    "start_date": "2026-10-23",
-    "end_date": "2026-10-30"
+    "start_date": "2026-10-24",
+    "end_date": "2026-10-31"
   },
   "summary": {
-    "openalex_works_fetched": 1038,
-    "watchlist_matches": 15,
-    "new_researchers_added": 0,
-    "existing_researchers_updated": 0,
-    "industrial_members_added": 14,
+    "openalex_works_fetched": 1080,
+    "watchlist_matches": 23,
+    "new_researchers_added": 3,
+    "existing_researchers_updated": 1,
+    "industrial_members_added": 1,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 1,
-    "skipped_due_to_score": 944,
-    "skipped_due_to_venue": 24,
-    "skipped_due_to_focus": 55,
+    "papers_mapped_to_site_entries": 9,
+    "skipped_due_to_score": 897,
+    "skipped_due_to_venue": 35,
+    "skipped_due_to_focus": 125,
     "skipped_due_to_institution": 14,
-    "skipped_due_to_role": 1
+    "skipped_due_to_role": 13
   },
-  "new_researchers": [],
+  "new_researchers": [
+    {
+      "name": "Chen Gong",
+      "institution": "Shanghai Jiao Tong University",
+      "tags": [
+        "RAG"
+      ]
+    },
+    {
+      "name": "ChengXiang Zhai",
+      "institution": "UIUC",
+      "tags": [
+        "RAG"
+      ]
+    },
+    {
+      "name": "Wei Fu Dong",
+      "institution": "Nanyang Technological University, Singapore (NTU Singapore)",
+      "tags": [
+        "RAG"
+      ]
+    }
+  ],
   "papers": [
     {
       "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
@@ -45,7 +67,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.37648",
+      "url": "https://arxiv.org/abs/2610.37648",
       "authors": [
         {
           "name": "Andrew Szot",
@@ -95,7 +117,7 @@
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2610.37459",
+      "url": "https://arxiv.org/abs/2610.37459",
       "authors": [
         {
           "name": "Hannes Ill",
@@ -147,7 +169,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.36418",
+      "url": "https://arxiv.org/abs/2610.36418",
       "authors": [
         {
           "name": "Hasara Kalumin",
@@ -162,6 +184,85 @@
       ]
     },
     {
+      "title": "UniGFM-RAG: Unify Graph Foundation Models and Large Language Models for End-to-End Retrieval and Reasoning",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.34866",
+      "authors": [
+        {
+          "name": "Zicheng Zhao",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Linhao Luo",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zongji Yu",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Junnan Dong",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yanchao Tan",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shirui Pan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chen Gong",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Topic-Level Fairness in Retrieval-Augmented Generation",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.34683",
+      "authors": [
+        {
+          "name": "Jaeyoung Park",
+          "affiliation": "Korea Advanced Institute of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hantian Zhang",
+          "affiliation": "Korea Advanced Institute of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kexin Rong",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Steven Euijong Whang",
+          "affiliation": "Korea Advanced Institute of Science and Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "Semantic Atoms for Scalable Text Analysis in Data Analytics in the Era of LLM-Based Agents",
       "publication_date": "2026-10-26",
       "venue": "arXiv (Cornell University)",
@@ -171,32 +272,106 @@
       "authors": [
         {
           "name": "Jinxiang Xie",
-          "affiliation": "",
+          "affiliation": "Nanjing University",
           "is_corresponding": false
         },
         {
           "name": "Zihao Li",
-          "affiliation": "",
+          "affiliation": "Tsinghua University",
           "is_corresponding": false
         },
         {
           "name": "Rui Ding",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States)",
           "is_corresponding": false
         },
         {
           "name": "Bartuer Zhou",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States)",
           "is_corresponding": false
         },
         {
           "name": "Shi Han",
-          "affiliation": "",
+          "affiliation": "Microsoft (United States)",
           "is_corresponding": false
         },
         {
           "name": "Dongmei Zhang",
+          "affiliation": "Microsoft (United States)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Reading Beyond OCR Noise: Robust Cross-Lingual RAG for Legislative Archives",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.35240",
+      "authors": [
+        {
+          "name": "Radha Krishna Deshpande",
           "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ajoy Mondal",
+          "affiliation": "International Institute of Information Technology, Hyderabad",
+          "is_corresponding": false
+        },
+        {
+          "name": "Akash Manna",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "C. V. Jawahar",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Logic Hijacking of RAG: Single-Document Poisoning via Local Optimization",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.34829",
+      "authors": [
+        {
+          "name": "Hangyi Zhao",
+          "affiliation": "City University of Macau",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bonan Zhang",
+          "affiliation": "City University of Macau",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fusen Guo",
+          "affiliation": "School of Systems and Computing , UNSW Sydney , Canberra , Australia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiaheng Wei",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chao Chen",
+          "affiliation": "RMIT University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tianqing Zhu",
+          "affiliation": "City University of Macau",
           "is_corresponding": false
         }
       ]
@@ -213,27 +388,79 @@
       "authors": [
         {
           "name": "Chenye Han",
-          "affiliation": "",
+          "affiliation": "Shanghai Jiao Tong University, Beijing Academy of Artificial Intelligence",
           "is_corresponding": false
         },
         {
           "name": "Hongche Yu",
-          "affiliation": "",
+          "affiliation": "Shanghai Jiao Tong University, Beijing Academy of Artificial Intelligence",
           "is_corresponding": false
         },
         {
           "name": "Mengyue Wu",
-          "affiliation": "",
+          "affiliation": "Shanghai Jiao Tong University",
           "is_corresponding": false
         },
         {
           "name": "Dell Zhang",
-          "affiliation": "",
+          "affiliation": "XSci , London , UK",
           "is_corresponding": false
         },
         {
           "name": "Jixiang Luo",
-          "affiliation": "",
+          "affiliation": "Beijing Academy of Artificial Intelligence",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GuardRAG: A Post-Retrieval Defense against Poisoning Attacks in Retrieval-Augmented Generation",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.35071",
+      "authors": [
+        {
+          "name": "Linghui Jiao",
+          "affiliation": "Southeast University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kang Wei",
+          "affiliation": "Southeast University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fushuo Huo",
+          "affiliation": "Southeast University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruijie Zhao",
+          "affiliation": "Southeast University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yiyang Ni",
+          "affiliation": "Jiangsu Second Normal University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jingcai Guo",
+          "affiliation": "Hong Kong Polytechnic University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yipeng Zhou",
+          "affiliation": "Macquarie University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jun Li",
+          "affiliation": "Southeast University",
           "is_corresponding": false
         }
       ]
@@ -248,17 +475,17 @@
       "authors": [
         {
           "name": "Jingwen Zhu",
-          "affiliation": "",
+          "affiliation": "University of Wisconsin–Madison",
           "is_corresponding": false
         },
         {
           "name": "Keshu Wu",
-          "affiliation": "",
+          "affiliation": "University of Wisconsin–Madison",
           "is_corresponding": false
         },
         {
           "name": "Steven T. Parker",
-          "affiliation": "",
+          "affiliation": "University of Wisconsin–Madison",
           "is_corresponding": false
         },
         {
@@ -268,7 +495,7 @@
         },
         {
           "name": "David A. Noyce",
-          "affiliation": "",
+          "affiliation": "University of Wisconsin–Madison",
           "is_corresponding": false
         }
       ]
@@ -283,22 +510,22 @@
       "authors": [
         {
           "name": "Tingzhu Bi",
-          "affiliation": "",
+          "affiliation": "Peking University",
           "is_corresponding": false
         },
         {
           "name": "Xun Zhang",
-          "affiliation": "",
+          "affiliation": "Peking University",
           "is_corresponding": false
         },
         {
           "name": "Jinglin Li",
-          "affiliation": "",
+          "affiliation": "Beijing University of Posts and Telecommunications",
           "is_corresponding": false
         },
         {
           "name": "Ping Wang",
-          "affiliation": "",
+          "affiliation": "Peking University",
           "is_corresponding": false
         },
         {
@@ -320,17 +547,287 @@
       "authors": [
         {
           "name": "Liang Zhang",
-          "affiliation": "",
+          "affiliation": "NORCE Research AS",
           "is_corresponding": false
         },
         {
           "name": "Benoît Daireaux",
-          "affiliation": "",
+          "affiliation": "NORCE Research AS",
           "is_corresponding": false
         },
         {
           "name": "Sergey Alyaev",
+          "affiliation": "NORCE Research AS",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Autonomous Structural Discovery Of Bioprocess Dynamics And Kinetics Via LLM-Driven Agents",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.35391",
+      "authors": [
+        {
+          "name": "Erdal Aydın",
+          "affiliation": "Aalto University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yaman Arkun",
+          "affiliation": "Koç University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "ArchiveLens: A Generative Spatial Knowledge Framework for Semantic Reconstruction of Historical Maps",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.35606",
+      "authors": [
+        {
+          "name": "Yanan Wu",
+          "affiliation": "University of Central Arkansas",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yalin Yang",
+          "affiliation": "West Virginia University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chengbin Deng",
+          "affiliation": "University of Oklahoma",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Xing USP: A Cross-Family Semantic Contract for Information Extraction and Intent-Slot Parsing",
+      "publication_date": "2026-10-25",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "NL2SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.34343",
+      "authors": [
+        {
+          "name": "Zhongqiu Li",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Boyang Wang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruiyu Fang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiquan Wang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Di Wu",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiayi Liang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Feilong Zhang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongfeng Du",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaomeng Huang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mengjiao Bao",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Luwen Pu",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xuewei He",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yu Zhao",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chao Wang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kaidong Yu",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bingkai Yang",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qingjun Zhu",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shaoyi Du",
+          "affiliation": "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence ,",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuangyong Song",
+          "affiliation": "China Telecom",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yongxiang Li",
+          "affiliation": "China Telecom, Xi'an Jiaotong University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
+      "publication_date": "2026-10-25",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.34073",
+      "authors": [
+        {
+          "name": "Xuan He",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sining Zhoubian",
+          "affiliation": "Tsinghua University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruozhen Yang",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuhao Wen",
+          "affiliation": "Tsinghua University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhineng Wang",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuyang Hu",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ke Yang",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuyu Zhang",
           "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ping Nie",
+          "affiliation": "University of Waterloo",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiawei Han",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "ChengXiang Zhai",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "HNSecW: A Logarithmic-Time MPC Protocol for Approximate Nearest Neighbor Search",
+      "publication_date": "2026-10-25",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.34248",
+      "authors": [
+        {
+          "name": "Fahong Zhang",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Weijie Jin",
+          "affiliation": "Beihang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lixu Wang",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ning Luo",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiao Wang",
+          "affiliation": "Northwestern University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wei Fu Dong",
+          "affiliation": "Nanyang Technological University",
           "is_corresponding": false
         }
       ]
@@ -347,7 +844,7 @@
       "authors": [
         {
           "name": "Dibakar Datta",
-          "affiliation": "",
+          "affiliation": "New Jersey Institute of Technology",
           "is_corresponding": true
         }
       ]
@@ -364,7 +861,7 @@
       "authors": [
         {
           "name": "Md Afif Al Mamun",
-          "affiliation": "",
+          "affiliation": "University of Calgary",
           "is_corresponding": false
         },
         {
@@ -392,12 +889,34 @@
         },
         {
           "name": "Nikhil Kapahi",
-          "affiliation": "",
+          "affiliation": "Amazon (United States)",
           "is_corresponding": false
         },
         {
           "name": "Prajit Reddy Muppidi",
           "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Ranking Is Not Deciding: Benchmark Shortcuts and Operating-Point Collapse in Query-Time RAG Poisoning Defenses",
+      "publication_date": "2026-10-24",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.33849",
+      "authors": [
+        {
+          "name": "Pushkal Kumar",
+          "affiliation": "North Creek High School",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arvin Sahaym",
+          "affiliation": "Washington State University",
           "is_corresponding": false
         }
       ]
@@ -412,93 +931,12 @@
       "authors": [
         {
           "name": "Wenjing Lin",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Madelon Hulsebos",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Who Verifies the Tools? How Warped Formatters Mislead Agents and Their Verifiers",
-      "publication_date": "2026-10-23",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.32110",
-      "authors": [
-        {
-          "name": "William Jeffries",
-          "affiliation": "",
-          "is_corresponding": true
-        }
-      ]
-    },
-    {
-      "title": "Scaling Graph Query Processing: Focused Exploration on Partitions Using Load Balancing",
-      "publication_date": "2026-10-23",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "query-optimization"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.32015",
-      "authors": [
-        {
-          "name": "Harshit Modi",
-          "affiliation": "The University of Texas at Arlington",
-          "is_corresponding": false
-        },
-        {
-          "name": "Abhishek Santra",
-          "affiliation": "The University of Texas at Arlington",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sharma Chakravarthy",
-          "affiliation": "The University of Texas at Arlington",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "OCTOPUS: Towards A Tag Model for Cross-Query Reuse in Semantic Query Processing",
-      "publication_date": "2026-10-23",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "query-optimization"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.32586",
-      "authors": [
-        {
-          "name": "Guangxue Zhang",
-          "affiliation": "University of California, Irvine",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nada Lahjouji",
-          "affiliation": "Blizzard Inc Irvine , USA",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yiming Lin",
           "affiliation": "University of California, Berkeley",
           "is_corresponding": false
         },
         {
-          "name": "Ashwin Colaco",
-          "affiliation": "University of California, Irvine",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sharad Mehrotra",
-          "affiliation": "University of California, Irvine",
+          "name": "Madelon Hulsebos",
+          "affiliation": "Centrum Wiskunde & Informatica",
           "is_corresponding": false
         }
       ]
