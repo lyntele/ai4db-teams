@@ -16,49 +16,101 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-10-31",
+  "run_date": "2026-11-01",
   "scan_window": {
-    "start_date": "2026-10-24",
-    "end_date": "2026-10-31"
+    "start_date": "2026-10-25",
+    "end_date": "2026-11-01"
   },
   "summary": {
-    "openalex_works_fetched": 1080,
-    "watchlist_matches": 23,
+    "openalex_works_fetched": 1120,
+    "watchlist_matches": 29,
     "new_researchers_added": 3,
-    "existing_researchers_updated": 1,
-    "industrial_members_added": 1,
+    "existing_researchers_updated": 2,
+    "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 9,
-    "skipped_due_to_score": 897,
-    "skipped_due_to_venue": 35,
-    "skipped_due_to_focus": 125,
-    "skipped_due_to_institution": 14,
-    "skipped_due_to_role": 13
+    "papers_mapped_to_site_entries": 14,
+    "skipped_due_to_score": 895,
+    "skipped_due_to_venue": 42,
+    "skipped_due_to_focus": 154,
+    "skipped_due_to_institution": 15,
+    "skipped_due_to_role": 24
   },
   "new_researchers": [
     {
-      "name": "Chen Gong",
-      "institution": "Shanghai Jiao Tong University",
+      "name": "Leo Anthony Celi",
+      "institution": "Massachusetts Institute of Technology",
+      "tags": []
+    },
+    {
+      "name": "Lingzi Wu",
+      "institution": "University of Washington",
       "tags": [
         "RAG"
       ]
     },
     {
-      "name": "ChengXiang Zhai",
-      "institution": "UIUC",
-      "tags": [
-        "RAG"
-      ]
-    },
-    {
-      "name": "Wei Fu Dong",
-      "institution": "Nanyang Technological University, Singapore (NTU Singapore)",
+      "name": "Lei Chen",
+      "institution": "HKUST",
       "tags": [
         "RAG"
       ]
     }
   ],
   "papers": [
+    {
+      "title": "LASSO: An LLM-Agent Synthesized System for SQL Validation",
+      "publication_date": "2026-10-28",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2610.38294",
+      "authors": [
+        {
+          "name": "Shreyas Jadhav",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "S. Sudarshan",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SpectRAG: Weighted Chunk Graphs for Token-Budgeted Context Selection in Multi-Hop Retrieval-Augmented Generation",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.36991",
+      "authors": [
+        {
+          "name": "Zafer Şahinoğlu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abdulazeez Mohammed",
+          "affiliation": "Mitsubishi Electric (Germany), Mitsubishi Electric (Netherlands)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Buse Yaren Kazangirler",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "CAHİT BERKAY KAZANGİRLER",
+          "affiliation": "Karabük University",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
       "publication_date": "2026-10-27",
@@ -112,6 +164,48 @@
       ]
     },
     {
+      "title": "p-DCIM: A 28nm Probabilistic SRAM DCIM based Ising Machine for Near-Memory Context Selection in LLM-RAG Pipeline",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.37033",
+      "authors": [
+        {
+          "name": "Madhav Vadlamani",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rahul Singh",
+          "affiliation": "University of California, Santa Barbara",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuyao Kong",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haomei Liu",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zheng Zhang",
+          "affiliation": "University of California, Santa Barbara",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shimeng Yu",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents",
       "publication_date": "2026-10-27",
       "venue": "arXiv (Cornell University)",
@@ -121,7 +215,7 @@
       "authors": [
         {
           "name": "Hannes Ill",
-          "affiliation": "",
+          "affiliation": "Massachusetts Institute of Technology",
           "is_corresponding": false
         },
         {
@@ -131,32 +225,204 @@
         },
         {
           "name": "Rajna Fani",
-          "affiliation": "",
+          "affiliation": "Massachusetts Institute of Technology",
           "is_corresponding": false
         },
         {
           "name": "Ahram Han",
-          "affiliation": "",
+          "affiliation": "Seoul National University, Seoul National University Hospital",
           "is_corresponding": false
         },
         {
           "name": "Ryohei Yamamoto",
-          "affiliation": "",
+          "affiliation": "Massachusetts Institute of Technology",
           "is_corresponding": false
         },
         {
           "name": "Marlene Louisa Moerig",
-          "affiliation": "",
+          "affiliation": "Massachusetts Institute of Technology, Charité – Universitätsmedizin Berlin",
           "is_corresponding": false
         },
         {
           "name": "Dukyong Yoon",
-          "affiliation": "",
+          "affiliation": "Yonsei University, Yonsei University Health System",
           "is_corresponding": false
         },
         {
           "name": "Leo Anthony Celi",
+          "affiliation": "Beth Israel Deaconess Medical Center, Massachusetts Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.36433",
+      "authors": [
+        {
+          "name": "Xianxiang Zhao",
+          "affiliation": "University of Washington",
+          "is_corresponding": false
+        },
+        {
+          "name": "Advik Mehta",
+          "affiliation": "PCL Industrial Management Inc , Canada",
+          "is_corresponding": false
+        },
+        {
+          "name": "Falak Sethi",
+          "affiliation": "University of Alberta",
+          "is_corresponding": false
+        },
+        {
+          "name": "Brian Gue",
+          "affiliation": "PCL Industrial Management Inc , Canada",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qipei Mei",
+          "affiliation": "University of Alberta",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lingzi Wu",
+          "affiliation": "University of Washington",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Governed Sovereign RAG for Public Administration: Tripartite Epistemic Routing, Facet-Guided Clarification, and Deterministic Numeric Verification in Citizen Services",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.36561",
+      "authors": [
+        {
+          "name": "Andres Cruz Degante",
+          "affiliation": "Universidad Autónoma de Occidente",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "EnvSched: Environment-Aware Scheduling for Rollout-Efficient Agent Reinforcement Learning",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.37609",
+      "authors": [
+        {
+          "name": "Sihan Yang",
           "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Weichen Bai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruichuan An",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yiming Cheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhiyuan Feng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tianyi Jiang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Renye Yan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ning Ding",
+          "affiliation": "Samsung (South Korea)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yifan Zhang",
+          "affiliation": "Institute of Automation",
+          "is_corresponding": false
+        },
+        {
+          "name": "Renrui Zhang",
+          "affiliation": "Chinese University of Hong Kong",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yehui Tang",
+          "affiliation": "Samsung (South Korea)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wentao Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Beyond Similarity Search: Knowledge Graph Metadata Enrichment for Enterprise Retrieval-Augmented Generation",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "knowledge-graph",
+        "RAG"
+      ],
+      "relevance_score": 5,
+      "url": "https://doi.org/10.48550/arxiv.2610.37728",
+      "authors": [
+        {
+          "name": "Fakabbir Amin",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Back to the Future: The Evolving Universal Relation Model",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.36833",
+      "authors": [
+        {
+          "name": "Nan Tang",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haixun Wang",
+          "affiliation": "Evenup , USA",
           "is_corresponding": false
         }
       ]
@@ -173,12 +439,12 @@
       "authors": [
         {
           "name": "Hasara Kalumin",
-          "affiliation": "",
+          "affiliation": "University of Maryland, College Park",
           "is_corresponding": false
         },
         {
           "name": "Amol Deshpande",
-          "affiliation": "",
+          "affiliation": "University of Maryland, College Park",
           "is_corresponding": false
         }
       ]
@@ -335,6 +601,33 @@
       ]
     },
     {
+      "title": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.36335",
+      "authors": [
+        {
+          "name": "Hui Yang",
+          "affiliation": "University of Manchester",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiaoyan Chen",
+          "affiliation": "University of Manchester",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gao Yongsheng",
+          "affiliation": "SNOMED International London , United Kingdom",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "Logic Hijacking of RAG: Single-Document Poisoning via Local Optimization",
       "publication_date": "2026-10-26",
       "venue": "arXiv (Cornell University)",
@@ -356,7 +649,7 @@
         },
         {
           "name": "Fusen Guo",
-          "affiliation": "School of Systems and Computing , UNSW Sydney , Canberra , Australia",
+          "affiliation": "UNSW Sydney, UNSW Canberra",
           "is_corresponding": false
         },
         {
@@ -409,6 +702,58 @@
         {
           "name": "Jixiang Luo",
           "affiliation": "Beijing Academy of Artificial Intelligence",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Hypergraph-Enhanced Evidence Selection for Long-Context Multimodal Document QA",
+      "publication_date": "2026-10-26",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.35542",
+      "authors": [
+        {
+          "name": "Wenxin Zhao",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiachuan Wang",
+          "affiliation": "University of Tsukuba",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinyi Zhu",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiake Ge",
+          "affiliation": "Tianjin University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haoyang Li",
+          "affiliation": "Hong Kong Polytechnic University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yongqi Zhang",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuangyin Li",
+          "affiliation": "South China Normal University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lei Chen",
+          "affiliation": "Hong Kong University of Science and Technology, The Hong Kong University of Science and Technology (Guangzhou)",
           "is_corresponding": false
         }
       ]
@@ -846,98 +1191,6 @@
           "name": "Dibakar Datta",
           "affiliation": "New Jersey Institute of Technology",
           "is_corresponding": true
-        }
-      ]
-    },
-    {
-      "title": "Secure and Functional Code Generation with Self-Evaluation",
-      "publication_date": "2026-10-24",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.33450",
-      "authors": [
-        {
-          "name": "Md Afif Al Mamun",
-          "affiliation": "University of Calgary",
-          "is_corresponding": false
-        },
-        {
-          "name": "Gias Uddin",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Schema-Free Text-to-SQL: Learning Enterprise Database Structure from Query Logs",
-      "publication_date": "2026-10-24",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL",
-        "knowledge-graph"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2610.33946",
-      "authors": [
-        {
-          "name": "Ömer Faruk Akgül",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nikhil Kapahi",
-          "affiliation": "Amazon (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Prajit Reddy Muppidi",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Ranking Is Not Deciding: Benchmark Shortcuts and Operating-Point Collapse in Query-Time RAG Poisoning Defenses",
-      "publication_date": "2026-10-24",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.33849",
-      "authors": [
-        {
-          "name": "Pushkal Kumar",
-          "affiliation": "North Creek High School",
-          "is_corresponding": false
-        },
-        {
-          "name": "Arvin Sahaym",
-          "affiliation": "Washington State University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Bridging Search Intent and Tabular Data in Dataset Search",
-      "publication_date": "2026-10-24",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.33936",
-      "authors": [
-        {
-          "name": "Wenjing Lin",
-          "affiliation": "University of California, Berkeley",
-          "is_corresponding": false
-        },
-        {
-          "name": "Madelon Hulsebos",
-          "affiliation": "Centrum Wiskunde & Informatica",
-          "is_corresponding": false
         }
       ]
     }
