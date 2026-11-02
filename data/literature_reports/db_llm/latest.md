@@ -1,30 +1,24 @@
 # DB + LLM Daily Literature Watch
 
-- Run date: 2026-11-01
-- Scan window: 2026-10-25 to 2026-11-01
+- Run date: 2026-11-02
+- Scan window: 2026-10-26 to 2026-11-02
 - Watchlist id: `db_llm`
 - Scope: Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.
 
 ## Summary
 
-- OpenAlex works fetched: 1120
-- Works matching this watchlist: 29
-- New researchers added to site: 3
-- Existing researchers updated: 2
+- OpenAlex works fetched: 1128
+- Works matching this watchlist: 25
+- New researchers added to site: 0
+- Existing researchers updated: 0
 - Industrial team members added: 0
 - Industrial team members updated: 0
-- Papers that mapped to site entries: 14
-- Skipped by relevance score: 895
-- Skipped by venue: 42
-- Skipped by DB+LLM focus filter: 154
-- Skipped by institution matching: 15
-- Skipped by author-role guardrail: 24
-
-## Newly Added Researchers
-
-- Leo Anthony Celi (Massachusetts Institute of Technology)
-- Lingzi Wu (University of Washington)
-- Lei Chen (HKUST)
+- Papers that mapped to site entries: 12
+- Skipped by relevance score: 937
+- Skipped by venue: 49
+- Skipped by DB+LLM focus filter: 117
+- Skipped by institution matching: 13
+- Skipped by author-role guardrail: 18
 
 ## Matched Papers
 
@@ -33,7 +27,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL
 - Relevance score: 3
-- URL: https://doi.org/10.48550/arxiv.2610.38294
+- URL: https://arxiv.org/abs/2610.38294
 - Authors: Shreyas Jadhav; S. Sudarshan
 
 ### 2. SpectRAG: Weighted Chunk Graphs for Token-Budgeted Context Selection in Multi-Hop Retrieval-Augmented Generation
@@ -42,7 +36,7 @@
 - Tags: RAG
 - Relevance score: 3
 - URL: https://arxiv.org/abs/2610.36991
-- Authors: Zafer Şahinoğlu; Abdulazeez Mohammed (Mitsubishi Electric (Germany), Mitsubishi Electric (Netherlands)); Buse Yaren Kazangirler; CAHİT BERKAY KAZANGİRLER (Karabük University)
+- Authors: Zafer Şahinoğlu; Abdulazeez Mohammed (Mitsubishi Electric Innovation Center (MELIC) Cambridge , MA 02139 , USA); Buse Yaren Kazangirler; CAHİT BERKAY KAZANGİRLER (Karabük University)
 
 ### 3. Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis
 - Publication date: 2026-10-27
@@ -97,7 +91,7 @@
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL, knowledge-graph, RAG
 - Relevance score: 5
-- URL: https://doi.org/10.48550/arxiv.2610.37728
+- URL: https://arxiv.org/abs/2610.37728
 - Authors: Fakabbir Amin
 
 ### 10. Back to the Future: The Evolving Universal Relation Model
@@ -188,4 +182,4 @@
 - URL: https://arxiv.org/abs/2610.35071
 - Authors: Linghui Jiao (Southeast University); Kang Wei (Southeast University); Fushuo Huo (Southeast University); Ruijie Zhao (Southeast University); Yiyang Ni (Jiangsu Second Normal University); Jingcai Guo (Hong Kong Polytechnic University); Yipeng Zhou (Macquarie University); Jun Li (Southeast University)
 
-_Omitted 9 additional matched papers from the markdown report to keep it readable._
+_Omitted 5 additional matched papers from the markdown report to keep it readable._

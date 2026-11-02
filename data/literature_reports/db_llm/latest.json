@@ -16,46 +16,26 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-01",
+  "run_date": "2026-11-02",
   "scan_window": {
-    "start_date": "2026-10-25",
-    "end_date": "2026-11-01"
+    "start_date": "2026-10-26",
+    "end_date": "2026-11-02"
   },
   "summary": {
-    "openalex_works_fetched": 1120,
-    "watchlist_matches": 29,
-    "new_researchers_added": 3,
-    "existing_researchers_updated": 2,
+    "openalex_works_fetched": 1128,
+    "watchlist_matches": 25,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 14,
-    "skipped_due_to_score": 895,
-    "skipped_due_to_venue": 42,
-    "skipped_due_to_focus": 154,
-    "skipped_due_to_institution": 15,
-    "skipped_due_to_role": 24
+    "papers_mapped_to_site_entries": 12,
+    "skipped_due_to_score": 937,
+    "skipped_due_to_venue": 49,
+    "skipped_due_to_focus": 117,
+    "skipped_due_to_institution": 13,
+    "skipped_due_to_role": 18
   },
-  "new_researchers": [
-    {
-      "name": "Leo Anthony Celi",
-      "institution": "Massachusetts Institute of Technology",
-      "tags": []
-    },
-    {
-      "name": "Lingzi Wu",
-      "institution": "University of Washington",
-      "tags": [
-        "RAG"
-      ]
-    },
-    {
-      "name": "Lei Chen",
-      "institution": "HKUST",
-      "tags": [
-        "RAG"
-      ]
-    }
-  ],
+  "new_researchers": [],
   "papers": [
     {
       "title": "LASSO: An LLM-Agent Synthesized System for SQL Validation",
@@ -65,7 +45,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2610.38294",
+      "url": "https://arxiv.org/abs/2610.38294",
       "authors": [
         {
           "name": "Shreyas Jadhav",
@@ -96,7 +76,7 @@
         },
         {
           "name": "Abdulazeez Mohammed",
-          "affiliation": "Mitsubishi Electric (Germany), Mitsubishi Electric (Netherlands)",
+          "affiliation": "Mitsubishi Electric Innovation Center (MELIC) Cambridge , MA 02139 , USA",
           "is_corresponding": false
         },
         {
@@ -396,7 +376,7 @@
         "RAG"
       ],
       "relevance_score": 5,
-      "url": "https://doi.org/10.48550/arxiv.2610.37728",
+      "url": "https://arxiv.org/abs/2610.37728",
       "authors": [
         {
           "name": "Fakabbir Amin",
@@ -953,244 +933,6 @@
           "name": "Chengbin Deng",
           "affiliation": "University of Oklahoma",
           "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Xing USP: A Cross-Family Semantic Contract for Information Extraction and Intent-Slot Parsing",
-      "publication_date": "2026-10-25",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "NL2SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.34343",
-      "authors": [
-        {
-          "name": "Zhongqiu Li",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Boyang Wang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ruiyu Fang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shiquan Wang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Di Wu",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiayi Liang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Feilong Zhang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hongfeng Du",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaomeng Huang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mengjiao Bao",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Luwen Pu",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xuewei He",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yu Zhao",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chao Wang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kaidong Yu",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Bingkai Yang",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Qingjun Zhu",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shaoyi Du",
-          "affiliation": "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence ,",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuangyong Song",
-          "affiliation": "China Telecom",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yongxiang Li",
-          "affiliation": "China Telecom, Xi'an Jiaotong University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
-      "publication_date": "2026-10-25",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.34073",
-      "authors": [
-        {
-          "name": "Xuan He",
-          "affiliation": "University of Illinois Urbana-Champaign",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sining Zhoubian",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ruozhen Yang",
-          "affiliation": "University of Illinois Urbana-Champaign",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yuhao Wen",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhineng Wang",
-          "affiliation": "University of Illinois Urbana-Champaign",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yuyang Hu",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ke Yang",
-          "affiliation": "University of Illinois Urbana-Champaign",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yuyu Zhang",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ping Nie",
-          "affiliation": "University of Waterloo",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiawei Han",
-          "affiliation": "University of Illinois Urbana-Champaign",
-          "is_corresponding": false
-        },
-        {
-          "name": "ChengXiang Zhai",
-          "affiliation": "University of Illinois Urbana-Champaign",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "HNSecW: A Logarithmic-Time MPC Protocol for Approximate Nearest Neighbor Search",
-      "publication_date": "2026-10-25",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.34248",
-      "authors": [
-        {
-          "name": "Fahong Zhang",
-          "affiliation": "Nanyang Technological University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Weijie Jin",
-          "affiliation": "Beihang University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lixu Wang",
-          "affiliation": "Nanyang Technological University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ning Luo",
-          "affiliation": "University of Illinois Urbana-Champaign",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiao Wang",
-          "affiliation": "Northwestern University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Wei Fu Dong",
-          "affiliation": "Nanyang Technological University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "From Autonomous Knowledge Generation to Generalizable Property Prediction: A Precision-First Pipeline for Electro-Optic Materials Discovery",
-      "publication_date": "2026-10-25",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.34628",
-      "authors": [
-        {
-          "name": "Dibakar Datta",
-          "affiliation": "New Jersey Institute of Technology",
-          "is_corresponding": true
         }
       ]
     }
