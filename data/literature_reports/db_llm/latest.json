@@ -16,27 +16,107 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-02",
+  "run_date": "2026-11-03",
   "scan_window": {
-    "start_date": "2026-10-26",
-    "end_date": "2026-11-02"
+    "start_date": "2026-10-27",
+    "end_date": "2026-11-03"
   },
   "summary": {
-    "openalex_works_fetched": 1128,
-    "watchlist_matches": 25,
+    "openalex_works_fetched": 1127,
+    "watchlist_matches": 14,
     "new_researchers_added": 0,
-    "existing_researchers_updated": 0,
+    "existing_researchers_updated": 1,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 12,
-    "skipped_due_to_score": 937,
-    "skipped_due_to_venue": 49,
-    "skipped_due_to_focus": 117,
-    "skipped_due_to_institution": 13,
-    "skipped_due_to_role": 18
+    "papers_mapped_to_site_entries": 5,
+    "skipped_due_to_score": 923,
+    "skipped_due_to_venue": 45,
+    "skipped_due_to_focus": 145,
+    "skipped_due_to_institution": 9,
+    "skipped_due_to_role": 9
   },
   "new_researchers": [],
   "papers": [
+    {
+      "title": "Rebuilding a Field's Open-Problem Catalog from the Literature: A Two-Layer Knowledge Graph, and Why Status Must Stay Proposed",
+      "publication_date": "2026-10-29",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.39641",
+      "authors": [
+        {
+          "name": "Madhulatha Mandarapu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sandeep Kunkunuru",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "TCC-RAG: Temporal Causal Chain-Guided RAG for Temporal Knowledge Graph Question Answering",
+      "publication_date": "2026-10-28",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2610.38366",
+      "authors": [
+        {
+          "name": "Xinxun Zhang",
+          "affiliation": "Wuhan University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuxiang Wang",
+          "affiliation": "Wuhan University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shanshan Feng",
+          "affiliation": "Wuhan University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jun Zhang",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tieyun Qian",
+          "affiliation": "Wuhan University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Binhang Yuan",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kai Yin",
+          "affiliation": "Wuhan University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiao Yan",
+          "affiliation": "Wuhan University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiawei Jiang",
+          "affiliation": "Wuhan University, Central China Normal University",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "LASSO: An LLM-Agent Synthesized System for SQL Validation",
       "publication_date": "2026-10-28",
@@ -49,12 +129,66 @@
       "authors": [
         {
           "name": "Shreyas Jadhav",
-          "affiliation": "",
+          "affiliation": "Indian Institute of Technology Bombay",
           "is_corresponding": false
         },
         {
           "name": "S. Sudarshan",
+          "affiliation": "Indian Institute of Technology Bombay",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "What Does an Ontology Catch? Curated, LLM-Generated and Data-Derived Ontologies as Checkers of LLM Agents over Knowledge Graphs",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.37809",
+      "authors": [
+        {
+          "name": "Michał Orzechowski",
           "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rund Tawfiq",
+          "affiliation": "Sano Centre for Computational Medicine Krakow , Poland",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tomasz Kosciolek",
+          "affiliation": "Sano – Centre for Computational Personalised Medicine International Research Foundation, AGH University of Krakow",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Statistical Detection of Positional Bias in LLM-Based Recommender Systems: Methodologies and Empirical Evidence",
+      "publication_date": "2026-10-27",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2610.37962",
+      "authors": [
+        {
+          "name": "Carlos Peláez-González",
+          "affiliation": "Universidad de Granada",
+          "is_corresponding": false
+        },
+        {
+          "name": "Francisco Herrera",
+          "affiliation": "Universidad de Granada",
+          "is_corresponding": false
+        },
+        {
+          "name": "Andrés Herrera-Poyatos",
+          "affiliation": "Universidad de Granada",
           "is_corresponding": false
         }
       ]
@@ -403,535 +537,6 @@
         {
           "name": "Haixun Wang",
           "affiliation": "Evenup , USA",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "When the Application Layer Is Disposable: Putting Integrity Constraints Back in the Database",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.36418",
-      "authors": [
-        {
-          "name": "Hasara Kalumin",
-          "affiliation": "University of Maryland, College Park",
-          "is_corresponding": false
-        },
-        {
-          "name": "Amol Deshpande",
-          "affiliation": "University of Maryland, College Park",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "UniGFM-RAG: Unify Graph Foundation Models and Large Language Models for End-to-End Retrieval and Reasoning",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.34866",
-      "authors": [
-        {
-          "name": "Zicheng Zhao",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Linhao Luo",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zongji Yu",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Junnan Dong",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yanchao Tan",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shirui Pan",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chen Gong",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Topic-Level Fairness in Retrieval-Augmented Generation",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.34683",
-      "authors": [
-        {
-          "name": "Jaeyoung Park",
-          "affiliation": "Korea Advanced Institute of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hantian Zhang",
-          "affiliation": "Korea Advanced Institute of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kexin Rong",
-          "affiliation": "Georgia Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Steven Euijong Whang",
-          "affiliation": "Korea Advanced Institute of Science and Technology",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Semantic Atoms for Scalable Text Analysis in Data Analytics in the Era of LLM-Based Agents",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.34860",
-      "authors": [
-        {
-          "name": "Jinxiang Xie",
-          "affiliation": "Nanjing University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zihao Li",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Rui Ding",
-          "affiliation": "Microsoft (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Bartuer Zhou",
-          "affiliation": "Microsoft (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shi Han",
-          "affiliation": "Microsoft (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dongmei Zhang",
-          "affiliation": "Microsoft (United States)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Reading Beyond OCR Noise: Robust Cross-Lingual RAG for Legislative Archives",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.35240",
-      "authors": [
-        {
-          "name": "Radha Krishna Deshpande",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ajoy Mondal",
-          "affiliation": "International Institute of Information Technology, Hyderabad",
-          "is_corresponding": false
-        },
-        {
-          "name": "Akash Manna",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "C. V. Jawahar",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.36335",
-      "authors": [
-        {
-          "name": "Hui Yang",
-          "affiliation": "University of Manchester",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiaoyan Chen",
-          "affiliation": "University of Manchester",
-          "is_corresponding": false
-        },
-        {
-          "name": "Gao Yongsheng",
-          "affiliation": "SNOMED International London , United Kingdom",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Logic Hijacking of RAG: Single-Document Poisoning via Local Optimization",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.34829",
-      "authors": [
-        {
-          "name": "Hangyi Zhao",
-          "affiliation": "City University of Macau",
-          "is_corresponding": false
-        },
-        {
-          "name": "Bonan Zhang",
-          "affiliation": "City University of Macau",
-          "is_corresponding": false
-        },
-        {
-          "name": "Fusen Guo",
-          "affiliation": "UNSW Sydney, UNSW Canberra",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiaheng Wei",
-          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chao Chen",
-          "affiliation": "RMIT University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tianqing Zhu",
-          "affiliation": "City University of Macau",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Learning to Remember: Advances in Memory Mechanisms for Large Language Models",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.35089",
-      "authors": [
-        {
-          "name": "Chenye Han",
-          "affiliation": "Shanghai Jiao Tong University, Beijing Academy of Artificial Intelligence",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hongche Yu",
-          "affiliation": "Shanghai Jiao Tong University, Beijing Academy of Artificial Intelligence",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mengyue Wu",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dell Zhang",
-          "affiliation": "XSci , London , UK",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jixiang Luo",
-          "affiliation": "Beijing Academy of Artificial Intelligence",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Hypergraph-Enhanced Evidence Selection for Long-Context Multimodal Document QA",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.35542",
-      "authors": [
-        {
-          "name": "Wenxin Zhao",
-          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiachuan Wang",
-          "affiliation": "University of Tsukuba",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xinyi Zhu",
-          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiake Ge",
-          "affiliation": "Tianjin University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Haoyang Li",
-          "affiliation": "Hong Kong Polytechnic University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yongqi Zhang",
-          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuangyin Li",
-          "affiliation": "South China Normal University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lei Chen",
-          "affiliation": "Hong Kong University of Science and Technology, The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "GuardRAG: A Post-Retrieval Defense against Poisoning Attacks in Retrieval-Augmented Generation",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.35071",
-      "authors": [
-        {
-          "name": "Linghui Jiao",
-          "affiliation": "Southeast University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kang Wei",
-          "affiliation": "Southeast University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Fushuo Huo",
-          "affiliation": "Southeast University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ruijie Zhao",
-          "affiliation": "Southeast University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yiyang Ni",
-          "affiliation": "Jiangsu Second Normal University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jingcai Guo",
-          "affiliation": "Hong Kong Polytechnic University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yipeng Zhou",
-          "affiliation": "Macquarie University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jun Li",
-          "affiliation": "Southeast University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "From Questions to Queries to Insights: A Schema-Grounded Agentic Workflow for Natural-Language Crash Data Analysis",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.35054",
-      "authors": [
-        {
-          "name": "Jingwen Zhu",
-          "affiliation": "University of Wisconsin–Madison",
-          "is_corresponding": false
-        },
-        {
-          "name": "Keshu Wu",
-          "affiliation": "University of Wisconsin–Madison",
-          "is_corresponding": false
-        },
-        {
-          "name": "Steven T. Parker",
-          "affiliation": "University of Wisconsin–Madison",
-          "is_corresponding": false
-        },
-        {
-          "name": "Bin Ran",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "David A. Noyce",
-          "affiliation": "University of Wisconsin–Madison",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2610.35767",
-      "authors": [
-        {
-          "name": "Tingzhu Bi",
-          "affiliation": "Peking University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xun Zhang",
-          "affiliation": "Peking University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jinglin Li",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ping Wang",
-          "affiliation": "Peking University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Meng Ma",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Before Blaming the LLM, Diagnose the Workflow: A Role-Level Difficulty Profile for Translating Natural Language into Ontology-Grounded Statements",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "NL2SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.35267",
-      "authors": [
-        {
-          "name": "Liang Zhang",
-          "affiliation": "NORCE Research AS",
-          "is_corresponding": false
-        },
-        {
-          "name": "Benoît Daireaux",
-          "affiliation": "NORCE Research AS",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sergey Alyaev",
-          "affiliation": "NORCE Research AS",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Autonomous Structural Discovery Of Bioprocess Dynamics And Kinetics Via LLM-Driven Agents",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.35391",
-      "authors": [
-        {
-          "name": "Erdal Aydın",
-          "affiliation": "Aalto University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yaman Arkun",
-          "affiliation": "Koç University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "ArchiveLens: A Generative Spatial Knowledge Framework for Semantic Reconstruction of Historical Maps",
-      "publication_date": "2026-10-26",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2610.35606",
-      "authors": [
-        {
-          "name": "Yanan Wu",
-          "affiliation": "University of Central Arkansas",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yalin Yang",
-          "affiliation": "West Virginia University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chengbin Deng",
-          "affiliation": "University of Oklahoma",
           "is_corresponding": false
         }
       ]
