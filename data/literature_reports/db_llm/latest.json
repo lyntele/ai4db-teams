@@ -16,42 +16,122 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-07",
+  "run_date": "2026-11-08",
   "scan_window": {
-    "start_date": "2026-10-31",
-    "end_date": "2026-11-07"
+    "start_date": "2026-11-01",
+    "end_date": "2026-11-08"
   },
   "summary": {
-    "openalex_works_fetched": 1117,
-    "watchlist_matches": 22,
-    "new_researchers_added": 2,
-    "existing_researchers_updated": 3,
+    "openalex_works_fetched": 1113,
+    "watchlist_matches": 19,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 8,
-    "skipped_due_to_score": 914,
-    "skipped_due_to_venue": 47,
-    "skipped_due_to_focus": 134,
-    "skipped_due_to_institution": 14,
-    "skipped_due_to_role": 19
+    "papers_mapped_to_site_entries": 7,
+    "skipped_due_to_score": 929,
+    "skipped_due_to_venue": 48,
+    "skipped_due_to_focus": 117,
+    "skipped_due_to_institution": 12,
+    "skipped_due_to_role": 14
   },
-  "new_researchers": [
+  "new_researchers": [],
+  "papers": [
     {
-      "name": "Haoran Luo",
-      "institution": "Nanyang Technological University, Singapore (NTU Singapore)",
+      "title": "Uncovering Systematic Blind Spots in Graph Database Testing through Integration and Process-Level Analysis",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
       "tags": [
+        "knowledge-graph",
         "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.07754",
+      "authors": [
+        {
+          "name": "Tinghan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aoyang Fang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Longbin Lai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zifan Xie",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongbo Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yu Shao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ying Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pinjia He",
+          "affiliation": "",
+          "is_corresponding": false
+        }
       ]
     },
     {
-      "name": "Tat-Seng Chua",
-      "institution": "Zhejiang University",
+      "title": "DiagDBench: Evaluating Agentic LLMs on Interactive Database Diagnosis and Anomaly Remediation",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
       "tags": [
-        "RAG"
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.07339",
+      "authors": [
+        {
+          "name": "Xinxin Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rong Kang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tieying Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cuiping Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hong Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jing Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
       ]
-    }
-  ],
-  "papers": [
+    },
     {
       "title": "Limited knowledge exchange across biological subfields in agent-based modelling: an LLM-assisted bibliometric analysis",
       "publication_date": "2026-11-04",
@@ -687,17 +767,17 @@
       "authors": [
         {
           "name": "MaoXun Huang",
-          "affiliation": "National Grid (United States)",
+          "affiliation": "Grid Agents",
           "is_corresponding": false
         },
         {
           "name": "Kshitij Kapoor",
-          "affiliation": "National Grid (United States)",
+          "affiliation": "Grid Agents",
           "is_corresponding": false
         },
         {
           "name": "Eli Louise",
-          "affiliation": "National Grid (United States)",
+          "affiliation": "Grid Agents",
           "is_corresponding": false
         }
       ]
@@ -844,258 +924,6 @@
         {
           "name": "Sachindra Joshi",
           "affiliation": "IBM",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Self-Refining Prompt Induction for Streaming Text-to-SQL",
-      "publication_date": "2026-10-31",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.00960",
-      "authors": [
-        {
-          "name": "Gaetano Rossiello",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Alfio Gliozzo",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nandana Mihindukulasooriya",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Erick Lee",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nabila Siregar",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lisa D. Amini",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "OntoDoc: Automatically Generating Ontology Resource Descriptions",
-      "publication_date": "2026-10-31",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "knowledge-graph",
-        "LLM-DB"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.01276",
-      "authors": [
-        {
-          "name": "Juan Guajardo Gutierrez",
-          "affiliation": "The University of Texas at Arlington",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mike Tran",
-          "affiliation": "The University of Texas at Arlington",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nasim Shirvani Mahdavi",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chengkai Li",
-          "affiliation": "The University of Texas at Arlington",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "ElectroChemLLM: A Multimodal LLM Pipeline for High-Fidelity Electrochemical Informatics",
-      "publication_date": "2026-10-31",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.00638",
-      "authors": [
-        {
-          "name": "Dikshya Mohanty",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Manoj Praveen Nandigama",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kuldeepsinh Raj",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sourav Kanti Maiti",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiannan Yang",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ruiqi Luo",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Srinivasa Phani Madhav Marupudi",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mounika Geriki",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Prayag Raghunandan",
-          "affiliation": "Indian Institute of Technology Jodhpur",
-          "is_corresponding": false
-        },
-        {
-          "name": "Puneet Lingutla",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tengfei Ma",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Niranjan Balasubramanian",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nav Nidhi Rajput",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Conversational Interaction for LLM-Based Clinical Text-to-SQL: A User Study with Healthcare Professionals",
-      "publication_date": "2026-10-31",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL",
-        "LLM-DB"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.00605",
-      "authors": [
-        {
-          "name": "Jun-Min Lee",
-          "affiliation": "Korea Advanced Institute of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Suyoung Yoo",
-          "affiliation": "Samsung Medical Center, Research Institute for Future Medicine",
-          "is_corresponding": false
-        },
-        {
-          "name": "Gyubok Lee",
-          "affiliation": "Korea Advanced Institute of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Edward Choi",
-          "affiliation": "Korea Advanced Institute of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "M.S. Son",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "CompSkill: Compiling Execution Experience for Skill Retrieval",
-      "publication_date": "2026-10-31",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.01115",
-      "authors": [
-        {
-          "name": "Qi Shen",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ziyue Zhu",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        },
-        {
-          "name": "Y. Jiang",
-          "affiliation": "Nanyang Technological University, Sichuan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhen Xia",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        },
-        {
-          "name": "Li Shengjie",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuai Zhao",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        },
-        {
-          "name": "Bo Cheng",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaobao Wu",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Anh Tuan Luu",
-          "affiliation": "Nanyang Technological University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Haoran Luo",
-          "affiliation": "Nanyang Technological University",
           "is_corresponding": false
         }
       ]

@@ -1,0 +1,932 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-11-08",
+  "scan_window": {
+    "start_date": "2026-11-01",
+    "end_date": "2026-11-08"
+  },
+  "summary": {
+    "openalex_works_fetched": 1113,
+    "watchlist_matches": 19,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 7,
+    "skipped_due_to_score": 929,
+    "skipped_due_to_venue": 48,
+    "skipped_due_to_focus": 117,
+    "skipped_due_to_institution": 12,
+    "skipped_due_to_role": 14
+  },
+  "new_researchers": [],
+  "papers": [
+    {
+      "title": "Uncovering Systematic Blind Spots in Graph Database Testing through Integration and Process-Level Analysis",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.07754",
+      "authors": [
+        {
+          "name": "Tinghan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aoyang Fang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Longbin Lai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zifan Xie",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongbo Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yu Shao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ying Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pinjia He",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "DiagDBench: Evaluating Agentic LLMs on Interactive Database Diagnosis and Anomaly Remediation",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.07339",
+      "authors": [
+        {
+          "name": "Xinxin Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rong Kang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tieying Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cuiping Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hong Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jing Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Limited knowledge exchange across biological subfields in agent-based modelling: an LLM-assisted bibliometric analysis",
+      "publication_date": "2026-11-04",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.06596",
+      "authors": [
+        {
+          "name": "Kira Pugh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rebecca  Marie Crossley",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sara Hamis",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
+      "publication_date": "2026-11-03",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.05036",
+      "authors": [
+        {
+          "name": "Guanting Dong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhichao Sun",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinyu Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rui Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xin Deng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiajie Jin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhixiong Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Junhao Huang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Han Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mingyu Ma",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaotao Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuyang Hu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaoshuai Song",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaoxi Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiejun Tan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhecan Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shihan Dou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Honglin Guo",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhiheng Xi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tao Gui",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tao Ji",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qi Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yutao Zhu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ji-Rong Wen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhicheng Dou",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Text-to-SQL Models Make Choices Without Saying So",
+      "publication_date": "2026-11-03",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.04318",
+      "authors": [
+        {
+          "name": "Yichen Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "仕沛 林",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chenhao Ma",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Correctness Firewalls for Synthesized Database Components",
+      "publication_date": "2026-11-03",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.05173",
+      "authors": [
+        {
+          "name": "Mohammad Javad Amiri",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Carsten Binnig",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Andreas Kipf",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tim Kraska",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ryan Marcus",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Johannes Wehrstein",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chenyuan Wu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Geoffrey X. Yu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zijie Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Stop Handcrafting Your Engine! GenDB-V: Towards AI-Generated and Formally Verified Database Systems",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.02779",
+      "authors": [
+        {
+          "name": "Jiale Lao",
+          "affiliation": "Cornell University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Immanuel Trummer",
+          "affiliation": "Cornell University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.03298",
+      "authors": [
+        {
+          "name": "Hao Fu",
+          "affiliation": "Virginia Tech",
+          "is_corresponding": false
+        },
+        {
+          "name": "Degang Sun",
+          "affiliation": "Chinese Academy of Sciences, Computer Network Information Center",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wan Wei",
+          "affiliation": "Chinese Academy of Sciences, Computer Network Information Center",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jinxia Wei",
+          "affiliation": "Chinese Academy of Sciences, Computer Network Information Center",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chun Long",
+          "affiliation": "Chinese Academy of Sciences, Computer Network Information Center",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peng Gao",
+          "affiliation": "Virginia Tech",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SHq: Learnable Grids for LLM Weight Quantization",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.02966",
+      "authors": [
+        {
+          "name": "Michael Helcig",
+          "affiliation": "ETH Zurich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Earl Killian",
+          "affiliation": "Rhoa Research , CA , USA",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dan Alistarh",
+          "affiliation": "Institute of Science and Technology Austria",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Mixed-Type Relational Database Synthesis with Graph-Prompted Language Model",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.02373",
+      "authors": [
+        {
+          "name": "Yuxiang Sun",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mengshi Chen",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jianwei Wang",
+          "affiliation": "UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenjie Zhang",
+          "affiliation": "UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kai Wang",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GRIPS: An Empirical Study of Pre-SQL Grounding Information for SQL Generation",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.02314",
+      "authors": [
+        {
+          "name": "Ekata Mitra",
+          "affiliation": "Portland State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yufei Tao",
+          "affiliation": "Portland State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kamalamalini Nagasundaram",
+          "affiliation": "Portland State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ameeta Agrawal",
+          "affiliation": "Portland State University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "EviCast: Forecasting Retrieval Gains Through Shared Response Calibration",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.02387",
+      "authors": [
+        {
+          "name": "Yibo Wang",
+          "affiliation": "Lanzhou University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jisheng Dang",
+          "affiliation": "Lanzhou University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bimei Wang",
+          "affiliation": "Lanzhou University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiongpei Hou",
+          "affiliation": "Lanzhou University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jingwen Zhao",
+          "affiliation": "Lanzhou University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenjun Ma",
+          "affiliation": "Lanzhou University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fei Shen",
+          "affiliation": "Nanjing University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Juncheng Li",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Meng Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qi Tian",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bin Hu",
+          "affiliation": "Lanzhou University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tat-Seng Chua",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "El Agente Fármaco: A Scalable AI Scientist for Drug Discovery",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.03832",
+      "authors": [
+        {
+          "name": "Marcel Müller",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mohammad Ghazi Vakili",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yoshihiro Ogura",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ella Ashoori",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shimeng Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alessandro Silva Nascimento",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Eddie Calleja",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yutong Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yimeng Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ella Miray Rajaonson",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aiwei Yin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiaru Bai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yunheng Zou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Abraham C. Stern",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Varinia Bernales",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alán Aspuru‐Guzik",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.03551",
+      "authors": [
+        {
+          "name": "Marianne Menglin Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rongguang Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zheng Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yewen Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Leonid Boytsov",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tao Sheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sujith Ravi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dan Roth",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "An Agentic Framework for Automated Power System Studies and Grid Connection Assessment",
+      "publication_date": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.03534",
+      "authors": [
+        {
+          "name": "MaoXun Huang",
+          "affiliation": "Grid Agents",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kshitij Kapoor",
+          "affiliation": "Grid Agents",
+          "is_corresponding": false
+        },
+        {
+          "name": "Eli Louise",
+          "affiliation": "Grid Agents",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "TSSDA: An Autonomous Agent for Constructing a Time-Series Text-to-SQL Benchmark",
+      "publication_date": "2026-11-01",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "data-agents"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.02132",
+      "authors": [
+        {
+          "name": "Zhihan Zheng",
+          "affiliation": "Tsinghua University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Song Shaoxu",
+          "affiliation": "Tsinghua University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haitao Yuan",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Minxiao Chen",
+          "affiliation": "Beijing University of Posts and Telecommunications",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Toward Agentic AI-Ready Workflows in Built Environment Organizations: Knowledge Structures and Interoperability Challenges",
+      "publication_date": "2026-11-01",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.02286",
+      "authors": [
+        {
+          "name": "Ahmet Bahaddin Ersöz",
+          "affiliation": "University College London",
+          "is_corresponding": false
+        },
+        {
+          "name": "Justin McHenry",
+          "affiliation": "Queen's University Belfast",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yevgeniya Kovalchuk",
+          "affiliation": "University College London",
+          "is_corresponding": false
+        },
+        {
+          "name": "Edward Barrett",
+          "affiliation": "University College London",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mandana Sarey Khanie",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "NEIGHBOR: Aligning Service Behaviour and Evidence Use in an LLM Agent for Community Resident Services",
+      "publication_date": "2026-11-01",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.01836",
+      "authors": [
+        {
+          "name": "Zongyou Yang",
+          "affiliation": "Imperial College London",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yinghan Hou",
+          "affiliation": "Imperial College London",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaokun Yang",
+          "affiliation": "Jiangxi University of Water Resources and Electric Power, Nanchang Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "EAGR: Evidence-Guided Adaptive Graph Retrieval",
+      "publication_date": "2026-11-01",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 5,
+      "url": "https://arxiv.org/abs/2611.01910",
+      "authors": [
+        {
+          "name": "Sonam Gupta",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "P. Preetham Vignesh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Vishwajeet Kumar",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "Adnan Qidwai",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anand Eswaran",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jaydeep Sen",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sachindra Joshi",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
