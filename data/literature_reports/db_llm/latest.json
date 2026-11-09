@@ -16,24 +16,24 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-08",
+  "run_date": "2026-11-09",
   "scan_window": {
-    "start_date": "2026-11-01",
-    "end_date": "2026-11-08"
+    "start_date": "2026-11-02",
+    "end_date": "2026-11-09"
   },
   "summary": {
-    "openalex_works_fetched": 1113,
-    "watchlist_matches": 19,
+    "openalex_works_fetched": 921,
+    "watchlist_matches": 15,
     "new_researchers_added": 0,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 7,
-    "skipped_due_to_score": 929,
-    "skipped_due_to_venue": 48,
-    "skipped_due_to_focus": 117,
-    "skipped_due_to_institution": 12,
-    "skipped_due_to_role": 14
+    "papers_mapped_to_site_entries": 4,
+    "skipped_due_to_score": 778,
+    "skipped_due_to_venue": 50,
+    "skipped_due_to_focus": 78,
+    "skipped_due_to_institution": 11,
+    "skipped_due_to_role": 1
   },
   "new_researchers": [],
   "papers": [
@@ -46,7 +46,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2611.07754",
+      "url": "https://arxiv.org/abs/2611.07754",
       "authors": [
         {
           "name": "Tinghan Li",
@@ -98,7 +98,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.07339",
+      "url": "https://arxiv.org/abs/2611.07339",
       "authors": [
         {
           "name": "Xinxin Zhao",
@@ -140,7 +140,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.06596",
+      "url": "https://arxiv.org/abs/2611.06596",
       "authors": [
         {
           "name": "Kira Pugh",
@@ -167,7 +167,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.05036",
+      "url": "https://arxiv.org/abs/2611.05036",
       "authors": [
         {
           "name": "Guanting Dong",
@@ -304,7 +304,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.04318",
+      "url": "https://arxiv.org/abs/2611.04318",
       "authors": [
         {
           "name": "Yichen Xu",
@@ -331,7 +331,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.05173",
+      "url": "https://arxiv.org/abs/2611.05173",
       "authors": [
         {
           "name": "Mohammad Javad Amiri",
@@ -619,7 +619,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.03832",
+      "url": "https://arxiv.org/abs/2611.03832",
       "authors": [
         {
           "name": "Marcel Müller",
@@ -778,152 +778,6 @@
         {
           "name": "Eli Louise",
           "affiliation": "Grid Agents",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "TSSDA: An Autonomous Agent for Constructing a Time-Series Text-to-SQL Benchmark",
-      "publication_date": "2026-11-01",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL",
-        "data-agents"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.02132",
-      "authors": [
-        {
-          "name": "Zhihan Zheng",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Song Shaoxu",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Haitao Yuan",
-          "affiliation": "Nanyang Technological University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Minxiao Chen",
-          "affiliation": "Beijing University of Posts and Telecommunications",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Toward Agentic AI-Ready Workflows in Built Environment Organizations: Knowledge Structures and Interoperability Challenges",
-      "publication_date": "2026-11-01",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.02286",
-      "authors": [
-        {
-          "name": "Ahmet Bahaddin Ersöz",
-          "affiliation": "University College London",
-          "is_corresponding": false
-        },
-        {
-          "name": "Justin McHenry",
-          "affiliation": "Queen's University Belfast",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yevgeniya Kovalchuk",
-          "affiliation": "University College London",
-          "is_corresponding": false
-        },
-        {
-          "name": "Edward Barrett",
-          "affiliation": "University College London",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mandana Sarey Khanie",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "NEIGHBOR: Aligning Service Behaviour and Evidence Use in an LLM Agent for Community Resident Services",
-      "publication_date": "2026-11-01",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.01836",
-      "authors": [
-        {
-          "name": "Zongyou Yang",
-          "affiliation": "Imperial College London",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yinghan Hou",
-          "affiliation": "Imperial College London",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaokun Yang",
-          "affiliation": "Jiangxi University of Water Resources and Electric Power, Nanchang Institute of Technology",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "EAGR: Evidence-Guided Adaptive Graph Retrieval",
-      "publication_date": "2026-11-01",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "knowledge-graph",
-        "RAG",
-        "LLM-DB"
-      ],
-      "relevance_score": 5,
-      "url": "https://arxiv.org/abs/2611.01910",
-      "authors": [
-        {
-          "name": "Sonam Gupta",
-          "affiliation": "IBM",
-          "is_corresponding": false
-        },
-        {
-          "name": "P. Preetham Vignesh",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Vishwajeet Kumar",
-          "affiliation": "IBM",
-          "is_corresponding": false
-        },
-        {
-          "name": "Adnan Qidwai",
-          "affiliation": "IBM",
-          "is_corresponding": false
-        },
-        {
-          "name": "Anand Eswaran",
-          "affiliation": "IBM",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jaydeep Sen",
-          "affiliation": "IBM",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sachindra Joshi",
-          "affiliation": "IBM",
           "is_corresponding": false
         }
       ]
