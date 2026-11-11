@@ -16,70 +16,79 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-10",
+  "run_date": "2026-11-11",
   "scan_window": {
-    "start_date": "2026-11-03",
-    "end_date": "2026-11-10"
+    "start_date": "2026-11-04",
+    "end_date": "2026-11-11"
   },
   "summary": {
-    "openalex_works_fetched": 1070,
-    "watchlist_matches": 18,
-    "new_researchers_added": 6,
-    "existing_researchers_updated": 3,
+    "openalex_works_fetched": 1081,
+    "watchlist_matches": 13,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 10,
-    "skipped_due_to_score": 838,
-    "skipped_due_to_venue": 45,
-    "skipped_due_to_focus": 169,
-    "skipped_due_to_institution": 8,
-    "skipped_due_to_role": 19
+    "papers_mapped_to_site_entries": 4,
+    "skipped_due_to_score": 897,
+    "skipped_due_to_venue": 31,
+    "skipped_due_to_focus": 140,
+    "skipped_due_to_institution": 9,
+    "skipped_due_to_role": 7
   },
-  "new_researchers": [
-    {
-      "name": "Chenhao Ma",
-      "institution": "University of Hong Kong",
-      "tags": [
-        "text-to-SQL"
-      ]
-    },
-    {
-      "name": "Zijie Zhao",
-      "institution": "University of Pennsylvania",
-      "tags": [
-        "LLM-DB"
-      ]
-    },
-    {
-      "name": "Val Tannen",
-      "institution": "University of Pennsylvania",
-      "tags": [
-        "data-integration"
-      ]
-    },
-    {
-      "name": "Xupeng Miao",
-      "institution": "Peking University",
-      "tags": [
-        "query-optimization"
-      ]
-    },
-    {
-      "name": "Sara Hamis",
-      "institution": "Uppsala University",
-      "tags": [
-        "LLM-DB"
-      ]
-    },
-    {
-      "name": "Johan A. Pouwelse",
-      "institution": "Delft University of Technology",
-      "tags": [
-        "RAG"
-      ]
-    }
-  ],
+  "new_researchers": [],
   "papers": [
+    {
+      "title": "ROAM: Retrieval-Augmented Optimization for Feasible Multi-Day Itinerary Planning",
+      "publication_date": "2026-11-06",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.09407",
+      "authors": [
+        {
+          "name": "Ye Zihao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lin Xiaoheng",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MongoBench: Do LLMs Know What a MongoDB Query Will Do?",
+      "publication_date": "2026-11-06",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2611.09065",
+      "authors": [
+        {
+          "name": "Qibai Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haoting Qiu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yezhou Cheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mengxiao Qian",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "ZeroRAG: Adaptive Semantic Peer Routing for Decentralized Retrieval-Augmented Generation",
       "publication_date": "2026-11-05",
@@ -500,383 +509,6 @@
         {
           "name": "Tsubasa Takahashi",
           "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Whiel: A Neurosymbolic Platform for Certified Relational Program Verification",
-      "publication_date": "2026-11-03",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "data-integration"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.05612",
-      "authors": [
-        {
-          "name": "Jesse Comer",
-          "affiliation": "University of Pennsylvania",
-          "is_corresponding": false
-        },
-        {
-          "name": "Fangzhu Shen",
-          "affiliation": "Duke University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shuo Zhang",
-          "affiliation": "Duke University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mayur Naik",
-          "affiliation": "University of Pennsylvania",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sudeepa Roy",
-          "affiliation": "Duke University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Val Tannen",
-          "affiliation": "University of Pennsylvania",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
-      "publication_date": "2026-11-03",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.05036",
-      "authors": [
-        {
-          "name": "Guanting Dong",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhichao Sun",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xinyu Yang",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Rui Wang",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xin Deng",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiajie Jin",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhixiong Yang",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Junhao Huang",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Han Han",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mingyu Ma",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaotao Wang",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yuyang Hu",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaoshuai Song",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaoxi Li",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jiejun Tan",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhecan Wang",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shihan Dou",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Honglin Guo",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhiheng Xi",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tao Gui",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tao Ji",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Qi Zhang",
-          "affiliation": "Fudan University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yutao Zhu",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ji-Rong Wen",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zhicheng Dou",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Text-to-SQL Models Make Choices Without Saying So",
-      "publication_date": "2026-11-03",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.04318",
-      "authors": [
-        {
-          "name": "Yichen Xu",
-          "affiliation": "University of California, Berkeley",
-          "is_corresponding": false
-        },
-        {
-          "name": "仕沛 林",
-          "affiliation": "Chinese University of Hong Kong, Chinese University of Hong Kong, Shenzhen",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chenhao Ma",
-          "affiliation": "Chinese University of Hong Kong, Chinese University of Hong Kong, Shenzhen",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Navigating Runtime Dynamism in Semantic Query Serving",
-      "publication_date": "2026-11-03",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "query-optimization"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.04248",
-      "authors": [
-        {
-          "name": "Hengrui Zhang",
-          "affiliation": "Tsinghua University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xupeng Miao",
-          "affiliation": "Peking University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "MIMIC-Note-Extract: A Large-Scale Structured Dataset Extracted from MIMIC-IV-Note Discharge Summaries",
-      "publication_date": "2026-11-03",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.04685",
-      "authors": [
-        {
-          "name": "Kristian Schwethelm",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jonas Kuntzer",
-          "affiliation": "Munich Center for Machine Learning",
-          "is_corresponding": false
-        },
-        {
-          "name": "Conrad Ketzer",
-          "affiliation": "Munich Center for Machine Learning",
-          "is_corresponding": false
-        },
-        {
-          "name": "Eva Wende",
-          "affiliation": "Munich Center for Machine Learning",
-          "is_corresponding": false
-        },
-        {
-          "name": "Moritz Schlager",
-          "affiliation": "TUM Klinikum, Munich Center for Machine Learning",
-          "is_corresponding": false
-        },
-        {
-          "name": "Daniel Rueckert",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Georgios A. Kaissis",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Friederike Jungmann",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Paul Hager",
-          "affiliation": "Munich Center for Machine Learning",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "DSL-Bench: Evaluating and Explaining LLM Code Generation Across Domain-Specific Languages",
-      "publication_date": "2026-11-03",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.05168",
-      "authors": [
-        {
-          "name": "Zihan Zhou",
-          "affiliation": "sen University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mingxi Ye",
-          "affiliation": "sen University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yan Gao",
-          "affiliation": "sen University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Guipeng Wei",
-          "affiliation": "sen University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zibin Zheng",
-          "affiliation": "sen University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Correctness Firewalls for Synthesized Database Components",
-      "publication_date": "2026-11-03",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.05173",
-      "authors": [
-        {
-          "name": "Mohammad Javad Amiri",
-          "affiliation": "Stony Brook University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Carsten Binnig",
-          "affiliation": "Technische Universität Darmstadt",
-          "is_corresponding": false
-        },
-        {
-          "name": "Andreas Kipf",
-          "affiliation": "University of Technology Nuremberg",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tim Kraska",
-          "affiliation": "Massachusetts Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ryan Marcus",
-          "affiliation": "University of Pennsylvania",
-          "is_corresponding": false
-        },
-        {
-          "name": "Johannes Wehrstein",
-          "affiliation": "Technische Universität Darmstadt",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chenyuan Wu",
-          "affiliation": "City University of Hong Kong",
-          "is_corresponding": false
-        },
-        {
-          "name": "Geoffrey X. Yu",
-          "affiliation": "Massachusetts Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zijie Zhao",
-          "affiliation": "University of Pennsylvania",
           "is_corresponding": false
         }
       ]
