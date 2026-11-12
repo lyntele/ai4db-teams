@@ -1,0 +1,525 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-11-12",
+  "scan_window": {
+    "start_date": "2026-11-05",
+    "end_date": "2026-11-12"
+  },
+  "summary": {
+    "openalex_works_fetched": 1074,
+    "watchlist_matches": 14,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 3,
+    "skipped_due_to_score": 954,
+    "skipped_due_to_venue": 24,
+    "skipped_due_to_focus": 82,
+    "skipped_due_to_institution": 11,
+    "skipped_due_to_role": 5
+  },
+  "new_researchers": [],
+  "papers": [
+    {
+      "title": "SNAPRAG: Cost-Efficient Knowledge Extraction Attack on RAG Systems via Adversarial Perturbations",
+      "publication_date": "2026-11-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.12241",
+      "authors": [
+        {
+          "name": "Melih Coşğun",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mehmet Emre Gürsoy",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alptekın Küpçü",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sinem Sav",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "NIFT-SQL: Customer-Supervised Table Scoring for Enterprise Text-to-SQL Retrieval",
+      "publication_date": "2026-11-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.12731",
+      "authors": [
+        {
+          "name": "Arjun Rao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nishant Gopinath",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Replay Fidelity in LLM Agent Evaluation: Randomness, Hidden State, and Test Oracles in AppWorld",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.11216",
+      "authors": [
+        {
+          "name": "You Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Quanchao Lu",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Agents Propose, Code Verifies, Humans Decide: Verified Agentic Ingestion of Heterogeneous Scientific Tables into Relational Databases",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.11045",
+      "authors": [
+        {
+          "name": "Bharatha Rankothge",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Suzanne B. Hodgkins",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Virginia Rich",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Michael Kirby",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Safe by Accident: Crash-Testing LLM-Written Code",
+      "publication_date": "2026-11-07",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.10585",
+      "authors": [
+        {
+          "name": "Afridi Mahmud",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Md. As-Aid Rahman",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rifat Shahriyar",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "ROAM: Retrieval-Augmented Optimization for Feasible Multi-Day Itinerary Planning",
+      "publication_date": "2026-11-06",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.09407",
+      "authors": [
+        {
+          "name": "Ye Zihao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lin Xiaoheng",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MongoBench: Do LLMs Know What a MongoDB Query Will Do?",
+      "publication_date": "2026-11-06",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.09065",
+      "authors": [
+        {
+          "name": "Qibai Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haoting Qiu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yezhou Cheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mengxiao Qian",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "ZeroRAG: Adaptive Semantic Peer Routing for Decentralized Retrieval-Augmented Generation",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.07928",
+      "authors": [
+        {
+          "name": "Petru Neague",
+          "affiliation": "Delft University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Quinten Stokkink",
+          "affiliation": "Delft University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Martijn de Vos",
+          "affiliation": "École Polytechnique Fédérale de Lausanne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rafael Pereira Pires",
+          "affiliation": "École Polytechnique Fédérale de Lausanne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mathis Randl",
+          "affiliation": "École Polytechnique Fédérale de Lausanne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anne-Marie Kermarrec",
+          "affiliation": "École Polytechnique Fédérale de Lausanne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Johan A. Pouwelse",
+          "affiliation": "Delft University of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Uncovering Systematic Blind Spots in Graph Database Testing through Integration and Process-Level Analysis",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.07754",
+      "authors": [
+        {
+          "name": "Tinghan Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aoyang Fang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Longbin Lai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zifan Xie",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongbo Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yu Shao",
+          "affiliation": "Alibaba Group (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ying Zhang",
+          "affiliation": "Chinese University of Hong Kong, Shenzhen, Zhejiang Gongshang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pinjia He",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Per-Query Recall Guarantees for Approximate Nearest Neighbor Search in Dynamic Vector Databases",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "vector-DB",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.07579",
+      "authors": [
+        {
+          "name": "Woong-Kee Loh",
+          "affiliation": "Gachon University, Semyung University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Suan Lee",
+          "affiliation": "Gachon University, Semyung University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Fix One, Miss Another: Leveraging Historical Bug Fixes to Uncover Residual Bugs in Database Systems",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.07739",
+      "authors": [
+        {
+          "name": "Yankai Rong",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhaoyang Zhang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shuang Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wei Lu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaoyong Du",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Embodied RAG++: Retrieval-Augmented Generation From What Exists to What Works in Embodied Scenes",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.07517",
+      "authors": [
+        {
+          "name": "Fan Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tatsuya Kikuzuki",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jun Liang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jun Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenkai Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ryosuke Kawamura",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ananya Hazarika",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Prajit KrisshnaKumar",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shaunak Mehta",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuushi Toyoda",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "DiagDBench: Evaluating Agentic LLMs on Interactive Database Diagnosis and Anomaly Remediation",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.07339",
+      "authors": [
+        {
+          "name": "Xinxin Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rong Kang",
+          "affiliation": "ByteDance (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tieying Zhang",
+          "affiliation": "ByteDance (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cuiping Li",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hong Chen",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jing Zhang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "CacheGraft: Enhancing Retrieval-Augmented Generation via Latent-Space Document Enrichment",
+      "publication_date": "2026-11-05",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.07393",
+      "authors": [
+        {
+          "name": "Vihan Lakshman",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peter Baile Chen",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhuohan Gu",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Michael Cafarella",
+          "affiliation": "MIT Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
