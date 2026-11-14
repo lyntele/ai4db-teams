@@ -1,0 +1,506 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-11-14",
+  "scan_window": {
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-14"
+  },
+  "summary": {
+    "openalex_works_fetched": 1066,
+    "watchlist_matches": 13,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 2,
+    "skipped_due_to_score": 887,
+    "skipped_due_to_venue": 24,
+    "skipped_due_to_focus": 142,
+    "skipped_due_to_institution": 11,
+    "skipped_due_to_role": 0
+  },
+  "new_researchers": [],
+  "papers": [
+    {
+      "title": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
+      "publication_date": "2026-11-10",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.14477",
+      "authors": [
+        {
+          "name": "Arjun Rao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nishant Gopinath",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SNAPRAG: Cost-Efficient Knowledge Extraction Attack on RAG Systems via Adversarial Perturbations",
+      "publication_date": "2026-11-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.12241",
+      "authors": [
+        {
+          "name": "Melih Coşğun",
+          "affiliation": "Bilkent University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mehmet Emre Gürsoy",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alptekın Küpçü",
+          "affiliation": "Koç University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sinem Sav",
+          "affiliation": "Bilkent University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment",
+      "publication_date": "2026-11-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.11960",
+      "authors": [
+        {
+          "name": "Guoqing Zhang",
+          "affiliation": "Kyoto University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rafik Hadfi",
+          "affiliation": "Kyoto University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Takayuki Ito",
+          "affiliation": "Kyoto University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "OGDA: Ontology-Grounded Data Agents for Reliable Analysis over Heterogeneous Data Lakes",
+      "publication_date": "2026-11-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-agents"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.12114",
+      "authors": [
+        {
+          "name": "Boyi Zhang",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hong Ting Tsang",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yisen Gao",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qiao Xiao",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "LI Yufei",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haoyu Huang",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhongwei Xie",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiaxin Bai",
+          "affiliation": "Hong Kong Baptist University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yangqiu Song",
+          "affiliation": "Hong Kong University of Science and Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "NIFT-SQL: Customer-Supervised Table Scoring for Enterprise Text-to-SQL Retrieval",
+      "publication_date": "2026-11-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.12731",
+      "authors": [
+        {
+          "name": "Arjun Rao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nishant Gopinath",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Replay Fidelity in LLM Agent Evaluation: Randomness, Hidden State, and Test Oracles in AppWorld",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.11216",
+      "authors": [
+        {
+          "name": "You Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Quanchao Lu",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Efficient VLA Inference via Retrieval-Based Speculation and Hardware Acceleration",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.11098",
+      "authors": [
+        {
+          "name": "Zhengyang Cheng",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "He Zhu",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zeyu Guo",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zihan Liu",
+          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anbang Wu",
+          "affiliation": "Shanghai Jiao Tong University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yiming Gan",
+          "affiliation": "Chinese Academy of Sciences, Institute of Computing Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jingwen Leng",
+          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yu Feng",
+          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
+          "is_corresponding": false
+        },
+        {
+          "name": "Minyi Guo",
+          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Building and Auditing Chemical Datasets with LLMs: A General LLM-as-a-Judge Framework Applied to Homogeneous Catalytic PET Depolymerisation",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.11030",
+      "authors": [
+        {
+          "name": "Muhammad bin Javaid",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Karim K. Ben Hicham",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Enkhnyam Battulga",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alexander Mitsos",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Martin Grohe",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "AOP-Smart-Finder: A High-Throughput Human-AI Hybrid Framework for AOP Discovery and Evidence Mapping from Large-Scale Literature",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.11349",
+      "authors": [
+        {
+          "name": "Qinjiang Niu",
+          "affiliation": "Nanyang Normal University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lu Yan",
+          "affiliation": "Nanyang Normal University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Agents Propose, Code Verifies, Humans Decide: Verified Agentic Ingestion of Heterogeneous Scientific Tables into Relational Databases",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.11045",
+      "authors": [
+        {
+          "name": "Bharatha Rankothge",
+          "affiliation": "Colorado State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Suzanne B. Hodgkins",
+          "affiliation": "The Ohio State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Virginia Rich",
+          "affiliation": "The Ohio State University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Michael Kirby",
+          "affiliation": "Colorado State University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Yuanbao-Reranker: Document-Grounded Synthesis and Preference Distillation for Text Reranking",
+      "publication_date": "2026-11-07",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.10405",
+      "authors": [
+        {
+          "name": "Hongyuan Xu",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dezhi Ye",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiahao Cao",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jie Liu",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haijin Liang",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haibo Shi",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jin Ma",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Safe by Accident: Crash-Testing LLM-Written Code",
+      "publication_date": "2026-11-07",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.10585",
+      "authors": [
+        {
+          "name": "Afridi Mahmud",
+          "affiliation": "Bangladesh University of Engineering and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Md. As-Aid Rahman",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rifat Shahriyar",
+          "affiliation": "Bangladesh University of Engineering and Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "BuySideFlow: A Point-in-Time Benchmark for LLM Agents in Investment Research",
+      "publication_date": "2026-11-07",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.12966",
+      "authors": [
+        {
+          "name": "Bo Dong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fanjin Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ke Cheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinxin Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaowei Su",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yang Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jinghang Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cuiping Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hong Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jing Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}

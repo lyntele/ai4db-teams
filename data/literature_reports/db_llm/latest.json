@@ -16,48 +16,26 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-13",
+  "run_date": "2026-11-14",
   "scan_window": {
-    "start_date": "2026-11-06",
-    "end_date": "2026-11-13"
+    "start_date": "2026-11-07",
+    "end_date": "2026-11-14"
   },
   "summary": {
-    "openalex_works_fetched": 1050,
-    "watchlist_matches": 16,
-    "new_researchers_added": 3,
-    "existing_researchers_updated": 1,
+    "openalex_works_fetched": 1066,
+    "watchlist_matches": 13,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 5,
-    "skipped_due_to_score": 889,
-    "skipped_due_to_venue": 20,
-    "skipped_due_to_focus": 125,
+    "papers_mapped_to_site_entries": 2,
+    "skipped_due_to_score": 887,
+    "skipped_due_to_venue": 24,
+    "skipped_due_to_focus": 142,
     "skipped_due_to_institution": 11,
-    "skipped_due_to_role": 3
+    "skipped_due_to_role": 0
   },
-  "new_researchers": [
-    {
-      "name": "Yangqiu Song",
-      "institution": "HKUST",
-      "tags": [
-        "data-agents"
-      ]
-    },
-    {
-      "name": "Lin Xiaoheng",
-      "institution": "University of Hong Kong",
-      "tags": [
-        "LLM-DB"
-      ]
-    },
-    {
-      "name": "Minyi Guo",
-      "institution": "Shanghai Jiao Tong University",
-      "tags": [
-        "RAG"
-      ]
-    }
-  ],
+  "new_researchers": [],
   "papers": [
     {
       "title": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
@@ -67,7 +45,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.14477",
+      "url": "https://arxiv.org/abs/2611.14477",
       "authors": [
         {
           "name": "Arjun Rao",
@@ -94,7 +72,7 @@
       "authors": [
         {
           "name": "Melih Coşğun",
-          "affiliation": "",
+          "affiliation": "Bilkent University",
           "is_corresponding": false
         },
         {
@@ -104,12 +82,39 @@
         },
         {
           "name": "Alptekın Küpçü",
-          "affiliation": "",
+          "affiliation": "Koç University",
           "is_corresponding": false
         },
         {
           "name": "Sinem Sav",
-          "affiliation": "",
+          "affiliation": "Bilkent University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment",
+      "publication_date": "2026-11-09",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.11960",
+      "authors": [
+        {
+          "name": "Guoqing Zhang",
+          "affiliation": "Kyoto University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rafik Hadfi",
+          "affiliation": "Kyoto University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Takayuki Ito",
+          "affiliation": "Kyoto University",
           "is_corresponding": false
         }
       ]
@@ -273,6 +278,41 @@
       ]
     },
     {
+      "title": "Building and Auditing Chemical Datasets with LLMs: A General LLM-as-a-Judge Framework Applied to Homogeneous Catalytic PET Depolymerisation",
+      "publication_date": "2026-11-08",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.11030",
+      "authors": [
+        {
+          "name": "Muhammad bin Javaid",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Karim K. Ben Hicham",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Enkhnyam Battulga",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alexander Mitsos",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Martin Grohe",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "AOP-Smart-Finder: A High-Throughput Human-AI Hybrid Framework for AOP Discovery and Evidence Mapping from Large-Scale Literature",
       "publication_date": "2026-11-08",
       "venue": "arXiv (Cornell University)",
@@ -327,6 +367,53 @@
       ]
     },
     {
+      "title": "Yuanbao-Reranker: Document-Grounded Synthesis and Preference Distillation for Text Reranking",
+      "publication_date": "2026-11-07",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.10405",
+      "authors": [
+        {
+          "name": "Hongyuan Xu",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dezhi Ye",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiahao Cao",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jie Liu",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haijin Liang",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haibo Shi",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jin Ma",
+          "affiliation": "Tencent (China)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "Safe by Accident: Crash-Testing LLM-Written Code",
       "publication_date": "2026-11-07",
       "venue": "arXiv (Cornell University)",
@@ -361,7 +448,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.12966",
+      "url": "https://arxiv.org/abs/2611.12966",
       "authors": [
         {
           "name": "Bo Dong",
@@ -411,251 +498,6 @@
         {
           "name": "Jing Zhang",
           "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Towards an Autonomous AI Steward for Large-Scale Physics Experiments: Integrating Causal Diagnostics, RAG, and Conformal Prediction",
-      "publication_date": "2026-11-06",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.09298",
-      "authors": [
-        {
-          "name": "O. Noll",
-          "affiliation": "Helmholtz Institute Mainz",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nicholas Tan Jerome",
-          "affiliation": "Karlsruhe Institute of Technology, Helmholtz Institute Mainz",
-          "is_corresponding": false
-        },
-        {
-          "name": "Alexander Lehnen",
-          "affiliation": "GSI Helmholtz Centre for Heavy Ion Research",
-          "is_corresponding": false
-        },
-        {
-          "name": "Frank Simon",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Frank Maas",
-          "affiliation": "Helmholtz Institute Mainz",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "ROAM: Retrieval-Augmented Optimization for Feasible Multi-Day Itinerary Planning",
-      "publication_date": "2026-11-06",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.09407",
-      "authors": [
-        {
-          "name": "Ye Zihao",
-          "affiliation": "City University of Hong Kong",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lin Xiaoheng",
-          "affiliation": "City University of Hong Kong",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Nebula: Distributed Position-Independent Caching for LLM Serving",
-      "publication_date": "2026-11-06",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.09474",
-      "authors": [
-        {
-          "name": "Yifei Liu",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Junbin Pan",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Junhao Hu",
-          "affiliation": "Peking University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yang Liu",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Junyi Chen",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Juntong Wu",
-          "affiliation": "Peking University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Chen Chen",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Haiyuan Zhao",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaoxu Chen",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Weihang Chen",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "MongoBench: Do LLMs Know What a MongoDB Query Will Do?",
-      "publication_date": "2026-11-06",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.09065",
-      "authors": [
-        {
-          "name": "Qibai Chen",
-          "affiliation": "Independent Researcher United States",
-          "is_corresponding": false
-        },
-        {
-          "name": "Haoting Qiu",
-          "affiliation": "Independent Researcher United States",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yezhou Cheng",
-          "affiliation": "University of Wisconsin–Madison",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mengxiao Qian",
-          "affiliation": "Independent Researcher United States",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "LoStBench: Benchmarking Longitudinal Studies Data Integration",
-      "publication_date": "2026-11-06",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "data-integration"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.10242",
-      "authors": [
-        {
-          "name": "Pratik Pokharel",
-          "affiliation": "University at Buffalo, State University of New York",
-          "is_corresponding": false
-        },
-        {
-          "name": "Oliver A. Kennedy",
-          "affiliation": "University at Buffalo, State University of New York",
-          "is_corresponding": false
-        },
-        {
-          "name": "Abhi Ramtel",
-          "affiliation": "University at Buffalo, State University of New York",
-          "is_corresponding": false
-        },
-        {
-          "name": "Poonam Kumari",
-          "affiliation": "Bridgewater State University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jeff Good",
-          "affiliation": "University at Buffalo, State University of New York",
-          "is_corresponding": false
-        },
-        {
-          "name": "Katarzyna Kordas",
-          "affiliation": "University at Buffalo, State University of New York",
-          "is_corresponding": false
-        },
-        {
-          "name": "Marianthi Markatou",
-          "affiliation": "University at Buffalo, State University of New York",
-          "is_corresponding": false
-        },
-        {
-          "name": "andrew talal",
-          "affiliation": "University at Buffalo, State University of New York",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Agentic AI for Healthcare Claim Denial Analysis: A Policy-Grounded Framework for Privacy Preservation",
-      "publication_date": "2026-11-06",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.09423",
-      "authors": [
-        {
-          "name": "Sofia Campos",
-          "affiliation": "Universidade do Porto",
-          "is_corresponding": false
-        },
-        {
-          "name": "Carlos Martins",
-          "affiliation": "Randy Labs , Portugal",
-          "is_corresponding": false
-        },
-        {
-          "name": "Pedro Pires",
-          "affiliation": "Randy Labs , Portugal",
-          "is_corresponding": false
-        },
-        {
-          "name": "João Gama",
-          "affiliation": "INESC TEC",
-          "is_corresponding": false
-        },
-        {
-          "name": "Bruno Veloso",
-          "affiliation": "INESC TEC",
-          "is_corresponding": false
-        },
-        {
-          "name": "Pedro Santos",
-          "affiliation": "Randy Labs , Portugal",
           "is_corresponding": false
         }
       ]
