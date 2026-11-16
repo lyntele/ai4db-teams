@@ -16,35 +16,26 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-15",
+  "run_date": "2026-11-16",
   "scan_window": {
-    "start_date": "2026-11-08",
-    "end_date": "2026-11-15"
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-16"
   },
   "summary": {
-    "openalex_works_fetched": 1110,
-    "watchlist_matches": 22,
-    "new_researchers_added": 1,
+    "openalex_works_fetched": 1118,
+    "watchlist_matches": 17,
+    "new_researchers_added": 0,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 3,
-    "skipped_due_to_score": 902,
-    "skipped_due_to_venue": 19,
-    "skipped_due_to_focus": 167,
-    "skipped_due_to_institution": 19,
+    "papers_mapped_to_site_entries": 2,
+    "skipped_due_to_score": 958,
+    "skipped_due_to_venue": 20,
+    "skipped_due_to_focus": 123,
+    "skipped_due_to_institution": 15,
     "skipped_due_to_role": 0
   },
-  "new_researchers": [
-    {
-      "name": "Manuel Arias Chao",
-      "institution": "Delft University of Technology",
-      "tags": [
-        "knowledge-graph",
-        "RAG"
-      ]
-    }
-  ],
+  "new_researchers": [],
   "papers": [
     {
       "title": "Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning",
@@ -54,7 +45,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.17304",
+      "url": "https://arxiv.org/abs/2611.17304",
       "authors": [
         {
           "name": "Gustavo Pinto",
@@ -71,7 +62,7 @@
         "NL2SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.17093",
+      "url": "https://arxiv.org/abs/2611.17093",
       "authors": [
         {
           "name": "Alfio Gliozzo",
@@ -108,7 +99,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.17044",
+      "url": "https://arxiv.org/abs/2611.17044",
       "authors": [
         {
           "name": "Sriom Chakrabarti",
@@ -140,7 +131,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.15372",
+      "url": "https://arxiv.org/abs/2611.15372",
       "authors": [
         {
           "name": "Arush Upadhyaya",
@@ -160,7 +151,7 @@
       "venue": "arXiv (Cornell University)",
       "tags": [],
       "relevance_score": 2,
-      "url": "https://doi.org/10.48550/arxiv.2611.16108",
+      "url": "https://arxiv.org/abs/2611.16108",
       "authors": [
         {
           "name": "Nicole Sullivan",
@@ -192,7 +183,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.15904",
+      "url": "https://arxiv.org/abs/2611.15904",
       "authors": [
         {
           "name": "Lingxiao Kong",
@@ -229,7 +220,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.15843",
+      "url": "https://arxiv.org/abs/2611.15843",
       "authors": [
         {
           "name": "Arleth Salinas",
@@ -256,7 +247,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.15596",
+      "url": "https://arxiv.org/abs/2611.15596",
       "authors": [
         {
           "name": "George Granberry",
@@ -288,7 +279,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.14581",
+      "url": "https://arxiv.org/abs/2611.14581",
       "authors": [
         {
           "name": "Sungbin Im",
@@ -306,7 +297,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2611.14765",
+      "url": "https://arxiv.org/abs/2611.14765",
       "authors": [
         {
           "name": "Jiani Zhang",
@@ -363,17 +354,17 @@
       "authors": [
         {
           "name": "Steve Nouyep",
-          "affiliation": "Centre National de la Recherche Scientifique, University of Clermont Auvergne",
+          "affiliation": "Centre National de la Recherche Scientifique, Université Clermont Auvergne",
           "is_corresponding": false
         },
         {
           "name": "Maxime Puys",
-          "affiliation": "Centre National de la Recherche Scientifique, University of Clermont Auvergne",
+          "affiliation": "Centre National de la Recherche Scientifique, Université Clermont Auvergne",
           "is_corresponding": false
         },
         {
           "name": "Sébastien Salva",
-          "affiliation": "Centre National de la Recherche Scientifique, University of Clermont Auvergne",
+          "affiliation": "Centre National de la Recherche Scientifique, Université Clermont Auvergne",
           "is_corresponding": false
         }
       ]
@@ -568,174 +559,6 @@
         {
           "name": "Nishant Gopinath",
           "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Replay Fidelity in LLM Agent Evaluation: Randomness, Hidden State, and Test Oracles in AppWorld",
-      "publication_date": "2026-11-08",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.11216",
-      "authors": [
-        {
-          "name": "You Liu",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Quanchao Lu",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Efficient VLA Inference via Retrieval-Based Speculation and Hardware Acceleration",
-      "publication_date": "2026-11-08",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.11098",
-      "authors": [
-        {
-          "name": "Zhengyang Cheng",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "He Zhu",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zeyu Guo",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zihan Liu",
-          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
-          "is_corresponding": false
-        },
-        {
-          "name": "Anbang Wu",
-          "affiliation": "Shanghai Jiao Tong University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yiming Gan",
-          "affiliation": "Chinese Academy of Sciences, Institute of Computing Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jingwen Leng",
-          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yu Feng",
-          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
-          "is_corresponding": false
-        },
-        {
-          "name": "Minyi Guo",
-          "affiliation": "Shanghai Jiao Tong University, Shanghai Qi Zhi Institute",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Building and Auditing Chemical Datasets with LLMs: A General LLM-as-a-Judge Framework Applied to Homogeneous Catalytic PET Depolymerisation",
-      "publication_date": "2026-11-08",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.11030",
-      "authors": [
-        {
-          "name": "Muhammad bin Javaid",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Karim K. Ben Hicham",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Enkhnyam Battulga",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Alexander Mitsos",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Martin Grohe",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "AOP-Smart-Finder: A High-Throughput Human-AI Hybrid Framework for AOP Discovery and Evidence Mapping from Large-Scale Literature",
-      "publication_date": "2026-11-08",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.11349",
-      "authors": [
-        {
-          "name": "Qinjiang Niu",
-          "affiliation": "Nanyang Normal University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lu Yan",
-          "affiliation": "Nanyang Normal University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Agents Propose, Code Verifies, Humans Decide: Verified Agentic Ingestion of Heterogeneous Scientific Tables into Relational Databases",
-      "publication_date": "2026-11-08",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.11045",
-      "authors": [
-        {
-          "name": "Bharatha Rankothge",
-          "affiliation": "Colorado State University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Suzanne B. Hodgkins",
-          "affiliation": "The Ohio State University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Virginia Rich",
-          "affiliation": "The Ohio State University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Michael Kirby",
-          "affiliation": "Colorado State University",
           "is_corresponding": false
         }
       ]
