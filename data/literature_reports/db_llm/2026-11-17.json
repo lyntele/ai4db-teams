@@ -1,0 +1,507 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-11-17",
+  "scan_window": {
+    "start_date": "2026-11-10",
+    "end_date": "2026-11-17"
+  },
+  "summary": {
+    "openalex_works_fetched": 1111,
+    "watchlist_matches": 15,
+    "new_researchers_added": 2,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 4,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 4,
+    "skipped_due_to_score": 931,
+    "skipped_due_to_venue": 22,
+    "skipped_due_to_focus": 143,
+    "skipped_due_to_institution": 11,
+    "skipped_due_to_role": 1
+  },
+  "new_researchers": [
+    {
+      "name": "Sebastian Link",
+      "institution": "The University of Auckland",
+      "tags": [
+        "LLM-DB"
+      ]
+    },
+    {
+      "name": "Jianliang Xu",
+      "institution": "University of Hong Kong",
+      "tags": [
+        "query-optimization",
+        "vector-DB"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning",
+      "publication_date": "2026-11-12",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.17304",
+      "authors": [
+        {
+          "name": "Gustavo Pinto",
+          "affiliation": "Universidade Federal do Pará",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "FlinkEval: A Synthetic Corpus for Evaluating Natural Language Interfaces to Streaming SQL",
+      "publication_date": "2026-11-12",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "NL2SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.17093",
+      "authors": [
+        {
+          "name": "Alfio Gliozzo",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nandana Mihindukulasooriya",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gaetano Rossiello",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        },
+        {
+          "name": "Erick Lee",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lisa D. Amini",
+          "affiliation": "IBM",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Authenticated Approximate Nearest Neighbor Search in Outsourced Vector Databases",
+      "publication_date": "2026-11-12",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "query-optimization",
+        "vector-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.16516",
+      "authors": [
+        {
+          "name": "Yuanhang Zhou",
+          "affiliation": "Hong Kong Baptist University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinyi Zhang",
+          "affiliation": "Hong Kong Baptist University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cheng Xu",
+          "affiliation": "Hong Kong Baptist University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jianliang Xu",
+          "affiliation": "Hong Kong Baptist University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "[Experiment, Analysis, and Benchmark] How well do LLMs comprehend and design relational database schemata?",
+      "publication_date": "2026-11-12",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.17044",
+      "authors": [
+        {
+          "name": "Sriom Chakrabarti",
+          "affiliation": "Aalborg University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sean Bin Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arijit Khan",
+          "affiliation": "Bowling Green State University, Aalborg University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sebastian Link",
+          "affiliation": "University of Auckland",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "LLMRunner: Closed Workload Model Performance Testing Framework for LLM Servings",
+      "publication_date": "2026-11-11",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.15372",
+      "authors": [
+        {
+          "name": "Arush Upadhyaya",
+          "affiliation": "Indian Institute of Technology Kanpur",
+          "is_corresponding": false
+        },
+        {
+          "name": "Debadatta Mishra",
+          "affiliation": "Indian Institute of Technology Kanpur",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "How Do People Debug Complex SQL Queries With LLMs? A Qualitative Study",
+      "publication_date": "2026-11-11",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.16108",
+      "authors": [
+        {
+          "name": "Nicole Sullivan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ella Cao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Leilani Battle",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Magdalena Bałazińska",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "HeriKGQA: Grounded Knowledge-Graph Question Answering over Cultural Heritage Sensor Data",
+      "publication_date": "2026-11-11",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.15904",
+      "authors": [
+        {
+          "name": "Lingxiao Kong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Vasileios Arampatzakis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Vasileios Sevetlidis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "George P. Pavlidis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zeyd Boukhers",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Food Critic: An Agentic Visualization System for Auditable Restaurant-Safety Reasoning",
+      "publication_date": "2026-11-11",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.15843",
+      "authors": [
+        {
+          "name": "Arleth Salinas",
+          "affiliation": "University of Utah",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ishrat Jahan Eliza",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Valerio Pascucci",
+          "affiliation": "University of Utah",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Bug Finding With Agentic Symbolic Execution",
+      "publication_date": "2026-11-11",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.15596",
+      "authors": [
+        {
+          "name": "George Granberry",
+          "affiliation": "Chalmers University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wolfgang Ahrendt",
+          "affiliation": "Chalmers University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Andy Gordon",
+          "affiliation": "University of Edinburgh",
+          "is_corresponding": false
+        },
+        {
+          "name": "Moa Johansson",
+          "affiliation": "Chalmers University of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+      "publication_date": "2026-11-10",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.14581",
+      "authors": [
+        {
+          "name": "Sungbin Im",
+          "affiliation": "Seoul School of Integrated Sciences and Technologies",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "VASTRA: Efficient Agentic Top-K Interactive Video Analysis",
+      "publication_date": "2026-11-10",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.14601",
+      "authors": [
+        {
+          "name": "Tushar Tyagi",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aditya Raghavan",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haoran Qiu",
+          "affiliation": "Microsoft Azure Research",
+          "is_corresponding": false
+        },
+        {
+          "name": "Francisco Romero",
+          "affiliation": "Georgia Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SynthCorp: A Platform for Creating Benchmarks for Data Agents",
+      "publication_date": "2026-11-10",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-agents",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.14765",
+      "authors": [
+        {
+          "name": "Jiani Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Manav Garg",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Eugenie Y. Lai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Cheng Zhen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Eva Sharma",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yang Pan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yaming Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alon Y. Halevy",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Isolation Is Not Confidentiality: Security Boundaries of Geometric Access Control in RAG",
+      "publication_date": "2026-11-10",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG",
+        "vector-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.14061",
+      "authors": [
+        {
+          "name": "Steve Nouyep",
+          "affiliation": "Centre National de la Recherche Scientifique, Université Clermont Auvergne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Maxime Puys",
+          "affiliation": "Centre National de la Recherche Scientifique, Université Clermont Auvergne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sébastien Salva",
+          "affiliation": "Centre National de la Recherche Scientifique, Université Clermont Auvergne",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
+      "publication_date": "2026-11-10",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.14477",
+      "authors": [
+        {
+          "name": "Arjun Rao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nishant Gopinath",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Chain of Physics: Supporting Fault Diagnosis with Engineering-Inspired Large Language Model Reasoning",
+      "publication_date": "2026-11-10",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.14263",
+      "authors": [
+        {
+          "name": "Wenqi Zhou",
+          "affiliation": "ZHAW Zurich University of Applied Sciences",
+          "is_corresponding": false
+        },
+        {
+          "name": "Leonardo Baldo",
+          "affiliation": "ZHAW Zurich University of Applied Sciences",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kai Goebel",
+          "affiliation": "Luleå University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Manuel Arias Chao",
+          "affiliation": "ZHAW Zurich University of Applied Sciences, Delft University of Technology",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
