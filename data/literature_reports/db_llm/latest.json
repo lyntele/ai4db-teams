@@ -16,27 +16,207 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-18",
+  "run_date": "2026-11-19",
   "scan_window": {
-    "start_date": "2026-11-11",
-    "end_date": "2026-11-18"
+    "start_date": "2026-11-12",
+    "end_date": "2026-11-19"
   },
   "summary": {
-    "openalex_works_fetched": 676,
-    "watchlist_matches": 13,
+    "openalex_works_fetched": 1080,
+    "watchlist_matches": 14,
     "new_researchers_added": 0,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 3,
-    "skipped_due_to_score": 542,
-    "skipped_due_to_venue": 19,
-    "skipped_due_to_focus": 102,
-    "skipped_due_to_institution": 10,
-    "skipped_due_to_role": 1
+    "papers_mapped_to_site_entries": 2,
+    "skipped_due_to_score": 1000,
+    "skipped_due_to_venue": 21,
+    "skipped_due_to_focus": 45,
+    "skipped_due_to_institution": 12,
+    "skipped_due_to_role": 0
   },
   "new_researchers": [],
   "papers": [
+    {
+      "title": "Optimizing Query Decomposition for Reliable Validation",
+      "publication_date": "2026-11-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2611.20511",
+      "authors": [
+        {
+          "name": "Shuo Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sudeepa Roy",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jun Yang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Living Context Graphs: Continual Semantic Learning for Enterprise Data Reasoning",
+      "publication_date": "2026-11-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.20976",
+      "authors": [
+        {
+          "name": "Varun Agrawal",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ayush Srivastava",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Eshan Gujar",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kaushal Kumar",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ayush Gupta",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Adaptive-Elbow Graph Traversal for Schema Retrieval in Text-to-SQL",
+      "publication_date": "2026-11-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.20979",
+      "authors": [
+        {
+          "name": "Fabio Picariello",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Salvatore Cipolla",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Susanna Bonura",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Vito Morreale",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Where Should LLM Agents Adapt at Test Time? In Context, in Weights, or Both",
+      "publication_date": "2026-11-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.19700",
+      "authors": [
+        {
+          "name": "Parsa Mirtaheri",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mohammadreza Armandpour",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Keivan Alizadeh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Iman Mirzadeh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Parshin Shojaee",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aryo Lotfi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "David Harrison",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mehrdad Farajtabar",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "HyperDBDiag: Multi-Root-Cause Identification and Operator-Level Localization for Database Performance Anomalies",
+      "publication_date": "2026-11-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.19241",
+      "authors": [
+        {
+          "name": "Hu Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhengjin Yan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hong Zhu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qiong Zuo",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
       "publication_date": "2026-11-13",
@@ -46,7 +226,7 @@
         "schema-linking"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2611.18338",
+      "url": "https://arxiv.org/abs/2611.18338",
       "authors": [
         {
           "name": "Xiaoqi Wang",
@@ -98,7 +278,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.17780",
+      "url": "https://arxiv.org/abs/2611.17780",
       "authors": [
         {
           "name": "Ibrahim Memon",
@@ -130,7 +310,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.18315",
+      "url": "https://arxiv.org/abs/2611.18315",
       "authors": [
         {
           "name": "Hiren Madhu",
@@ -160,6 +340,33 @@
       ]
     },
     {
+      "title": "DataTrace: Benchmarking Data Agents for Evidence-Grounded Root-Cause Localization",
+      "publication_date": "2026-11-13",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-agents"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.18926",
+      "authors": [
+        {
+          "name": "Tung Sum Thomas Kwok",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaotian Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuyu Luo",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "Bridge: Database-Grounded Interactive Disambiguation for Text-to-SQL",
       "publication_date": "2026-11-13",
       "venue": "arXiv (Cornell University)",
@@ -168,7 +375,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2611.17770",
+      "url": "https://arxiv.org/abs/2611.17770",
       "authors": [
         {
           "name": "Sau Lai Yip",
@@ -307,154 +514,6 @@
         {
           "name": "Sebastian Link",
           "affiliation": "University of Auckland",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "LLMRunner: Closed Workload Model Performance Testing Framework for LLM Servings",
-      "publication_date": "2026-11-11",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.15372",
-      "authors": [
-        {
-          "name": "Arush Upadhyaya",
-          "affiliation": "Indian Institute of Technology Kanpur",
-          "is_corresponding": false
-        },
-        {
-          "name": "Debadatta Mishra",
-          "affiliation": "Indian Institute of Technology Kanpur",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "How Do People Debug Complex SQL Queries With LLMs? A Qualitative Study",
-      "publication_date": "2026-11-11",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.16108",
-      "authors": [
-        {
-          "name": "Nicole Sullivan",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ella Cao",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Leilani Battle",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Magdalena Bałazińska",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "HeriKGQA: Grounded Knowledge-Graph Question Answering over Cultural Heritage Sensor Data",
-      "publication_date": "2026-11-11",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.15904",
-      "authors": [
-        {
-          "name": "Lingxiao Kong",
-          "affiliation": "University of Cologne, Fraunhofer Institute for Applied Information Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Vasileios Arampatzakis",
-          "affiliation": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
-          "is_corresponding": false
-        },
-        {
-          "name": "Vasileios Sevetlidis",
-          "affiliation": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
-          "is_corresponding": false
-        },
-        {
-          "name": "George P. Pavlidis",
-          "affiliation": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
-          "is_corresponding": false
-        },
-        {
-          "name": "Zeyd Boukhers",
-          "affiliation": "Fraunhofer Institute for Applied Information Technology, University Hospital Cologne",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Food Critic: An Agentic Visualization System for Auditable Restaurant-Safety Reasoning",
-      "publication_date": "2026-11-11",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.15843",
-      "authors": [
-        {
-          "name": "Arleth Salinas",
-          "affiliation": "University of Utah",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ishrat Jahan Eliza",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Valerio Pascucci",
-          "affiliation": "University of Utah",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Bug Finding With Agentic Symbolic Execution",
-      "publication_date": "2026-11-11",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.15596",
-      "authors": [
-        {
-          "name": "George Granberry",
-          "affiliation": "Chalmers University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Wolfgang Ahrendt",
-          "affiliation": "Chalmers University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Andy Gordon",
-          "affiliation": "University of Edinburgh",
-          "is_corresponding": false
-        },
-        {
-          "name": "Moa Johansson",
-          "affiliation": "Chalmers University of Technology",
           "is_corresponding": false
         }
       ]
