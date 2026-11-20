@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-11-17"
+    "last_updated": "2026-11-20"
   },
   "researchers": [
     {
@@ -30498,6 +30498,11 @@
           "title": "MIRA: Evidence-Verified Repair Memory for Text-to-SQL Correction",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2608.06950"
+        },
+        {
+          "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.18338"
         }
       ],
       "research_group_url": "",
@@ -30508,7 +30513,7 @@
       "contact_history": [],
       "notes": "REWRITER 通讯作者。机构通过论文首页署名与 @hkust-gz.edu.cn 邮箱域名核实；主页来自 HKUST(GZ) 官方 faculty profile。",
       "added_date": "2026-03-26",
-      "last_updated": "2026-08-14"
+      "last_updated": "2026-11-20"
     },
     {
       "id": "uid-823",
@@ -34926,6 +34931,121 @@
       "notes": "Auto-discovered from QS #11 school University of Hong Kong via arXiv (Cornell University) paper \"Authenticated Approximate Nearest Neighbor Search in Outsourced Vector Databases\". Please verify homepage and student availability manually.",
       "added_date": "2026-11-17",
       "last_updated": "2026-11-17"
+    },
+    {
+      "id": "uid-943",
+      "name": "Hongyang Du",
+      "type": "faculty",
+      "institution": "HKU",
+      "institution_display_name": "University of Hong Kong",
+      "institution_qs_rank": 11,
+      "department": "",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "text-to-SQL",
+        "schema-linking"
+      ],
+      "tags": [
+        "text-to-SQL",
+        "schema-linking"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.18338"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #11 school University of Hong Kong via arXiv (Cornell University) paper \"MEM-SQL: Memory-Empowered Text-to-SQL\". Please verify homepage and student availability manually.",
+      "added_date": "2026-11-20",
+      "last_updated": "2026-11-20"
+    },
+    {
+      "id": "uid-944",
+      "name": "Xiaofang Zhou",
+      "type": "faculty",
+      "institution": "HKUST",
+      "institution_display_name": "HKUST",
+      "institution_qs_rank": 44,
+      "department": "",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "tags": [
+        "text-to-SQL",
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Bridge: Database-Grounded Interactive Disambiguation for Text-to-SQL",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.17770"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #44 school HKUST via arXiv (Cornell University) paper \"Bridge: Database-Grounded Interactive Disambiguation for Text-to-SQL\". Please verify homepage and student availability manually.",
+      "added_date": "2026-11-20",
+      "last_updated": "2026-11-20"
+    },
+    {
+      "id": "uid-945",
+      "name": "Rex Ying",
+      "type": "faculty",
+      "institution": "QS_YaleUniversity_3",
+      "institution_display_name": "Yale University",
+      "institution_qs_rank": 21,
+      "department": "",
+      "country": "United States",
+      "region": "North America",
+      "position": "",
+      "research_focus": [
+        "LLM-DB"
+      ],
+      "tags": [
+        "LLM-DB"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "Experts Across Schemas: Agent-Guided Mixture-of-Relational-Experts for Cross-Database Generalization",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.18315"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #21 school Yale University via arXiv (Cornell University) paper \"Experts Across Schemas: Agent-Guided Mixture-of-Relational-Experts for Cross-Database Generalization\". Please verify homepage and student availability manually.",
+      "added_date": "2026-11-20",
+      "last_updated": "2026-11-20"
     }
   ]
 }
