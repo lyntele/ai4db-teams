@@ -16,51 +16,147 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-20",
+  "run_date": "2026-11-21",
   "scan_window": {
-    "start_date": "2026-11-13",
-    "end_date": "2026-11-20"
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-21"
   },
   "summary": {
-    "openalex_works_fetched": 1068,
-    "watchlist_matches": 12,
-    "new_researchers_added": 3,
-    "existing_researchers_updated": 1,
+    "openalex_works_fetched": 1115,
+    "watchlist_matches": 17,
+    "new_researchers_added": 2,
+    "existing_researchers_updated": 2,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 3,
-    "skipped_due_to_score": 982,
-    "skipped_due_to_venue": 15,
-    "skipped_due_to_focus": 59,
-    "skipped_due_to_institution": 9,
-    "skipped_due_to_role": 3
+    "papers_mapped_to_site_entries": 4,
+    "skipped_due_to_score": 967,
+    "skipped_due_to_venue": 18,
+    "skipped_due_to_focus": 113,
+    "skipped_due_to_institution": 13,
+    "skipped_due_to_role": 9
   },
   "new_researchers": [
     {
-      "name": "Hongyang Du",
-      "institution": "University of Hong Kong",
+      "name": "Mehrdad Farajtabar",
+      "institution": "University of California, San Diego (UCSD)",
       "tags": [
-        "text-to-SQL",
-        "schema-linking"
-      ]
-    },
-    {
-      "name": "Xiaofang Zhou",
-      "institution": "HKUST",
-      "tags": [
-        "text-to-SQL",
         "LLM-DB"
       ]
     },
     {
-      "name": "Rex Ying",
-      "institution": "Yale University",
+      "name": "Tianyue Wang",
+      "institution": "University of Michigan-Ann Arbor",
       "tags": [
-        "LLM-DB"
+        "knowledge-graph",
+        "RAG"
       ]
     }
   ],
   "papers": [
+    {
+      "title": "Structured Extraction of Diffraction Data from Covalent Organic Frameworks",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.23680",
+      "authors": [
+        {
+          "name": "Shenghan Gao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhiling Zheng",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2611.24059",
+      "authors": [
+        {
+          "name": "Zhenrui Yue",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gongxiaohui Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Huimin Zeng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Honglei Zhuang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiashuo Sun",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhen Han",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dong Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Prioritize, Don't Decide: What We Learned Auditing a Deployed Human-in-the-Loop CV Sorter",
+      "publication_date": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.23359",
+      "authors": [
+        {
+          "name": "Hadi Mohammadi",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jeroen Sparla",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alexandros Paliouras",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Georg Krempl",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Robert A. Bagheri",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "MoL-SQL: A Controlled Benchmark for Mixture-of-Language Text-to-SQL",
       "publication_date": "2026-11-17",
@@ -69,7 +165,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.22333",
+      "url": "https://arxiv.org/abs/2611.22333",
       "authors": [
         {
           "name": "Tianqi Luo",
@@ -89,6 +185,33 @@
       ]
     },
     {
+      "title": "QuarkDB: A Hybrid Database System for Quantum Data Management",
+      "publication_date": "2026-11-16",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.20807",
+      "authors": [
+        {
+          "name": "Wenrui Zhang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yu Wang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiao Zhang",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "Optimizing Query Decomposition for Reliable Validation",
       "publication_date": "2026-11-16",
       "venue": "arXiv (Cornell University)",
@@ -98,17 +221,17 @@
       "authors": [
         {
           "name": "Shuo Zhang",
-          "affiliation": "",
+          "affiliation": "Duke University",
           "is_corresponding": false
         },
         {
           "name": "Sudeepa Roy",
-          "affiliation": "",
+          "affiliation": "Duke University",
           "is_corresponding": false
         },
         {
           "name": "Jun Yang",
-          "affiliation": "",
+          "affiliation": "Duke University",
           "is_corresponding": false
         }
       ]
@@ -163,22 +286,22 @@
       "authors": [
         {
           "name": "Fabio Picariello",
-          "affiliation": "",
+          "affiliation": "Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy",
           "is_corresponding": false
         },
         {
           "name": "Salvatore Cipolla",
-          "affiliation": "",
+          "affiliation": "Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy",
           "is_corresponding": false
         },
         {
           "name": "Susanna Bonura",
-          "affiliation": "",
+          "affiliation": "Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy",
           "is_corresponding": false
         },
         {
           "name": "Vito Morreale",
-          "affiliation": "",
+          "affiliation": "Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy",
           "is_corresponding": false
         }
       ]
@@ -195,42 +318,308 @@
       "authors": [
         {
           "name": "Parsa Mirtaheri",
-          "affiliation": "",
+          "affiliation": "University of California San Diego, Apple (United States)",
           "is_corresponding": false
         },
         {
           "name": "Mohammadreza Armandpour",
-          "affiliation": "",
+          "affiliation": "University of California San Diego, Apple (United States)",
           "is_corresponding": false
         },
         {
           "name": "Keivan Alizadeh",
-          "affiliation": "",
+          "affiliation": "University of California San Diego, Apple (United States)",
           "is_corresponding": false
         },
         {
           "name": "Iman Mirzadeh",
-          "affiliation": "",
+          "affiliation": "University of California San Diego, Apple (United States)",
           "is_corresponding": false
         },
         {
           "name": "Parshin Shojaee",
-          "affiliation": "",
+          "affiliation": "University of California San Diego, Apple (United States)",
           "is_corresponding": false
         },
         {
           "name": "Aryo Lotfi",
-          "affiliation": "",
+          "affiliation": "University of California San Diego, Apple (United States)",
           "is_corresponding": false
         },
         {
           "name": "David Harrison",
-          "affiliation": "",
+          "affiliation": "University of California San Diego, Apple (United States)",
           "is_corresponding": false
         },
         {
           "name": "Mehrdad Farajtabar",
+          "affiliation": "University of California San Diego, Apple (United States)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Exact Sparse Assignment with Costly Target Embeddings: Fixed-Realization Certificates and an Empirical Audit",
+      "publication_date": "2026-11-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-integration"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.19770",
+      "authors": [
+        {
+          "name": "Hamidreza Hasani Balyani",
           "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mahtab Movahhedrad",
+          "affiliation": "University of Southern California",
+          "is_corresponding": false
+        },
+        {
+          "name": "Seyed Pouyan Mousavi Davoudi",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Estimating Outpatient Visit Prices from Hospital Price Transparency Data using Large Language Models",
+      "publication_date": "2026-11-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.20261",
+      "authors": [
+        {
+          "name": "Kurmanbek Kaiyrbekov",
+          "affiliation": "National Institutes of Health, National Human Genome Research Institute",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nicholas J Dobbins",
+          "affiliation": "National Institutes of Health, National Human Genome Research Institute",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sean David Mooney",
+          "affiliation": "National Institutes of Health, National Human Genome Research Institute",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Autonomous Multi-modal Agents for ITOps Observability",
+      "publication_date": "2026-11-15",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.19982",
+      "authors": [
+        {
+          "name": "Gunjan Siddharth",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sanjana Garai",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Utsav Shekhar",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Prakhar Jain",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sarvam Maheshwari",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Balaji Ganesan",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Avirup Saha",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Seema Nagar",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pratik Mishra",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Felix George",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Suranjana Samanta",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Harshit Kumar",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mudit Verma",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Prateeti Mohapatra",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ravi Jagannathan",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Amit M. Paradkar",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sameep Mehta",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pratibha Moogi",
+          "affiliation": "IBM (India)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Orbit AI: Evaluating Tool-Augmented Agents For Enterprise Question Answering",
+      "publication_date": "2026-11-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.19333",
+      "authors": [
+        {
+          "name": "Rishabh Gupta",
+          "affiliation": "Indian Institute of Information Technology Vadodara",
+          "is_corresponding": false
+        },
+        {
+          "name": "Uday Kharatmol",
+          "affiliation": "Indian Institute of Information Technology Vadodara",
+          "is_corresponding": false
+        },
+        {
+          "name": "Krishna Bhatt",
+          "affiliation": "Indian Institute of Information Technology Vadodara",
+          "is_corresponding": false
+        },
+        {
+          "name": "Avadhesh Nagar",
+          "affiliation": "Indian Institute of Information Technology Vadodara",
+          "is_corresponding": false
+        },
+        {
+          "name": "Naman Sanotiya",
+          "affiliation": "Indian Institute of Information Technology Vadodara",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tarun Jain",
+          "affiliation": "Indian Institute of Information Technology Vadodara",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Large Language Models for AI Infrastructure",
+      "publication_date": "2026-11-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "ML-systems",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.19061",
+      "authors": [
+        {
+          "name": "Bolin Shen",
+          "affiliation": "YUSHUN DONG * ,",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shaoyi Huang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yushun Dong",
+          "affiliation": "Florida State University, Stevens Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "KaleidoKV: Rearranging Evidence for Efficient KV Cache Reuse in Offline RAG Inference",
+      "publication_date": "2026-11-14",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.19253",
+      "authors": [
+        {
+          "name": "Peiting Xie",
+          "affiliation": "UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xingyu Tan",
+          "affiliation": "UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiangjun Zai",
+          "affiliation": "UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chen Chen",
+          "affiliation": "Shenzhen University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaoyang Wang",
+          "affiliation": "UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenjie Zhang",
+          "affiliation": "UNSW Sydney",
           "is_corresponding": false
         }
       ]
@@ -248,257 +637,50 @@
       "authors": [
         {
           "name": "Hu Wang",
-          "affiliation": "",
+          "affiliation": "Huazhong University of Science and Technology",
           "is_corresponding": false
         },
         {
           "name": "Zhengjin Yan",
-          "affiliation": "",
+          "affiliation": "Huazhong University of Science and Technology",
           "is_corresponding": false
         },
         {
           "name": "Hong Zhu",
-          "affiliation": "",
+          "affiliation": "Huazhong University of Science and Technology",
           "is_corresponding": false
         },
         {
           "name": "Qiong Zuo",
-          "affiliation": "",
+          "affiliation": "Huazhong University of Science and Technology",
           "is_corresponding": false
         }
       ]
     },
     {
-      "title": "Query Processing with eBPF-Offload on Computational Storage",
-      "publication_date": "2026-11-13",
+      "title": "GRASP: Query-Adaptive Graph Retrieval framework with Cross-Attention Scoring and Path Sufficiency Verification for Question Answering",
+      "publication_date": "2026-11-14",
       "venue": "arXiv (Cornell University)",
       "tags": [
-        "query-optimization",
-        "LLM-DB"
+        "knowledge-graph",
+        "RAG"
       ],
       "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.18119",
+      "url": "https://arxiv.org/abs/2611.19441",
       "authors": [
         {
-          "name": "Alexander Krause",
-          "affiliation": "Technische Universität Dresden",
+          "name": "Rui Xu",
+          "affiliation": "Karolinska Institutet, KTH Royal Institute of Technology",
           "is_corresponding": false
         },
         {
-          "name": "Niclas Hedam",
-          "affiliation": "Technische Universität Dresden",
+          "name": "Le Wang",
+          "affiliation": "KTH Royal Institute of Technology",
           "is_corresponding": false
         },
         {
-          "name": "Johannes Pietrzyk",
-          "affiliation": "Technische Universität Dresden",
-          "is_corresponding": false
-        },
-        {
-          "name": "Dirk Habich",
-          "affiliation": "Technische Universität Dresden",
-          "is_corresponding": false
-        },
-        {
-          "name": "Lehner Wolfgang",
-          "affiliation": "Technische Universität Dresden, IT University of Copenhagen",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sangjin Lee",
-          "affiliation": "Technische Universität Dresden",
-          "is_corresponding": false
-        },
-        {
-          "name": "Alberto Lerner",
-          "affiliation": "Technische Universität Dresden",
-          "is_corresponding": false
-        },
-        {
-          "name": "Philippe Bonnet",
-          "affiliation": "Technische Universität Dresden",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
-      "publication_date": "2026-11-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL",
-        "schema-linking"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.18338",
-      "authors": [
-        {
-          "name": "Xiaoqi Wang",
-          "affiliation": "National University of Singapore, University of Hong Kong",
-          "is_corresponding": false
-        },
-        {
-          "name": "Wenqi Pei",
-          "affiliation": "University of Hong Kong",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shizheng Hou",
-          "affiliation": "National University of Singapore",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yilai Liu",
-          "affiliation": "University of Hong Kong",
-          "is_corresponding": false
-        },
-        {
-          "name": "Han Chen",
-          "affiliation": "National University of Singapore",
-          "is_corresponding": false
-        },
-        {
-          "name": "Boyan Li",
-          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yuyu Luo",
-          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hongyang Du",
-          "affiliation": "University of Hong Kong",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
-      "publication_date": "2026-11-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.17780",
-      "authors": [
-        {
-          "name": "Ibrahim Memon",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Armin Karamzade",
-          "affiliation": "University of California, Irvine",
-          "is_corresponding": false
-        },
-        {
-          "name": "M. Hanif Jhaveri",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Roy Fox",
-          "affiliation": "University of California, Irvine",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Experts Across Schemas: Agent-Guided Mixture-of-Relational-Experts for Cross-Database Generalization",
-      "publication_date": "2026-11-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.18315",
-      "authors": [
-        {
-          "name": "Hiren Madhu",
-          "affiliation": "Yale University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sukanta Ganguly",
-          "affiliation": "NetApp (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kiran Srinivasan",
-          "affiliation": "NetApp (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Smita Krishnaswamy",
-          "affiliation": "Yale University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Rex Ying",
-          "affiliation": "Yale University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "DataTrace: Benchmarking Data Agents for Evidence-Grounded Root-Cause Localization",
-      "publication_date": "2026-11-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "data-agents"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.18926",
-      "authors": [
-        {
-          "name": "Tung Sum Thomas Kwok",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaotian Lin",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yuyu Luo",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Bridge: Database-Grounded Interactive Disambiguation for Text-to-SQL",
-      "publication_date": "2026-11-13",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL",
-        "LLM-DB"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.17770",
-      "authors": [
-        {
-          "name": "Sau Lai Yip",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yue Pang",
-          "affiliation": "Hong Kong University of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Shiwen Wu",
-          "affiliation": "Hong Kong University of Science and Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiaofang Zhou",
-          "affiliation": "Hong Kong University of Science and Technology",
+          "name": "Tianyue Wang",
+          "affiliation": "University of Michigan",
           "is_corresponding": false
         }
       ]

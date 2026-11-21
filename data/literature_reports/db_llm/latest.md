@@ -1,50 +1,81 @@
 # DB + LLM Daily Literature Watch
 
-- Run date: 2026-11-20
-- Scan window: 2026-11-13 to 2026-11-20
+- Run date: 2026-11-21
+- Scan window: 2026-11-14 to 2026-11-21
 - Watchlist id: `db_llm`
 - Scope: Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.
 
 ## Summary
 
-- OpenAlex works fetched: 1068
-- Works matching this watchlist: 12
-- New researchers added to site: 3
-- Existing researchers updated: 1
+- OpenAlex works fetched: 1115
+- Works matching this watchlist: 17
+- New researchers added to site: 2
+- Existing researchers updated: 2
 - Industrial team members added: 0
 - Industrial team members updated: 0
-- Papers that mapped to site entries: 3
-- Skipped by relevance score: 982
-- Skipped by venue: 15
-- Skipped by DB+LLM focus filter: 59
-- Skipped by institution matching: 9
-- Skipped by author-role guardrail: 3
+- Papers that mapped to site entries: 4
+- Skipped by relevance score: 967
+- Skipped by venue: 18
+- Skipped by DB+LLM focus filter: 113
+- Skipped by institution matching: 13
+- Skipped by author-role guardrail: 9
 
 ## Newly Added Researchers
 
-- Hongyang Du (University of Hong Kong)
-- Xiaofang Zhou (HKUST)
-- Rex Ying (Yale University)
+- Mehrdad Farajtabar (University of California, San Diego (UCSD))
+- Tianyue Wang (University of Michigan-Ann Arbor)
 
 ## Matched Papers
 
-### 1. MoL-SQL: A Controlled Benchmark for Mixture-of-Language Text-to-SQL
+### 1. Structured Extraction of Diffraction Data from Covalent Organic Frameworks
+- Publication date: 2026-11-18
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2611.23680
+- Authors: Shenghan Gao; Zhiling Zheng
+
+### 2. Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts
+- Publication date: 2026-11-18
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://doi.org/10.48550/arxiv.2611.24059
+- Authors: Zhenrui Yue; Gongxiaohui Chen; Huimin Zeng; Honglei Zhuang; Jiashuo Sun; Zhen Han; Dong Wang
+
+### 3. Prioritize, Don't Decide: What We Learned Auditing a Deployed Human-in-the-Loop CV Sorter
+- Publication date: 2026-11-17
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://doi.org/10.48550/arxiv.2611.23359
+- Authors: Hadi Mohammadi; Jeroen Sparla; Alexandros Paliouras; Georg Krempl; Robert A. Bagheri
+
+### 4. MoL-SQL: A Controlled Benchmark for Mixture-of-Language Text-to-SQL
 - Publication date: 2026-11-17
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL
 - Relevance score: 3
-- URL: https://doi.org/10.48550/arxiv.2611.22333
+- URL: https://arxiv.org/abs/2611.22333
 - Authors: Tianqi Luo; Boyan Li; Yuyu Luo
 
-### 2. Optimizing Query Decomposition for Reliable Validation
+### 5. QuarkDB: A Hybrid Database System for Quantum Data Management
+- Publication date: 2026-11-16
+- Venue: arXiv (Cornell University)
+- Tags: LLM-DB
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2611.20807
+- Authors: Wenrui Zhang (Renmin University of China); Yu Wang (Renmin University of China); Xiao Zhang (Renmin University of China)
+
+### 6. Optimizing Query Decomposition for Reliable Validation
 - Publication date: 2026-11-16
 - Venue: arXiv (Cornell University)
 - Tags: none
 - Relevance score: 2
 - URL: https://arxiv.org/abs/2611.20511
-- Authors: Shuo Zhang; Sudeepa Roy; Jun Yang
+- Authors: Shuo Zhang (Duke University); Sudeepa Roy (Duke University); Jun Yang (Duke University)
 
-### 3. Living Context Graphs: Continual Semantic Learning for Enterprise Data Reasoning
+### 7. Living Context Graphs: Continual Semantic Learning for Enterprise Data Reasoning
 - Publication date: 2026-11-16
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL
@@ -52,74 +83,82 @@
 - URL: https://arxiv.org/abs/2611.20976
 - Authors: Varun Agrawal; Ayush Srivastava; Eshan Gujar; Kaushal Kumar; Ayush Gupta
 
-### 4. Adaptive-Elbow Graph Traversal for Schema Retrieval in Text-to-SQL
+### 8. Adaptive-Elbow Graph Traversal for Schema Retrieval in Text-to-SQL
 - Publication date: 2026-11-16
 - Venue: arXiv (Cornell University)
 - Tags: text-to-SQL, LLM-DB
 - Relevance score: 4
 - URL: https://arxiv.org/abs/2611.20979
-- Authors: Fabio Picariello; Salvatore Cipolla; Susanna Bonura; Vito Morreale
+- Authors: Fabio Picariello (Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy); Salvatore Cipolla (Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy); Susanna Bonura (Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy); Vito Morreale (Engineering Ingegneria Informatica S.p.A. , Piazzale dell'Agricoltura 24 , 00144 Roma , Italy)
 
-### 5. Where Should LLM Agents Adapt at Test Time? In Context, in Weights, or Both
+### 9. Where Should LLM Agents Adapt at Test Time? In Context, in Weights, or Both
 - Publication date: 2026-11-15
 - Venue: arXiv (Cornell University)
 - Tags: LLM-DB
 - Relevance score: 3
 - URL: https://arxiv.org/abs/2611.19700
-- Authors: Parsa Mirtaheri; Mohammadreza Armandpour; Keivan Alizadeh; Iman Mirzadeh; Parshin Shojaee; Aryo Lotfi; David Harrison; Mehrdad Farajtabar
+- Authors: Parsa Mirtaheri (University of California San Diego, Apple (United States)); Mohammadreza Armandpour (University of California San Diego, Apple (United States)); Keivan Alizadeh (University of California San Diego, Apple (United States)); Iman Mirzadeh (University of California San Diego, Apple (United States)); Parshin Shojaee (University of California San Diego, Apple (United States)); Aryo Lotfi (University of California San Diego, Apple (United States)); David Harrison (University of California San Diego, Apple (United States)); Mehrdad Farajtabar (University of California San Diego, Apple (United States))
 
-### 6. HyperDBDiag: Multi-Root-Cause Identification and Operator-Level Localization for Database Performance Anomalies
+### 10. Exact Sparse Assignment with Costly Target Embeddings: Fixed-Realization Certificates and an Empirical Audit
+- Publication date: 2026-11-15
+- Venue: arXiv (Cornell University)
+- Tags: data-integration
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2611.19770
+- Authors: Hamidreza Hasani Balyani; Mahtab Movahhedrad (University of Southern California); Seyed Pouyan Mousavi Davoudi
+
+### 11. Estimating Outpatient Visit Prices from Hospital Price Transparency Data using Large Language Models
+- Publication date: 2026-11-15
+- Venue: arXiv (Cornell University)
+- Tags: RAG
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2611.20261
+- Authors: Kurmanbek Kaiyrbekov (National Institutes of Health, National Human Genome Research Institute); Nicholas J Dobbins (National Institutes of Health, National Human Genome Research Institute); Sean David Mooney (National Institutes of Health, National Human Genome Research Institute)
+
+### 12. Autonomous Multi-modal Agents for ITOps Observability
+- Publication date: 2026-11-15
+- Venue: arXiv (Cornell University)
+- Tags: none
+- Relevance score: 2
+- URL: https://arxiv.org/abs/2611.19982
+- Authors: Gunjan Siddharth (IBM (India)); Sanjana Garai (IBM (India)); Utsav Shekhar (IBM (India)); Prakhar Jain (IBM (India)); Sarvam Maheshwari (IBM (India)); Balaji Ganesan (IBM (India)); Avirup Saha (IBM (India)); Seema Nagar (IBM (India)); Pratik Mishra (IBM (India)); Felix George (IBM (India)); Suranjana Samanta (IBM (India)); Harshit Kumar (IBM (India))
+
+### 13. Orbit AI: Evaluating Tool-Augmented Agents For Enterprise Question Answering
+- Publication date: 2026-11-14
+- Venue: arXiv (Cornell University)
+- Tags: RAG
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2611.19333
+- Authors: Rishabh Gupta (Indian Institute of Information Technology Vadodara); Uday Kharatmol (Indian Institute of Information Technology Vadodara); Krishna Bhatt (Indian Institute of Information Technology Vadodara); Avadhesh Nagar (Indian Institute of Information Technology Vadodara); Naman Sanotiya (Indian Institute of Information Technology Vadodara); Tarun Jain (Indian Institute of Information Technology Vadodara)
+
+### 14. Large Language Models for AI Infrastructure
+- Publication date: 2026-11-14
+- Venue: arXiv (Cornell University)
+- Tags: ML-systems, LLM-DB
+- Relevance score: 4
+- URL: https://arxiv.org/abs/2611.19061
+- Authors: Bolin Shen (YUSHUN DONG * ,); Shaoyi Huang; Yushun Dong (Florida State University, Stevens Institute of Technology)
+
+### 15. KaleidoKV: Rearranging Evidence for Efficient KV Cache Reuse in Offline RAG Inference
+- Publication date: 2026-11-14
+- Venue: arXiv (Cornell University)
+- Tags: RAG
+- Relevance score: 3
+- URL: https://arxiv.org/abs/2611.19253
+- Authors: Peiting Xie (UNSW Sydney); Xingyu Tan (UNSW Sydney); Xiangjun Zai (UNSW Sydney); Chen Chen (Shenzhen University); Xiaoyang Wang (UNSW Sydney); Wenjie Zhang (UNSW Sydney)
+
+### 16. HyperDBDiag: Multi-Root-Cause Identification and Operator-Level Localization for Database Performance Anomalies
 - Publication date: 2026-11-14
 - Venue: arXiv (Cornell University)
 - Tags: knowledge-graph, LLM-DB
 - Relevance score: 4
 - URL: https://arxiv.org/abs/2611.19241
-- Authors: Hu Wang; Zhengjin Yan; Hong Zhu; Qiong Zuo
+- Authors: Hu Wang (Huazhong University of Science and Technology); Zhengjin Yan (Huazhong University of Science and Technology); Hong Zhu (Huazhong University of Science and Technology); Qiong Zuo (Huazhong University of Science and Technology)
 
-### 7. Query Processing with eBPF-Offload on Computational Storage
-- Publication date: 2026-11-13
+### 17. GRASP: Query-Adaptive Graph Retrieval framework with Cross-Attention Scoring and Path Sufficiency Verification for Question Answering
+- Publication date: 2026-11-14
 - Venue: arXiv (Cornell University)
-- Tags: query-optimization, LLM-DB
+- Tags: knowledge-graph, RAG
 - Relevance score: 4
-- URL: https://arxiv.org/abs/2611.18119
-- Authors: Alexander Krause (Technische Universität Dresden); Niclas Hedam (Technische Universität Dresden); Johannes Pietrzyk (Technische Universität Dresden); Dirk Habich (Technische Universität Dresden); Lehner Wolfgang (Technische Universität Dresden, IT University of Copenhagen); Sangjin Lee (Technische Universität Dresden); Alberto Lerner (Technische Universität Dresden); Philippe Bonnet (Technische Universität Dresden)
-
-### 8. MEM-SQL: Memory-Empowered Text-to-SQL
-- Publication date: 2026-11-13
-- Venue: arXiv (Cornell University)
-- Tags: text-to-SQL, schema-linking
-- Relevance score: 4
-- URL: https://arxiv.org/abs/2611.18338
-- Authors: Xiaoqi Wang (National University of Singapore, University of Hong Kong); Wenqi Pei (University of Hong Kong); Shizheng Hou (National University of Singapore); Yilai Liu (University of Hong Kong); Han Chen (National University of Singapore); Boyan Li (The Hong Kong University of Science and Technology (Guangzhou)); Yuyu Luo (The Hong Kong University of Science and Technology (Guangzhou)); Hongyang Du (University of Hong Kong)
-
-### 9. LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent
-- Publication date: 2026-11-13
-- Venue: arXiv (Cornell University)
-- Tags: text-to-SQL
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2611.17780
-- Authors: Ibrahim Memon; Armin Karamzade (University of California, Irvine); M. Hanif Jhaveri; Roy Fox (University of California, Irvine)
-
-### 10. Experts Across Schemas: Agent-Guided Mixture-of-Relational-Experts for Cross-Database Generalization
-- Publication date: 2026-11-13
-- Venue: arXiv (Cornell University)
-- Tags: LLM-DB
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2611.18315
-- Authors: Hiren Madhu (Yale University); Sukanta Ganguly (NetApp (United States)); Kiran Srinivasan (NetApp (United States)); Smita Krishnaswamy (Yale University); Rex Ying (Yale University)
-
-### 11. DataTrace: Benchmarking Data Agents for Evidence-Grounded Root-Cause Localization
-- Publication date: 2026-11-13
-- Venue: arXiv (Cornell University)
-- Tags: data-agents
-- Relevance score: 3
-- URL: https://arxiv.org/abs/2611.18926
-- Authors: Tung Sum Thomas Kwok; Xiaotian Lin; Yuyu Luo
-
-### 12. Bridge: Database-Grounded Interactive Disambiguation for Text-to-SQL
-- Publication date: 2026-11-13
-- Venue: arXiv (Cornell University)
-- Tags: text-to-SQL, LLM-DB
-- Relevance score: 4
-- URL: https://arxiv.org/abs/2611.17770
-- Authors: Sau Lai Yip; Yue Pang (Hong Kong University of Science and Technology); Shiwen Wu (Hong Kong University of Science and Technology); Xiaofang Zhou (Hong Kong University of Science and Technology)
+- URL: https://arxiv.org/abs/2611.19441
+- Authors: Rui Xu (Karolinska Institutet, KTH Royal Institute of Technology); Le Wang (KTH Royal Institute of Technology); Tianyue Wang (University of Michigan)
