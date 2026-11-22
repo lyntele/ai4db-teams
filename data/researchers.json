@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-11-21"
+    "last_updated": "2026-11-22"
   },
   "researchers": [
     {
@@ -1126,7 +1126,13 @@
       "homepage": "https://people.cs.uchicago.edu/~chenz/",
       "email": "",
       "google_scholar": "",
-      "notable_papers": [],
+      "notable_papers": [
+        {
+          "title": "RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.22179"
+        }
+      ],
       "research_group_url": "",
       "currently_taking_students": true,
       "admission_chance": "low",
@@ -1135,7 +1141,7 @@
       "contact_history": [],
       "notes": "原 ETH Zurich，ML+DB 系统方向，Together AI 联合创始人。",
       "added_date": "2026-03-24",
-      "last_updated": "2026-03-24"
+      "last_updated": "2026-11-22"
     },
     {
       "id": "uid-032",
@@ -4589,6 +4595,11 @@
           "title": "Beyond Linear LLM Invocation: An Efficient and Effective Semantic Filter Paradigm",
           "venue": "arXiv (Cornell University)",
           "url": "http://arxiv.org/abs/2603.04799"
+        },
+        {
+          "title": "Cascadeability and the Realization Gap: An Empirical Study of LLM-Powered Semantic Filtering",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.23898"
         }
       ],
       "research_group_url": "",
@@ -4599,7 +4610,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #32 school University of Hong Kong via arXiv (Cornell University) paper \"Beyond Linear LLM Invocation: An Efficient and Effective Semantic Filter Paradigm\". Please verify homepage and student availability manually.",
       "added_date": "2026-03-26",
-      "last_updated": "2026-03-26"
+      "last_updated": "2026-11-22"
     },
     {
       "id": "uid-110",
@@ -8444,6 +8455,11 @@
           "title": "Retrieval is Cheap, Show Me the Code: Executable Multi-Hop Reasoning for Retrieval-Augmented Generation",
           "venue": "ArXiv.org",
           "url": "https://arxiv.org/abs/2605.12975"
+        },
+        {
+          "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.24059"
         }
       ],
       "research_group_url": "",
@@ -8454,7 +8470,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #70 school UIUC via ArXiv.org paper \"TaSR-RAG: Taxonomy-guided Structured Reasoning for Retrieval-Augmented Generation\". Please verify homepage and student availability manually.",
       "added_date": "2026-03-26",
-      "last_updated": "2026-05-18"
+      "last_updated": "2026-11-22"
     },
     {
       "id": "uid-217",
@@ -30503,6 +30519,11 @@
           "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.18338"
+        },
+        {
+          "title": "MoL-SQL: A Controlled Benchmark for Mixture-of-Language Text-to-SQL",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.22333"
         }
       ],
       "research_group_url": "",
@@ -30513,7 +30534,7 @@
       "contact_history": [],
       "notes": "REWRITER 通讯作者。机构通过论文首页署名与 @hkust-gz.edu.cn 邮箱域名核实；主页来自 HKUST(GZ) 官方 faculty profile。",
       "added_date": "2026-03-26",
-      "last_updated": "2026-11-20"
+      "last_updated": "2026-11-22"
     },
     {
       "id": "uid-823",
@@ -33631,6 +33652,11 @@
           "title": "KaleidoKV: Rearranging Evidence for Efficient KV Cache Reuse in Offline RAG Inference",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.19253"
+        },
+        {
+          "title": "Errpedia: Is Your Exact $k$-NN Vector Search Really Exact?",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.22474"
         }
       ],
       "research_group_url": "",
@@ -33641,7 +33667,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #20 school UNSW Sydney via ACM SIGMOD Record paper \"Managing Vector Data for Retrieval Augmented Generation@Dagstuhl Seminar Summary\". Please verify homepage and student availability manually.",
       "added_date": "2026-10-17",
-      "last_updated": "2026-11-21"
+      "last_updated": "2026-11-22"
     },
     {
       "id": "uid-908",
@@ -35132,6 +35158,43 @@
       "notes": "Auto-discovered from QS #45 school University of Michigan-Ann Arbor via arXiv (Cornell University) paper \"GRASP: Query-Adaptive Graph Retrieval framework with Cross-Attention Scoring and Path Sufficiency Verification for Question Answering\". Please verify homepage and student availability manually.",
       "added_date": "2026-11-21",
       "last_updated": "2026-11-21"
+    },
+    {
+      "id": "uid-948",
+      "name": "Fei Wu",
+      "type": "faculty",
+      "institution": "ZJU",
+      "institution_display_name": "Zhejiang University",
+      "institution_qs_rank": 49,
+      "department": "",
+      "country": "China",
+      "region": "Asia",
+      "position": "",
+      "research_focus": [
+        "table-QA"
+      ],
+      "tags": [
+        "table-QA"
+      ],
+      "homepage": "",
+      "email": "",
+      "google_scholar": "",
+      "notable_papers": [
+        {
+          "title": "EviDARL: Evidence-Centric Dual-Agent Reasoning via Alternating Reinforcement Learning for Multi-Table Question Answering",
+          "venue": "arXiv (Cornell University)",
+          "url": "https://arxiv.org/abs/2611.22310"
+        }
+      ],
+      "research_group_url": "",
+      "currently_taking_students": false,
+      "admission_chance": "medium",
+      "application_status": "considering",
+      "priority": "medium",
+      "contact_history": [],
+      "notes": "Auto-discovered from QS #49 school Zhejiang University via arXiv (Cornell University) paper \"EviDARL: Evidence-Centric Dual-Agent Reasoning via Alternating Reinforcement Learning for Multi-Table Question Answering\". Please verify homepage and student availability manually.",
+      "added_date": "2026-11-22",
+      "last_updated": "2026-11-22"
     }
   ]
 }
