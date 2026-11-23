@@ -16,31 +16,31 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-22",
+  "run_date": "2026-11-23",
   "scan_window": {
-    "start_date": "2026-11-15",
-    "end_date": "2026-11-22"
+    "start_date": "2026-11-16",
+    "end_date": "2026-11-23"
   },
   "summary": {
-    "openalex_works_fetched": 1114,
-    "watchlist_matches": 23,
+    "openalex_works_fetched": 1128,
+    "watchlist_matches": 22,
     "new_researchers_added": 1,
-    "existing_researchers_updated": 5,
+    "existing_researchers_updated": 1,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
     "papers_mapped_to_site_entries": 9,
-    "skipped_due_to_score": 911,
-    "skipped_due_to_venue": 18,
-    "skipped_due_to_focus": 162,
-    "skipped_due_to_institution": 14,
-    "skipped_due_to_role": 14
+    "skipped_due_to_score": 901,
+    "skipped_due_to_venue": 23,
+    "skipped_due_to_focus": 182,
+    "skipped_due_to_institution": 13,
+    "skipped_due_to_role": 8
   },
   "new_researchers": [
     {
-      "name": "Fei Wu",
-      "institution": "Zhejiang University",
+      "name": "Luu Anh Tuan",
+      "institution": "Nanyang Technological University, Singapore (NTU Singapore)",
       "tags": [
-        "table-QA"
+        "RAG"
       ]
     }
   ],
@@ -54,7 +54,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2611.25374",
+      "url": "https://arxiv.org/abs/2611.25374",
       "authors": [
         {
           "name": "Lyu Xu",
@@ -186,6 +186,78 @@
       ]
     },
     {
+      "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.24294",
+      "authors": [
+        {
+          "name": "Haoran Luo",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiapu Wang",
+          "affiliation": "Nanjing University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Linhao Luo",
+          "affiliation": "Monash University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Luu Anh Tuan",
+          "affiliation": "Nanyang Technological University, VinUniversity",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "From Neural Tokens to Language: Dual-View EEG Semantic Bridging for Brain-to-Text Generation",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.24197",
+      "authors": [
+        {
+          "name": "YaoYang Liu",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jun Dai",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "ZhuoShi Tang",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Weijun Sun",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaozhao Fang",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jie Wen",
+          "affiliation": "Harbin Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "From Industrial Product Documentation to Automated Digital Product Passport Generation: An Experimental Study of Large Language Models",
       "publication_date": "2026-11-18",
       "venue": "arXiv (Cornell University)",
@@ -195,7 +267,7 @@
         "LLM-DB"
       ],
       "relevance_score": 5,
-      "url": "https://doi.org/10.48550/arxiv.2611.24998",
+      "url": "https://arxiv.org/abs/2611.24998",
       "authors": [
         {
           "name": "Marco Buecheler",
@@ -247,6 +319,26 @@
       ]
     },
     {
+      "title": "Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.24877",
+      "authors": [
+        {
+          "name": "Zhiyu Liu",
+          "affiliation": "Tianjin Medical University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinyu Yang",
+          "affiliation": "Tianjin Medical University General Hospital",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "A Model of Diverse Sampling from Language Models",
       "publication_date": "2026-11-18",
       "venue": "arXiv (Cornell University)",
@@ -254,7 +346,7 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.25003",
+      "url": "https://arxiv.org/abs/2611.25003",
       "authors": [
         {
           "name": "Manuel Prada-Corral",
@@ -480,22 +572,22 @@
       "authors": [
         {
           "name": "Yinuo Deng",
-          "affiliation": "University of Technology Sydney",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
           "is_corresponding": false
         },
         {
           "name": "Ying Zhang",
-          "affiliation": "University of Technology Sydney",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
           "is_corresponding": false
         },
         {
           "name": "Hanchen Wang",
-          "affiliation": "University of Technology Sydney",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
           "is_corresponding": false
         },
         {
           "name": "Wenjie Zhang",
-          "affiliation": "University of Technology Sydney",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
           "is_corresponding": false
         }
       ]
@@ -703,212 +795,6 @@
         {
           "name": "Vito Morreale",
           "affiliation": "Engineering (Italy)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Where Should LLM Agents Adapt at Test Time? In Context, in Weights, or Both",
-      "publication_date": "2026-11-15",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.19700",
-      "authors": [
-        {
-          "name": "Parsa Mirtaheri",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mohammadreza Armandpour",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Keivan Alizadeh",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Iman Mirzadeh",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Parshin Shojaee",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Aryo Lotfi",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "David Harrison",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mehrdad Farajtabar",
-          "affiliation": "University of California San Diego, Apple (United States)",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Exact Sparse Assignment with Costly Target Embeddings: Fixed-Realization Certificates and an Empirical Audit",
-      "publication_date": "2026-11-15",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "data-integration"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.19770",
-      "authors": [
-        {
-          "name": "Hamidreza Hasani Balyani",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mahtab Movahhedrad",
-          "affiliation": "University of Southern California",
-          "is_corresponding": false
-        },
-        {
-          "name": "Seyed Pouyan Mousavi Davoudi",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Estimating Outpatient Visit Prices from Hospital Price Transparency Data using Large Language Models",
-      "publication_date": "2026-11-15",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.20261",
-      "authors": [
-        {
-          "name": "Kurmanbek Kaiyrbekov",
-          "affiliation": "National Institutes of Health, National Human Genome Research Institute",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nicholas J Dobbins",
-          "affiliation": "National Institutes of Health, National Human Genome Research Institute",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sean David Mooney",
-          "affiliation": "National Institutes of Health, National Human Genome Research Institute",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Autonomous Multi-modal Agents for ITOps Observability",
-      "publication_date": "2026-11-15",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.19982",
-      "authors": [
-        {
-          "name": "Gunjan Siddharth",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sanjana Garai",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Utsav Shekhar",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Prakhar Jain",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sarvam Maheshwari",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Balaji Ganesan",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Avirup Saha",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Seema Nagar",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Pratik Mishra",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Felix George",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Suranjana Samanta",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Harshit Kumar",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mudit Verma",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Prateeti Mohapatra",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ravi Jagannathan",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Amit M. Paradkar",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sameep Mehta",
-          "affiliation": "IBM (India)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Pratibha Moogi",
-          "affiliation": "IBM (India)",
           "is_corresponding": false
         }
       ]
