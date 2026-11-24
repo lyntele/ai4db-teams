@@ -16,35 +16,178 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-23",
+  "run_date": "2026-11-24",
   "scan_window": {
-    "start_date": "2026-11-16",
-    "end_date": "2026-11-23"
+    "start_date": "2026-11-17",
+    "end_date": "2026-11-24"
   },
   "summary": {
-    "openalex_works_fetched": 1128,
-    "watchlist_matches": 22,
-    "new_researchers_added": 1,
-    "existing_researchers_updated": 1,
+    "openalex_works_fetched": 1111,
+    "watchlist_matches": 24,
+    "new_researchers_added": 3,
+    "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
-    "papers_mapped_to_site_entries": 9,
-    "skipped_due_to_score": 901,
-    "skipped_due_to_venue": 23,
-    "skipped_due_to_focus": 182,
-    "skipped_due_to_institution": 13,
-    "skipped_due_to_role": 8
+    "papers_mapped_to_site_entries": 12,
+    "skipped_due_to_score": 866,
+    "skipped_due_to_venue": 21,
+    "skipped_due_to_focus": 200,
+    "skipped_due_to_institution": 12,
+    "skipped_due_to_role": 10
   },
   "new_researchers": [
     {
-      "name": "Luu Anh Tuan",
+      "name": "Tim Vieira",
+      "institution": "ETH Zurich",
+      "tags": [
+        "text-to-SQL"
+      ]
+    },
+    {
+      "name": "Jianzhong Qi",
+      "institution": "University of Melbourne",
+      "tags": [
+        "table-QA"
+      ]
+    },
+    {
+      "name": "Qichen Wang",
       "institution": "Nanyang Technological University, Singapore (NTU Singapore)",
       "tags": [
-        "RAG"
+        "vector-DB",
+        "LLM-DB"
       ]
     }
   ],
   "papers": [
+    {
+      "title": "Technology-Enabled Fuel Supply Chain Resilience: An Integrated Information System for Real-Time Monitoring and Decision Support",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-integration"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25542",
+      "authors": [
+        {
+          "name": "Mohamed Loutis",
+          "affiliation": "Université Sorbonne Nouvelle, Sorbonne Université",
+          "is_corresponding": false
+        },
+        {
+          "name": "Esma Aimeur",
+          "affiliation": "Université de Montréal",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "TableRoute: Capability-Aware Routing for Scalable Table Question Answering",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "table-QA"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25853",
+      "authors": [
+        {
+          "name": "Yuxiang Wang",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Junhao Gan",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jianzhong Qi",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "RAVEN: A Self-RAG Based Agent for Threat Classification and Response",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25832",
+      "authors": [
+        {
+          "name": "Pironti Francesco Aurelio",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arena Luigi",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Blefari Francesco",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Matteo Lupinacci",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Romeo Francesco",
+          "affiliation": "IMT School for Advanced Studies Lucca",
+          "is_corresponding": false
+        },
+        {
+          "name": "Furfaro Angelo",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GenSPARQL: A Generative Extension of SPARQL for Incomplete Knowledge Graphs",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.26062",
+      "authors": [
+        {
+          "name": "Jingcheng Wu",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yi Wang",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongkuan Zhou",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Steffen Staab",
+          "affiliation": "University of Stuttgart, University of Southampton",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bo Xiong",
+          "affiliation": "Iowa State University",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search",
       "publication_date": "2026-11-19",
@@ -58,17 +201,17 @@
       "authors": [
         {
           "name": "Lyu Xu",
-          "affiliation": "",
+          "affiliation": "Nanyang Technological University",
           "is_corresponding": false
         },
         {
           "name": "Guozhong Li",
-          "affiliation": "",
+          "affiliation": "King Abdullah University of Science and Technology",
           "is_corresponding": false
         },
         {
           "name": "Qichen Wang",
-          "affiliation": "",
+          "affiliation": "Nanyang Technological University",
           "is_corresponding": false
         }
       ]
@@ -130,12 +273,12 @@
       "authors": [
         {
           "name": "Shenghan Gao",
-          "affiliation": "",
+          "affiliation": "Washington University in St. Louis",
           "is_corresponding": false
         },
         {
           "name": "Zhiling Zheng",
-          "affiliation": "",
+          "affiliation": "Washington University in St. Louis",
           "is_corresponding": false
         }
       ]
@@ -181,6 +324,86 @@
         {
           "name": "Dong Wang",
           "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Rate-distortion Assessment for Hierarchical Content Summarization",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25151",
+      "authors": [
+        {
+          "name": "Yunye Gong",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Indranil Sur",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jared Claypoole",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pritish Sahu",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ajay Divakaran",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "LSP-RAG: Latent Scoring Perspectives for Knowledge Graph Retrieval-Augmented Generation",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.25229",
+      "authors": [
+        {
+          "name": "Haochen Liu",
+          "affiliation": "University of Virginia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guanghui Min",
+          "affiliation": "University of Virginia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Song Wang",
+          "affiliation": "University of Central Florida",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yada Zhu",
+          "affiliation": "IBM (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chen Chen",
+          "affiliation": "University of Virginia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jundong Li",
+          "affiliation": "University of Virginia",
           "is_corresponding": false
         }
       ]
@@ -271,17 +494,37 @@
       "authors": [
         {
           "name": "Marco Buecheler",
-          "affiliation": "",
+          "affiliation": "Purdue University West Lafayette",
           "is_corresponding": false
         },
         {
           "name": "Grant Richards",
-          "affiliation": "",
+          "affiliation": "Purdue University West Lafayette",
           "is_corresponding": false
         },
         {
           "name": "Nathan Hartman",
-          "affiliation": "",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "CRAFT: Constrained Route planning with Adaptive Framework and Template-based code generation",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.25128",
+      "authors": [
+        {
+          "name": "Shahd Elmahallawy",
+          "affiliation": "University of California, Riverside",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ahmed Eldawy",
+          "affiliation": "University of California, Riverside",
           "is_corresponding": false
         }
       ]
@@ -355,7 +598,7 @@
         },
         {
           "name": "Yahya Emara",
-          "affiliation": "",
+          "affiliation": "Cornell University",
           "is_corresponding": false
         },
         {
@@ -365,12 +608,12 @@
         },
         {
           "name": "Ryan Cotterell",
-          "affiliation": "",
+          "affiliation": "ETH Zurich",
           "is_corresponding": false
         },
         {
           "name": "Tim Vieira",
-          "affiliation": "",
+          "affiliation": "ETH Zurich",
           "is_corresponding": false
         }
       ]
@@ -645,156 +888,6 @@
         {
           "name": "Siddharth Mehrotra",
           "affiliation": "Birla Institute of Technology and Science, Pilani",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "TUSI: A Citation-Grounded Graph-Based Benchmark",
-      "publication_date": "2026-11-16",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "knowledge-graph",
-        "RAG"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.21823",
-      "authors": [
-        {
-          "name": "Marzieh Karimi",
-          "affiliation": "Isfahan University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Mehran Safayani",
-          "affiliation": "Isfahan University of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Alireza Basiri",
-          "affiliation": "Isfahan University of Technology",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "QuarkDB: A Hybrid Database System for Quantum Data Management",
-      "publication_date": "2026-11-16",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.20807",
-      "authors": [
-        {
-          "name": "Wenrui Zhang",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yu Wang",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xiao Zhang",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Optimizing Query Decomposition for Reliable Validation",
-      "publication_date": "2026-11-16",
-      "venue": "arXiv (Cornell University)",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.20511",
-      "authors": [
-        {
-          "name": "Shuo Zhang",
-          "affiliation": "Duke University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sudeepa Roy",
-          "affiliation": "Duke University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jun Yang",
-          "affiliation": "Duke University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Living Context Graphs: Continual Semantic Learning for Enterprise Data Reasoning",
-      "publication_date": "2026-11-16",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.20976",
-      "authors": [
-        {
-          "name": "Varun Agrawal",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ayush Srivastava",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Eshan Gujar",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kaushal Kumar",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ayush Gupta",
-          "affiliation": "",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Adaptive-Elbow Graph Traversal for Schema Retrieval in Text-to-SQL",
-      "publication_date": "2026-11-16",
-      "venue": "arXiv (Cornell University)",
-      "tags": [
-        "text-to-SQL",
-        "LLM-DB"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.20979",
-      "authors": [
-        {
-          "name": "Fabio Picariello",
-          "affiliation": "Engineering (Italy)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Salvatore Cipolla",
-          "affiliation": "Engineering (Italy)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Susanna Bonura",
-          "affiliation": "Engineering (Italy)",
-          "is_corresponding": false
-        },
-        {
-          "name": "Vito Morreale",
-          "affiliation": "Engineering (Italy)",
           "is_corresponding": false
         }
       ]

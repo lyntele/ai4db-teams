@@ -1,0 +1,896 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-11-24",
+  "scan_window": {
+    "start_date": "2026-11-17",
+    "end_date": "2026-11-24"
+  },
+  "summary": {
+    "openalex_works_fetched": 1111,
+    "watchlist_matches": 24,
+    "new_researchers_added": 3,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 12,
+    "skipped_due_to_score": 866,
+    "skipped_due_to_venue": 21,
+    "skipped_due_to_focus": 200,
+    "skipped_due_to_institution": 12,
+    "skipped_due_to_role": 10
+  },
+  "new_researchers": [
+    {
+      "name": "Tim Vieira",
+      "institution": "ETH Zurich",
+      "tags": [
+        "text-to-SQL"
+      ]
+    },
+    {
+      "name": "Jianzhong Qi",
+      "institution": "University of Melbourne",
+      "tags": [
+        "table-QA"
+      ]
+    },
+    {
+      "name": "Qichen Wang",
+      "institution": "Nanyang Technological University, Singapore (NTU Singapore)",
+      "tags": [
+        "vector-DB",
+        "LLM-DB"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Technology-Enabled Fuel Supply Chain Resilience: An Integrated Information System for Real-Time Monitoring and Decision Support",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "data-integration"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25542",
+      "authors": [
+        {
+          "name": "Mohamed Loutis",
+          "affiliation": "Université Sorbonne Nouvelle, Sorbonne Université",
+          "is_corresponding": false
+        },
+        {
+          "name": "Esma Aimeur",
+          "affiliation": "Université de Montréal",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "TableRoute: Capability-Aware Routing for Scalable Table Question Answering",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "table-QA"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25853",
+      "authors": [
+        {
+          "name": "Yuxiang Wang",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Junhao Gan",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jianzhong Qi",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "RAVEN: A Self-RAG Based Agent for Threat Classification and Response",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25832",
+      "authors": [
+        {
+          "name": "Pironti Francesco Aurelio",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arena Luigi",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Blefari Francesco",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Matteo Lupinacci",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Romeo Francesco",
+          "affiliation": "IMT School for Advanced Studies Lucca",
+          "is_corresponding": false
+        },
+        {
+          "name": "Furfaro Angelo",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GenSPARQL: A Generative Extension of SPARQL for Incomplete Knowledge Graphs",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.26062",
+      "authors": [
+        {
+          "name": "Jingcheng Wu",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yi Wang",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongkuan Zhou",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Steffen Staab",
+          "affiliation": "University of Stuttgart, University of Southampton",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bo Xiong",
+          "affiliation": "Iowa State University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "vector-DB",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.25374",
+      "authors": [
+        {
+          "name": "Lyu Xu",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guozhong Li",
+          "affiliation": "King Abdullah University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qichen Wang",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Towards Online Adaptive LLM-based Semantic Filtering",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.24518",
+      "authors": [
+        {
+          "name": "Ziqi Zou",
+          "affiliation": "Beijing Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhenyan Nie",
+          "affiliation": "Beijing Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kangfei Zhao",
+          "affiliation": "Beijing Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhiwei Zhang",
+          "affiliation": "Beijing Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aoqian Zhang",
+          "affiliation": "Beijing Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Peng Wu",
+          "affiliation": "China Mobile (China), China Mobile Research Institute",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xuefeng Zhao",
+          "affiliation": "China Mobile (China), China Mobile Research Institute",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Structured Extraction of Diffraction Data from Covalent Organic Frameworks",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.23680",
+      "authors": [
+        {
+          "name": "Shenghan Gao",
+          "affiliation": "Washington University in St. Louis",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhiling Zheng",
+          "affiliation": "Washington University in St. Louis",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.24059",
+      "authors": [
+        {
+          "name": "Zhenrui Yue",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Gongxiaohui Chen",
+          "affiliation": "Argonne National Laboratory",
+          "is_corresponding": false
+        },
+        {
+          "name": "Huimin Zeng",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Honglei Zhuang",
+          "affiliation": "Independent Researcher",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiashuo Sun",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhen Han",
+          "affiliation": "Amazon (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dong Wang",
+          "affiliation": "University of Illinois Urbana-Champaign",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Rate-distortion Assessment for Hierarchical Content Summarization",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25151",
+      "authors": [
+        {
+          "name": "Yunye Gong",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Indranil Sur",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jared Claypoole",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Pritish Sahu",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ajay Divakaran",
+          "affiliation": "SRI International",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "LSP-RAG: Latent Scoring Perspectives for Knowledge Graph Retrieval-Augmented Generation",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "knowledge-graph",
+        "RAG"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.25229",
+      "authors": [
+        {
+          "name": "Haochen Liu",
+          "affiliation": "University of Virginia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guanghui Min",
+          "affiliation": "University of Virginia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Song Wang",
+          "affiliation": "University of Central Florida",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yada Zhu",
+          "affiliation": "IBM (United States)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chen Chen",
+          "affiliation": "University of Virginia",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jundong Li",
+          "affiliation": "University of Virginia",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.24294",
+      "authors": [
+        {
+          "name": "Haoran Luo",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiapu Wang",
+          "affiliation": "Nanjing University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Linhao Luo",
+          "affiliation": "Monash University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Luu Anh Tuan",
+          "affiliation": "Nanyang Technological University, VinUniversity",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "From Neural Tokens to Language: Dual-View EEG Semantic Bridging for Brain-to-Text Generation",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.24197",
+      "authors": [
+        {
+          "name": "YaoYang Liu",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jun Dai",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "ZhuoShi Tang",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Weijun Sun",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaozhao Fang",
+          "affiliation": "Guangdong University of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jie Wen",
+          "affiliation": "Harbin Institute of Technology",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "From Industrial Product Documentation to Automated Digital Product Passport Generation: An Experimental Study of Large Language Models",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG",
+        "vector-DB",
+        "LLM-DB"
+      ],
+      "relevance_score": 5,
+      "url": "https://arxiv.org/abs/2611.24998",
+      "authors": [
+        {
+          "name": "Marco Buecheler",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        },
+        {
+          "name": "Grant Richards",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nathan Hartman",
+          "affiliation": "Purdue University West Lafayette",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "CRAFT: Constrained Route planning with Adaptive Framework and Template-based code generation",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.25128",
+      "authors": [
+        {
+          "name": "Shahd Elmahallawy",
+          "affiliation": "University of California, Riverside",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ahmed Eldawy",
+          "affiliation": "University of California, Riverside",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Cascadeability and the Realization Gap: An Empirical Study of LLM-Powered Semantic Filtering",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "query-optimization"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.23898",
+      "authors": [
+        {
+          "name": "Nan Hou",
+          "affiliation": "Chinese University of Hong Kong",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kangfei Zhao",
+          "affiliation": "Beijing Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiadong Xie",
+          "affiliation": "Chinese University of Hong Kong",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jeffrey Xu Yu",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Auditing black-box clinical prediction models with a large language model through queries alone: a blinded test with planted flaws",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.24877",
+      "authors": [
+        {
+          "name": "Zhiyu Liu",
+          "affiliation": "Tianjin Medical University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xinyu Yang",
+          "affiliation": "Tianjin Medical University General Hospital",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "A Model of Diverse Sampling from Language Models",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25003",
+      "authors": [
+        {
+          "name": "Manuel Prada-Corral",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yahya Emara",
+          "affiliation": "Cornell University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Timothy J. O’Donnell",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ryan Cotterell",
+          "affiliation": "ETH Zurich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tim Vieira",
+          "affiliation": "ETH Zurich",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
+      "publication_date": "2026-11-18",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.24049",
+      "authors": [
+        {
+          "name": "Andrei Kostin",
+          "affiliation": "Universidad de Jaén",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jose A. Diaz-Garcia",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Karel Gutiérrez‐Batista",
+          "affiliation": "Universidad de Granada",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't",
+      "publication_date": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.22179",
+      "authors": [
+        {
+          "name": "Jingyu Liu",
+          "affiliation": "University of Chicago",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zongze Li",
+          "affiliation": "University of Chicago",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zach Xu",
+          "affiliation": "University of Chicago",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhanhui Zhou",
+          "affiliation": "University of California, Berkeley",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tahseen Rabbani",
+          "affiliation": "University of Chicago",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dawn Song",
+          "affiliation": "University of California, Berkeley",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ce Zhang",
+          "affiliation": "University of Chicago",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Prioritize, Don't Decide: What We Learned Auditing a Deployed Human-in-the-Loop CV Sorter",
+      "publication_date": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.23359",
+      "authors": [
+        {
+          "name": "Hadi Mohammadi",
+          "affiliation": "Utrecht University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jeroen Sparla",
+          "affiliation": "AcademicTransfer , Utrecht , The Netherlands",
+          "is_corresponding": false
+        },
+        {
+          "name": "Alexandros Paliouras",
+          "affiliation": "Utrecht University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Georg Krempl",
+          "affiliation": "Utrecht University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Robert A. Bagheri",
+          "affiliation": "Utrecht University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MoL-SQL: A Controlled Benchmark for Mixture-of-Language Text-to-SQL",
+      "publication_date": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.22333",
+      "authors": [
+        {
+          "name": "Tianqi Luo",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Boyan Li",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yuyu Luo",
+          "affiliation": "The Hong Kong University of Science and Technology (Guangzhou)",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "EviDARL: Evidence-Centric Dual-Agent Reasoning via Alternating Reinforcement Learning for Multi-Table Question Answering",
+      "publication_date": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "table-QA"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.22310",
+      "authors": [
+        {
+          "name": "Dunhan Li",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Leilei Gan",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lirong Gao",
+          "affiliation": "Ant Group (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenyan Fan",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yongwei Wang",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sheng Guo",
+          "affiliation": "Ant Group (China)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fei Wu",
+          "affiliation": "Zhejiang University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Errpedia: Is Your Exact $k$-NN Vector Search Really Exact?",
+      "publication_date": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.22474",
+      "authors": [
+        {
+          "name": "Yinuo Deng",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ying Zhang",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hanchen Wang",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenjie Zhang",
+          "affiliation": "University of Technology Sydney, UNSW Sydney",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "AI Companions for Young Adult Caregivers: Practical Advice, Emotional Depth, and the Limits of Metric Evaluation",
+      "publication_date": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.23147",
+      "authors": [
+        {
+          "name": "Trizal Garg",
+          "affiliation": "University of Cambridge",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xuelong Fu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dhruv Shah",
+          "affiliation": "Birla Institute of Technology and Science, Pilani",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jin Huang",
+          "affiliation": "University of Cambridge",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shrigopal Maheshwari",
+          "affiliation": "Birla Institute of Technology and Science, Pilani",
+          "is_corresponding": false
+        },
+        {
+          "name": "Atiksh Aggarwal",
+          "affiliation": "Birla Institute of Technology and Science, Pilani",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yash Sinha",
+          "affiliation": "Birla Institute of Technology and Science, Pilani",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dhruv Kumar",
+          "affiliation": "Birla Institute of Technology and Science, Pilani",
+          "is_corresponding": false
+        },
+        {
+          "name": "Siddharth Mehrotra",
+          "affiliation": "Birla Institute of Technology and Science, Pilani",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
