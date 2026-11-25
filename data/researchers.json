@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.1",
-    "last_updated": "2026-11-24"
+    "last_updated": "2026-11-25"
   },
   "researchers": [
     {
@@ -4600,6 +4600,11 @@
           "title": "Cascadeability and the Realization Gap: An Empirical Study of LLM-Powered Semantic Filtering",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.23898"
+        },
+        {
+          "title": "Cascadeability and the Realization Gap: An Empirical Study of LLM-Powered Semantic Filtering",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2611.23898"
         }
       ],
       "research_group_url": "",
@@ -4610,7 +4615,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #32 school University of Hong Kong via arXiv (Cornell University) paper \"Beyond Linear LLM Invocation: An Efficient and Effective Semantic Filter Paradigm\". Please verify homepage and student availability manually.",
       "added_date": "2026-03-26",
-      "last_updated": "2026-11-22"
+      "last_updated": "2026-11-25"
     },
     {
       "id": "uid-110",
@@ -8460,6 +8465,11 @@
           "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.24059"
+        },
+        {
+          "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24059"
         }
       ],
       "research_group_url": "",
@@ -8470,7 +8480,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #70 school UIUC via ArXiv.org paper \"TaSR-RAG: Taxonomy-guided Structured Reasoning for Retrieval-Augmented Generation\". Please verify homepage and student availability manually.",
       "added_date": "2026-03-26",
-      "last_updated": "2026-11-22"
+      "last_updated": "2026-11-25"
     },
     {
       "id": "uid-217",
@@ -34476,6 +34486,11 @@
           "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.24294"
+        },
+        {
+          "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24294"
         }
       ],
       "research_group_url": "",
@@ -34486,7 +34501,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #12 school Nanyang Technological University, Singapore (NTU Singapore) via arXiv (Cornell University) paper \"CompSkill: Compiling Execution Experience for Skill Retrieval\". Please verify homepage and student availability manually.",
       "added_date": "2026-11-07",
-      "last_updated": "2026-11-23"
+      "last_updated": "2026-11-25"
     },
     {
       "id": "uid-930",
@@ -35226,6 +35241,11 @@
           "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.24294"
+        },
+        {
+          "title": "KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2611.24294"
         }
       ],
       "research_group_url": "",
@@ -35236,7 +35256,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #12 school Nanyang Technological University, Singapore (NTU Singapore) via arXiv (Cornell University) paper \"KnowledgeClaw: Towards Agentic Knowledge Engineering via Omnimodal Hypergraphs\". Please verify homepage and student availability manually.",
       "added_date": "2026-11-23",
-      "last_updated": "2026-11-23"
+      "last_updated": "2026-11-25"
     },
     {
       "id": "uid-950",
@@ -35263,6 +35283,11 @@
           "title": "A Model of Diverse Sampling from Language Models",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.25003"
+        },
+        {
+          "title": "A Model of Diverse Sampling from Language Models",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2611.25003"
         }
       ],
       "research_group_url": "",
@@ -35273,7 +35298,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #7 school ETH Zurich via arXiv (Cornell University) paper \"A Model of Diverse Sampling from Language Models\". Please verify homepage and student availability manually.",
       "added_date": "2026-11-24",
-      "last_updated": "2026-11-24"
+      "last_updated": "2026-11-25"
     },
     {
       "id": "uid-951",
@@ -35300,6 +35325,11 @@
           "title": "TableRoute: Capability-Aware Routing for Scalable Table Question Answering",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.25853"
+        },
+        {
+          "title": "TableRoute: Capability-Aware Routing for Scalable Table Question Answering",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2611.25853"
         }
       ],
       "research_group_url": "",
@@ -35310,7 +35340,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #19 school University of Melbourne via arXiv (Cornell University) paper \"TableRoute: Capability-Aware Routing for Scalable Table Question Answering\". Please verify homepage and student availability manually.",
       "added_date": "2026-11-24",
-      "last_updated": "2026-11-24"
+      "last_updated": "2026-11-25"
     },
     {
       "id": "uid-952",
@@ -35339,6 +35369,11 @@
           "title": "Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search",
           "venue": "arXiv (Cornell University)",
           "url": "https://arxiv.org/abs/2611.25374"
+        },
+        {
+          "title": "Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search",
+          "venue": "arXiv",
+          "url": "https://arxiv.org/abs/2611.25374"
         }
       ],
       "research_group_url": "",
@@ -35349,7 +35384,7 @@
       "contact_history": [],
       "notes": "Auto-discovered from QS #12 school Nanyang Technological University, Singapore (NTU Singapore) via arXiv (Cornell University) paper \"Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search\". Please verify homepage and student availability manually.",
       "added_date": "2026-11-24",
-      "last_updated": "2026-11-24"
+      "last_updated": "2026-11-25"
     }
   ]
 }
