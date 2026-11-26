@@ -1,0 +1,501 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-11-26",
+  "scan_window": {
+    "start_date": "2026-11-19",
+    "end_date": "2026-11-26"
+  },
+  "summary": {
+    "openalex_works_fetched": 1115,
+    "watchlist_matches": 15,
+    "new_researchers_added": 0,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 4,
+    "skipped_due_to_score": 983,
+    "skipped_due_to_venue": 30,
+    "skipped_due_to_focus": 87,
+    "skipped_due_to_institution": 11,
+    "skipped_due_to_role": 4
+  },
+  "new_researchers": [],
+  "papers": [
+    {
+      "title": "Semantic-aware Decoding for Diverse Text-to-SQL under Schema Ambiguity",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.30873",
+      "authors": [
+        {
+          "name": "Yuxuan Jiang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anna Mitsopoulou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Apostolos Koukouvinis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yannis Velegrakis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Georgia Koutrika",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Reward Blindness: A Theoretical Framework for Diagnosing Reinforcement Learning Reward Limitations in Text-to-SQL",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.29930",
+      "authors": [
+        {
+          "name": "Lashimi Muraleedharan Nair",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiqi Huang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fangyu Lo",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yihua Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dingyan Shang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.31190",
+      "authors": [
+        {
+          "name": "Avinash Kumar Singh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bhaskarjit Sarmah",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Stefano Pasquali",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Evaluating Persona Consistency in LLM User Simulators Without External Reference Annotations",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.30280",
+      "authors": [
+        {
+          "name": "Anping Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yang Tan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yi Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Clive Bai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Blaze Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yang Li",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Auditing a superconducting database built by a large language model",
+      "publication_date": "2026-11-22",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.29445",
+      "authors": [
+        {
+          "name": "Wenjian Lu",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Mind the Trap As LLMs Guess the Data Model: Grain-Aware Guards Against Fan-out in Text-to-SQL and Its Benchmarks",
+      "publication_date": "2026-11-21",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.29009",
+      "authors": [
+        {
+          "name": "Ahmed M. Mahran",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Schema-Validated LLM Workflows: A Benchmark Protocol and Comparative Evaluation Across Six Python Implementations",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.27106",
+      "authors": [
+        {
+          "name": "Sidney Shapiro",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sanad Al-Khatib",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aurora Pinzón Arzola",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Emiliano Sebastian Gonzalez Venegas",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Daniel Pearson",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GERF: A Token-Efficient Multimodal Retrieval Framework for Schema-Guided Scientific Information Extraction",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.28295",
+      "authors": [
+        {
+          "name": "Yiyu Qian",
+          "affiliation": "Cornell University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xing Wu",
+          "affiliation": "Shanghai University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "AskWise: Execution-Guided Clarification of Intent and Data in Text-to-SQL",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.27474",
+      "authors": [
+        {
+          "name": "Yuru Liang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guangyinan Mei",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Miles Fan",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Technology-Enabled Fuel Supply Chain Resilience: An Integrated Information System for Real-Time Monitoring and Decision Support",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv",
+      "tags": [
+        "data-integration"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25542",
+      "authors": [
+        {
+          "name": "Mohamed Loutis",
+          "affiliation": "Sorbonne Université",
+          "is_corresponding": false
+        },
+        {
+          "name": "Esma Aimeur",
+          "affiliation": "Université de Montréal",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "TableRoute: Capability-Aware Routing for Scalable Table Question Answering",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv",
+      "tags": [
+        "table-QA"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25853",
+      "authors": [
+        {
+          "name": "Yuxiang Wang",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Junhao Gan",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jianzhong Qi",
+          "affiliation": "The University of Melbourne",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "RAVEN: A Self-RAG Based Agent for Threat Classification and Response",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.25832",
+      "authors": [
+        {
+          "name": "Pironti Francesco Aurelio",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arena Luigi",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Blefari Francesco",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Matteo Lupinacci",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        },
+        {
+          "name": "Romeo Francesco",
+          "affiliation": "IMT School for Advanced Studies Lucca",
+          "is_corresponding": false
+        },
+        {
+          "name": "Furfaro Angelo",
+          "affiliation": "University of Calabria",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Know Your Context Bank: Repairing Inconsistency and Measuring Generalization in Context-Aware Text-to-SQL",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.26775",
+      "authors": [
+        {
+          "name": "Hailong Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Mohammadreza Pourreza",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tal Neiman",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Reza Sherkat",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Per Jacobsson",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yannis Papakonstantinou",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GenSPARQL: A Generative Extension of SPARQL for Incomplete Knowledge Graphs",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv",
+      "tags": [
+        "knowledge-graph"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.26062",
+      "authors": [
+        {
+          "name": "Jingcheng Wu",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yi Wang",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hongkuan Zhou",
+          "affiliation": "University of Stuttgart",
+          "is_corresponding": false
+        },
+        {
+          "name": "Steffen Staab",
+          "affiliation": "University of Stuttgart, University of Southampton",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bo Xiong",
+          "affiliation": "Iowa State University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search",
+      "publication_date": "2026-11-19",
+      "venue": "arXiv",
+      "tags": [
+        "vector-DB",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.25374",
+      "authors": [
+        {
+          "name": "Lyu Xu",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guozhong Li",
+          "affiliation": "King Abdullah University of Science and Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qichen Wang",
+          "affiliation": "Nanyang Technological University",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
