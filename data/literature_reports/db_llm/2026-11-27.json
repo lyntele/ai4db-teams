@@ -1,0 +1,785 @@
+{
+  "watchlist_id": "db_llm",
+  "watchlist_name": "DB + LLM",
+  "description": "Daily watchlist for DB+LLM papers, especially NL2SQL, SQL generation, data agents, schema linking, and LLM-assisted database workflows.",
+  "search_terms": [
+    "text-to-sql",
+    "nl2sql",
+    "natural language to sql",
+    "sql generation language model",
+    "llm sql",
+    "sql agent",
+    "database llm",
+    "llm database",
+    "database agent",
+    "data agent sql",
+    "schema linking sql",
+    "rag sql"
+  ],
+  "run_date": "2026-11-27",
+  "scan_window": {
+    "start_date": "2026-11-20",
+    "end_date": "2026-11-27"
+  },
+  "summary": {
+    "openalex_works_fetched": 1109,
+    "watchlist_matches": 21,
+    "new_researchers_added": 1,
+    "existing_researchers_updated": 0,
+    "industrial_members_added": 0,
+    "industrial_members_updated": 0,
+    "papers_mapped_to_site_entries": 3,
+    "skipped_due_to_score": 996,
+    "skipped_due_to_venue": 31,
+    "skipped_due_to_focus": 61,
+    "skipped_due_to_institution": 18,
+    "skipped_due_to_role": 19
+  },
+  "new_researchers": [
+    {
+      "name": "Wenqi Fan",
+      "institution": "The Hong Kong Polytechnic University",
+      "tags": [
+        "RAG"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "TableRouter: Query-Aware Evidence Construction for Long-Table Question Answering",
+      "publication_date": "2026-11-24",
+      "venue": "arXiv",
+      "tags": [
+        "table-QA"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.32006",
+      "authors": [
+        {
+          "name": "Anahita Bolourani",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaofeng Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tung Sum Thomas Kwok",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guang Cheng",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Simultaneous Inference for Watermark Proportions in LLM-Generated Text",
+      "publication_date": "2026-11-24",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.32674",
+      "authors": [
+        {
+          "name": "Jingcheng He",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zinan Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenguang Sun",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xintao Xia",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "RubikSQL-HB: Agentic Text-to-SQL with Knowledge in the Loop",
+      "publication_date": "2026-11-24",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.32772",
+      "authors": [
+        {
+          "name": "Haorui Jia",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zihan Qu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yundi Dong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ziyang Mei",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chi Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zezhi Zheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dousheng Zhao",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jiahao Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zui Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Han Li",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "No Fixed Configuration Is Best: Context- and Cost-Aware Tuning of LLM Pipelines, with an Application to Schema Matching and Mapping",
+      "publication_date": "2026-11-24",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.31864",
+      "authors": [
+        {
+          "name": "Gökhan Kirlik",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiuwen Zheng",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anirudh Sriram",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "A Text-to-SQL Benchmark for Official Statistics",
+      "publication_date": "2026-11-24",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL",
+        "knowledge-graph"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.32646",
+      "authors": [
+        {
+          "name": "Lucas Lageweg",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Karen Goes",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tom van den Broek",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Frank Pijpers",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Paul Groth",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jan-Christoph Kalo",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Semantic-aware Decoding for Diverse Text-to-SQL under Schema Ambiguity",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.30873",
+      "authors": [
+        {
+          "name": "Yuxuan Jiang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Anna Mitsopoulou",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Apostolos Koukouvinis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yannis Velegrakis",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Georgia Koutrika",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Reward Blindness: A Theoretical Framework for Diagnosing Reinforcement Learning Reward Limitations in Text-to-SQL",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.29930",
+      "authors": [
+        {
+          "name": "Lashimi Muraleedharan Nair",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Shiqi Huang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fangyu Lo",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yihua Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dingyan Shang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Rethinking Document Indexing for LLM-based Analysis",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://doi.org/10.48550/arxiv.2611.31679",
+      "authors": [
+        {
+          "name": "Donna Pham",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhongwei Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Siyuan Dong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Haotian Gong",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Lin Ma",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.31190",
+      "authors": [
+        {
+          "name": "Avinash Kumar Singh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bhaskarjit Sarmah",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Stefano Pasquali",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Evaluating Persona Consistency in LLM User Simulators Without External Reference Annotations",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.30280",
+      "authors": [
+        {
+          "name": "Anping Zhang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yang Tan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yi Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Clive Bai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Blaze Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yang Li",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.31554",
+      "authors": [
+        {
+          "name": "Artem Trofimov",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Boris Novikov",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Auditing a superconducting database built by a large language model",
+      "publication_date": "2026-11-22",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.29445",
+      "authors": [
+        {
+          "name": "Wenjian Lu",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Mind the Trap As LLMs Guess the Data Model: Grain-Aware Guards Against Fan-out in Text-to-SQL and Its Benchmarks",
+      "publication_date": "2026-11-21",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.29009",
+      "authors": [
+        {
+          "name": "Ahmed M. Mahran",
+          "affiliation": "",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "When Visually Rich Documents Meet Multi-Vector Retrieval for Region-level Retrieval-Augmented Generation",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.27542",
+      "authors": [
+        {
+          "name": "Xu Yuan",
+          "affiliation": "Hong Kong Polytechnic University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Liangbo Ning",
+          "affiliation": "Hong Kong Polytechnic University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yujuan Ding",
+          "affiliation": "Hong Kong Polytechnic University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Qing Li",
+          "affiliation": "Hong Kong Polytechnic University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wenqi Fan",
+          "affiliation": "Hong Kong Polytechnic University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Uncovering Multimorbidity Patterns Through a Novel Randomized Clustering Algorithm",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.26927",
+      "authors": [
+        {
+          "name": "Ali Jafari",
+          "affiliation": "University of Massachusetts Amherst",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hari Balasubramanian",
+          "affiliation": "University of Massachusetts Amherst",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Schema-Validated LLM Workflows: A Benchmark Protocol and Comparative Evaluation Across Six Python Implementations",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.27106",
+      "authors": [
+        {
+          "name": "Sidney Shapiro",
+          "affiliation": "University of Lethbridge",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sanad Al-Khatib",
+          "affiliation": "Al Hussein Technical University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aurora Pinzón Arzola",
+          "affiliation": "Universidad de Guanajuato",
+          "is_corresponding": false
+        },
+        {
+          "name": "Emiliano Sebastian Gonzalez Venegas",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Daniel Pearson",
+          "affiliation": "University of Lethbridge",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "GERF: A Token-Efficient Multimodal Retrieval Framework for Schema-Guided Scientific Information Extraction",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "RAG",
+        "LLM-DB"
+      ],
+      "relevance_score": 4,
+      "url": "https://arxiv.org/abs/2611.28295",
+      "authors": [
+        {
+          "name": "Yiyu Qian",
+          "affiliation": "Cornell University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xing Wu",
+          "affiliation": "Shanghai University",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Epistemic Guard: Out-of-Process MCP Receipt Proxying, Post-Turn Prose Supervision, and Provenance-Gated Memory for Tool-Using Autonomous Agents",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.27095",
+      "authors": [
+        {
+          "name": "Sean Maxwell",
+          "affiliation": "Melbourne , VIC , Australia",
+          "is_corresponding": true
+        }
+      ]
+    },
+    {
+      "title": "Detecting Word-Substitution Poisoning of a RAG Knowledge Base with Relative Entropy and Runtime Verification",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.27410",
+      "authors": [
+        {
+          "name": "Ali Yousefi",
+          "affiliation": "St George's, University of London",
+          "is_corresponding": false
+        },
+        {
+          "name": "Nikos Komninos",
+          "affiliation": "St George's, University of London",
+          "is_corresponding": false
+        },
+        {
+          "name": "Hafizul Asad",
+          "affiliation": "St George's, University of London",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "AskWise: Execution-Guided Clarification of Intent and Data in Text-to-SQL",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.27474",
+      "authors": [
+        {
+          "name": "Yuru Liang",
+          "affiliation": "Centerforce, Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Guangyinan Mei",
+          "affiliation": "Centerforce, Renmin University of China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Miles Fan",
+          "affiliation": "Renmin University of China",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "A Framework for AI-Ready Data in Earth and Environmental Science",
+      "publication_date": "2026-11-20",
+      "venue": "arXiv",
+      "tags": [
+        "LLM-DB"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.27313",
+      "authors": [
+        {
+          "name": "Tobias Weigel",
+          "affiliation": "Helmholtz-Zentrum Hereon",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jan Bumberger",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Danu Caus",
+          "affiliation": "Helmholtz-Zentrum Hereon",
+          "is_corresponding": false
+        },
+        {
+          "name": "Christian Chwala",
+          "affiliation": "Karlsruhe Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Romy Fösig",
+          "affiliation": "Karlsruhe Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sonja Hänzelmann",
+          "affiliation": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sibylle Kathrin Hassler",
+          "affiliation": "Karlsruhe Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Beate Hetényi",
+          "affiliation": "GFZ Helmholtz Centre for Geosciences",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ralf Kunkel",
+          "affiliation": "Forschungszentrum Jülich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Katharina Loewe",
+          "affiliation": "Karlsruhe Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ulrich Loup",
+          "affiliation": "Forschungszentrum Jülich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yueling Ma",
+          "affiliation": "Forschungszentrum Jülich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Stefan Neuhaus",
+          "affiliation": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kaleb Phipps",
+          "affiliation": "Karlsruhe Institute of Technology",
+          "is_corresponding": false
+        },
+        {
+          "name": "Tino Polen",
+          "affiliation": "Forschungszentrum Jülich",
+          "is_corresponding": false
+        },
+        {
+          "name": "Maren Rebke",
+          "affiliation": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
+          "is_corresponding": false
+        },
+        {
+          "name": "Björn Saß",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "David Schäfer",
+          "affiliation": "Helmholtz Centre for Environmental Research",
+          "is_corresponding": false
+        },
+        {
+          "name": "Timm Schoening",
+          "affiliation": "GEOMAR Helmholtz Centre for Ocean Research Kiel",
+          "is_corresponding": false
+        },
+        {
+          "name": "Emanuel Söding",
+          "affiliation": "GEOMAR Helmholtz Centre for Ocean Research Kiel",
+          "is_corresponding": false
+        },
+        {
+          "name": "Paula Stock",
+          "affiliation": "GFZ Helmholtz Centre for Geosciences",
+          "is_corresponding": false
+        }
+      ]
+    }
+  ]
+}
