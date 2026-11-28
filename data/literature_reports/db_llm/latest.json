@@ -16,35 +16,137 @@
     "schema linking sql",
     "rag sql"
   ],
-  "run_date": "2026-11-27",
+  "run_date": "2026-11-28",
   "scan_window": {
-    "start_date": "2026-11-20",
-    "end_date": "2026-11-27"
+    "start_date": "2026-11-21",
+    "end_date": "2026-11-28"
   },
   "summary": {
-    "openalex_works_fetched": 1109,
-    "watchlist_matches": 21,
+    "openalex_works_fetched": 1143,
+    "watchlist_matches": 23,
     "new_researchers_added": 1,
     "existing_researchers_updated": 0,
     "industrial_members_added": 0,
     "industrial_members_updated": 0,
     "papers_mapped_to_site_entries": 3,
-    "skipped_due_to_score": 996,
-    "skipped_due_to_venue": 31,
-    "skipped_due_to_focus": 61,
-    "skipped_due_to_institution": 18,
-    "skipped_due_to_role": 19
+    "skipped_due_to_score": 927,
+    "skipped_due_to_venue": 32,
+    "skipped_due_to_focus": 161,
+    "skipped_due_to_institution": 20,
+    "skipped_due_to_role": 4
   },
   "new_researchers": [
     {
-      "name": "Wenqi Fan",
-      "institution": "The Hong Kong Polytechnic University",
+      "name": "Yen-Chia Hsu",
+      "institution": "The University of Amsterdam",
       "tags": [
         "RAG"
       ]
     }
   ],
   "papers": [
+    {
+      "title": "Sports Agent: A Self-Evolving System for Conversational Data Analytics",
+      "publication_date": "2026-11-25",
+      "venue": "arXiv",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://doi.org/10.48550/arxiv.2611.33700",
+      "authors": [
+        {
+          "name": "Chao Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Fuqi Lin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ze Chen",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ziyan Liu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Chen Li",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "姜海树",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Bo Xu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zihan Jiang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yue Wu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zheng Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Kun Wang",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhihang Fu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Jieping Ye",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL",
+      "publication_date": "2026-11-25",
+      "venue": "arXiv",
+      "tags": [
+        "text-to-SQL"
+      ],
+      "relevance_score": 3,
+      "url": "https://doi.org/10.48550/arxiv.2611.34363",
+      "authors": [
+        {
+          "name": "Shreshth Rai",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rishii Kumar Singh",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Aksh Aggarwal",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
     {
       "title": "TableRouter: Query-Aware Evidence Construction for Long-Table Question Answering",
       "publication_date": "2026-11-24",
@@ -53,7 +155,7 @@
         "table-QA"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.32006",
+      "url": "https://arxiv.org/abs/2611.32006",
       "authors": [
         {
           "name": "Anahita Bolourani",
@@ -85,7 +187,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.32674",
+      "url": "https://arxiv.org/abs/2611.32674",
       "authors": [
         {
           "name": "Jingcheng He",
@@ -117,26 +219,26 @@
         "text-to-SQL"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.32772",
+      "url": "https://arxiv.org/abs/2611.32772",
       "authors": [
         {
           "name": "Haorui Jia",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies Co. , Ltd",
           "is_corresponding": false
         },
         {
           "name": "Zihan Qu",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies Co. , Ltd",
           "is_corresponding": false
         },
         {
           "name": "Yundi Dong",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies Co. , Ltd",
           "is_corresponding": false
         },
         {
           "name": "Ziyang Mei",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies Co. , Ltd",
           "is_corresponding": false
         },
         {
@@ -146,27 +248,27 @@
         },
         {
           "name": "Zezhi Zheng",
-          "affiliation": "",
+          "affiliation": "Alibaba Group (China)",
           "is_corresponding": false
         },
         {
           "name": "Dousheng Zhao",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies Co. , Ltd",
           "is_corresponding": false
         },
         {
           "name": "Jiahao Zhang",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies Co. , Ltd",
           "is_corresponding": false
         },
         {
           "name": "Zui Chen",
-          "affiliation": "",
+          "affiliation": "DeepSeek (China)",
           "is_corresponding": false
         },
         {
           "name": "Han Li",
-          "affiliation": "",
+          "affiliation": "Huawei Technologies Co. , Ltd",
           "is_corresponding": false
         }
       ]
@@ -179,7 +281,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.31864",
+      "url": "https://arxiv.org/abs/2611.31864",
       "authors": [
         {
           "name": "Gökhan Kirlik",
@@ -188,12 +290,12 @@
         },
         {
           "name": "Xiuwen Zheng",
-          "affiliation": "",
+          "affiliation": "Xperi (Ireland), Xperi (United States)",
           "is_corresponding": false
         },
         {
           "name": "Anirudh Sriram",
-          "affiliation": "",
+          "affiliation": "Xperi (Ireland), Xperi (United States)",
           "is_corresponding": false
         }
       ]
@@ -207,11 +309,11 @@
         "knowledge-graph"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2611.32646",
+      "url": "https://arxiv.org/abs/2611.32646",
       "authors": [
         {
           "name": "Lucas Lageweg",
-          "affiliation": "",
+          "affiliation": "Centraal Bureau voor de Statistiek, University of Amsterdam",
           "is_corresponding": false
         },
         {
@@ -226,7 +328,7 @@
         },
         {
           "name": "Frank Pijpers",
-          "affiliation": "",
+          "affiliation": "Centraal Bureau voor de Statistiek",
           "is_corresponding": false
         },
         {
@@ -236,6 +338,102 @@
         },
         {
           "name": "Jan-Christoph Kalo",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SuSi-RAG: A Hybrid Graph RAG for Equipment Maintenance",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.30588",
+      "authors": [
+        {
+          "name": "Hansi Zhang",
+          "affiliation": "Robert Bosch (China), Robert Bosch (Netherlands)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wilma Johanna Schmidt",
+          "affiliation": "Robert Bosch (Germany)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Wanlin Yang",
+          "affiliation": "Robert Bosch (China), Robert Bosch (Netherlands)",
+          "is_corresponding": false
+        },
+        {
+          "name": "Xiaozhi Shen",
+          "affiliation": "Robert Bosch GmbH Suzhou , China",
+          "is_corresponding": false
+        },
+        {
+          "name": "Adrian Paschke",
+          "affiliation": "Fraunhofer Institute for Open Communication Systems, Freie Universität Berlin",
+          "is_corresponding": false
+        },
+        {
+          "name": "Evgeny Kharlamov",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SignalCount: Approximate Counts with Structured and Semantic Predicates in Seconds",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "query-optimization"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.30779",
+      "authors": [
+        {
+          "name": "Matteo Agius-D'Arrigo",
+          "affiliation": "OuterSignal New York , New York , USA",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zachary Zelner",
+          "affiliation": "OuterSignal New York , New York , USA",
+          "is_corresponding": false
+        },
+        {
+          "name": "Harrison Ju",
+          "affiliation": "OuterSignal New York , New York , USA",
+          "is_corresponding": false
+        },
+        {
+          "name": "Rushab Munot",
+          "affiliation": "OuterSignal New York , New York , USA",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "SHAKTI: Evidence-Grounded Conversational AI for Nutrition and Health",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.29988",
+      "authors": [
+        {
+          "name": "Chaitanya Kumar Reddy Pallerla",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Dongyi Wang",
           "affiliation": "",
           "is_corresponding": false
         }
@@ -253,27 +451,27 @@
       "authors": [
         {
           "name": "Yuxuan Jiang",
-          "affiliation": "",
+          "affiliation": "Utrecht University, Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
           "is_corresponding": false
         },
         {
           "name": "Anna Mitsopoulou",
-          "affiliation": "",
+          "affiliation": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
           "is_corresponding": false
         },
         {
           "name": "Apostolos Koukouvinis",
-          "affiliation": "",
+          "affiliation": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
           "is_corresponding": false
         },
         {
           "name": "Yannis Velegrakis",
-          "affiliation": "",
+          "affiliation": "Utrecht University",
           "is_corresponding": false
         },
         {
           "name": "Georgia Koutrika",
-          "affiliation": "",
+          "affiliation": "Athena Research and Innovation Center In Information Communication & Knowledge Technologies",
           "is_corresponding": false
         }
       ]
@@ -324,7 +522,7 @@
         "LLM-DB"
       ],
       "relevance_score": 4,
-      "url": "https://doi.org/10.48550/arxiv.2611.31679",
+      "url": "https://arxiv.org/abs/2611.31679",
       "authors": [
         {
           "name": "Donna Pham",
@@ -349,6 +547,38 @@
         {
           "name": "Lin Ma",
           "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MH-RAG-DIVE: Dynamic and Cost-Efficient Multi-Hop RAG Evaluation via Tree-Cached Dialogue Simulation",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.30335",
+      "authors": [
+        {
+          "name": "Lorenz Brehme",
+          "affiliation": "Universität Innsbruck",
+          "is_corresponding": false
+        },
+        {
+          "name": "Daniel Hillebrand",
+          "affiliation": "Universität Innsbruck",
+          "is_corresponding": false
+        },
+        {
+          "name": "Thomas Ströhle",
+          "affiliation": "Universität Innsbruck",
+          "is_corresponding": false
+        },
+        {
+          "name": "Ruth Breu",
+          "affiliation": "Universität Innsbruck",
           "is_corresponding": false
         }
       ]
@@ -423,6 +653,70 @@
       ]
     },
     {
+      "title": "BRAG: Bayesian Retrieval Augmented Generation",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.31656",
+      "authors": [
+        {
+          "name": "Javier R. Movellan",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Manjot Bilkhu",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Young-Mok Jung",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Sirajul Salekin",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Henry Tran",
+          "affiliation": "",
+          "is_corresponding": false
+        },
+        {
+          "name": "Zhao Huang",
+          "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "Automated Call for Action: RAG-Based Environmental Law Enforcement Screening System",
+      "publication_date": "2026-11-23",
+      "venue": "arXiv",
+      "tags": [
+        "RAG"
+      ],
+      "relevance_score": 3,
+      "url": "https://arxiv.org/abs/2611.30423",
+      "authors": [
+        {
+          "name": "Matas Jurkevicius",
+          "affiliation": "University of Amsterdam",
+          "is_corresponding": false
+        },
+        {
+          "name": "Yen-Chia Hsu",
+          "affiliation": "University of Amsterdam",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
       "title": "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls",
       "publication_date": "2026-11-23",
       "venue": "arXiv",
@@ -430,7 +724,7 @@
         "LLM-DB"
       ],
       "relevance_score": 3,
-      "url": "https://doi.org/10.48550/arxiv.2611.31554",
+      "url": "https://arxiv.org/abs/2611.31554",
       "authors": [
         {
           "name": "Artem Trofimov",
@@ -440,6 +734,31 @@
         {
           "name": "Boris Novikov",
           "affiliation": "",
+          "is_corresponding": false
+        }
+      ]
+    },
+    {
+      "title": "MedTimeQ: Query-guided fusion of time-series foundation models and LLMs for multi-lead ECG classification",
+      "publication_date": "2026-11-22",
+      "venue": "arXiv",
+      "tags": [],
+      "relevance_score": 2,
+      "url": "https://arxiv.org/abs/2611.29690",
+      "authors": [
+        {
+          "name": "Kiana Taktehrani",
+          "affiliation": "Concordia University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Maryam Hosseini",
+          "affiliation": "Concordia University",
+          "is_corresponding": false
+        },
+        {
+          "name": "Arash Mohammadi",
+          "affiliation": "Concordia University",
           "is_corresponding": false
         }
       ]
@@ -456,7 +775,7 @@
       "authors": [
         {
           "name": "Wenjian Lu",
-          "affiliation": "",
+          "affiliation": "Chinese Academy of Sciences, Institute of Solid State Physics",
           "is_corresponding": true
         }
       ]
@@ -479,304 +798,28 @@
       ]
     },
     {
-      "title": "When Visually Rich Documents Meet Multi-Vector Retrieval for Region-level Retrieval-Augmented Generation",
-      "publication_date": "2026-11-20",
+      "title": "Beyond Single-Turn Privacy: Training-Data Leakage in Conversational RAG",
+      "publication_date": "2026-11-21",
       "venue": "arXiv",
       "tags": [
         "RAG"
       ],
       "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.27542",
+      "url": "https://arxiv.org/abs/2611.28748",
       "authors": [
         {
-          "name": "Xu Yuan",
-          "affiliation": "Hong Kong Polytechnic University",
+          "name": "Syed Khaderi",
+          "affiliation": "University of Doha for Science and Technology",
           "is_corresponding": false
         },
         {
-          "name": "Liangbo Ning",
-          "affiliation": "Hong Kong Polytechnic University",
+          "name": "Karima Makhlouf",
+          "affiliation": "University of Doha for Science and Technology",
           "is_corresponding": false
         },
         {
-          "name": "Yujuan Ding",
-          "affiliation": "Hong Kong Polytechnic University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Qing Li",
-          "affiliation": "Hong Kong Polytechnic University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Wenqi Fan",
-          "affiliation": "Hong Kong Polytechnic University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Uncovering Multimorbidity Patterns Through a Novel Randomized Clustering Algorithm",
-      "publication_date": "2026-11-20",
-      "venue": "arXiv",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.26927",
-      "authors": [
-        {
-          "name": "Ali Jafari",
-          "affiliation": "University of Massachusetts Amherst",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hari Balasubramanian",
-          "affiliation": "University of Massachusetts Amherst",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Schema-Validated LLM Workflows: A Benchmark Protocol and Comparative Evaluation Across Six Python Implementations",
-      "publication_date": "2026-11-20",
-      "venue": "arXiv",
-      "tags": [],
-      "relevance_score": 2,
-      "url": "https://arxiv.org/abs/2611.27106",
-      "authors": [
-        {
-          "name": "Sidney Shapiro",
-          "affiliation": "University of Lethbridge",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sanad Al-Khatib",
-          "affiliation": "Al Hussein Technical University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Aurora Pinzón Arzola",
-          "affiliation": "Universidad de Guanajuato",
-          "is_corresponding": false
-        },
-        {
-          "name": "Emiliano Sebastian Gonzalez Venegas",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Daniel Pearson",
-          "affiliation": "University of Lethbridge",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "GERF: A Token-Efficient Multimodal Retrieval Framework for Schema-Guided Scientific Information Extraction",
-      "publication_date": "2026-11-20",
-      "venue": "arXiv",
-      "tags": [
-        "RAG",
-        "LLM-DB"
-      ],
-      "relevance_score": 4,
-      "url": "https://arxiv.org/abs/2611.28295",
-      "authors": [
-        {
-          "name": "Yiyu Qian",
-          "affiliation": "Cornell University",
-          "is_corresponding": false
-        },
-        {
-          "name": "Xing Wu",
-          "affiliation": "Shanghai University",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "Epistemic Guard: Out-of-Process MCP Receipt Proxying, Post-Turn Prose Supervision, and Provenance-Gated Memory for Tool-Using Autonomous Agents",
-      "publication_date": "2026-11-20",
-      "venue": "arXiv",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.27095",
-      "authors": [
-        {
-          "name": "Sean Maxwell",
-          "affiliation": "Melbourne , VIC , Australia",
-          "is_corresponding": true
-        }
-      ]
-    },
-    {
-      "title": "Detecting Word-Substitution Poisoning of a RAG Knowledge Base with Relative Entropy and Runtime Verification",
-      "publication_date": "2026-11-20",
-      "venue": "arXiv",
-      "tags": [
-        "RAG"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.27410",
-      "authors": [
-        {
-          "name": "Ali Yousefi",
-          "affiliation": "St George's, University of London",
-          "is_corresponding": false
-        },
-        {
-          "name": "Nikos Komninos",
-          "affiliation": "St George's, University of London",
-          "is_corresponding": false
-        },
-        {
-          "name": "Hafizul Asad",
-          "affiliation": "St George's, University of London",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "AskWise: Execution-Guided Clarification of Intent and Data in Text-to-SQL",
-      "publication_date": "2026-11-20",
-      "venue": "arXiv",
-      "tags": [
-        "text-to-SQL"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.27474",
-      "authors": [
-        {
-          "name": "Yuru Liang",
-          "affiliation": "Centerforce, Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Guangyinan Mei",
-          "affiliation": "Centerforce, Renmin University of China",
-          "is_corresponding": false
-        },
-        {
-          "name": "Miles Fan",
-          "affiliation": "Renmin University of China",
-          "is_corresponding": false
-        }
-      ]
-    },
-    {
-      "title": "A Framework for AI-Ready Data in Earth and Environmental Science",
-      "publication_date": "2026-11-20",
-      "venue": "arXiv",
-      "tags": [
-        "LLM-DB"
-      ],
-      "relevance_score": 3,
-      "url": "https://arxiv.org/abs/2611.27313",
-      "authors": [
-        {
-          "name": "Tobias Weigel",
-          "affiliation": "Helmholtz-Zentrum Hereon",
-          "is_corresponding": false
-        },
-        {
-          "name": "Jan Bumberger",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "Danu Caus",
-          "affiliation": "Helmholtz-Zentrum Hereon",
-          "is_corresponding": false
-        },
-        {
-          "name": "Christian Chwala",
-          "affiliation": "Karlsruhe Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Romy Fösig",
-          "affiliation": "Karlsruhe Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sonja Hänzelmann",
-          "affiliation": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
-          "is_corresponding": false
-        },
-        {
-          "name": "Sibylle Kathrin Hassler",
-          "affiliation": "Karlsruhe Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Beate Hetényi",
-          "affiliation": "GFZ Helmholtz Centre for Geosciences",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ralf Kunkel",
-          "affiliation": "Forschungszentrum Jülich",
-          "is_corresponding": false
-        },
-        {
-          "name": "Katharina Loewe",
-          "affiliation": "Karlsruhe Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Ulrich Loup",
-          "affiliation": "Forschungszentrum Jülich",
-          "is_corresponding": false
-        },
-        {
-          "name": "Yueling Ma",
-          "affiliation": "Forschungszentrum Jülich",
-          "is_corresponding": false
-        },
-        {
-          "name": "Stefan Neuhaus",
-          "affiliation": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
-          "is_corresponding": false
-        },
-        {
-          "name": "Kaleb Phipps",
-          "affiliation": "Karlsruhe Institute of Technology",
-          "is_corresponding": false
-        },
-        {
-          "name": "Tino Polen",
-          "affiliation": "Forschungszentrum Jülich",
-          "is_corresponding": false
-        },
-        {
-          "name": "Maren Rebke",
-          "affiliation": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
-          "is_corresponding": false
-        },
-        {
-          "name": "Björn Saß",
-          "affiliation": "",
-          "is_corresponding": false
-        },
-        {
-          "name": "David Schäfer",
-          "affiliation": "Helmholtz Centre for Environmental Research",
-          "is_corresponding": false
-        },
-        {
-          "name": "Timm Schoening",
-          "affiliation": "GEOMAR Helmholtz Centre for Ocean Research Kiel",
-          "is_corresponding": false
-        },
-        {
-          "name": "Emanuel Söding",
-          "affiliation": "GEOMAR Helmholtz Centre for Ocean Research Kiel",
-          "is_corresponding": false
-        },
-        {
-          "name": "Paula Stock",
-          "affiliation": "GFZ Helmholtz Centre for Geosciences",
+          "name": "Sami Zhioua",
+          "affiliation": "University of Doha for Science and Technology",
           "is_corresponding": false
         }
       ]
